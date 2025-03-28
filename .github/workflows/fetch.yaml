@@ -61,6 +61,8 @@ jobs:
 
       - name: Run code formatting
         run: npm run prettier
+      - name: Update package version
+        run: npm version patch -m "Update to Dota 2 version ${{ needs.precheck.outputs.new_version }}"
 
       - name: Commit and push changes
         run: |
@@ -68,4 +70,4 @@ jobs:
           git config --global user.email 'actions@github.com'
           git add .
           git diff --staged --quiet || git commit -m "Update to Dota 2 version ${{ needs.precheck.outputs.new_version }}"
-          git push
+          git push --follow-tags
