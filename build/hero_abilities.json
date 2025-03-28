@@ -634,7 +634,7 @@
         "color": "Gray",
         "gradient_id": 3,
         "title": "Leaps and Bounds",
-        "description": "Upon landing, Leap roots targets in a 250 radius for 1.1 =1.4 =1.7 =2.0s."
+        "description": "Upon landing, Leap roots targets in a 250 radius for 1.1 1.4 1.7 2.0s."
       }
     ]
   },
@@ -2987,7 +2987,7 @@
         "color": "Gray",
         "gradient_id": 0,
         "title": "Methodical",
-        "description": "Coup de Grace procs every 6 attacks on the same hero or 4 attacks on non hero units."
+        "description": "Coup de Grace procs every [object Object] attacks on the same hero or [object Object] attacks on non hero units."
       },
       {
         "id": 2,
@@ -3375,7 +3375,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_attack_speed_90",
+        "name": "special_bonus_unique_dazzle_nothl_projection_duration",
         "level": 2
       },
       {
@@ -3403,7 +3403,7 @@
         "color": "Red",
         "gradient_id": 1,
         "title": "Nothl Boon",
-        "description": "Dazzle's overhealing is converted into a barrier. Weave is stronger on allies.",
+        "description": "Dazzle's overhealing is converted into a barrier. Weave is stronger on allies and amplifies incoming heals from Dazzle.",
         "abilities": [
           "dazzle_nothl_boon"
         ]
@@ -3611,7 +3611,7 @@
         "color": "Blue",
         "gradient_id": 2,
         "title": "Ironwood Treant",
-        "description": "Nature's Call creates only 1 =1 =1 =1 Treant that has more health, more damage, increased vision, increased movement speed, and is Reinforced."
+        "description": "Nature's Call creates only 1 1 1 1 Treant that has more health, more damage, increased vision, increased movement speed, and is Reinforced."
       }
     ]
   },
@@ -4657,7 +4657,7 @@
         "color": "Gray",
         "gradient_id": 0,
         "title": "Forsaken",
-        "description": "Spectre deals 1.75x damage with Desolate. Spectre's illusions no longer have Desolate."
+        "description": "Spectre deals 2x damage with Desolate. Spectre's illusions no longer have Desolate."
       },
       {
         "id": 1,
@@ -5174,7 +5174,7 @@
         "color": "Blue",
         "gradient_id": 0,
         "title": "Scholar of Koryx",
-        "description": "Quas gains an additional max level. When Invoker reaches level 6, Quas gains an additional level.\n\nWhen Cold Snap triggers, Invoker is healed.\n\nAghanim's Scepter upgrades Ghost Walk and grants 2 current and max levels to Quas, increasing it to 10.\n\nAghanim's Shard upgrades Ice Wall."
+        "description": "Quas gains an additional max level. When Invoker reaches level 6, Quas gains an additional level.\n\nWhen Cold Snap triggers, Invoker is healed and restores some mana.\n\nAghanim's Scepter upgrades Ghost Walk and grants 2 current and max levels to Quas, increasing it to 10.\n\nAghanim's Shard upgrades Ice Wall."
       },
       {
         "id": 3,
@@ -6594,7 +6594,7 @@
         "color": "Yellow",
         "gradient_id": 2,
         "title": "Venomous Volley",
-        "description": "Every 5 attacks, Medusa applies poison to her arrow that briefly reduces movement speed, attack speed, and cast speed.",
+        "description": "Every 6 attacks, Medusa applies poison to her arrow that briefly reduces movement speed and attack speed.",
         "abilities": [
           "medusa_venomed_volley"
         ]
@@ -7620,7 +7620,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_oracle_5",
+        "name": "special_bonus_unique_oracle_8",
         "level": 2
       },
       {
@@ -7628,7 +7628,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_oracle_8",
+        "name": "special_bonus_unique_oracle_5",
         "level": 3
       },
       {
@@ -7832,7 +7832,7 @@
         "color": "Blue",
         "gradient_id": 0,
         "title": "Recursive",
-        "description": "Winter's Curse is recast on the lowest health enemy hero if the primary target dies. Cursed enemies take 125% physical, magical, and pure damage from Winter Wyvern."
+        "description": "Winter's Curse is recast on the lowest health enemy hero if the primary target dies."
       }
     ]
   },
@@ -7907,7 +7907,7 @@
         "color": "Blue",
         "gradient_id": 1,
         "title": "Runed Replica",
-        "description": "The Tempest Double is infused with the bonuses of Power Runes for 10s when created.\n\nLevel 1 - Invisibility Rune.\n\nLevel 2 - Invisibility and Arcane Runes.\n\nLevel 3 - Invisibility, Arcane, and Haste Runes."
+        "description": "The Tempest Double is infused with the bonuses of Power Runes for 12s when created.\n\nLevel 1 - Invisibility Rune.\n\nLevel 2 - Invisibility and Arcane Runes.\n\nLevel 3 - Invisibility, Arcane, and Haste Runes."
       },
       {
         "id": 3,
@@ -8785,7 +8785,7 @@
         "color": "Red",
         "gradient_id": 0,
         "title": "Provoke the Beast",
-        "description": "Gain 2 Uproar stacks upon being disabled by an enemy hero."
+        "description": "Gain 3 Uproar stacks upon being disabled by an enemy hero."
       },
       {
         "id": 2,
@@ -9034,7 +9034,10 @@
         "color": "Blue",
         "gradient_id": 3,
         "title": "Shadowhawk",
-        "description": "Triggering a Shodo Sai Mark from invisibility deals bonus critical damage.  When Kez triggers a Shodo Sai Mark, reduce the cooldown of Shodo Sai and Kazurai Katana."
+        "description": "Triggering a Shodo Sai Mark from invisibility deals bonus critical damage.",
+        "abilities": [
+          "kez_shadowhawk_passive"
+        ]
       }
     ]
   }
