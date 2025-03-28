@@ -1,0 +1,48 @@
+name: Fetch new data when a new version is released
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  precheck:
+    name: Check version
+    runs-on: ubuntu-latest
+    outputs:
+      new_version: ${{ steps.new_version.outputs.version }}
+      current_version: ${{ steps.current_version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 'master'
+      - id: new_version
+        run: echo "version=`curl \"https://api.steampowered.com/IGCVersion_570/GetClientVersion/v1/\" | jq .result.active_version`" >> $GITHUB_OUTPUT
+      - id: current_version
+        run: echo "version=`cat version`" >> $GITHUB_OUTPUT
+
+  build:
+    name: Fetch and build new source strings
+    needs: precheck
+    if: ${{ needs.precheck.outputs.new_version != needs.precheck.outputs.current_version || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 'master'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Update version
+        run: echo ${{ needs.precheck.outputs.new_version }} > version
+      - name: Build constants
+        run: npm run build
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git commit -m "Update to version ${{ needs.precheck.outputs.new_version }}"
+          git push
