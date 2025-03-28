@@ -1,38 +1,48 @@
-name: Fetch new data when a new version is released
+name: Fetch new data when d2vpkr is updated
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # Check hourly
   workflow_dispatch:     # Allow manual triggering
+  schedule:
+    - cron: '0 * * * *'  # Check hourly for updates
 
 jobs:
   precheck:
-    name: Check version
+    name: Check for updates
     runs-on: ubuntu-latest
     outputs:
-      new_version: ${{ steps.new_version.outputs.version }}
-      current_version: ${{ steps.current_version.outputs.version }}
-      should_update: ${{ steps.check_versions.outputs.should_update }}
+      latest_commit: ${{ steps.latest_commit.outputs.sha }}
+      current_commit: ${{ steps.current_commit.outputs.sha }}
+      should_update: ${{ steps.check_commits.outputs.should_update }}
+      new_version: ${{ steps.get_version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: 'master'
-      - id: new_version
-        name: Fetch latest Dota 2 version
+      - id: latest_commit
+        name: Fetch latest d2vpkr commit
         run: |
-          echo "version=$(curl -s 'https://api.steampowered.com/IGCVersion_570/GetClientVersion/v1/' | jq -r .result.active_version)" >> $GITHUB_OUTPUT
-      - id: current_version
-        name: Get current version
+          echo "sha=$(curl -s 'https://api.github.com/repos/dotabuff/d2vpkr/commits/master' | jq -r .sha)" >> $GITHUB_OUTPUT
+      - id: current_commit
+        name: Get current tracked commit
         run: |
-          echo "version=$(cat version)" >> $GITHUB_OUTPUT
-      - id: check_versions
-        name: Compare versions
+          if [ -f d2vpkr_commit ]; then
+            echo "sha=$(cat d2vpkr_commit)" >> $GITHUB_OUTPUT
+          else
+            echo "sha=" >> $GITHUB_OUTPUT
+          fi
+      - id: check_commits
+        name: Compare commits
         run: |
-          if [[ "${{ steps.new_version.outputs.version }}" != "${{ steps.current_version.outputs.version }}" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          if [[ "${{ steps.latest_commit.outputs.sha }}" != "${{ steps.current_commit.outputs.sha }}" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             echo "should_update=true" >> $GITHUB_OUTPUT
           else
             echo "should_update=false" >> $GITHUB_OUTPUT
           fi
+      - id: get_version
+        name: Get Dota 2 version
+        if: steps.check_commits.outputs.should_update == 'true'
+        run: |
+          echo "version=$(curl -s 'https://api.steampowered.com/IGCVersion_570/GetClientVersion/v1/' | jq -r .result.active_version)" >> $GITHUB_OUTPUT
 
   build:
     name: Fetch and build new source strings
@@ -53,8 +63,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Update version file
-        run: echo ${{ needs.precheck.outputs.new_version }} > version
+      - name: Update version and commit tracking
+        run: |
+          echo ${{ needs.precheck.outputs.new_version }} > version
+          echo ${{ needs.precheck.outputs.latest_commit }} > d2vpkr_commit
 
       - name: Build constants
         run: npm run build
@@ -69,5 +81,5 @@ jobs:
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           git add .
-          git diff --staged --quiet || git commit -m "Update to Dota 2 version ${{ needs.precheck.outputs.new_version }}"
+          git diff --staged --quiet || git commit -m "Update based on d2vpkr changes (Dota 2 version ${{ needs.precheck.outputs.new_version }})"
           git push --follow-tags
