@@ -1620,11 +1620,15 @@ function formatAttrib(attributes, strings, strings_prefix) {
 }
 
 function removeSigns(template) {
+  if (typeof template !== "string") {
+    return template;
+  }
+
   return template
-    .replace("+", "")
-    .replace("-", "")
-    .replace("x", "")
-    .replace("=", "");
+    .replace(/\+/g, "")
+    .replace(/-/g, "")
+    .replace(/x/g, "")
+    .replace(/=/g, "");
 }
 
 const specialBonusLookup = {};
