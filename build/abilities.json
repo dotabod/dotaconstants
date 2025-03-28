@@ -39292,7 +39292,7 @@
     "dname": "Summon Convert",
     "is_innate": true,
     "behavior": "No Target",
-    "desc": "Chen summons a convert to fight for him. The convert gains bonuses from Holy Persuasion and dies if Chen dies. Its maximum health is set to 220 + 80 per Chen Level.\n\n The spell stays on cooldown while the convert is alive, but refreshes whenever Chen respawns. The Convert counts towards Holy Persuasion max unit count. The Convert's ability level increases with Chen's level of Holy Persusasion.",
+    "desc": "Chen summons a convert to fight for him. The convert gains bonuses from Holy Persuasion and dies if Chen dies. Its maximum health is set to 220 + 80 per Chen Level.\n\n The spell stays on cooldown while the convert is alive, but refreshes whenever Chen respawns. The Convert counts towards Holy Persuasion max unit count. The Convert's ability level increases with Chen's level of Holy Persuasion.",
     "attrib": [
       {
         "key": "health_min",
@@ -71467,6 +71467,18 @@
           "130"
         ],
         "generated": true
+      },
+      {
+        "key": "spell_amp_steal",
+        "header": "SPELL AMP STEAL:",
+        "value": "2",
+        "generated": true
+      },
+      {
+        "key": "spell_amp_steal_range",
+        "header": "SPELL AMP STEAL RANGE:",
+        "value": "925",
+        "generated": true
       }
     ],
     "mc": [
@@ -72013,6 +72025,12 @@
       {
         "key": "grant_debuff_immunity",
         "header": "GRANT DEBUFF IMMUNITY:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "abilitychargerestoretime",
+        "header": "CHARGE RESTORE TIME:",
         "value": "0",
         "generated": true
       },
@@ -72625,7 +72643,7 @@
       "No Target",
       "Hidden"
     ],
-    "desc": "Use: Saddle Up Summons a speedy unicycle to ride around on for 10 seconds. 1.5s after mounting the unicycle, taking damage from enemy hero sources greather than 20 dismounts the rider. Crashing into trees destroys them and slows the unicycle. Attacking, using channeled abilities, or crashing into units and other obstacles also dismounts the rider.",
+    "desc": "Use: Saddle Up Summons a speedy unicycle to ride around on for 10 seconds. 1.5s after mounting the unicycle, taking damage from enemy hero sources greater than 20 dismounts the rider. Crashing into trees destroys them and slows the unicycle. Attacking, using channeled abilities, or crashing into units and other obstacles also dismounts the rider.",
     "attrib": [
       {
         "key": "mount_cast_point",
@@ -74125,7 +74143,7 @@
     "dname": "-{s:value}s Wraithfire Blast Cooldown"
   },
   "special_bonus_unique_wraith_king_facet_1_Facet_skeleton_king_facet_bone_guard": {
-    "dname": "+{s:bonus_blast_dot_duration}s Wraith Blast Slow Duration"
+    "dname": "+{s:bonus_blast_dot_duration}s Wraithfire Blast Slow Duration"
   },
   "special_bonus_unique_wraith_king_facet_2_Facet_skeleton_king_facet_bone_guard": {
     "dname": "+{s:bonus_talent_skeleton_damage} Bone Guard Skeleton Damage"

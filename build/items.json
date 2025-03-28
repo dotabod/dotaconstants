@@ -10168,7 +10168,7 @@
       {
         "type": "active",
         "title": "Suppress",
-        "description": "Applies a basic dispell and slows the target for 5 seconds if they are an enemy or grants bonus movespeed and 40% slow resistance for 5 seconds if they are an ally. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.\nDispel Type: Basic Dispel"
+        "description": "Slows the target for 5 seconds if they are an enemy or applies a basic dispell and grants bonus movespeed and 40% slow resistance for 5 seconds if they are an ally. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.\nDispel Type: Basic Dispel"
       },
       {
         "type": "passive",
