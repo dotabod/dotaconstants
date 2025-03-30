@@ -3,6 +3,11 @@
   "version": "9.4.3",
   "description": "Constant data for Dota 2 applications",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "index.ts",
+    "build/**/*.json"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsx tasks/updateconstants && tsc",

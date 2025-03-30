@@ -1,0 +1,31 @@
+# Development files
+tasks/
+.github/
+.vscode/
+.idea/
+.gitignore
+.npmignore
+biome.json
+tsconfig.json
+*.log
+
+# Node modules (users will install their own)
+node_modules/
+
+# Test files
+test/
+tests/
+
+# Source files not needed for consumers
+json/
+
+# Git files
+.git/
+d2vpkr_commit
+
+# Lock files
+bun.lock
+package-lock.json
+
+# Keep build directory
+!build/
