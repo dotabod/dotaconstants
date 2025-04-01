@@ -807,7 +807,7 @@
     "hero_name": "npc_dota_hero_doom_bringer",
     "hero_id": 69,
     "has_scepter": true,
-    "scepter_desc": "Increases Damage per Second of Doom. Allies in a 300 radius around the doomed target also suffer the effects of Doom.",
+    "scepter_desc": "Allies in a 300 radius around the doomed target also suffer the effects of Doom. Allows Doom to be self-cast to affect enemies around himself with Doom.",
     "scepter_skill_name": "Doom",
     "scepter_new_skill": false,
     "has_shard": true,
