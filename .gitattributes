@@ -1,0 +1,13 @@
+# Mark build JSON files as binary to ensure they're included in the git bundle
+build/**/*.json binary
+
+# Don't ignore build files when creating GitHub archives
+build/**/*.json -linguist-generated
+build/** -linguist-generated
+
+# Force inclusion of build files in git archives and npm tarballs
+build/ export-ignore=false
+build/** export-ignore=false
+
+# Set default behavior to automatically normalize line endings
+* text=auto

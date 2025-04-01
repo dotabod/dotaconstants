@@ -12,9 +12,31 @@ yarn add dotaconstants
 
 # Bun
 bun add dotaconstants
+```
 
-# Install directly from GitHub (pre-built, no build step needed)
-bun add https://github.com/odota/dotaconstants.git
+### Installing from GitHub
+
+This package includes pre-built files, so no build step is needed. When installing from GitHub, use the following approach:
+
+```bash
+# For NPM
+npm install github:odota/dotaconstants
+
+# For Yarn
+yarn add github:odota/dotaconstants
+
+# For Bun - use the direct URL
+bun add https://github.com/odota/dotaconstants
+```
+
+### Bun Users - Important Note
+
+When using Bun, add the following to your `package.json` if you're having issues with imports:
+
+```json
+"trustedDependencies": [
+  "dotaconstants"
+]
 ```
 
 ## Usage
@@ -25,6 +47,13 @@ const constants = require('dotaconstants');
 
 // Or import specific constants
 const { heroes, items } = require('dotaconstants');
+
+// ES Modules import (with TypeScript/Bun)
+import { heroes, items } from 'dotaconstants';
+
+// Direct JSON imports (with TypeScript/Bun)
+import HEROES from 'dotaconstants/build/heroes.json' assert { type: 'json' };
+import ITEMS from 'dotaconstants/build/items.json' assert { type: 'json' };
 ```
 
 ## Notes

@@ -1,0 +1,12 @@
+# Configuration for Bun package manager
+
+[install]
+# Always run the prepare script when adding from git
+git.prepare = true
+
+# Ensure proper handling of git packages
+git.includes = ["build/**/*.json"]
+
+[install.cache]
+# Don't use the cache when installing this package to ensure fresh build
+disable = false

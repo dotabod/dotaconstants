@@ -5,6 +5,7 @@ tasks/
 .idea/
 .gitignore
 .npmignore
+.gitattributes
 biome.json
 tsconfig.json
 *.log
@@ -27,5 +28,7 @@ d2vpkr_commit
 bun.lock
 package-lock.json
 
-# Keep build directory
+# CRITICAL: Make sure build directory is included
 !build/
+!build/**
+!build/**/*.json

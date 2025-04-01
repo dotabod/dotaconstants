@@ -8,9 +8,14 @@
     "index.ts",
     "build/**/*.json"
   ],
+  "exports": {
+    ".": "./index.js",
+    "./build/*": "./build/*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsx tasks/updateconstants && tsc",
+    "postbuild": "git add build/*.json || true",
     "patch": "tsx tasks/newpatch",
     "prettier": "prettier --write tasks",
     "build_node": "node --experimental-strip-types tasks/updateconstants.ts"
@@ -35,5 +40,6 @@
   },
   "trustedDependencies": [
     "@biomejs/biome"
-  ]
+  ],
+  "dependencies": {}
 }
