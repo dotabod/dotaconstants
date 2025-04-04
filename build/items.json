@@ -3601,7 +3601,7 @@
       {
         "type": "active",
         "title": "Transmute",
-        "description": "Kills a non-hero target for 160 gold and 2.1x experience. When used on a neutral creep, guarantees to create a neutral item if available. \n\n Cannot be used on Ancient creeps."
+        "description": "Kills a non-hero target for 160 gold and 2.1x experience. Killing a neutral creep additionally grants a madstone bundle. \n\n Cannot be used on Ancient creeps."
       }
     ],
     "hint": [],
