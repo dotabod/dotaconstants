@@ -14991,7 +14991,7 @@
       {
         "type": "passive",
         "title": "Chipper",
-        "description": "Everytime you are attacked, you return 30 damage to heroes and 20 damage to creeps."
+        "description": "Every time you are attacked, you return 30 damage to heroes and 20 damage to creeps."
       }
     ],
     "hint": [],

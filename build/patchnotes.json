@@ -54230,7 +54230,7 @@
         "Cold Attack's slow and health restoration reduction no longer stack with Orb of Frost and Orb of Corrosion"
       ],
       "shivas_guard": [
-        "Freezing Aura instead of reducing Healing, Health Regen, Lifesteal, and Spell Lifesteal by 25%, now reduces Health Restoration and Incoming Healing by 25%"
+        "Freezing Aura instead of reducing Healing, Health Regen, Lifesteal, and Spell Lifesteal by 25%, now reduces Health Restoration and Heal Amplification by 25%"
       ],
       "bloodstone": [
         "Bloodpact cooldown decreased from 35s to 30s"
