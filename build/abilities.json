@@ -33654,30 +33654,6 @@
     ],
     "img": "/apps/dota2/images/dota_react/abilities/dark_seer_aggrandize.png"
   },
-  "special_bonus_unique_dark_seer": {
-    "dname": "+50 Ion Shell Damage"
-  },
-  "special_bonus_unique_dark_seer_2": {
-    "dname": "+75 Vacuum AoE"
-  },
-  "special_bonus_unique_dark_seer_3": {
-    "dname": "350 AoE Surge"
-  },
-  "special_bonus_unique_dark_seer_5": {
-    "dname": "+65 Ion Shell Radius"
-  },
-  "special_bonus_unique_dark_seer_6": {
-    "dname": "Ion Shell Provides +250 Max Health"
-  },
-  "special_bonus_unique_dark_seer_7": {
-    "dname": "+15% Wall of Replica Illusion Damage"
-  },
-  "special_bonus_unique_dark_seer_13": {
-    "dname": "-40s Wall of Replica Cooldown"
-  },
-  "special_bonus_unique_dark_seer_14": {
-    "dname": "2 Ion Shell Charges "
-  },
   "clinkz_strafe": {
     "dname": "Strafe",
     "behavior": [
@@ -73540,8 +73516,26 @@
   "special_bonus_unique_sven_6": {
     "dname": "+{s:bonus_movespeed}% Warcry Movement Speed"
   },
+  "special_bonus_unique_dark_seer": {
+    "dname": "+{s:bonus_damage_per_second} Ion Shell Damage"
+  },
+  "special_bonus_unique_dark_seer_2": {
+    "dname": "+{s:bonus_radius} Vacuum AoE"
+  },
+  "special_bonus_unique_dark_seer_3": {
+    "dname": "{s:bonus_aoe_radius} AoE Surge"
+  },
   "special_bonus_unique_dark_seer_4": {
     "dname": "Parallel Wall"
+  },
+  "special_bonus_unique_dark_seer_5": {
+    "dname": "+{s:bonus_radius} Ion Shell Radius"
+  },
+  "special_bonus_unique_dark_seer_6": {
+    "dname": "Ion Shell Provides +{s:bonus_bonus_health} Max Health"
+  },
+  "special_bonus_unique_dark_seer_7": {
+    "dname": "+{s:bonus_tooltip_outgoing}% Wall of Replica Illusion Damage"
   },
   "special_bonus_unique_dark_seer_8": {
     "dname": "-{s:value}s Vacuum Cooldown"
@@ -73557,6 +73551,12 @@
   },
   "special_bonus_unique_dark_seer_12": {
     "dname": "+{s:value}s Wall of Replica Slow"
+  },
+  "special_bonus_unique_dark_seer_13": {
+    "dname": "-{s:bonus_cooldown_reduction}s Wall of Replica Cooldown"
+  },
+  "special_bonus_unique_dark_seer_14": {
+    "dname": "{s:bonus_AbilityCharges} Ion Shell Charges "
   },
   "special_bonus_unique_dark_seer_15": {
     "dname": "+{s:bonus_duration}s Ion Shell Duration"
