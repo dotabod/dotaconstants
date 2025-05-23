@@ -50828,7 +50828,7 @@
   "disruptor_electromagnetic_repulsion": {
     "dname": "Electromagnetic Repulsion",
     "is_innate": true,
-    "behavior": "Passive",
+    "behavior": [],
     "dispellable": "No",
     "desc": "Whenever Disruptor takes more than 250 damage from any source within 400 radius, all nearby enemies within are pushed back up to a 400 unit distance.",
     "attrib": [
