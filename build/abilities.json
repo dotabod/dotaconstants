@@ -12853,7 +12853,7 @@
       },
       {
         "key": "necromastery_max_souls",
-        "header": "MAX SOULS:",
+        "header": "BASE MAX SOULS:",
         "value": "20"
       },
       {
@@ -37997,11 +37997,11 @@
         "key": "turn_rate_pct",
         "header": "TURN RATE SLOW:",
         "value": [
-          "-5%",
-          "-15%",
-          "-25%",
-          "-35%",
-          "-35%"
+          "-10%",
+          "-30%",
+          "-50%",
+          "-70%",
+          "-70%"
         ]
       },
       {
@@ -51806,6 +51806,16 @@
     "mc": "0",
     "cd": "8",
     "img": "/apps/dota2/images/dota_react/abilities/naga_siren_reel_in.png"
+  },
+  "naga_siren_reel_in_ad": {
+    "behavior": [
+      "No Target",
+      "Channeled",
+      "Hidden",
+      "Autocast"
+    ],
+    "attrib": [],
+    "img": "/apps/dota2/images/dota_react/abilities/naga_siren_reel_in_ad.png"
   },
   "special_bonus_unique_naga_siren": {
     "dname": "+1 Mirror Image Illusion"

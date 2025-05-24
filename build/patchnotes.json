@@ -54593,10 +54593,9 @@
           "Now applies 2 stacks on cast",
           "Stack limit increased from 10 to 20",
           "All per-stack values are halved",
-          "Application Damage neither halved nor doubled",
+          "Application Damage and Turn Rate neither halved nor doubled",
           "Damage per stack decreased from 5/10/15/20 to 2.5/5/7.5/10",
           "Movement Slow per stack decreased from 1.5/3/4.5/6% to 0.75/1.5/2.25/3%",
-          "Turn Rate Slow per stack decreased from 10/30/50/70% to 5/15/25/35%",
           "Aghanim's Shard upgrade reworked",
           "Removes the 20 stack limit and allows Sticky Napalm to deal 35% of its damage to buildings"
         ],
