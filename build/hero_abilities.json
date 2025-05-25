@@ -8182,11 +8182,12 @@
       "pangolier_swashbuckle",
       "pangolier_shield_crash",
       "pangolier_lucky_shot",
-      "pangolier_fortune_favors_the_bold",
+      "generic_hidden",
       "pangolier_rollup",
       "pangolier_gyroshell",
       "pangolier_gyroshell_stop",
-      "pangolier_rollup_stop"
+      "pangolier_rollup_stop",
+      "pangolier_fortune_favors_the_bold"
     ],
     "talents": [
       {
