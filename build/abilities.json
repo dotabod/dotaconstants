@@ -28228,30 +28228,6 @@
     "lore": "A divine strike, Mortred honors her opponent by choosing them for death.",
     "img": "/apps/dota2/images/dota_react/abilities/phantom_assassin_coup_de_grace.png"
   },
-  "special_bonus_unique_phantom_assassin": {
-    "dname": "Triple Strike Stifling Dagger"
-  },
-  "special_bonus_unique_phantom_assassin_2": {
-    "dname": "+10% Coup de Grace chance"
-  },
-  "special_bonus_unique_phantom_assassin_3": {
-    "dname": "+15% Immaterial Evasion"
-  },
-  "special_bonus_unique_phantom_assassin_4": {
-    "dname": "+0.5s Phantom Strike Duration"
-  },
-  "special_bonus_unique_phantom_assassin_5": {
-    "dname": "+15% Stifling Dagger Damage"
-  },
-  "special_bonus_unique_phantom_assassin_6": {
-    "dname": "+200 Phantom Strike Cast Range"
-  },
-  "special_bonus_unique_phantom_assassin_7": {
-    "dname": "-1.5s Stifling Dagger Cooldown"
-  },
-  "special_bonus_unique_phantom_assassin_strike_aspd": {
-    "dname": "+60 Phantom Strike Attack Speed"
-  },
   "pugna_nether_blast": {
     "dname": "Nether Blast",
     "behavior": [
@@ -48927,12 +48903,6 @@
         ]
       },
       {
-        "key": "required_level",
-        "header": "REQUIRED LEVEL:",
-        "value": "1",
-        "generated": true
-      },
-      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "525",
@@ -49151,12 +49121,6 @@
         "generated": true
       },
       {
-        "key": "required_level",
-        "header": "REQUIRED LEVEL:",
-        "value": "1",
-        "generated": true
-      },
-      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
@@ -49248,12 +49212,6 @@
         "generated": true
       },
       {
-        "key": "required_level",
-        "header": "REQUIRED LEVEL:",
-        "value": "1",
-        "generated": true
-      },
-      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "600",
@@ -49313,12 +49271,6 @@
         "key": "strength_mult",
         "header": "STRENGTH MULT:",
         "value": "0",
-        "generated": true
-      },
-      {
-        "key": "required_level",
-        "header": "REQUIRED LEVEL:",
-        "value": "6",
         "generated": true
       }
     ],
@@ -49392,24 +49344,6 @@
     "mc": "40",
     "cd": "5",
     "img": "/apps/dota2/images/dota_react/abilities/ogre_magi_frost_armor.png"
-  },
-  "special_bonus_unique_ogre_magi": {
-    "dname": "+30 Bloodlust Attack Speed"
-  },
-  "special_bonus_unique_ogre_magi_2": {
-    "dname": "+220 Fireblast Damage"
-  },
-  "special_bonus_unique_ogre_magi_3": {
-    "dname": "17% Fireblast chance on attack"
-  },
-  "special_bonus_unique_ogre_magi_4": {
-    "dname": "+12 Ignite DPS"
-  },
-  "special_bonus_unique_ogre_magi_5": {
-    "dname": "-1s Fireblast Cooldown"
-  },
-  "special_bonus_unique_ogre_magi_dumb_luck_mana": {
-    "dname": "+2/0.01 Dumb Luck Mana/Mana Regen Per Strength"
   },
   "undying_decay": {
     "dname": "Decay",
@@ -68265,33 +68199,6 @@
     ],
     "img": "/apps/dota2/images/dota_react/abilities/snapfire_lil_shredder.png"
   },
-  "special_bonus_unique_snapfire_1": {
-    "dname": "+8 Mortimer Kisses Launched"
-  },
-  "special_bonus_unique_snapfire_2": {
-    "dname": "+1 Lil' Shredder attacks"
-  },
-  "special_bonus_unique_snapfire_3": {
-    "dname": "-4s Firesnap Cookie Cooldown"
-  },
-  "special_bonus_unique_snapfire_5": {
-    "dname": "+25 Mortimer Kisses Debuff DPS"
-  },
-  "special_bonus_unique_snapfire_6": {
-    "dname": "+60% Lil' Shredder Attack Damage"
-  },
-  "special_bonus_unique_snapfire_7": {
-    "dname": "+70 Scatterblast Damage"
-  },
-  "special_bonus_unique_snapfire_8": {
-    "dname": "+=2 Lil' Shredder Targets"
-  },
-  "special_bonus_unique_snapfire_mortimer_kisses_impact_damage": {
-    "dname": "+60 Mortimer Kisses Impact Damage"
-  },
-  "special_bonus_unique_snapfire_firesnap_cookie_additional_charge": {
-    "dname": "2 Firesnap Cookie Charges"
-  },
   "hoodwink_hunters_boomerang": {
     "dname": "Hunter's Boomerang",
     "behavior": [
@@ -73352,6 +73259,33 @@
   "special_bonus_unique_void_spirit_resonant_pulse_barrier": {
     "dname": "+{s:bonus_base_absorb_amount}% Resonant Pulse Barrier"
   },
+  "special_bonus_unique_snapfire_1": {
+    "dname": "+{s:bonus_projectile_count} Mortimer Kisses Launched"
+  },
+  "special_bonus_unique_snapfire_2": {
+    "dname": "+{s:bonus_buffed_attacks} Lil' Shredder attacks"
+  },
+  "special_bonus_unique_snapfire_3": {
+    "dname": "-{s:bonus_AbilityCooldown}s Firesnap Cookie Cooldown"
+  },
+  "special_bonus_unique_snapfire_5": {
+    "dname": "+{s:bonus_burn_damage} Mortimer Kisses Debuff DPS"
+  },
+  "special_bonus_unique_snapfire_6": {
+    "dname": "+{s:bonus_damage_pct}% Lil' Shredder Attack Damage"
+  },
+  "special_bonus_unique_snapfire_7": {
+    "dname": "+{s:bonus_damage} Scatterblast Damage"
+  },
+  "special_bonus_unique_snapfire_8": {
+    "dname": "+{s:bonus_extra_targets} Lil' Shredder Targets"
+  },
+  "special_bonus_unique_snapfire_mortimer_kisses_impact_damage": {
+    "dname": "+{s:bonus_damage_per_impact} Mortimer Kisses Impact Damage"
+  },
+  "special_bonus_unique_snapfire_firesnap_cookie_additional_charge": {
+    "dname": "{s:bonus_AbilityCharges} Firesnap Cookie Charges"
+  },
   "special_bonus_unique_hoodwink_sharpshooter_speed": {
     "dname": "{s:pct_change}% Sharpshooter Faster Projectile / Charge Time"
   },
@@ -74084,6 +74018,21 @@
   "special_bonus_unique_medusa_gorgons_grasp_volleys": {
     "dname": "+{s:bonus_volley_count} Gorgon's Grasp Volley"
   },
+  "special_bonus_unique_ogre_magi": {
+    "dname": "+{s:bonus_bonus_attack_speed} Bloodlust Attack Speed"
+  },
+  "special_bonus_unique_ogre_magi_2": {
+    "dname": "+{s:bonus_fireblast_damage} Fireblast Damage"
+  },
+  "special_bonus_unique_ogre_magi_4": {
+    "dname": "+{s:bonus_burn_damage} Ignite DPS"
+  },
+  "special_bonus_unique_ogre_magi_5": {
+    "dname": "-{s:bonus_AbilityCooldown}s Fireblast Cooldown"
+  },
+  "special_bonus_unique_ogre_magi_dumb_luck_mana": {
+    "dname": "+{s:bonus_mana_per_str}/{s:bonus_mana_regen_per_str} Dumb Luck Mana/Mana Regen Per Strength"
+  },
   "special_bonus_unique_silencer_5": {
     "dname": "+{s:bonus_int_steal_duration}s Glaives of Wisdom Int Steal Duration"
   },
@@ -74099,14 +74048,38 @@
   "special_bonus_unique_death_prophet_silence_slow": {
     "dname": "-{s:bonus_movement_slow}% Silence Move Speed Slow"
   },
+  "special_bonus_unique_phantom_assassin": {
+    "dname": "Triple Strike Stifling Dagger"
+  },
+  "special_bonus_unique_phantom_assassin_2": {
+    "dname": "+{s:bonus_crit_chance}% Coup de Grace chance"
+  },
   "special_bonus_unique_phantom_assassin_2_facet_phantom_assassin_methodical": {
     "dname": "-{s:bonus_attacks_to_proc} Attacks to Trigger Coup de Grace"
+  },
+  "special_bonus_unique_phantom_assassin_3": {
+    "dname": "+{s:bonus_evasion}% Immaterial Evasion"
+  },
+  "special_bonus_unique_phantom_assassin_4": {
+    "dname": "+{s:bonus_duration}s Phantom Strike Duration"
+  },
+  "special_bonus_unique_phantom_assassin_5": {
+    "dname": "+{s:bonus_attack_factor}% Stifling Dagger Damage"
+  },
+  "special_bonus_unique_phantom_assassin_6": {
+    "dname": "+{s:bonus_AbilityCastRange} Phantom Strike Cast Range"
+  },
+  "special_bonus_unique_phantom_assassin_7": {
+    "dname": "-{s:bonus_AbilityCooldown}s Stifling Dagger Cooldown"
   },
   "special_bonus_unique_phantom_assassin_8": {
     "dname": "+{s:value} Range and Ground Target Stifling Dagger"
   },
   "special_bonus_unique_phantom_assassin_9": {
     "dname": "{s:value} Phantom Strike Charges"
+  },
+  "special_bonus_unique_phantom_assassin_strike_aspd": {
+    "dname": "+{s:bonus_bonus_attack_speed} Phantom Strike Attack Speed"
   },
   "special_bonus_unique_riki_4": {
     "dname": "+{s:value} Tricks of the Trade Radius"
