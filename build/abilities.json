@@ -9797,12 +9797,9 @@
   },
   "bloodseeker_bloodrage": {
     "dname": "Bloodrage",
-    "behavior": [
-      "Unit Target",
-      "Instant Cast"
-    ],
+    "behavior": "Unit Target",
     "dmg_type": "Pure",
-    "bkbpierce": "Yes",
+    "bkbpierce": "No",
     "dispellable": "Yes",
     "target_team": "Friendly",
     "target_type": "Hero",
@@ -9863,9 +9860,9 @@
         "generated": true
       },
       {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.2",
+        "key": "enemy_castpoint",
+        "header": "ENEMY CASTPOINT:",
+        "value": "0.3",
         "generated": true
       }
     ],
@@ -15150,10 +15147,10 @@
     ],
     "lore": "Crixalis often lies in wait, burrowing under the surface to ambush his adversaries.",
     "mc": [
+      "100",
       "110",
       "120",
-      "130",
-      "140"
+      "130"
     ],
     "cd": [
       "14",
@@ -15467,10 +15464,10 @@
     "dname": "+10 Epicenter Pulses"
   },
   "special_bonus_unique_sand_king_2": {
-    "dname": "+20 Sand Storm Damage Per Second"
+    "dname": "+25 Sand Storm Damage Per Second"
   },
   "special_bonus_unique_sand_king_3": {
-    "dname": "+8% Stinger Slow"
+    "dname": "+12% Stinger Slow"
   },
   "special_bonus_unique_sand_king_4": {
     "dname": "45% Sand Storm Slow"
@@ -15482,7 +15479,7 @@
     "dname": "-2s Burrowstrike Cooldown"
   },
   "special_bonus_unique_sand_king_8": {
-    "dname": "+150 Burrowstrike Cast Range"
+    "dname": "+200 Burrowstrike Cast Range"
   },
   "special_bonus_unique_sand_king_burrowstrike_stun": {
     "dname": "+{s:bonus_burrow_duration}s Burrowstrike Stun"
@@ -19127,7 +19124,7 @@
       "Hidden"
     ],
     "target_team": "Friendly",
-    "desc": "Lich cannot gain passive mana regeneration, but any unit dying within 1500 range of Lich restores 2.5% of his Max Mana (Dying heroes restore 15% of Lich's Max Mana). Instant mana restoration from items and abilities apply to Lich as normal.",
+    "desc": "Lich cannot gain passive mana regeneration, but any unit dying within 1500 range of Lich restores 2.5% of his Max Mana (Dying heroes restore 25% of Lich's Max Mana). Instant mana restoration from items and abilities apply to Lich as normal.",
     "attrib": [
       {
         "key": "radius",
@@ -19147,7 +19144,7 @@
       {
         "key": "mana_restore_pct_from_hero",
         "header": "MANA RESTORE PCT FROM HERO:",
-        "value": "15",
+        "value": "25",
         "generated": true
       },
       {
@@ -20074,9 +20071,9 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "140",
-          "200",
-          "260",
+          "125",
+          "190",
+          "255",
           "320"
         ]
       },
@@ -20274,10 +20271,10 @@
       "170"
     ],
     "cd": [
+      "14",
       "13",
       "12",
-      "11",
-      "10"
+      "11"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/shadow_shaman_shackles.png"
   },
@@ -22691,7 +22688,7 @@
       {
         "key": "damage_threshold",
         "header": "DAMAGE THRESHOLD:",
-        "value": "350",
+        "value": "375",
         "generated": true
       },
       {
@@ -22704,6 +22701,12 @@
         "key": "eidolon_spawns",
         "header": "EIDOLON SPAWNS:",
         "value": "1",
+        "generated": true
+      },
+      {
+        "key": "non_splitting_bounty_reduction_tooltip",
+        "header": "NON SPLITTING BOUNTY REDUCTION TOOLTIP:",
+        "value": "50",
         "generated": true
       }
     ],
@@ -25644,7 +25647,7 @@
     "dname": "Rugged",
     "is_innate": true,
     "behavior": "Passive",
-    "desc": "Beastmaster's melee hero Damage Block Chance is increased from 50% to 100% versus non-hero units.",
+    "desc": "Beastmaster's melee hero Damage Block Chance is increased from 50% to 100% versus non-hero units and non-building units.",
     "attrib": [
       {
         "key": "damage_block_pct_fifty_tooltip",
@@ -28620,10 +28623,10 @@
         "key": "bonus_damage",
         "header": "BONUS DAMAGE:",
         "value": [
-          "20",
-          "40",
-          "60",
-          "80"
+          "15",
+          "30",
+          "45",
+          "60"
         ]
       },
       {
@@ -28639,7 +28642,7 @@
       }
     ],
     "lore": "Manipulating her psionic veil, Lanaya bends nature's law to her will.",
-    "mc": "85",
+    "mc": "95",
     "cd": "14",
     "img": "/apps/dota2/images/dota_react/abilities/templar_assassin_refraction.png"
   },
@@ -32169,9 +32172,9 @@
         "key": "damage",
         "header": "BASE DAMAGE:",
         "value": [
-          "100",
-          "140",
-          "180"
+          "90",
+          "130",
+          "170"
         ]
       },
       {
@@ -32551,7 +32554,7 @@
       {
         "key": "hero_level_gold_multiplier",
         "header": "HERO LEVEL GOLD MULTIPLIER:",
-        "value": "1.5",
+        "value": "2",
         "generated": true
       }
     ],
@@ -33355,10 +33358,10 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "21",
+          "20",
+          "22",
           "24",
-          "27",
-          "30"
+          "26"
         ]
       },
       {
@@ -33538,7 +33541,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "1300",
+        "value": "1000",
         "generated": true
       },
       {
@@ -34250,9 +34253,9 @@
         "key": "bonus_damage",
         "header": "DAMAGE:",
         "value": [
-          "40",
-          "60",
-          "80",
+          "25",
+          "50",
+          "75",
           "100"
         ]
       },
@@ -34299,10 +34302,10 @@
     "lore": "The knight is merely a means to move the hammer.",
     "mc": "0",
     "cd": [
-      "16",
-      "12",
-      "8",
-      "4"
+      "20",
+      "15",
+      "10",
+      "5"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/omniknight_hammer_of_purity.png"
   },
@@ -35068,7 +35071,7 @@
       {
         "key": "wisp_count",
         "header": "WISPS:",
-        "value": "8"
+        "value": "9"
       },
       {
         "key": "movespeed",
@@ -35736,10 +35739,10 @@
         "key": "duration_night",
         "header": "NIGHT DURATION:",
         "value": [
-          "2",
-          "2.5",
-          "3",
-          "3.5",
+          "1.6",
+          "2.2",
+          "2.8",
+          "3.4",
           "4"
         ]
       },
@@ -40282,12 +40285,7 @@
       {
         "key": "slow_resist",
         "header": "SLOW RESISTANCE:",
-        "value": [
-          "10%",
-          "20%",
-          "30%",
-          "40%"
-        ]
+        "value": "25%"
       },
       {
         "key": "abilitycastrange",
@@ -40343,7 +40341,7 @@
       {
         "key": "bonus_reset_time_roshan",
         "header": "RESET TIME (ROSHAN):",
-        "value": "10"
+        "value": "8"
       },
       {
         "key": "damage_per_stack",
@@ -44448,10 +44446,10 @@
         "key": "damage_pct",
         "header": "DAMAGE:",
         "value": [
-          "10%",
-          "15%",
-          "20%",
-          "25%"
+          "8%",
+          "12%",
+          "16%",
+          "20%"
         ]
       }
     ],
@@ -50439,7 +50437,7 @@
       {
         "key": "slow_duration",
         "header": "SLOW DURATION:",
-        "value": "0.4",
+        "value": "0.3",
         "generated": true
       },
       {
@@ -53782,7 +53780,7 @@
         "key": "bonus_regen",
         "header": "HEALTH GAINED PER SECOND:",
         "value": [
-          "10",
+          "5",
           "70",
           "100",
           "130"
@@ -55326,7 +55324,7 @@
       {
         "key": "move_speed_limit",
         "header": "MOVE SPEED LIMIT:",
-        "value": "600",
+        "value": "575",
         "generated": true
       },
       {
@@ -57826,9 +57824,9 @@
         "header": "BASE DAMAGE:",
         "value": [
           "60",
-          "85",
-          "110",
-          "135"
+          "90",
+          "120",
+          "150"
         ]
       },
       {
@@ -60909,7 +60907,7 @@
       {
         "key": "outside_radius_bonus_damage_pct",
         "header": "DAMAGE PENALTY:",
-        "value": "-50%"
+        "value": "-60%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/terrorblade_dark_unity.png"
@@ -61821,7 +61819,7 @@
       {
         "key": "heal_amp",
         "header": "HEAL AMPLIFICATION:",
-        "value": "20%"
+        "value": "15%"
       },
       {
         "key": "abilitycastrange",
@@ -62208,9 +62206,9 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "80",
-          "160",
-          "240",
+          "95",
+          "170",
+          "245",
           "320"
         ]
       },
@@ -63916,7 +63914,7 @@
       }
     ],
     "lore": "They come without warning, leaving fire and blood where kingdoms once flourished.",
-    "mc": "200",
+    "mc": "175",
     "cd": [
       "110",
       "105",
@@ -72168,7 +72166,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Use: Toss Pie Knocks enemies back, slows them by 45% and reduces their vision to 50 recovering over 2 seconds, and prevents them from receiving vision from their allies for the duration. Instantly kills any non-ancient creep.",
+    "desc": "Use: Toss Pie Knocks enemies back, slows them by 45% and reduces their vision to 50 recovering over 3 seconds, and prevents them from receiving vision from their allies for the duration. Instantly kills any non-ancient creep.",
     "attrib": [
       {
         "key": "projectile_speed",
@@ -72197,7 +72195,7 @@
       {
         "key": "blind_duration",
         "header": "BLIND DURATION:",
-        "value": "2",
+        "value": "3",
         "generated": true
       },
       {
@@ -72247,7 +72245,7 @@
       "AOE",
       "Hidden"
     ],
-    "desc": "Use: Clairvoyance Scans a targeted 450 area with global range for 4 seconds. Indicates whether there are enemy heroes in that area for the duration. Reveals invisible units and wards in the scanned area, but does not provide vision. The reveal effect lingers for 1 second.",
+    "desc": "Use: Clairvoyance Scans a targeted 450 area with global range for 5 seconds. Indicates whether there are enemy heroes in that area for the duration. Reveals invisible units and wards in the scanned area, but does not provide vision. The reveal effect lingers for 1 second.",
     "attrib": [
       {
         "key": "radius",
@@ -72258,7 +72256,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "4",
+        "value": "5",
         "generated": true
       },
       {
@@ -72822,9 +72820,9 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "3",
-          "4",
-          "5",
+          "3.75",
+          "4.5",
+          "5.25",
           "6"
         ]
       },
@@ -72961,7 +72959,12 @@
       }
     ],
     "lore": "The Shodo learned to rely upon distance and disorientation to survive against much stronger opposition.",
-    "mc": "75",
+    "mc": [
+      "60",
+      "65",
+      "70",
+      "75"
+    ],
     "cd": [
       "13",
       "11",
@@ -72987,7 +72990,7 @@
     ],
     "bkbpierce": "Yes",
     "dispellable": "Strong Dispels Only",
-    "desc": "Kez's attacks and abilities with the Sai have a chance to Mark enemies. The next attack or ability damage from Kez will stun the enemy and deal a critical strike, consuming the buff.\n\nKez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for 2 seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned and Marked.\n\nThe sub-ability may be used to cancel the blocking early.",
+    "desc": "Kez's attacks and abilities with the Sai have a chance to Mark enemies. The next attack or ability damage from Kez will stun the enemy and deal a critical strike, consuming the buff.\n\nKez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for 2 seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned and gains a stronger Mark that stuns for longer and deals 4% * Target Hero Level bonus critical strike.\n\nThe sub-ability may be used to cancel the blocking early.",
     "attrib": [
       {
         "key": "sai_attack_range",
@@ -73053,7 +73056,7 @@
       {
         "key": "parry_bonus_crit",
         "header": "PARRY BONUS CRIT:",
-        "value": "0",
+        "value": "4",
         "generated": true
       },
       {

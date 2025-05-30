@@ -13690,7 +13690,7 @@
     ],
     "mc": false,
     "hc": false,
-    "cd": 50,
+    "cd": 100,
     "lore": "The price for wearing it is paid in the afterlife.",
     "components": null,
     "created": false,
@@ -18600,7 +18600,7 @@
       {
         "key": "health_restoration",
         "display": "+ {value}% Health Restoration",
-        "value": "20 / 30"
+        "value": "30 / 40"
       },
       {
         "key": "bat_reduce",
@@ -18610,7 +18610,7 @@
       {
         "key": "intelligence_pct",
         "display": "- {value}% Intelligence",
-        "value": "-8"
+        "value": "-5"
       }
     ],
     "mc": false,
@@ -19246,7 +19246,7 @@
       {
         "type": "passive",
         "title": "Keen Eye",
-        "description": "Increases cast range by 125 and attack range by 100 (Melee & Ranged). Taking over 25 damage from a player controlled source or Roshan disables this effect for 3 seconds."
+        "description": "Increases cast range by 100 and attack range by 100 (Melee & Ranged). Taking over 25 damage from a player controlled source or Roshan disables this effect for 3 seconds."
       }
     ],
     "hint": [],
@@ -19262,7 +19262,7 @@
       },
       {
         "key": "bonus_cast_range",
-        "value": "125"
+        "value": "100"
       },
       {
         "key": "damage_disable",
@@ -19533,7 +19533,7 @@
     "img": "/apps/dota2/images/dota_react/items/dormant_curio.png?t=1593393829403",
     "dname": "Dormant Curio",
     "cost": 0,
-    "notes": "Will amplify a stat on the next artifact by 30% other than cooldown, mana cost, or cast range.",
+    "notes": "Certain stats on the next artifact will be amplified. Will not amplify cooldown, mana cost, or cast range.",
     "attrib": [
       {
         "key": "item_potency",
@@ -19617,7 +19617,7 @@
       {
         "key": "health_regen_loss",
         "display": "HEALTH RESTORATION LOSS: {value}%",
-        "value": "20"
+        "value": "30"
       },
       {
         "key": "hp_damage",
@@ -19690,7 +19690,7 @@
       {
         "type": "passive",
         "title": "Blood Invocation",
-        "description": "Spells have a 15% larger Area of Effect, but now additionally cost health equal to 35% of their mana cost."
+        "description": "Spells have a 12% larger Area of Effect, but now additionally cost health equal to 35% of their mana cost."
       }
     ],
     "hint": [],
@@ -19706,7 +19706,7 @@
       },
       {
         "key": "aoe_pct",
-        "value": "15"
+        "value": "12"
       }
     ],
     "mc": false,
@@ -19756,7 +19756,7 @@
       {
         "key": "debuff_duration",
         "display": "DURATION: {value}",
-        "value": "4"
+        "value": "3"
       }
     ],
     "mc": false,

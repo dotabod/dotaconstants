@@ -3671,7 +3671,7 @@
         "color": "Green",
         "gradient_id": 0,
         "title": "Soothing Saplings",
-        "description": "After Sprout is cast, all trees in a 1200 radius heal nearby allies."
+        "description": "After Sprout is cast, all trees in a 900 radius heal nearby allies."
       },
       {
         "id": 1,
@@ -4281,7 +4281,7 @@
         "color": "Gray",
         "gradient_id": 0,
         "title": "Necrotic Webs",
-        "description": "Reduces health regeneration of enemies on webs."
+        "description": "Reduces health restoration of enemies on webs."
       },
       {
         "id": 1,
@@ -6205,7 +6205,7 @@
         "icon": "vortex_out",
         "color": "Gray",
         "gradient_id": 0,
-        "title": "Transferrence",
+        "title": "Transference",
         "description": "Electromagnetic Repulsion can be activated manually, be cast on allies and deals damage equal to a percentage of Disruptor's current health."
       }
     ]
