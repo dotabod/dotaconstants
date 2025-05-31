@@ -7783,9 +7783,10 @@
       "techies_sticky_bomb",
       "techies_reactive_tazer",
       "techies_suicide",
-      "techies_reactive_tazer_stop",
+      "generic_hidden",
       "techies_minefield_sign",
-      "techies_land_mines"
+      "techies_land_mines",
+      "techies_reactive_tazer_stop"
     ],
     "talents": [
       {

@@ -32469,7 +32469,10 @@
   "furion_spirit_of_the_forest": {
     "dname": "Spirit of the Forest",
     "is_innate": true,
-    "behavior": "Passive",
+    "behavior": [
+      "Passive",
+      "Hidden"
+    ],
     "dispellable": "No",
     "desc": "Nature's Prophet gains 3% bonus damage for each tree within 300 and a multiplier of that same bonus for each treant within 1200 distance of him.",
     "attrib": [
@@ -32506,7 +32509,10 @@
   },
   "furion_natures_profit": {
     "dname": "Nature's Profit",
-    "behavior": "Passive",
+    "behavior": [
+      "Passive",
+      "Hidden"
+    ],
     "dispellable": "No",
     "attrib": [
       {
