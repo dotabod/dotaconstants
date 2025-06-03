@@ -58195,7 +58195,7 @@
       {
         "key": "self_damage_enemy_target",
         "header": "SELF DAMAGE (ENEMY CAST):",
-        "value": "0%"
+        "value": "40%"
       },
       {
         "key": "missile_speed",
