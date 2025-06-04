@@ -55998,7 +55998,7 @@
       },
       "broodmother": {
         "hero_facet": [
-          "Health Regeneration Reduction now affects Health Restoration instead"
+          "Health Regeneration Reduction now also affects Health Restoration at the same values"
         ]
       },
       "centaur": {
