@@ -4166,5 +4166,44 @@
     "label": "Брбрбрбр. Ладно, смотрим дальше.",
     "message": "Брбрбрбр. Ладно, смотрим дальше.",
     "sound_ext": "wav"
+  },
+  "720": {
+    "id": 720,
+    "name": "Guild_Earthshaker_Confused",
+    "image": "sprays/shaker_confus_spray_icon.png"
+  },
+  "721": {
+    "id": 721,
+    "name": "Guild_Lina_Angry",
+    "image": "sprays/lina_angry_spray_icon.png"
+  },
+  "722": {
+    "id": 722,
+    "name": "Guild_NaturesProphet_Nervous",
+    "image": "sprays/naturesprophet_o_o_spray_icon.png"
+  },
+  "723": {
+    "id": 723,
+    "name": "Guild_TI11_Caster_English_4",
+    "all_chat": true,
+    "label": "His brain is so big.",
+    "message": "His brain is so big.",
+    "sound_ext": "wav"
+  },
+  "724": {
+    "id": 724,
+    "name": "Guild_TI11_Caster_Chinese_1",
+    "all_chat": true,
+    "label": "一拳超人，他来了呀",
+    "message": "一拳超人，他来了呀",
+    "sound_ext": "wav"
+  },
+  "725": {
+    "id": 725,
+    "name": "Guild_TI11_Caster_Russian_5",
+    "all_chat": true,
+    "label": "Смех",
+    "message": "Смех",
+    "sound_ext": "wav"
   }
 }
