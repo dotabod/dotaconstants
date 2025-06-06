@@ -779,7 +779,10 @@
   },
   "roshan_revengeroar": {
     "dname": "Roar of Retribution",
-    "behavior": "No Target",
+    "behavior": [
+      "No Target",
+      "Instant Cast"
+    ],
     "dmg_type": "Magical",
     "dispellable": "Yes",
     "attrib": [
@@ -817,6 +820,12 @@
         "key": "disarm_duration",
         "header": "DISARM DURATION:",
         "value": "2",
+        "generated": true
+      },
+      {
+        "key": "windup_time",
+        "header": "WINDUP TIME:",
+        "value": "0.5",
         "generated": true
       }
     ],
