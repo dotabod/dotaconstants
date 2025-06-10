@@ -594,8 +594,10 @@
   "courier_take_stash_and_transfer_items": {
     "behavior": [
       "Hidden",
-      "No Target"
+      "Unit Target"
     ],
+    "target_team": "Friendly",
+    "target_type": "Hero",
     "attrib": [],
     "img": "/apps/dota2/images/dota_react/abilities/courier_take_stash_and_transfer_items.png"
   },
