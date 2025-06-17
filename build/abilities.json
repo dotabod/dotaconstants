@@ -24176,7 +24176,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Binds several enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
+    "desc": "Binds several visible enemy units together, causing a percentage of the damage dealt to one of them to be felt by the others.",
     "dmg": "0",
     "attrib": [
       {
@@ -24201,9 +24201,8 @@
       },
       {
         "key": "search_aoe",
-        "header": "SEARCH AOE:",
-        "value": "700",
-        "generated": true
+        "header": "BIND RADIUS:",
+        "value": "700"
       },
       {
         "key": "abilitycastrange",
