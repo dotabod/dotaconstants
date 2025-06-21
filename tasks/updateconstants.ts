@@ -1438,6 +1438,8 @@ function parseJsonOrVdf(text: string, url: string) {
       fixed = fixed.replace(/\t\t\t"damage_reduction"\t\r\n\t\t\t""/g, "");
       // Remove stray empty string lines that invalidate the VDF
       fixed = fixed.replace(/^\s*""\r?\n/gm, "");
+      // Remove stray quoted tokens like "dota_empty_ability"
+      fixed = fixed.replace(/^\s*"[^"\n]+"\s*\r?\n/gm, "");
       const vdf = vdfparser.parse(fixed, { types: false, arrayify: true });
       return vdf;
     } catch (e) {
