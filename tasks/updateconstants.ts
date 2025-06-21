@@ -1436,6 +1436,8 @@ function parseJsonOrVdf(text: string, url: string) {
       fixed = fixed.replace(/\t\t"ItemRequirements"\r\n\t\t""/g, "");
       fixed = fixed.replace(/\t\t\t"has_flying_movement"\t\r\n\t\t\t""/g, "");
       fixed = fixed.replace(/\t\t\t"damage_reduction"\t\r\n\t\t\t""/g, "");
+      // Remove stray empty string lines that invalidate the VDF
+      fixed = fixed.replace(/^\s*""\r?\n/gm, "");
       const vdf = vdfparser.parse(fixed, { types: false, arrayify: true });
       return vdf;
     } catch (e) {
