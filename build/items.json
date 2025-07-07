@@ -3247,7 +3247,7 @@
     "id": 1106,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Phylactery Recipe",
-    "cost": 400,
+    "cost": 300,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -3272,7 +3272,7 @@
     "img": "/apps/dota2/images/dota_react/items/phylactery.png?t=1593393829403",
     "dname": "Phylactery",
     "qual": "common",
-    "cost": 2600,
+    "cost": 2500,
     "notes": "",
     "attrib": [
       {
@@ -3355,8 +3355,8 @@
     "img": "/apps/dota2/images/dota_react/items/angels_demise.png?t=1593393829403",
     "dname": "Khanda",
     "qual": "common",
-    "cost": 5700,
-    "notes": "",
+    "cost": 5600,
+    "notes": "The slow debuff is dispellable.\nThe break debuff is not dispellable.",
     "attrib": [
       {
         "key": "bonus_mana_regen",
@@ -7752,7 +7752,7 @@
       {
         "key": "bonus_armor",
         "display": "+ {value} Armor",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "bonus_intellect",
@@ -18744,7 +18744,7 @@
       {
         "key": "spell_lifesteal",
         "display": "+ {value}% Spell Lifesteal",
-        "value": "8 / 10 / 12"
+        "value": "6 / 8 / 10"
       },
       {
         "key": "bonus_night_vision",
@@ -18888,7 +18888,7 @@
       {
         "type": "active",
         "title": "Bottoms Up",
-        "description": "Restores 60 + 4% of the caster's maximum mana over 6 seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nHold Control to use on an allied hero."
+        "description": "Restores 70 + 3% of the caster's maximum mana over 6 seconds. If the hero is attacked by an enemy hero or Roshan, the effect is lost.\n\nHold Control to use on an allied hero."
       },
       {
         "type": "passive",
@@ -18911,11 +18911,11 @@
     "attrib": [
       {
         "key": "mana_restore",
-        "value": "60"
+        "value": "70"
       },
       {
         "key": "mana_restore_pct",
-        "value": "4"
+        "value": "3"
       },
       {
         "key": "heal_duration",
@@ -19130,7 +19130,7 @@
     "img": "/apps/dota2/images/dota_react/items/searing_signet.png?t=1593393829403",
     "dname": "Searing Signet",
     "cost": 0,
-    "notes": "",
+    "notes": "Will not ignite enemies that are more than 2000 range away.",
     "attrib": [
       {
         "key": "damage_threshold",
@@ -19147,6 +19147,10 @@
       {
         "key": "burn_tickrate",
         "value": ".25"
+      },
+      {
+        "key": "max_range",
+        "value": "2000"
       }
     ],
     "mc": false,

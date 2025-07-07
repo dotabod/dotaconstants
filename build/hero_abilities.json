@@ -654,7 +654,7 @@
         "color": "Gray",
         "gradient_id": 3,
         "title": "Leaps and Bounds",
-        "description": "Upon landing, Leap roots targets in a 250 radius for 1.5 1.75 2.0 2.25s."
+        "description": "Upon landing, Leap roots targets in a 250 radius for 1.5 =1.75 =2.0 =2.25s."
       }
     ]
   },
@@ -1443,7 +1443,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_unique_windranger_9",
+        "name": "special_bonus_all_stats_4",
         "level": 1
       },
       {
@@ -2917,7 +2917,7 @@
     ],
     "talents": [
       {
-        "name": "special_bonus_attack_speed_40",
+        "name": "special_bonus_attack_speed_30",
         "level": 1
       },
       {
@@ -3681,7 +3681,7 @@
         "color": "Blue",
         "gradient_id": 2,
         "title": "Ironwood Treant",
-        "description": "Nature's Call creates only 1 1 1 1 Treant that has more health, more damage, increased vision, increased movement speed, and is Reinforced."
+        "description": "Nature's Call creates only 1 =1 =1 =1 Treant that has more health, more damage, increased vision, increased movement speed, and is Reinforced."
       },
       {
         "id": 2,
@@ -4745,7 +4745,7 @@
         "color": "Purple",
         "gradient_id": 2,
         "title": "Twist the Knife",
-        "description": "Reality also casts Spectral Dagger on the target."
+        "description": "Reality also casts Spectral Dagger on the Haunt illusion's target."
       }
     ]
   },
@@ -5049,7 +5049,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_hp_175",
+        "name": "special_bonus_hp_150",
         "level": 1
       },
       {
@@ -5980,7 +5980,7 @@
         "color": "Red",
         "gradient_id": 0,
         "title": "Fat Chance",
-        "description": "Multicast chance is increased by  0.06% of Ogre Magi's Strength."
+        "description": "Each point of Ogre Magi's Strength adds 0.06% to Ogre Magi's Multicast chance."
       },
       {
         "id": 1,
@@ -6020,7 +6020,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_undying_3",
+        "name": "special_bonus_unique_undying_5",
         "level": 3
       },
       {
@@ -6032,7 +6032,7 @@
         "level": 4
       },
       {
-        "name": "special_bonus_unique_undying_5",
+        "name": "special_bonus_unique_undying_3",
         "level": 4
       }
     ],
@@ -7299,7 +7299,7 @@
         "color": "Blue",
         "gradient_id": 1,
         "title": "Malignant Mist",
-        "description": "Mist Coil also deals 40 60 80 100% attack damage and applies effects from items and abilities. Self Damage increased when targeting enemies."
+        "description": "Mist Coil also deals 40 =60 =80 =100% attack damage and applies effects from items and abilities. Self Damage increased when targeting enemies."
       }
     ]
   },
@@ -8861,7 +8861,7 @@
     ],
     "talents": [
       {
-        "name": "special_bonus_attack_damage_20",
+        "name": "special_bonus_attack_damage_30",
         "level": 1
       },
       {

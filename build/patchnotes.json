@@ -56210,5 +56210,390 @@
         ]
       }
     }
+  },
+  "7_39c": {
+    "general": [
+      "Map Objectives",
+      "Roshan: Melee attacks against couriers are now treated as melee hero attacks",
+      "Tormentor: Reflect no longer considers creep-heroes for the damage reflected ",
+      "Lone Druid's Spirit Bear is an exception for this",
+      "<br>",
+      "Terrain Changes",
+      "Watchers by the respective Wisdom shrines have been slightly moved away from the nearby ramps",
+      "Watcher activation range decreased from 300 to 200"
+    ],
+    "items": {
+      "orb_of_venom": [
+        "Poison Attack no longer has True Strike on the attack"
+      ],
+      "blade_mail": [
+        "Armor bonus decreased from +7 to +6"
+      ],
+      "hurricane_pike": [
+        "Hurricane Thrust buff provided to the wearer when targeting an enemy is now dispellable"
+      ],
+      "harpoon": [
+        "Draw Forth initial projectile is now disjointable"
+      ],
+      "phylactery": [
+        "Recipe cost decreased from 400 to 300. Total cost decreased from 2600 to 2500"
+      ],
+      "angels_demise": [
+        "Total cost decreased from 5700 to 5600 (due to Phylactery Recipe cost reduction)",
+        "Empower Spell Break debuff no longer dispellable ",
+        "Slow debuff applied by Empower Spell is still dispellable"
+      ],
+      "rippers_lash": [
+        "Flay cast range increased from 700 to 850"
+      ],
+      "mana_draught": [
+        "Bottoms Up mana restore rescaled from 60 + 4% to 70 + 3% ",
+        "Dormant Curio Max Mana Restoration decreased from 5.2% to 3.9%"
+      ],
+      "searing_signet": [
+        "Burn Through no longer applies if the wearer is more than 2000 range away from the target"
+      ],
+      "serrated_shiv": [
+        "Gut 'Em no longer grants Illusions the chance to True Strike"
+      ],
+      "giant_maul": [
+        "Crushing Blow can no longer be applied by illusions"
+      ],
+      "enhancement_vampiric": [
+        "Spell Lifesteal bonus decreased from 8/10/12% to 6/8/10%"
+      ]
+    },
+    "heroes": {
+      "misc": [
+        "Artifact changes",
+        "Enchantment changes",
+        "Arm of the Deep: Cast point increased from 0.2s to 0.3s",
+        "Tendrils of the Deep: Cast point increased from 0.2s to 0.3s",
+        "Congregation of the Deep: Cast point increased from 0.2s to 0.3s",
+        "Petrify: No longer has a health threshold restriction when the Shaman is controlled by a player"
+      ],
+      "axe": {
+        "talents": [
+          "Level 10 Talent Movement Speed per active Battle Hunger decreased from +10% to +8%",
+          "Level 25 Talent Berserker's Call AoE decreased from +100 to +85"
+        ]
+      },
+      "batrider": {
+        "general": [
+          "Base Health Regen decreased from 1.75 to 1.25"
+        ],
+        "batrider_sticky_napalm": [
+          "Aghanim's Shard Building Damage decreased from 35% to 25%"
+        ]
+      },
+      "beastmaster": {
+        "beastmaster_primal_roar": [
+          "Movement speed bonus duration decreased from 3/3.5/4s to 2s"
+        ]
+      },
+      "bristleback": {
+        "hero_facet": [
+          "Armor Loss per stack decreased from 2.5/3/3.5/4 to 2/2.5/3/3.5"
+        ],
+        "bristleback_viscous_nasal_goo": [
+          "Duration decreased from 6s to 5s"
+        ]
+      },
+      "chaos_knight": {
+        "chaos_knight_chaos_bolt": [
+          "Aghanim's Shard Illusion damage reduction decreased from 30% to 15%"
+        ]
+      },
+      "clinkz": {
+        "clinkz_bone_and_arrow": [
+          "Tower hits on archers now count as hero hits"
+        ]
+      },
+      "crystal_maiden": {
+        "crystal_maiden_freezing_field": [
+          "Aghanim's Scepter time for Frostbite application decreased from 2.5s to 2s"
+        ]
+      },
+      "dark_seer": {
+        "dark_seer_surge": [
+          "Aghanim's Shard movement speed slow decreased from 50% to 35%"
+        ],
+        "dark_seer_wall_of_replica": [
+          "Movement Slow decreased from 50/60/70% to 40%"
+        ]
+      },
+      "dark_willow": {
+        "dark_willow_shadow_realm": [
+          "Mana Cost increased from 70/80/90/100 to 80/90/100/110"
+        ]
+      },
+      "death_prophet": {
+        "general": [
+          "Base Armor decreased by 1"
+        ],
+        "death_prophet_exorcism": [
+          "Aghanim's Scepter ghosts no longer slow enemies"
+        ],
+        "talents": [
+          "Level 10 Talent Attack Speed decreased from +40 to +30"
+        ]
+      },
+      "disruptor": {
+        "disruptor_electromagnetic_repulsion": [
+          "Cooldown increased from 4s to 5s"
+        ],
+        "talents": [
+          "Level 20 Talent Kinetic Field Duration decreased from +1.5s to +1s"
+        ]
+      },
+      "doom_bringer": {
+        "general": [
+          "Strength gain decreased from 3.8 to 3.5"
+        ]
+      },
+      "earth_spirit": {
+        "hero_facet": [
+          "Allied heroes that are affected by Enchant Remnant ability are now considered a hero instead of a Stone Remnant"
+        ],
+        "earth_spirit_rolling_boulder": [
+          "Distance increased from 750 to 800"
+        ]
+      },
+      "enchantress": {
+        "enchantress_untouchable": [
+          "Attack Slow increased from 100/150/200 to 110/160/210"
+        ]
+      },
+      "gyrocopter": {
+        "talents": [
+          "Level 10 Talent Health decreased from +175 to +150",
+          "Level 25 Talent Flak Cannon Cooldown Reduction decreased from 5s to 4s"
+        ]
+      },
+      "hoodwink": {
+        "general": [
+          "Base Movement Speed increased from 310 to 315"
+        ],
+        "hoodwink_bushwhack": [
+          "Stun Duration increased from 1.4/1.6/1.8/2s to 1.5/1.7/1.9/2.1s"
+        ]
+      },
+      "kez": {
+        "kez_echo_slash": [
+          "Mana Cost decreased from 85/100/115/130 to 75/90/105/120"
+        ],
+        "kez_kazurai_katana": [
+          "Impale Duration decreased from 0.6s to 0.5s",
+          "Mana Cost decreased from 50 to 40"
+        ]
+      },
+      "kunkka": {
+        "kunkka_tidal_wave": [
+          "Wave Distance decreased from 2300 to 1800",
+          "Cast Range decreased from 1400 to 1050",
+          "As a result, wave's spawn distance behind Kunkka decreased from 900 to 750"
+        ]
+      },
+      "lich": {
+        "hero_facet": [
+          "Bonus Damage increased from 10/15/20/25 to 15/20/25/30"
+        ]
+      },
+      "lone_druid": {
+        "lone_druid_spirit_bear": [
+          "Spirit Bear health per Lone Druid's level increased from 90 to 100"
+        ]
+      },
+      "monkey_king": {
+        "monkey_king_mischief": [
+          "Bonus Move Speed rescaled from 6/9/12/15% to 8%"
+        ]
+      },
+      "muerta": {
+        "general": [
+          "Base Agility increased from 20 to 21"
+        ]
+      },
+      "naga_siren": {
+        "general": [
+          "Base Intelligence decreased from 21 to 20"
+        ]
+      },
+      "furion": {
+        "hero_facet": [
+          "Level 15 Talent Sprout Heal Per Second decreased from +30% to +20%"
+        ],
+        "furion_curse_of_the_forest": [
+          "DPS per Tree decreased from 20 to 15"
+        ]
+      },
+      "nyx_assassin": {
+        "nyx_assassin_spiked_carapace": [
+          "Damage Reflected increased from 125% to 140%"
+        ]
+      },
+      "pangolier": {
+        "general": [
+          "Base Damage decreased by 2",
+          "Damage at level 1 decreased from 51-57 to 49-55"
+        ]
+      },
+      "phantom_assassin": {
+        "phantom_assassin_blur": [
+          "Cooldown rescaled from 60/55/50/45s to 50s"
+        ],
+        "phantom_assassin_fan_of_knives": [
+          "Break debuff is no longer dispellable"
+        ]
+      },
+      "phantom_lancer": {
+        "phantom_lancer_phantom_edge": [
+          "Aghanim's Scepter now additionally every 600 units rushed creates a Juxtapose illusion that rushes to the target alongside Phantom Lancer",
+          "Aghanim's Scepter collision radius for Phantom Lancer increased from 75 to 125"
+        ]
+      },
+      "primal_beast": {
+        "hero_facet": [
+          "Now also provides stacks upon being leashed"
+        ],
+        "primal_beast_rock_throw": [
+          "Cooldown decreased from 25s to 20s"
+        ],
+        "talents": [
+          "Level 10 Talent Damage increased from +20 to +30"
+        ]
+      },
+      "puck": {
+        "puck_waning_rift": [
+          "Max Distance decreased from 400 to 350"
+        ],
+        "puck_phase_shift": [
+          "Aghanim's Shard Bonus Damage decreased from 35 to 20"
+        ]
+      },
+      "pugna": {
+        "pugna_nether_ward": [
+          "Ward Duration increased from 18/22/26/30s to 21/24/27/30s"
+        ]
+      },
+      "sand_king": {
+        "sandking_burrowstrike": [
+          "Damage increased from 80/140/200/260 to 80/150/220/290"
+        ],
+        "sandking_epicenter": [
+          "Aghanim's Shard pulse interval decreased from 3.5s to 3s"
+        ],
+        "talents": [
+          "Level 25 Talent Sand Storm Slow increased from 45% to 50%"
+        ]
+      },
+      "shadow_shaman": {
+        "general": [
+          "Base Armor decreased by 1",
+          "Base Intelligence decreased from 25 to 23"
+        ]
+      },
+      "snapfire": {
+        "talents": [
+          "Level 10 Talent Mortimer Kisses Burn DPS increased from +25 to +35"
+        ]
+      },
+      "spectre": {
+        "spectre_reality": [
+          "Mana Cost increased from 0 to 40"
+        ]
+      },
+      "sven": {
+        "sven_gods_strength": [
+          "Duration decreased from 35s to 30s"
+        ]
+      },
+      "techies": {
+        "techies_reactive_tazer": [
+          "Explosion Radius increased from 400 to 450"
+        ]
+      },
+      "templar_assassin": {
+        "general": [
+          "Base Strength decreased from 23 to 21"
+        ],
+        "templar_assassin_psionic_trap": [
+          "Trap vision radius decreased from 400 to 250"
+        ],
+        "templar_assassin_psionic_trap_info": [
+          "Effect radius unchanged and still 400"
+        ]
+      },
+      "terrorblade": {
+        "general": [
+          "Base Damage decreased by 2",
+          "Damage at level 1 decreased from 50-56 to 48-54"
+        ]
+      },
+      "tiny": {
+        "tiny_toss": [
+          "Flight duration decreased from 1.4s to 1.25s"
+        ]
+      },
+      "tusk": {
+        "general": [
+          "Agility gain decreased from 2.1 to 1.9"
+        ]
+      },
+      "abyssal_underlord": {
+        "abyssal_underlord_raid_boss": [
+          "Movement speed bonus increased from 5/10/15/20% to 11/14/17/20%"
+        ]
+      },
+      "undying": {
+        "undying_flesh_golem": [
+          "Bonus Movespeed decreased from 20/30/40 to 20"
+        ],
+        "talents": [
+          "Level 20 Talent Tombstone on Death replaced with to +4 Tombstone Attacks to Destroy",
+          "Level 25 Talent +6 Tombstone Attacks to Destroy replaced with Tombstone on Death"
+        ]
+      },
+      "vengefulspirit": {
+        "general": [
+          "Base Attack Speed decreased from 110 to 100"
+        ],
+        "vengefulspirit_command_aura": [
+          "Aghanim's Scepter illusion damage taken increased from 100% to 115%"
+        ]
+      },
+      "visage": {
+        "visage_summon_familiars": [
+          "Familiar Armor increased from 0/2/4 to 2/3/4"
+        ]
+      },
+      "windrunner": {
+        "talents": [
+          "Level 10 Talent +25 Easy Breezy Min/Max Movespeed replaced with +4 All Attributes"
+        ]
+      },
+      "winter_wyvern": {
+        "general": [
+          "Base Damage increased by 1",
+          "Damage at level 1 increased from 40-47 to 41-48"
+        ]
+      },
+      "skeleton_king": {
+        "hero_facet": [
+          "Skeleton Armor decreased from 3 to 2"
+        ],
+        "skeleton_king_reincarnation": [
+          "Slow Radius decreased from 900 to 600"
+        ],
+        "skeleton_king_reincarnation_info": [
+          "Also affects Wraithfire Blast cast range from level 25 talent"
+        ]
+      },
+      "zuus": {
+        "general": [
+          "Base intelligence increased from 22 to 23"
+        ]
+      }
+    }
   }
 }
