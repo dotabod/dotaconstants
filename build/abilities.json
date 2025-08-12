@@ -9149,10 +9149,10 @@
     ],
     "lore": "Mogul Khan's warcry taunts opponents into engaging in an unconquerable battle with the Axe.",
     "mc": [
-      "80",
       "90",
       "100",
-      "110"
+      "110",
+      "120"
     ],
     "cd": [
       "17",
@@ -9316,9 +9316,9 @@
         "key": "armor_bonus",
         "header": "KILL ARMOR BONUS:",
         "value": [
-          "20",
-          "25",
-          "30"
+          "10",
+          "15",
+          "20"
         ]
       },
       {
@@ -9869,10 +9869,10 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "90",
-          "145",
-          "200",
-          "255"
+          "100",
+          "155",
+          "210",
+          "265"
         ]
       },
       {
@@ -10579,8 +10579,8 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "105",
-          "170",
+          "110",
+          "180",
           "250"
         ]
       },
@@ -12058,7 +12058,7 @@
     "dmg_type": "Magical",
     "bkbpierce": "No",
     "dispellable": "Strong Dispels Only",
-    "desc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 2.6 seconds, with bonus damage up to 150 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
+    "desc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 2.6 seconds, with bonus damage up to 180 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
     "dmg": [
       "60",
       "150",
@@ -12107,12 +12107,7 @@
       {
         "key": "arrow_bonus_damage",
         "header": "MAXIMUM BONUS DAMAGE:",
-        "value": [
-          "150",
-          "160",
-          "170",
-          "180"
-        ]
+        "value": "180"
       },
       {
         "key": "arrow_vision",
@@ -12822,10 +12817,10 @@
         "key": "presence_armor_reduction",
         "header": "ARMOR REDUCTION:",
         "value": [
+          "-3",
           "-4",
           "-5",
-          "-6",
-          "-7"
+          "-6"
         ]
       },
       {
@@ -14981,10 +14976,10 @@
         "key": "sand_storm_radius",
         "header": "RADIUS:",
         "value": [
-          "425",
-          "500",
-          "575",
-          "650"
+          "475",
+          "550",
+          "625",
+          "700"
         ]
       },
       {
@@ -17196,9 +17191,9 @@
         "key": "hop_distance",
         "header": "LEAP DISTANCE:",
         "value": [
-          "300",
-          "400",
-          "500",
+          "375",
+          "450",
+          "525",
           "600"
         ]
       },
@@ -17833,9 +17828,9 @@
         "header": "CLEAVE RANGE:",
         "value": [
           "650",
-          "800",
-          "950",
-          "1100"
+          "775",
+          "900",
+          "1025"
         ]
       },
       {
@@ -22345,7 +22340,7 @@
     ],
     "lore": "As Boush likes to say, 'There is nothing the arcane can accomplish that the curious mind cannot reproduce given time. And proper funding, of course.'",
     "mc": "75",
-    "cd": "80",
+    "cd": "50",
     "img": "/apps/dota2/images/dota_react/abilities/tinker_keen_teleport.png"
   },
   "tinker_eureka": {
@@ -23355,10 +23350,10 @@
         "key": "health_regen",
         "header": "HEALTH REGEN PER KILL:",
         "value": [
-          "3",
-          "4.5",
-          "6",
-          "7.5"
+          "3.5",
+          "5",
+          "6.5",
+          "8"
         ]
       },
       {
@@ -23450,7 +23445,7 @@
       {
         "key": "slow_aoe",
         "header": "SLOW RADIUS:",
-        "value": "750"
+        "value": "700"
       },
       {
         "key": "bonus_damage",
@@ -24526,6 +24521,7 @@
   "beastmaster_call_of_the_wild_hawk": {
     "dname": "Call of the Wild Hawk",
     "behavior": "No Target",
+    "dmg_type": "Magical",
     "target_team": "Enemy",
     "target_type": [
       "Hero",
@@ -25022,10 +25018,10 @@
     "img": "/apps/dota2/images/dota_react/abilities/beastmaster_rugged.png"
   },
   "special_bonus_unique_beastmaster_5": {
-    "dname": "+20 Movespeed Aura to Beastmaster and his units"
+    "dname": "+20 Movespeed to Beastmaster and his summons"
   },
   "special_bonus_unique_beastmaster_6": {
-    "dname": "+250 Max Health Aura to Beastmaster and his units"
+    "dname": "+250 Health to Beastmaster and his summons"
   },
   "queenofpain_shadow_strike": {
     "dname": "Shadow Strike",
@@ -25341,7 +25337,7 @@
     "dname": "Succubus",
     "is_innate": true,
     "behavior": "Passive",
-    "desc": "All sources of Spell Lifesteal also apply to Pure Damage. Queen of Pain gains Spell Lifesteal that increases with proximity to her enemies. Lifesteal is at its maximum when the enemy is 300 units or closer to her and at its minimum when the enemy is 800 units or further from her.",
+    "desc": "All sources of Spell Lifesteal also apply to Pure Damage. Queen of Pain gains Spell Lifesteal that increases with proximity to her enemies. Lifesteal is at its maximum when the enemy is 150 units or closer to her and at its minimum when the enemy is 800 units or further from her.",
     "attrib": [
       {
         "key": "spell_lifesteal",
@@ -25351,7 +25347,7 @@
       {
         "key": "close_radius",
         "header": "CLOSE RADIUS:",
-        "value": "300",
+        "value": "150",
         "generated": true
       },
       {
@@ -26053,9 +26049,9 @@
         "key": "bonus_damage",
         "header": "BONUS DAMAGE:",
         "value": [
-          "12",
           "18",
-          "24",
+          "22",
+          "26",
           "30"
         ]
       },
@@ -26200,9 +26196,9 @@
       "275"
     ],
     "cd": [
-      "160",
-      "150",
-      "140"
+      "155",
+      "145",
+      "135"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/faceless_void_chronosphere.png"
   },
@@ -26292,9 +26288,9 @@
       "275"
     ],
     "cd": [
-      "130",
       "125",
-      "120"
+      "120",
+      "115"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/faceless_void_time_zone.png"
   },
@@ -26617,7 +26613,7 @@
       {
         "key": "slow_duration",
         "header": "SLOW DURATION:",
-        "value": "5"
+        "value": "4"
       },
       {
         "key": "clear_curse",
@@ -27427,7 +27423,7 @@
     ],
     "lore": "Meditation allows a Veiled Sister to carefully anticipate her opponents in combat.",
     "mc": "50",
-    "cd": "50",
+    "cd": "45",
     "img": "/apps/dota2/images/dota_react/abilities/phantom_assassin_blur.png"
   },
   "phantom_assassin_coup_de_grace": {
@@ -28288,9 +28284,9 @@
         "header": "MIN DPS:",
         "value": [
           "15",
-          "20",
           "25",
-          "30"
+          "35",
+          "45"
         ]
       },
       {
@@ -28475,18 +28471,18 @@
         "key": "bonus_movement_speed",
         "header": "MOVE SLOW:",
         "value": [
-          "-60%",
-          "-70%",
-          "-80%"
+          "60%",
+          "70%",
+          "80%"
         ]
       },
       {
         "key": "bonus_attack_speed",
         "header": "ATTACK SLOW:",
         "value": [
-          "-100",
-          "-140",
-          "-180"
+          "100",
+          "140",
+          "180"
         ]
       },
       {
@@ -28966,7 +28962,7 @@
       "200",
       "250"
     ],
-    "cd": "110",
+    "cd": "105",
     "img": "/apps/dota2/images/dota_react/abilities/luna_eclipse.png"
   },
   "dragon_knight_fireball": {
@@ -29701,7 +29697,7 @@
       }
     ],
     "lore": "While it is a simplistic and routine rite among Shadow Priests, the Shadow Wave is also the most critical for success.",
-    "mc": "75",
+    "mc": "90",
     "cd": [
       "10",
       "9",
@@ -29959,7 +29955,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "10"
+        "value": "8"
       },
       {
         "key": "affects_allies",
@@ -30957,9 +30953,9 @@
         "header": "DAMAGE:",
         "value": [
           "70",
-          "135",
-          "200",
-          "265"
+          "130",
+          "190",
+          "250"
         ]
       },
       {
@@ -33941,7 +33937,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for 3.5s.\n\n If the enemy is a creep, she brings it under her control and receives 35% of their experience bounty. Enchantress can control creeps for up to 30s. \n\nDISPEL TYPE: Basic Dispel",
+    "desc": "Enchantress charms an enemy. If the enemy is a hero, they are dispelled and slowed for 3.5s.\n\n If the enemy is a creep, she brings it under her control and receives 40% of their experience bounty. Enchantress can control creeps for up to 30s. \n\nDISPEL TYPE: Basic Dispel",
     "attrib": [
       {
         "key": "abilitycastrange",
@@ -34015,7 +34011,7 @@
       {
         "key": "xp_gain_pct",
         "header": "XP GAIN PCT:",
-        "value": "35",
+        "value": "40",
         "generated": true
       },
       {
@@ -34570,7 +34566,7 @@
     "is_innate": true,
     "behavior": "Passive",
     "dmg_type": [],
-    "desc": "Huskar does not have mana. Mana costs of items are converted into health costs.",
+    "desc": "Huskar does not have mana. Mana costs of items are converted into health costs.Huskar's Health Costs are Magical Damage and can be reduced by Magic Resist.",
     "attrib": [],
     "img": "/apps/dota2/images/dota_react/abilities/huskar_blood_magic.png"
   },
@@ -35855,9 +35851,9 @@
         "key": "bonus_gold",
         "header": "ALLIES BONUS GOLD:",
         "value": [
-          "40",
-          "80",
-          "120"
+          "50",
+          "90",
+          "130"
         ]
       },
       {
@@ -37036,7 +37032,7 @@
       {
         "key": "explosion_radius",
         "header": "RADIUS:",
-        "value": "450"
+        "value": "400"
       },
       {
         "key": "collision_radius",
@@ -38163,10 +38159,10 @@
         "key": "bonus_gold",
         "header": "BONUS GOLD:",
         "value": [
-          "40",
-          "80",
-          "120",
-          "160"
+          "35",
+          "70",
+          "105",
+          "140"
         ]
       },
       {
@@ -39280,12 +39276,7 @@
       {
         "key": "health_as_damage_pct",
         "header": "HEALTH AS DAMAGE:",
-        "value": [
-          "1.2%",
-          "1.3%",
-          "1.4%",
-          "1.5%"
-        ]
+        "value": "1.25%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/ursa_maul.png"
@@ -40146,30 +40137,6 @@
     "attrib": [],
     "img": "/apps/dota2/images/dota_react/abilities/gyrocopter_chop_shop.png"
   },
-  "special_bonus_unique_gyrocopter_1": {
-    "dname": "-4s Flak Cannon Cooldown"
-  },
-  "special_bonus_unique_gyrocopter_2": {
-    "dname": "+3 Flak Cannon Attacks"
-  },
-  "special_bonus_unique_gyrocopter_3": {
-    "dname": "+14 Rocket Barrage Damage"
-  },
-  "special_bonus_unique_gyrocopter_5": {
-    "dname": "-30s Call Down Cooldown"
-  },
-  "special_bonus_unique_gyrocopter_6": {
-    "dname": "+0.3s Homing Missile Stun Duration"
-  },
-  "special_bonus_unique_gyrocopter_flak_cannon_bonus_damage": {
-    "dname": "+25 Flak Cannon Damage"
-  },
-  "special_bonus_unique_gyrocopter_homing_missile_damage": {
-    "dname": "+25% Homing Missile Damage"
-  },
-  "special_bonus_unique_gyrocopter_flak_cannon_range": {
-    "dname": "+{s:bonus_radius} Flak Cannon Attack Radius"
-  },
   "alchemist_berserk_potion": {
     "dname": "Berserk Potion",
     "behavior": [
@@ -40531,6 +40498,11 @@
         "key": "bonus_gold_cap",
         "header": "MAX BONUS GOLD PER KILL:",
         "value": "18"
+      },
+      {
+        "key": "scepter_bonus_damage",
+        "header": "BONUS DAMAGE PER SCEPTER:",
+        "value": "25"
       },
       {
         "key": "abilitycastrange",
@@ -42698,9 +42670,9 @@
         "key": "duration",
         "header": "WALL DURATION:\\n",
         "value": [
-          "4.5",
-          "7",
-          "9.5",
+          "3",
+          "6",
+          "9",
           "12"
         ]
       },
@@ -42708,10 +42680,10 @@
         "key": "slow",
         "header": "MOVEMENT SLOW:\\n",
         "value": [
-          "-40%",
-          "-74%",
-          "-106%",
-          "-140%"
+          "-20%",
+          "-80%",
+          "-140%",
+          "-200%"
         ]
       },
       {
@@ -42723,11 +42695,17 @@
         "key": "damage_per_second",
         "header": "DAMAGE PER SECOND:\\n",
         "value": [
-          "12",
-          "22",
-          "32",
-          "42"
+          "30",
+          "45",
+          "60",
+          "75"
         ]
+      },
+      {
+        "key": "tick_interval",
+        "header": "TICK INTERVAL:",
+        "value": "0.5",
+        "generated": true
       },
       {
         "key": "wall_place_distance",
@@ -42736,20 +42714,14 @@
         "generated": true
       },
       {
-        "key": "num_wall_elements",
-        "header": "NUM WALL ELEMENTS:",
-        "value": "15",
+        "key": "wall_total_length",
+        "header": "WALL TOTAL LENGTH:",
+        "value": "1200",
         "generated": true
       },
       {
-        "key": "wall_element_spacing",
-        "header": "WALL ELEMENT SPACING:",
-        "value": "80",
-        "generated": true
-      },
-      {
-        "key": "wall_element_radius",
-        "header": "WALL ELEMENT RADIUS:",
+        "key": "wall_width",
+        "header": "WALL WIDTH:",
         "value": "105",
         "generated": true
       },
@@ -42757,6 +42729,18 @@
         "key": "vector_cast_range",
         "header": "VECTOR CAST RANGE:",
         "value": "0",
+        "generated": true
+      },
+      {
+        "key": "glacier_formation_delay",
+        "header": "GLACIER FORMATION DELAY:",
+        "value": "1.3",
+        "generated": true
+      },
+      {
+        "key": "glacier_formation_speed",
+        "header": "GLACIER FORMATION SPEED:",
+        "value": "600",
         "generated": true
       },
       {
@@ -45017,7 +45001,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "650",
+        "value": "675",
         "generated": true
       },
       {
@@ -47400,7 +47384,7 @@
       {
         "key": "damage",
         "header": "DAMAGE PER SECOND:",
-        "value": "85"
+        "value": "95"
       },
       {
         "key": "undispellable",
@@ -50012,7 +49996,12 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "3.5"
+        "value": [
+          "2.6",
+          "2.9",
+          "3.2",
+          "3.5"
+        ]
       },
       {
         "key": "status_resistance",
@@ -50098,8 +50087,8 @@
         "key": "radius",
         "header": "RADIUS:",
         "value": [
-          "1000",
-          "1200",
+          "900",
+          "1150",
           "1400"
         ]
       },
@@ -50127,8 +50116,8 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
-          "1000",
-          "1200",
+          "900",
+          "1150",
           "1400"
         ],
         "generated": true
@@ -51118,10 +51107,10 @@
       "130"
     ],
     "cd": [
-      "26",
-      "24",
       "22",
-      "20"
+      "21",
+      "20",
+      "19"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/wisp_spirits.png"
   },
@@ -56751,7 +56740,7 @@
     "dname": "+10% Withering Mist Health Restoration Reduction"
   },
   "special_bonus_unique_abaddon_7": {
-    "dname": "Aphotic Shield provides +12 HP Regen"
+    "dname": "Aphotic Shield provides +10 HP Regen"
   },
   "special_bonus_unique_abaddon_immolation": {
     "dname": "100 Borrowed Time Immolation DPS"
@@ -57600,30 +57589,6 @@
     ],
     "img": "/apps/dota2/images/dota_react/abilities/legion_commander_outfight_them.png"
   },
-  "special_bonus_unique_legion_commander_3": {
-    "dname": "+8% Moment of Courage Proc Chance"
-  },
-  "special_bonus_unique_legion_commander_4": {
-    "dname": "+35 Overwhelming Odds Damage per Hero"
-  },
-  "special_bonus_unique_legion_commander_5": {
-    "dname": "300 AoE Press The Attack"
-  },
-  "special_bonus_unique_legion_commander_6": {
-    "dname": "+40 Press The Attack HP Regen"
-  },
-  "special_bonus_unique_legion_commander_7": {
-    "dname": "+75% Moment of Courage Lifesteal"
-  },
-  "special_bonus_unique_legion_commander_8": {
-    "dname": "Press the Attack grants 1.5s Debuff Immunity"
-  },
-  "special_bonus_unique_legion_commander_9": {
-    "dname": "-2s Overwhelming Odds Cooldown"
-  },
-  "special_bonus_unique_legion_commander_pta_movespeed": {
-    "dname": "+12% Press The Attack Movement Speed"
-  },
   "ember_spirit_searing_chains": {
     "dname": "Searing Chains",
     "behavior": "No Target",
@@ -57690,9 +57655,9 @@
     "lore": "Xin's harshest lessons often employed the use of red-hot chains.",
     "mc": [
       "95",
-      "100",
       "105",
-      "110"
+      "115",
+      "125"
     ],
     "cd": [
       "13",
@@ -62424,7 +62389,7 @@
       {
         "key": "spring_channel_pct",
         "header": "SPRING CHANNEL PCT:",
-        "value": "60",
+        "value": "40",
         "generated": true
       },
       {
@@ -62893,7 +62858,7 @@
       {
         "key": "initial_cooldown",
         "header": "INITIAL COOLDOWN:",
-        "value": "0.5",
+        "value": "1",
         "generated": true
       },
       {
@@ -63510,7 +63475,7 @@
     "dname": "+90 Shield Crash Barrier Per Hero"
   },
   "special_bonus_unique_pangolier_luckyshot_armor": {
-    "dname": "+4 Lucky Shot Armor Reduction"
+    "dname": "+3 Lucky Shot Armor Reduction"
   },
   "special_bonus_unique_pangolier_shield_crash_radius": {
     "dname": "+125 Shield Crash Radius and Damage"
@@ -64262,9 +64227,9 @@
       "140"
     ],
     "cd": [
-      "36",
       "30",
-      "24",
+      "26",
+      "22",
       "18"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/grimstroke_ink_creature.png"
@@ -64400,9 +64365,9 @@
         "key": "max_stun",
         "header": "MAX STUN DURATION:",
         "value": [
-          "1.3",
-          "1.8",
-          "2.3",
+          "1.6",
+          "2",
+          "2.4",
           "2.8"
         ]
       },
@@ -65716,7 +65681,7 @@
       {
         "key": "burn_ground_duration",
         "header": "FIRESPIT POOL DURATION:",
-        "value": "3"
+        "value": "3.5"
       },
       {
         "key": "dist_change_speed",
@@ -66071,9 +66036,9 @@
       "100"
     ],
     "cd": [
-      "21",
-      "19",
+      "18",
       "17",
+      "16",
       "15"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/snapfire_firesnap_cookie.png"
@@ -68415,8 +68380,8 @@
     "mc": "100",
     "cd": [
       "40",
-      "36",
-      "32"
+      "35",
+      "30"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/primal_beast_pulverize.png"
   },
@@ -70467,24 +70432,6 @@
         "key": "max_distance_break",
         "header": "MAX DISTANCE BREAK:",
         "value": "2000",
-        "generated": true
-      },
-      {
-        "key": "bonus_flat_lifesteal",
-        "header": "BONUS FLAT LIFESTEAL:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "lifesteal_pct",
-        "header": "LIFESTEAL PCT:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "creep_lifesteal_reduction_pct",
-        "header": "CREEP LIFESTEAL REDUCTION PCT:",
-        "value": "0",
         "generated": true
       },
       {
@@ -72577,7 +72524,7 @@
     "dname": "+{s:bonus_axe_damage} Wild Axes Damage"
   },
   "special_bonus_unique_beastmaster_2": {
-    "dname": "+{s:bonus_boar_bonus_damage} Damage to Beastmaster and his units"
+    "dname": "+{s:bonus_boar_bonus_damage} Damage to Beastmaster and his summons"
   },
   "special_bonus_unique_beastmaster_3": {
     "dname": "-{s:bonus_AbilityCooldown}s Call Of The Wild Cooldown"
@@ -73833,8 +73780,32 @@
   "special_bonus_unique_disruptor_6": {
     "dname": "Kinetic Field Grants True Sight"
   },
+  "special_bonus_unique_gyrocopter_1": {
+    "dname": "-{s:bonus_AbilityCooldown}s Flak Cannon Cooldown"
+  },
+  "special_bonus_unique_gyrocopter_2": {
+    "dname": "+{s:bonus_max_attacks} Flak Cannon Attacks"
+  },
+  "special_bonus_unique_gyrocopter_3": {
+    "dname": "+{s:bonus_rocket_damage} Rocket Barrage Damage"
+  },
   "special_bonus_unique_gyrocopter_4": {
     "dname": "+{s:bonus_bonus_movement_speed} Movement Speed during Rocket Barrage"
+  },
+  "special_bonus_unique_gyrocopter_5": {
+    "dname": "-{s:bonus_AbilityCooldown}s Call Down Cooldown"
+  },
+  "special_bonus_unique_gyrocopter_6": {
+    "dname": "+{s:bonus_stun_duration}s Homing Missile Stun Duration"
+  },
+  "special_bonus_unique_gyrocopter_flak_cannon_bonus_damage": {
+    "dname": "+{s:bonus_bonus_damage} Flak Cannon Damage"
+  },
+  "special_bonus_unique_gyrocopter_homing_missile_damage": {
+    "dname": "+{s:bonus_hit_damage}% Homing Missile Damage"
+  },
+  "special_bonus_unique_gyrocopter_flak_cannon_range": {
+    "dname": "+{s:bonus_radius} Flak Cannon Attack Radius"
   },
   "special_bonus_unique_keeper_of_the_light": {
     "dname": "+{s:bonus_total_damage} Illuminate Damage"
@@ -73892,6 +73863,30 @@
   },
   "special_bonus_unique_legion_commander_2": {
     "dname": "+{s:bonus_radius} Overwhelming Odds Radius"
+  },
+  "special_bonus_unique_legion_commander_3": {
+    "dname": "+{s:bonus_trigger_chance}% Moment of Courage Proc Chance"
+  },
+  "special_bonus_unique_legion_commander_4": {
+    "dname": "+{s:bonus_damage_per_hero} Overwhelming Odds Damage per Hero"
+  },
+  "special_bonus_unique_legion_commander_5": {
+    "dname": "{s:bonus_radius} AoE Press The Attack"
+  },
+  "special_bonus_unique_legion_commander_6": {
+    "dname": "+{s:bonus_hp_regen} Press The Attack HP Regen"
+  },
+  "special_bonus_unique_legion_commander_7": {
+    "dname": "+{s:bonus_hp_leech_percent}% Moment of Courage Lifesteal"
+  },
+  "special_bonus_unique_legion_commander_8": {
+    "dname": "Press the Attack grants {s:bonus_immunity_duration}s Debuff Immunity"
+  },
+  "special_bonus_unique_legion_commander_9": {
+    "dname": "-{s:bonus_AbilityCooldown}s Overwhelming Odds Cooldown"
+  },
+  "special_bonus_unique_legion_commander_pta_movespeed": {
+    "dname": "+{s:bonus_move_speed}% Press The Attack Movement Speed"
   },
   "special_bonus_unique_puck": {
     "dname": "-{s:bonus_AbilityCooldown}s Dream Coil Cooldown"

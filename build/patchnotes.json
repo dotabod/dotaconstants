@@ -56595,5 +56595,404 @@
         ]
       }
     }
+  },
+  "7_39d": {
+    "general": [
+      "Terrain Changes",
+      "Increased spawnboxes of Triangle Ancient camps",
+      "Fixed a ward spot in Radiant safe lane hard camp",
+      "Removed several trees from the inside corner of the Dire Safelane small camp"
+    ],
+    "items": {
+      "blade_mail": [
+        "Damage bonus decreased from +18 to +15",
+        "Damage Return passive attack damage returned decreased from 20 + 20% to 10 + 15%"
+      ],
+      "dragon_lance": [
+        "Attack Range bonus decreased from +150 to +140"
+      ],
+      "hurricane_pike": [
+        "Attack Range bonus decreased from +150 to +140"
+      ],
+      "glimmer_cape": [
+        "Glimmer cooldown increased from 14s to 15s"
+      ],
+      "heavens_halberd": [
+        "Disarm duration increased from 3s to 3.5s on melee targets and from 4s to 4.5s on ranged targets"
+      ],
+      "maelstrom": [
+        "Chain Lightning no longer deals bonus damage to illusions"
+      ],
+      "mjollnir": [
+        "Fixed item description stating that Chain Lightning deals bonus damage to illusions"
+      ],
+      "mask_of_madness": [
+        "Berserk bonus attack speed decreased from 110 to 100"
+      ],
+      "octarine_core": [
+        "Health bonus decreased from +500 to +450",
+        "Mana bonus decreased from +500 to +450"
+      ],
+      "pavise": [
+        "Protect mana cost decreased from 100 to 60"
+      ],
+      "phylactery": [
+        "Empower Spell cooldown decreased from 10s to 9s"
+      ],
+      "angels_demise": [
+        "Empower Spell cooldown decreased from 10s to 9s"
+      ],
+      "witch_blade": [
+        "Armor bonus decreased from +6 to +5"
+      ],
+      "devastator": [
+        "Armor bonus decreased from +8 to +7"
+      ],
+      "sisters_shroud": [
+        "Veiled starting evasion decreased from 200% to 150%",
+        "Veiled duration decreased from 8s to 5s"
+      ],
+      "gale_guard": [
+        "Cyclonic Shield barrier amount decreased from 250 to 225"
+      ],
+      "helm_of_the_undying": [
+        "Death Delay base duration increased from 5s to 6s",
+        "Units can no longer attack buildings while under the effect of Death Delay"
+      ],
+      "psychic_headband": [
+        "Psychic Push cooldown decreased from 20s to 15s"
+      ],
+      "magnifying_monocle": [
+        "Keen Eye disable duration on taking damage increased from 3s to 6s"
+      ],
+      "outworld_staff": [
+        "Self-Exile mana cost increased from 40 to 65"
+      ],
+      "enhancement_brawny": [
+        "Health Regen bonus decreased from +0/4/8/12 to +0/3/6/9"
+      ],
+      "enhancement_mystical": [
+        "Mana Regen bonus decreased from +1/1.75/2.5/3.25 to +0.8/1.6/2.4/3.2"
+      ]
+    },
+    "heroes": {
+      "misc": [
+        "Artifact changes",
+        "Enchantment Changes"
+      ],
+      "abaddon": {
+        "talents": [
+          "Level 10 Talent Aphotic Shield provides HP Regen decreased from +12 to +10"
+        ]
+      },
+      "axe": {
+        "axe_berserkers_call": [
+          "Mana Cost increased from 80/90/100/110 to 90/100/110/120"
+        ],
+        "axe_culling_blade": [
+          "Kill Armor Bonus decreased from 20/25/30 to 10/15/20"
+        ]
+      },
+      "batrider": {
+        "general": [
+          "Base Agility decreased from 15 to 13",
+          "Damage at level 1 decreased by 1 (from 39–43 to 38–42)"
+        ],
+        "batrider_flamebreak": [
+          "Radius decreased from 450 to 400"
+        ]
+      },
+      "bloodseeker": {
+        "bloodseeker_sanguivore": [
+          "Aghanim's Scepter heal on Pure damage dealt increased from 30% to 35%"
+        ],
+        "bloodseeker_blood_bath": [
+          "Damage increased from 90/145/200/255 to 100/155/210/265"
+        ]
+      },
+      "bounty_hunter": {
+        "bounty_hunter_track": [
+          "Allies Bonus Gold increased from 40/80/120 to 50/90/130"
+        ]
+      },
+      "crystal_maiden": {
+        "crystal_maiden_freezing_field": [
+          "Damage increased from 105/170/250 to 110/180/250"
+        ]
+      },
+      "dark_willow": {
+        "dark_willow_shadow_realm": [
+          "Allies can no longer target Dark Willow while active (Dark Willow can still target herself)"
+        ]
+      },
+      "dawnbreaker": {
+        "hero_facet": [
+          "Cooldown Reduction decreased from 1s to 0.8s"
+        ],
+        "talents": [
+          "Level 15 Talent Solar Guardian Cooldown Reduction decreased from 20s to 15s"
+        ]
+      },
+      "dazzle": {
+        "dazzle_innate_weave": [
+          "Duration decreased from 10s to 8s"
+        ],
+        "dazzle_shadow_wave": [
+          "Mana Cost increased from 75 to 90"
+        ]
+      },
+      "doom_bringer": {
+        "doom_bringer_devour": [
+          "Bonus Gold decreased from 40/80/120/160 to 35/70/105/140"
+        ]
+      },
+      "earth_spirit": {
+        "general": [
+          "Min base damage increased by 6",
+          "Damage at level 1 increased from 47–57 to 53–57"
+        ],
+        "info": [
+          "Damage spread decreased from 10 to 4"
+        ]
+      },
+      "ember_spirit": {
+        "ember_spirit_searing_chains": [
+          "Mana Cost increased from 95/100/105/110 to 95/105/115/125"
+        ]
+      },
+      "enchantress": {
+        "enchantress_enchant": [
+          "Experience bounty on creep cast increased from 35% to 40%"
+        ]
+      },
+      "faceless_void": {
+        "hero_facet": [
+          "Cooldown decreased from 160/150/140s to 155/145/135s",
+          "Cooldown decreased from 130/125/120s to 125/120/115s"
+        ],
+        "faceless_void_time_lock": [
+          "Bonus Damage increased from 12/18/24/30 to 18/22/26/30"
+        ]
+      },
+      "grimstroke": {
+        "grimstroke_ink_creature": [
+          "Cooldown decreased from 36/30/24/18s to 30/26/22/18s"
+        ],
+        "grimstroke_spirit_walk": [
+          "Max Stun Duration increased from 1.3/1.8/2.3/2.8s to 1.6/2/2.4/2.8s"
+        ]
+      },
+      "wisp": {
+        "wisp_spirits": [
+          "Cooldown decreased from 26/24/22/20s to 22/21/20/19s"
+        ]
+      },
+      "kunkka": {
+        "kunkka_tidebringer": [
+          "Cleave Range decreased from 650/800/950/1100 to 650/775/900/1025"
+        ]
+      },
+      "luna": {
+        "luna_eclipse": [
+          "Cooldown decreased from 110s to 105s"
+        ],
+        "talents": [
+          "Level 10 Talent Lucent Beam Ministun increased from +0.4s to +0.5s"
+        ]
+      },
+      "mirana": {
+        "mirana_arrow": [
+          "Maximum Bonus Damage increased from 150/160/170/180 to 180"
+        ]
+      },
+      "monkey_king": {
+        "hero_facet": [
+          "Initial cooldown increased from 0.5s to 1s"
+        ],
+        "monkey_king_boundless_strike": [
+          "Aghanim's Shard portion of Primal Spring's max power decreased from 60% to 40%"
+        ]
+      },
+      "naga_siren": {
+        "hero_facet": [
+          "Duration decreased from 3.5s to 2.6/2.9/3.2/3.5s"
+        ],
+        "naga_siren_song_of_the_siren": [
+          "Radius decreased from 1000/1200/1400 to 900/1150/1400"
+        ]
+      },
+      "furion": {
+        "general": [
+          "Agility gain decreased from 3.2 to 3.0"
+        ],
+        "hero_facet": [
+          "Heal per second decreased from 14/26/38/50 to 10/15/20/25"
+        ],
+        "furion_sprout": [
+          "Damage decreased from 70/135/200/265 to 70/130/190/250"
+        ]
+      },
+      "necrolyte": {
+        "necrolyte_sadist": [
+          "Health Regen per kill increased from 3/4.5/6/7.5 to 3.5/5/6.5/8"
+        ],
+        "necrolyte_ghost_shroud": [
+          "Slow Radius decreased from 750 to 700"
+        ]
+      },
+      "nyx_assassin": {
+        "talents": [
+          "Level 20 Talent Impale Damage increased from +100 to +140",
+          "Level 20 Talent Spiked Carapace Stun Duration increased from +0.5s to +0.6s"
+        ]
+      },
+      "pangolier": {
+        "talents": [
+          "Level 10 Talent Lucky Shot Armor Reduction decreased from +4 to +3"
+        ]
+      },
+      "phantom_assassin": {
+        "phantom_assassin_blur": [
+          "Cooldown decreased from 50s to 45s"
+        ],
+        "talents": [
+          "Level 15 Talent Immaterial Evasion increased from +15% to +20%"
+        ]
+      },
+      "primal_beast": {
+        "primal_beast_pulverize": [
+          "Cooldown decreased from 40/36/32s to 40/35/30s"
+        ]
+      },
+      "puck": {
+        "general": [
+          "Agility gain decreased from 2.5 to 2.3"
+        ]
+      },
+      "queenofpain": {
+        "queenofpain_succubus": [
+          "Range for Max Lifesteal decreased from 300 to 150"
+        ]
+      },
+      "sand_king": {
+        "general": [
+          "Base Strength increased from 22 to 23"
+        ],
+        "sandking_sand_storm": [
+          "Radius increased from 425/500/575/650 to 475/550/625/700"
+        ]
+      },
+      "shadow_demon": {
+        "shadow_demon_disruption": [
+          "Cast Range increased from 650 to 675"
+        ]
+      },
+      "nevermore": {
+        "general": [
+          "Base Armor decreased by 1"
+        ],
+        "nevermore_dark_lord": [
+          "Armor Reduction decreased from 4/5/6/7 to 3/4/5/6"
+        ]
+      },
+      "shadow_shaman": {
+        "shadow_shaman_mass_serpent_ward": [
+          "Wards' base attack time increased from 1.5s to 1.6s",
+          "Wards no longer deal 50% extra damage against Roshan"
+        ]
+      },
+      "silencer": {
+        "general": [
+          "Base Strength decreased from 19 to 18"
+        ]
+      },
+      "skywrath_mage": {
+        "skywrath_mage_arcane_bolt": [
+          "Aghanim's Shard number of bolts increased from 2 to 3"
+        ]
+      },
+      "snapfire": {
+        "snapfire_firesnap_cookie": [
+          "Cooldown decreased from 21/19/17/15s to 18/17/16/15s"
+        ],
+        "snapfire_mortimer_kisses": [
+          "Firespit Pool Duration increased from 3 to 3.5s"
+        ]
+      },
+      "spirit_breaker": {
+        "general": [
+          "Base Damage increased by 3",
+          "Damage at level 1 increased from 59–69 to 62–72"
+        ]
+      },
+      "techies": {
+        "general": [
+          "Intelligence gain increased from 2.8 to 3.0"
+        ]
+      },
+      "templar_assassin": {
+        "general": [
+          "Base Damage decreased by 2–3",
+          "Damage at level 1 decreased from 53–59 to 51–56"
+        ],
+        "info": [
+          "Damage spread decreased from 6 to 5"
+        ],
+        "talents": [
+          "Level 25 Talent Meld Bash duration decreased from 1s to 0.8s"
+        ]
+      },
+      "tinker": {
+        "tinker_keen_teleport": [
+          "Cooldown decreased from 80s to 50s"
+        ]
+      },
+      "treant": {
+        "treant_overgrowth": [
+          "Damage per second increased from 85 to 95"
+        ]
+      },
+      "undying": {
+        "hero_facet": [
+          "Zombies summoned by the facet effect now die when Undying dies"
+        ],
+        "undying_tombstone": [
+          "Zombie vision range decreased from 900/900 to 800/800"
+        ],
+        "talents": [
+          "Level 10 Talent Decay Damage decreased from +40 to +30"
+        ]
+      },
+      "ursa": {
+        "ursa_maul": [
+          "Health As Damage rescaled from 1.2/1.3/1.4/1.5% to 1.25%"
+        ],
+        "ursa_earthshock": [
+          "Aghanim's Shard Enrage duration decreased from 1.4s to 1.3s"
+        ]
+      },
+      "vengefulspirit": {
+        "general": [
+          "Base Damage increased by 2",
+          "Damage at level 1 increased from 49–55 to 51–57",
+          "Agility gain decreased from 3.2 to 3.0"
+        ]
+      },
+      "viper": {
+        "viper_nethertoxin": [
+          "Min DPS increased from 15/20/25/30 to 15/25/35/45"
+        ]
+      },
+      "skeleton_king": {
+        "skeleton_king_reincarnation": [
+          "Slow Duration decreased from 5s to 4s"
+        ]
+      },
+      "zuus": {
+        "zuus_heavenly_jump": [
+          "Leap Distance increased from 300/400/500/600 to 375/450/525/600"
+        ]
+      }
+    }
   }
 }
