@@ -1195,7 +1195,7 @@
     "scepter_skill_name": "Mystic Flare",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "When Skywrath Mage casts Arcane Bolt, 3 bolts are created, one aimed at the original target, and the other at a random enemy within %extra_bolt_search_radius% range of the original target. Heroes will take priority.",
+    "shard_desc": "When Skywrath Mage casts Arcane Bolt, 3 bolts are created, one aimed at the original target, and two others aimed at random enemies within %extra_bolt_search_radius% range of the original target. Heroes will take priority.",
     "shard_skill_name": "Arcane Bolt",
     "shard_new_skill": false
   },
