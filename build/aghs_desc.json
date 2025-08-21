@@ -60,6 +60,18 @@
     "shard_new_skill": true
   },
   {
+    "hero_name": "npc_dota_hero_drow_ranger",
+    "hero_id": 6,
+    "has_scepter": true,
+    "scepter_desc": "Frost Arrows now apply a Hypothermia stack to enemies, increasing damage from Frost Arrows and reducing their regeneration per stack. If an enemy dies with Hypothermia stacks, they burst and deal damage per stack and slow in an area around it.",
+    "scepter_skill_name": "Frost Arrows",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Drow creates a hill of ice beneath her. While standing on the hill, attackers gain bonus attack range and high ground advantage - they cannot miss and gain flying vision. Drow additionally gets bonus Multishot arrows per wave while on the hill. The front of the hill obscures vision and cannot be moved through except by Drow. Does not interrupt Multishot when cast.",
+    "shard_skill_name": "Glacier",
+    "shard_new_skill": true
+  },
+  {
     "hero_name": "npc_dota_hero_earthshaker",
     "hero_id": 7,
     "has_scepter": true,
@@ -81,6 +93,18 @@
     "has_shard": true,
     "shard_desc": "Increases Blade Fury radius, and slows enemies by 35%.",
     "shard_skill_name": "Blade Fury",
+    "shard_new_skill": false
+  },
+  {
+    "hero_name": "npc_dota_hero_mirana",
+    "hero_id": 9,
+    "has_scepter": true,
+    "scepter_desc": "Causes Sacred Arrow to release a Starstorm on enemies along the travel path of the primary arrow, releasing a second Starstorm that deals less damage to the impacted unit.",
+    "scepter_skill_name": "Sacred Arrow",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Grants +1 Leap charge. Attacks during the Leap buff critically strike for 150% damage.",
+    "shard_skill_name": "Leap",
     "shard_new_skill": false
   },
   {
@@ -156,6 +180,18 @@
     "shard_new_skill": false
   },
   {
+    "hero_name": "npc_dota_hero_sand_king",
+    "hero_id": 16,
+    "has_scepter": true,
+    "scepter_desc": "When the pulses start, 3 Stinger attack areas are created every =0.5s at random locations, each measuring 35% of the Epicenter's current radius, that apply =50% of Stinger damage to enemies hit. Shard pulses cause 1 attack(s).",
+    "scepter_skill_name": "Epicenter",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Increases Epicenter damage per pulse. Every 3s causes a small single Epicenter Pulse around Sand King.",
+    "shard_skill_name": "Epicenter",
+    "shard_new_skill": false
+  },
+  {
     "hero_name": "npc_dota_hero_storm_spirit",
     "hero_id": 17,
     "has_scepter": true,
@@ -226,6 +262,30 @@
     "shard_desc": "Zeus gains bonus attack speed and his attacks create Arc Lightnings that deal a percentage of its damage. Can be toggled off to stop this effect.",
     "shard_skill_name": "Lightning Hands",
     "shard_new_skill": true
+  },
+  {
+    "hero_name": "npc_dota_hero_kunkka",
+    "hero_id": 23,
+    "has_scepter": true,
+    "scepter_desc": "Ghostship creates a fleet of 2 ships at the target point on a 2.5 second interval. Each ship now also fires 3 waves of cannonballs from the port and starboard side that deal 40% of Ghostship's damage as they pass through enemies.",
+    "scepter_skill_name": "Ghostship",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Releases a Tidal Wave that spawns behind Kunkka. Deals damage and drags enemies along it. Enemies cannot attack while being dragged.",
+    "shard_skill_name": "Tidal Wave",
+    "shard_new_skill": true
+  },
+  {
+    "hero_name": "npc_dota_hero_lina",
+    "hero_id": 25,
+    "has_scepter": true,
+    "scepter_desc": "Grants Lina unobstructed movement and increases her spell damage and magic resistance. Grants max fiery soul stacks on activation.",
+    "scepter_skill_name": "Flame Cloak",
+    "scepter_new_skill": true,
+    "has_shard": true,
+    "shard_desc": "100% of the damage dealt is converted to an all damage barrier for Lina. Barrier lasts for 10s.",
+    "shard_skill_name": "Laguna Blade",
+    "shard_new_skill": false
   },
   {
     "hero_name": "npc_dota_hero_lion",
@@ -672,6 +732,18 @@
     "shard_new_skill": true
   },
   {
+    "hero_name": "npc_dota_hero_weaver",
+    "hero_id": 63,
+    "has_scepter": true,
+    "scepter_desc": "Time Lapse may target allied Heroes with 500 cast range.",
+    "scepter_skill_name": "Time Lapse",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Shukuchi puts a mark on enemies it damages that last 4.6 seconds. 0.2s after Weaver exits Shukuchi, enemies with a mark within 1200 range will also be attacked with a secondary Geminate attack ",
+    "shard_skill_name": "Shukuchi",
+    "shard_new_skill": false
+  },
+  {
     "hero_name": "npc_dota_hero_jakiro",
     "hero_id": 64,
     "has_scepter": true,
@@ -850,6 +922,18 @@
     "shard_desc": "Increases Primal Split duration and allows it to be cancelled early.",
     "shard_skill_name": "Primal Split",
     "shard_new_skill": false
+  },
+  {
+    "hero_name": "npc_dota_hero_shadow_demon",
+    "hero_id": 79,
+    "has_scepter": true,
+    "scepter_desc": "Causes Demonic Purge to break and gain 2 charges.",
+    "scepter_skill_name": "Demonic Purge",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Cleanses the target allied unit, removing negative buffs for the duration.  At the end of the duration, the unit is healed. Units under the effect of Disruption can still be affected by Demonic Cleanse.\n\nDISPEL TYPE: Basic Dispel",
+    "shard_skill_name": "Demonic Cleanse",
+    "shard_new_skill": true
   },
   {
     "hero_name": "npc_dota_hero_lone_druid",
@@ -1234,6 +1318,30 @@
     "shard_desc": "Brings forth rain to the target area. Enemies standing in the area receive damage and have reduced Heal Amplification. Allies in the area heal and have increased incoming Heal Amplification.",
     "shard_skill_name": "Rain of Destiny",
     "shard_new_skill": true
+  },
+  {
+    "hero_name": "npc_dota_hero_winter_wyvern",
+    "hero_id": 112,
+    "has_scepter": true,
+    "scepter_desc": "Causes Arctic Burn to be a toggle ability, draining mana every second when active. Removes limit on number of attacks per target. Increases Winter Wyvern's movement speed.",
+    "scepter_skill_name": "Arctic Burn",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "When Cold Embrace ends, a Splinter Blast goes off at that location, hitting enemies within 1150 range. Reduces cooldown by 4.0 seconds.",
+    "shard_skill_name": "Cold Embrace",
+    "shard_new_skill": false
+  },
+  {
+    "hero_name": "npc_dota_hero_arc_warden",
+    "hero_id": 113,
+    "has_scepter": true,
+    "scepter_desc": "Flux silences when the target is alone, deals more damage, and lasts longer.",
+    "scepter_skill_name": "Flux",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "When Spark Wraith activates, a secondary Spark Wraith will fuse to the next closest target that deals =80.0% damage. Increases Spark Wraith search radius.",
+    "shard_skill_name": "Spark Wraith",
+    "shard_new_skill": false
   },
   {
     "hero_name": "npc_dota_hero_monkey_king",
