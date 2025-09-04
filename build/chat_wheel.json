@@ -4277,5 +4277,35 @@
     "label": "Nakakatakot ka naman jusko po",
     "message": "Nakakatakot ka naman jusko po",
     "sound_ext": "mp3"
+  },
+  "735": {
+    "id": 735,
+    "name": "VoiceOfGod_1",
+    "label": "Well Played!",
+    "message": "Well Played!",
+    "sound_ext": "wav"
+  },
+  "736": {
+    "id": 736,
+    "name": "VoiceOfGod_2",
+    "label": "Never Give Up.",
+    "message": "Never Give Up.",
+    "sound_ext": "wav"
+  },
+  "737": {
+    "id": 737,
+    "name": "VoiceOfGod_3",
+    "all_chat": true,
+    "label": "That was regrettable.",
+    "message": "That was regrettable.",
+    "sound_ext": "wav"
+  },
+  "738": {
+    "id": 738,
+    "name": "VoiceOfGod_4",
+    "all_chat": true,
+    "label": "Marvel at the spectacle!",
+    "message": "Marvel at the spectacle!",
+    "sound_ext": "wav"
   }
 }
