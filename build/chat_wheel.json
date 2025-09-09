@@ -4307,5 +4307,44 @@
     "label": "Marvel at the spectacle!",
     "message": "Marvel at the spectacle!",
     "sound_ext": "wav"
+  },
+  "739": {
+    "id": 739,
+    "name": "Guild_Diretide_Spray_7",
+    "image": "sprays/diretide_gummy_icon.png"
+  },
+  "740": {
+    "id": 740,
+    "name": "Guild_FallSprays_SnugBugs",
+    "image": "sprays/fall_sprays_snugbugs_icon.png"
+  },
+  "741": {
+    "id": 741,
+    "name": "Guild_FallSprays_CozyClock",
+    "image": "sprays/fall_sprays_cozyclock_icon.png"
+  },
+  "742": {
+    "id": 742,
+    "name": "Guild_TI11_Caster_English_3",
+    "all_chat": true,
+    "label": "Whoa! Juicy!",
+    "message": "Whoa! Juicy!",
+    "sound_ext": "wav"
+  },
+  "743": {
+    "id": 743,
+    "name": "Guild_TI11_Caster_Chinese_2",
+    "all_chat": true,
+    "label": "这大概就是年轻人的操作吧",
+    "message": "这大概就是年轻人的操作吧",
+    "sound_ext": "wav"
+  },
+  "744": {
+    "id": 744,
+    "name": "Guild_TI11_Caster_Russian_1",
+    "all_chat": true,
+    "label": "Да бей, бей просто, уничтожь!",
+    "message": "Да бей, бей просто, уничтожь!",
+    "sound_ext": "wav"
   }
 }
