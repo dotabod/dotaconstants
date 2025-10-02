@@ -1153,7 +1153,7 @@
       {
         "key": "damage_bonus",
         "header": "BONUS DAMAGE:",
-        "value": "3"
+        "value": "2"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/hill_troll_rally.png"
@@ -1571,7 +1571,7 @@
       {
         "key": "bonus_damage_pct",
         "header": "BONUS DAMAGE:",
-        "value": "30%"
+        "value": "20%"
       },
       {
         "key": "radius",
@@ -9490,10 +9490,10 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
+          "700",
           "800",
           "900",
-          "1000",
-          "1100"
+          "1000"
         ],
         "generated": true
       },
@@ -11434,10 +11434,10 @@
         "key": "aftershock_damage",
         "header": "DAMAGE:",
         "value": [
-          "70",
-          "100",
-          "130",
-          "160"
+          "65",
+          "90",
+          "115",
+          "140"
         ]
       },
       {
@@ -11628,7 +11628,7 @@
     "dname": "+200 Fissure Range"
   },
   "special_bonus_unique_earthshaker_4": {
-    "dname": "+90 Fissure Damage"
+    "dname": "+75 Fissure Damage"
   },
   "special_bonus_unique_earthshaker_6": {
     "dname": "+50 Aftershock Damage"
@@ -14686,9 +14686,9 @@
     "lore": "Razor's polarity channels electricity into his being, draining the power of his opposition.",
     "mc": "65",
     "cd": [
-      "50",
-      "40",
-      "30",
+      "44",
+      "36",
+      "28",
       "20"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/razor_static_link.png"
@@ -15282,7 +15282,7 @@
         "generated": true
       }
     ],
-    "mc": "150",
+    "mc": "100",
     "cd": "30",
     "img": "/apps/dota2/images/dota_react/abilities/storm_spirit_electric_rave.png"
   },
@@ -15892,9 +15892,9 @@
         "header": "BONUS DAMAGE PER STR:",
         "value": [
           "0",
+          "0.2",
           "0.3",
-          "0.4",
-          "0.5"
+          "0.4"
         ]
       },
       {
@@ -18244,10 +18244,10 @@
         "key": "light_strike_array_stun_duration",
         "header": "STUN DURATION:",
         "value": [
-          "1",
-          "1.4",
-          "1.8",
-          "2.2"
+          "1.2",
+          "1.6",
+          "2",
+          "2.4"
         ]
       },
       {
@@ -21413,7 +21413,7 @@
       {
         "key": "slow",
         "header": "SLOW DURATION:",
-        "value": "0.4"
+        "value": "0.5"
       },
       {
         "key": "abilitycastrange",
@@ -25018,7 +25018,7 @@
     "img": "/apps/dota2/images/dota_react/abilities/beastmaster_rugged.png"
   },
   "special_bonus_unique_beastmaster_5": {
-    "dname": "+20 Movespeed to Beastmaster and his summons"
+    "dname": "+15 Movespeed to Beastmaster and his summons"
   },
   "special_bonus_unique_beastmaster_6": {
     "dname": "+250 Health to Beastmaster and his summons"
@@ -25258,9 +25258,9 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "350",
-          "500",
-          "650"
+          "325",
+          "475",
+          "625"
         ]
       },
       {
@@ -25625,10 +25625,10 @@
         "key": "ward_damage_tooltip",
         "header": "WARD DAMAGE:",
         "value": [
-          "14",
-          "22",
-          "30",
-          "38"
+          "16",
+          "24",
+          "32",
+          "40"
         ]
       },
       {
@@ -27329,10 +27329,10 @@
         "key": "evasion",
         "header": "BONUS EVASION:",
         "value": [
-          "20%",
-          "30%",
-          "40%",
-          "50%"
+          "25%",
+          "35%",
+          "45%",
+          "55%"
         ]
       }
     ],
@@ -28382,10 +28382,10 @@
         "key": "bonus_attack_speed",
         "header": "ATTACK SLOW:",
         "value": [
-          "8",
-          "16",
-          "24",
-          "32"
+          "9",
+          "18",
+          "27",
+          "36"
         ]
       },
       {
@@ -33388,7 +33388,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "600",
+        "value": "700",
         "generated": true
       },
       {
@@ -36578,7 +36578,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Jakiro chill his enemies with ice added to his attack, slowing movement for 4 seconds and increasing damage taken from Jakiro's attacks and abilities. This effect does not apply to buildings. Shares a cooldown with Liquid Fire.",
+    "desc": "Jakiro chill his enemies with ice added to his attack, slowing movement for 5 seconds and increasing damage taken from Jakiro's attacks and abilities. This effect does not apply to buildings. Shares a cooldown with Liquid Fire.",
     "attrib": [
       {
         "key": "movement_slow",
@@ -36594,10 +36594,10 @@
         "key": "damage",
         "header": "IMPACT DAMAGE:",
         "value": [
-          "10",
           "15",
           "20",
-          "25"
+          "25",
+          "30"
         ]
       },
       {
@@ -36619,7 +36619,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "4"
+        "value": "5"
       },
       {
         "key": "radius",
@@ -42922,7 +42922,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "1000",
+        "value": "850",
         "generated": true
       },
       {
@@ -43272,9 +43272,9 @@
     "lore": "Harbinger's outworldly knowledge allows it to tap into the ebb and flow of all spiritual energy, infusing it into his being.",
     "mc": "0",
     "cd": [
-      "6",
-      "4",
-      "2",
+      "4.5",
+      "3",
+      "1.5",
       "0"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/obsidian_destroyer_arcane_orb.png"
@@ -47316,9 +47316,9 @@
         "header": "BONUS ARMOR:",
         "value": [
           "4",
-          "6",
-          "8",
-          "10"
+          "7",
+          "10",
+          "13"
         ]
       },
       {
@@ -48895,7 +48895,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Repeatedly strikes the targeted unit with lightning. Each strike damages nearby enemy units in a small radius and slows enemy movement and attack speed by 100% for x2 seconds. Provides vision of its target.",
+    "desc": "Repeatedly strikes the targeted unit with lightning. Each strike damages nearby enemy units in a small radius and slows enemy movement and attack speed by 100% for x1.75 seconds. Provides vision of its target.",
     "attrib": [
       {
         "key": "abilitycastrange",
@@ -49251,8 +49251,8 @@
       "225"
     ],
     "cd": [
-      "90",
-      "80",
+      "100",
+      "85",
       "70"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/disruptor_static_storm.png"
@@ -49982,9 +49982,9 @@
         "header": "DAMAGE:",
         "value": [
           "80",
-          "150",
-          "220",
-          "290"
+          "140",
+          "200",
+          "260"
         ]
       },
       {
@@ -51358,7 +51358,7 @@
       }
     ],
     "lore": "The warmth of the sun is never felt in the dark cold of the Narrow Maze.",
-    "mc": "90",
+    "mc": "75",
     "cd": [
       "17",
       "15",
@@ -52431,7 +52431,7 @@
       {
         "key": "damage_per_mana",
         "header": "BASE DAMAGE PER MANA:",
-        "value": "2.2"
+        "value": "2"
       },
       {
         "key": "damage_per_mana_per_level",
@@ -53686,7 +53686,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "300",
+        "value": "250",
         "generated": true
       }
     ],
@@ -54576,7 +54576,7 @@
     "behavior": "Passive",
     "dmg_type": "Magical",
     "dispellable": "No",
-    "desc": "Each time Timbersaw is attacked, he gains increased health regen and armor. Hero attacks are counted as 3x the amount.",
+    "desc": "Each time Timbersaw is attacked, he gains increased health regen and armor. Hero attacks are counted as 4x the amount.",
     "attrib": [
       {
         "key": "bonus_armor",
@@ -54621,7 +54621,7 @@
       {
         "key": "stacks_per_hero_attack",
         "header": "STACKS PER HERO ATTACK:",
-        "value": "3",
+        "value": "4",
         "generated": true
       }
     ],
@@ -55879,10 +55879,10 @@
         "key": "attack_speed_slow",
         "header": "ATTACK SPEED SLOW:",
         "value": [
-          "15",
-          "35",
-          "55",
-          "75"
+          "20",
+          "40",
+          "60",
+          "80"
         ]
       }
     ],
@@ -56716,8 +56716,8 @@
     "mc": "0",
     "cd": [
       "90",
-      "80",
-      "70"
+      "85",
+      "80"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/abaddon_borrowed_time.png"
   },
@@ -58310,10 +58310,10 @@
         "key": "rock_damage",
         "header": "REMNANT DAMAGE:",
         "value": [
-          "70",
-          "140",
-          "210",
-          "280"
+          "75",
+          "150",
+          "225",
+          "300"
         ]
       },
       {
@@ -59476,7 +59476,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "500",
+        "value": "450",
         "generated": true
       },
       {
@@ -60044,7 +60044,7 @@
     "dmg_type": "Magical",
     "bkbpierce": "No",
     "dispellable": "Yes",
-    "desc": "Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active 500 AoE of the mine. Mines detonate if an enemy is standing within the active AoE for 1 seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within 150 radius and decreases up to 50% on the edge. Deals 30% damage to buildings.",
+    "desc": "Plant an invisible mine that cannot be detected by True Sight, but is visible if an enemy is within the active 500 AoE of the mine. Mines detonate if an enemy is standing within the active AoE for 1 seconds dealing damage and temporarily reducing the enemy's Magic Resistance. The explosion deals full damage if the target is within 150 radius and decreases up to 60% on the edge. Deals 30% damage to buildings.",
     "attrib": [
       {
         "key": "radius",
@@ -60085,7 +60085,7 @@
       {
         "key": "outer_damage",
         "header": "OUTER DAMAGE:",
-        "value": "50",
+        "value": "60",
         "generated": true
       },
       {
@@ -60479,10 +60479,10 @@
     "lore": "A steady bomb hand prefers an abundance of personal space.",
     "mc": "60",
     "cd": [
-      "30",
-      "25",
-      "20",
-      "15"
+      "26",
+      "22",
+      "18",
+      "14"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/techies_reactive_tazer.png"
   },
@@ -62389,7 +62389,7 @@
       {
         "key": "spring_channel_pct",
         "header": "SPRING CHANNEL PCT:",
-        "value": "40",
+        "value": "35",
         "generated": true
       },
       {
@@ -64858,11 +64858,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": [
-          "5",
-          "6",
-          "7"
-        ]
+        "value": "5.5"
       },
       {
         "key": "radius",
@@ -66018,7 +66014,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "700",
+        "value": "650",
         "generated": true
       },
       {
@@ -66225,8 +66221,8 @@
       },
       {
         "key": "spell_amp",
-        "header": "INCOMING SPELL DAMAGE:",
-        "value": "25%"
+        "header": "INCOMING SPELL DAMAGE AMP:",
+        "value": "20%"
       },
       {
         "key": "status_resistance",
@@ -67512,8 +67508,8 @@
         "header": "BONUS ATTACK SPEED:",
         "value": [
           "700",
-          "975",
-          "1325"
+          "925",
+          "1150"
         ]
       },
       {
@@ -69161,10 +69157,10 @@
         "key": "damage_min",
         "header": "MIN DAMAGE:",
         "value": [
-          "45",
-          "70",
-          "95",
-          "120"
+          "50",
+          "75",
+          "100",
+          "125"
         ]
       },
       {
@@ -70499,24 +70495,6 @@
     "desc": "Katana attacks and abilities apply a stacking damage over time to enemies that deals a percentage of the original attack's damage as additional damage over time. \n\nKez may activate the ability to impale the target with his attack, preventing them from moving or turning. The target's Katana debuff bursts, causing some of the stacks to deal damage instantly.",
     "attrib": [
       {
-        "key": "katana_attack_range",
-        "header": "KATANA ATTACK RANGE:",
-        "value": "225",
-        "generated": true
-      },
-      {
-        "key": "katana_base_attack_time",
-        "header": "KATANA BASE ATTACK TIME:",
-        "value": "2",
-        "generated": true
-      },
-      {
-        "key": "katana_agility_bonus_base_damage",
-        "header": "KATANA AGILITY BONUS BASE DAMAGE:",
-        "value": "20",
-        "generated": true
-      },
-      {
         "key": "katana_bleed_duration",
         "header": "DURATION:",
         "value": "7"
@@ -70625,7 +70603,7 @@
       {
         "key": "max_health_damage_pct",
         "header": "MAX HEALTH AS DAMAGE:",
-        "value": "3%"
+        "value": "2.5%"
       },
       {
         "key": "lifesteal_pct",
@@ -70769,12 +70747,13 @@
       {
         "key": "attack_speed_factor",
         "header": "ATTACK SPEED FACTOR:",
-        "value": [
-          "6%",
-          "8%",
-          "10%",
-          "12%"
-        ]
+        "value": "9%"
+      },
+      {
+        "key": "break_range",
+        "header": "BREAK RANGE:",
+        "value": "825",
+        "generated": true
       },
       {
         "key": "abilitycastpoint",
@@ -70907,18 +70886,6 @@
     "desc": "Kez's attacks and abilities with the Sai have a chance to Mark enemies. The next attack or ability damage from Kez will stun the enemy and deal a critical strike, consuming the buff.\n\nKez may activate the ability to disarm himself, lock his facing, and parry attacks and attack effects from the targeted direction for 2 seconds. If an attack is parried from an enemy Hero in this way, that Hero is stunned and gains a stronger Mark that stuns for longer and deals 4% * Target Hero Level bonus critical strike.\n\nThe sub-ability may be used to cancel the blocking early.",
     "attrib": [
       {
-        "key": "sai_attack_range",
-        "header": "SAI ATTACK RANGE:",
-        "value": "150",
-        "generated": true
-      },
-      {
-        "key": "sai_base_attack_time",
-        "header": "SAI BASE ATTACK TIME:",
-        "value": "1.5",
-        "generated": true
-      },
-      {
         "key": "sai_proc_vuln_chance",
         "header": "CHANCE TO MARK:",
         "value": "18%"
@@ -70938,9 +70905,9 @@
         "key": "base_crit_pct",
         "header": "MARKED CRITICAL STRIKE:",
         "value": [
-          "140%",
-          "160%",
-          "180%",
+          "125%",
+          "150%",
+          "175%",
           "200%"
         ]
       },

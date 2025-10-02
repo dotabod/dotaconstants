@@ -56994,5 +56994,381 @@
         ]
       }
     }
+  },
+  "7_39e": {
+    "general": [
+      "General Changes",
+      "Scan no longer triggers on creep heroes (with the exception of Lone Druid's Spirit Bear)",
+      "Neutral Creep Gold/XP penalty for stacked camps increased from 15% to 20%"
+    ],
+    "items": {
+      "aeon_disk": [
+        "Combo Breaker now starts on a 6s cooldown after being assembled for the first time"
+      ],
+      "ghost": [
+        "Ghost Form is no longer active while the wearer is Debuff Immune"
+      ],
+      "ethereal_blade": [
+        "Ether Blast ethereal form is no longer applied while the target is Debuff Immune"
+      ],
+      "helm_of_the_dominator": [
+        "Dominate now has a 50 mana cost",
+        "Dominate can no longer be used if the currently dominated creep took damage from hero-based sources in the last 3s",
+        "Dominated Creep movement speed decreased from 380 to 370"
+      ],
+      "helm_of_the_overlord": [
+        "Dominate now has a 50 mana cost",
+        "Dominate can no longer be used if the currently dominated creep took damage from hero-based sources in the last 3s"
+      ],
+      "refresher": [
+        "Reset Cooldowns cooldown now increases by 10s with each subsequent use up to 210s ",
+        "Maximum is reached after 4 uses: 180/190/200/210s",
+        "Reset Cooldowns mana cost increased from 350 to 400"
+      ],
+      "outworld_staff": [
+        "Self-Exile now makes the user invulnerable and immobile for the duration, instead of hidden"
+      ],
+      "enhancement_timeless": [
+        "Debuff Duration bonus decreased from +10/15% to +8/15%",
+        "Spell Amplification bonus decreased from +8/16% to +6/16%"
+      ],
+      "enhancement_boundless": [
+        "Cast Range bonus decreased from +350 to +275"
+      ]
+    },
+    "heroes": {
+      "misc": [
+        "Artifact Changes",
+        "Enchantment Changes",
+        "Packleader's Aura damage decreased from 30% to 20%",
+        "Dark Troll Summoner",
+        "Rally aura bonus attack damage decreased from 3 to 2"
+      ],
+      "abaddon": {
+        "abaddon_borrowed_time": [
+          "Cooldown increased from 90/80/70s to 90/85/80s"
+        ]
+      },
+      "bane": {
+        "bane_enfeeble": [
+          "Cast Range decreased from 800/900/1000/1100 to 700/800/900/1000"
+        ]
+      },
+      "beastmaster": {
+        "general": [
+          "Base damage decreased by 2",
+          "Damage at level 1 decreased from 52–56 to 50–54"
+        ],
+        "talents": [
+          "Level 15 Talent Movespeed to Beastmaster and his summons decreased from +20 to +15",
+          "Level 25 Talent Primal Roar Cooldown Reduction decreased from 30s to 25s"
+        ]
+      },
+      "brewmaster": {
+        "general": [
+          "Base armor increased by 1"
+        ]
+      },
+      "crystal_maiden": {
+        "hero_facet": [
+          "Mana Granted increased from 15% to 20%"
+        ]
+      },
+      "centaur": {
+        "centaur_work_horse": [
+          "Hitch a ride cast range decreased from 300 to 250"
+        ]
+      },
+      "dawnbreaker": {
+        "dawnbreaker_solar_guardian": [
+          "Aghanim's Scepter aura linger duration decreased from 3s to 2s"
+        ]
+      },
+      "disruptor": {
+        "hero_facet": [
+          "Slow duration bonus decreased from +100% to +75%",
+          "Total duration decreased from 0.6s to 0.525s"
+        ],
+        "disruptor_static_storm": [
+          "Cooldown increased from 90/80/70s to 100/85/70s"
+        ]
+      },
+      "earth_spirit": {
+        "earth_spirit_geomagnetic_grip": [
+          "Remnant Damage increased from 70/140/210/280 to 75/150/225/300"
+        ]
+      },
+      "earthshaker": {
+        "hero_facet": [
+          "Bonus AoE decreased from 40 to 30"
+        ],
+        "earthshaker_aftershock": [
+          "Damage decreased from 70/100/130/160 to 65/90/115/140"
+        ],
+        "talents": [
+          "Level 10 Talent Fissure Damage decreased from +90 to +75"
+        ]
+      },
+      "hoodwink": {
+        "hoodwink_hunters_boomerang": [
+          "Incoming Spell Damage Amp decreased from 25% to 20%"
+        ]
+      },
+      "jakiro": {
+        "jakiro_liquid_ice": [
+          "Impact Damage increased from 10/15/20/25 to 15/20/25/30",
+          "Duration increased from 4s to 5s"
+        ]
+      },
+      "kez": {
+        "general": [
+          "Added to Captain's Mode",
+          "Base Mana Regen increased from 0 to 0.25"
+        ],
+        "hero_facet": [
+          "The first hit bonus is now consumed by the first attack of Echo Slash and Raptor Dance, rather than applying to the entire cast",
+          "Still applies bonus to all enemies in the area",
+          "Fixed the Katana bonus being lost if Echo Slash hit nothing"
+        ],
+        "kez_switch_weapons": [
+          "Fixed a bug with Aghanim's Scepter that would allow extra Sai abilities to skip cooldown"
+        ],
+        "kez_kazurai_katana": [
+          "Impale damage changed from post-critical strike bonus damage to a separate instance of physical spell damage"
+        ],
+        "kez_raptor_dance": [
+          "Max Health as Damage decreased from 3% to 2.5%",
+          "Can no longer be interrupted by casting Grappling Claw"
+        ],
+        "kez_falcon_rush": [
+          "Now has an 825 break distance",
+          "Attack Speed Factor rescaled from 6/8/10/12% to 9%"
+        ],
+        "kez_shodo_sai": [
+          "Mark Critical Strike decreased from 140/160/180/200% to 125/150/175/200%"
+        ]
+      },
+      "leshrac": {
+        "leshrac_greater_lightning_storm": [
+          "Ethereal form is not applied if the target is Debuff Immune"
+        ]
+      },
+      "lich": {
+        "general": [
+          "Base Intelligence increased from 26 to 28",
+          "Damage at level 1 increased by 2 (from 50–59 to 52–61)"
+        ]
+      },
+      "life_stealer": {
+        "life_stealer_feast": [
+          "Hero Creeps no longer count as heroes for Lifestealer's permanent Health bonus"
+        ]
+      },
+      "lina": {
+        "lina_light_strike_array": [
+          "Stun Duration increased from 1/1.4/1.8/2.2s to 1.2/1.6/2.0/2.4s"
+        ]
+      },
+      "magnataur": {
+        "magnataur_skewer": [
+          "Movement is now cancelled if Magnus is interrupted"
+        ],
+        "magnataur_skewer_info": [
+          "Stunned, hexed or out of world"
+        ]
+      },
+      "marci": {
+        "marci_unleash": [
+          "Bonus Attack Speed decreased from 700/975/1325 to 700/925/1150"
+        ]
+      },
+      "mars": {
+        "mars_arena_of_blood": [
+          "Duration rescaled from 5/6/7s to 5.5s"
+        ]
+      },
+      "medusa": {
+        "medusa_mana_shield": [
+          "Base Damage per Mana decreased from 2.2 to 2.0"
+        ]
+      },
+      "monkey_king": {
+        "monkey_king_boundless_strike": [
+          "Aghanim's Shard portion of Primal Spring's max power decreased from 40% to 35%"
+        ],
+        "monkey_king_tree_dance": [
+          "Movement is now cancelled if Monkey King is interrupted"
+        ],
+        "monkey_king_tree_dance_info": [
+          "Stunned, hexed or out of world"
+        ],
+        "talents": [
+          "Level 10 Talent Primal Spring Max Damage decreased from +100 to +85"
+        ]
+      },
+      "naga_siren": {
+        "hero_facet": [
+          "Damage decreased from 80/150/220/290 to 80/140/200/260"
+        ],
+        "naga_siren_song_of_the_siren": [
+          "Aghanim's Shard Max HP Regen per Second decreased from 5/6/7% to 4/5/6%"
+        ],
+        "naga_siren_song_of_the_siren_info": [
+          "Aghanim's Shard bonus decreased from +3% to +2%"
+        ]
+      },
+      "necrolyte": {
+        "necrolyte_ghost_shroud": [
+          "Ethereal form is not applied if the target is Debuff Immune"
+        ]
+      },
+      "omniknight": {
+        "omniknight_purification": [
+          "Cast Range increased from 600 to 700"
+        ]
+      },
+      "obsidian_destroyer": {
+        "obsidian_destroyer_arcane_orb": [
+          "Cooldown decreased from 6/4/2/0s to 4.5/3/1.5/0s"
+        ]
+      },
+      "phantom_assassin": {
+        "phantom_assassin_immaterial": [
+          "Bonus Evasion increased from 20/30/40/50% to 25/35/45/55%"
+        ]
+      },
+      "phoenix": {
+        "phoenix_supernova": [
+          "Aghanim's Scepter cast range decreased from 500 to 450"
+        ]
+      },
+      "puck": {
+        "hero_facet": [
+          "Bonus damage per tick decreased from 5% to 3%"
+        ]
+      },
+      "pugna": {
+        "hero_facet": [
+          "Damage to HP decreased from 30% to 25%",
+          "Damage to Mana decreased from 40% to 30%"
+        ],
+        "pugna_decrepify": [
+          "Ethereal form is not applied if the target is Debuff Immune"
+        ]
+      },
+      "queenofpain": {
+        "queenofpain_sonic_wave": [
+          "Damage decreased from 350/500/650 to 325/475/625"
+        ]
+      },
+      "razor": {
+        "razor_static_link": [
+          "Cooldown decreased from 50/40/30/20s to 44/36/28/20s"
+        ]
+      },
+      "riki": {
+        "riki_blink_strike": [
+          "Slow Duration increased from 0.4s to 0.5s"
+        ]
+      },
+      "ringmaster": {
+        "ringmaster_tame_the_beasts": [
+          "Min Damage increased from 45/70/95/120 to 50/75/100/125"
+        ]
+      },
+      "rubick": {
+        "talents": [
+          "Level 10 Talent Telekinesis Landing damage increased from 150 to 165"
+        ]
+      },
+      "sand_king": {
+        "hero_facet": [
+          "Blind debuff no longer affects buildings"
+        ]
+      },
+      "silencer": {
+        "silencer_curse_of_the_silent": [
+          "Cast Range decreased from 1000 to 850"
+        ]
+      },
+      "snapfire": {
+        "hero_facet": [
+          "Max range decreased from 1300 to 1200",
+          "Point-blank distance is not changed. It is still 650"
+        ],
+        "snapfire_firesnap_cookie": [
+          "Cast Range decreased from 700 to 650"
+        ]
+      },
+      "storm_spirit": {
+        "storm_spirit_overload": [
+          "Aghanim's Shard active mana cost decreased from 150 to 100"
+        ]
+      },
+      "sven": {
+        "hero_facet": [
+          "Bonus Damage per STR decreased from 0/0.3/0.4/0.5 to 0/0.2/0.3/0.4"
+        ]
+      },
+      "techies": {
+        "techies_reactive_tazer": [
+          "Cooldown decreased from 30/25/20/15s to 26/22/18/14s"
+        ],
+        "techies_land_mines": [
+          "Min damage at the edge increased from 50% to 60%"
+        ]
+      },
+      "shredder": {
+        "shredder_reactive_armor": [
+          "Stacks gained from hero attacks increased from 3 to 4"
+        ]
+      },
+      "treant": {
+        "general": [
+          "Base armor increased by 1"
+        ],
+        "treant_living_armor": [
+          "Bonus Armor increased from 4/6/8/10 to 4/7/10/13"
+        ]
+      },
+      "troll_warlord": {
+        "talents": [
+          "Level 10 Talent Berserker's Rage Movement Speed decreased from +25 to +20",
+          "Level 15 Talent Fervor Attack Speed decreased from +5 to +4"
+        ]
+      },
+      "tusk": {
+        "tusk_bitter_chill": [
+          "Attack Speed Slow increased from 15/35/55/75 to 20/40/60/80"
+        ]
+      },
+      "ursa": {
+        "ursa_earthshock": [
+          "Aghanim's Shard Enrage duration decreased from 1.3s to 1.2s"
+        ],
+        "talents": [
+          "Level 10 Talent Fury Swipes Reset Time decreased from +12s to +9s"
+        ]
+      },
+      "venomancer": {
+        "general": [
+          "Base agility increased from 24 to 25",
+          "Damage at level 1 increased by 1 (from 45–48 to 46–49)"
+        ],
+        "venomancer_plague_ward": [
+          "Ward damage increased from 14/22/30/38 to 16/24/32/40"
+        ]
+      },
+      "viper": {
+        "viper_corrosive_skin": [
+          "Attack Slow increased from 8/16/24/32 to 9/18/27/36"
+        ]
+      },
+      "visage": {
+        "visage_grave_chill": [
+          "Mana Cost decreased from 90 to 75"
+        ]
+      }
+    }
   }
 }

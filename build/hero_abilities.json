@@ -475,7 +475,7 @@
         "color": "Red",
         "gradient_id": 1,
         "title": "Tectonic Buildup",
-        "description": "Aftershock radius is increased by 40 for every level of Echo Slam."
+        "description": "Aftershock radius is increased by 30 for every level of Echo Slam."
       },
       {
         "id": 1,
@@ -6185,7 +6185,7 @@
         "color": "Red",
         "gradient_id": 1,
         "title": "Thunderstorm",
-        "description": "Thunder Strike additionally hits all enemies within Kinetic Field. Thunder Strike Slow duration is doubled."
+        "description": "Thunder Strike additionally hits all enemies within Kinetic Field. Thunder Strike Slow duration is increased."
       },
       {
         "id": 1,
@@ -9161,7 +9161,7 @@
         "color": "Yellow",
         "gradient_id": 1,
         "title": "Flutter",
-        "description": "Kez deals extra damage on the first attack or ability after switching to Katana, and gains bonus movement speed after switching to Sai."
+        "description": "Kez deals extra damage on the first attack after switching to Katana, and gains bonus movement speed after switching to Sai."
       },
       {
         "id": 1,

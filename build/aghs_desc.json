@@ -823,7 +823,7 @@
     "scepter_skill_name": "Enrage",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Earthshock applies a 1.3 second Enrage on Ursa when cast.",
+    "shard_desc": "Earthshock applies a 1.2 second Enrage on Ursa when cast.",
     "shard_skill_name": "Earthshock",
     "shard_new_skill": false
   },
@@ -1351,7 +1351,7 @@
     "scepter_skill_name": "Wukong's Command",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Boundless Strike applies Primal Spring with 40% of the max channeling duration power to enemies along the staff and at the end of the staff. When Boundless Strike is set to alt-cast, Monkey King leaps to the end of his staff.",
+    "shard_desc": "Boundless Strike applies Primal Spring with 35% of the max channeling duration power to enemies along the staff and at the end of the staff. When Boundless Strike is set to alt-cast, Monkey King leaps to the end of his staff.",
     "shard_skill_name": "Boundless Strike",
     "shard_new_skill": false
   },
@@ -1455,7 +1455,7 @@
     "hero_name": "npc_dota_hero_dawnbreaker",
     "hero_id": 135,
     "has_scepter": true,
-    "scepter_desc": "Solar Guardian's aura now lingers for 3s after landing and follows Dawnbreaker around. Solar Guardian's heal per pulse is increased. Channel time and air time is reduced.",
+    "scepter_desc": "Solar Guardian's aura now lingers for 2s after landing and follows Dawnbreaker around. Solar Guardian's heal per pulse is increased. Channel time and air time is reduced.",
     "scepter_skill_name": "Solar Guardian",
     "scepter_new_skill": false,
     "has_shard": true,
