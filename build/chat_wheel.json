@@ -4346,5 +4346,155 @@
     "label": "Да бей, бей просто, уничтожь!",
     "message": "Да бей, бей просто, уничтожь!",
     "sound_ext": "wav"
+  },
+  "745": {
+    "id": 745,
+    "name": "monster_hunter_sprays_01",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/monster_hunter_sprays_01.psd"
+  },
+  "751": {
+    "id": 751,
+    "name": "monster_hunter_sprays_07",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/monster_hunter_sprays_07.psd"
+  },
+  "754": {
+    "id": 754,
+    "name": "monster_hunter_sprays_10",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/monster_hunter_sprays_10.psd"
+  },
+  "755": {
+    "id": 755,
+    "name": "monster_hunter_sprays_11",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/monster_hunter_sprays_11.psd"
+  },
+  "758": {
+    "id": 758,
+    "name": "palico_sprays_02",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_02.psd"
+  },
+  "759": {
+    "id": 759,
+    "name": "palico_sprays_03",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_03.psd"
+  },
+  "765": {
+    "id": 765,
+    "name": "palico_sprays_09",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_09.psd"
+  },
+  "767": {
+    "id": 767,
+    "name": "palico_sprays_11",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_11.psd"
+  },
+  "768": {
+    "id": 768,
+    "name": "palico_sprays_12",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_12.psd"
+  },
+  "769": {
+    "id": 769,
+    "name": "palico_sprays_13",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/free/palico_sprays_13.psd"
+  },
+  "770": {
+    "id": 770,
+    "name": "celestial_pursuit_girls_01",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/celestial_pursuit_girls_01.psd"
+  },
+  "771": {
+    "id": 771,
+    "name": "celestial_pursuit_girls_02",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/celestial_pursuit_girls_02.psd"
+  },
+  "772": {
+    "id": 772,
+    "name": "celestial_pursuit_girls_03",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/celestial_pursuit_girls_03.psd"
+  },
+  "773": {
+    "id": 773,
+    "name": "celestial_pursuit_girls_04",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/celestial_pursuit_girls_04.psd"
+  },
+  "774": {
+    "id": 774,
+    "name": "celestial_pursuit_girls_05",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/celestial_pursuit_girls_05.psd"
+  },
+  "780": {
+    "id": 780,
+    "name": "guild_lasses_01",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/guild_lasses_01.psd"
+  },
+  "781": {
+    "id": 781,
+    "name": "guild_lasses_02",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/guild_lasses_02.psd"
+  },
+  "782": {
+    "id": 782,
+    "name": "guild_lasses_03",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/guild_lasses_03.psd"
+  },
+  "783": {
+    "id": 783,
+    "name": "guild_lasses_04",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/guild_lasses_04.psd"
+  },
+  "784": {
+    "id": 784,
+    "name": "guild_lasses_05",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/guild_lasses_05.psd"
+  },
+  "790": {
+    "id": 790,
+    "name": "poogie_01",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/poogie_01.psd"
+  },
+  "791": {
+    "id": 791,
+    "name": "poogie_02",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/poogie_02.psd"
+  },
+  "792": {
+    "id": 792,
+    "name": "poogie_03",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/poogie_03.psd"
+  },
+  "793": {
+    "id": 793,
+    "name": "poogie_04",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/poogie_04.psd"
+  },
+  "794": {
+    "id": 794,
+    "name": "poogie_05",
+    "all_chat": true,
+    "image": "sprays/monster_hunter/premium/poogie_05.psd"
   }
 }

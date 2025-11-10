@@ -29343,6 +29343,12 @@
           "40%",
           "50%"
         ]
+      },
+      {
+        "key": "health_bar_offset",
+        "header": "HEALTH BAR OFFSET:",
+        "value": "300",
+        "generated": true
       }
     ],
     "lore": "The dormant dragon power springs forth from within Davion, combining the powers of a legendary knight with a legendary Eldwurm.",
@@ -42454,6 +42460,30 @@
         "key": "vision_duration",
         "header": "VISION DURATION:",
         "value": "4",
+        "generated": true
+      },
+      {
+        "key": "cataclysm_cooldown",
+        "header": "CATACLYSM COOLDOWN:",
+        "value": "90",
+        "generated": true
+      },
+      {
+        "key": "cataclysm_min_range",
+        "header": "CATACLYSM MIN RANGE:",
+        "value": "90",
+        "generated": true
+      },
+      {
+        "key": "cataclysm_max_range",
+        "header": "CATACLYSM MAX RANGE:",
+        "value": "180",
+        "generated": true
+      },
+      {
+        "key": "cataclysm_damage_pct",
+        "header": "CATACLYSM DAMAGE PCT:",
+        "value": "75",
         "generated": true
       },
       {

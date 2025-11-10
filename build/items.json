@@ -18157,7 +18157,7 @@
     "id": 1804,
     "img": "/apps/dota2/images/dota_react/items/roshans_banner.png?t=1593393829403",
     "dname": "Roshan's Banner",
-    "qual": "artifact",
+    "qual": "consumable",
     "cost": 0,
     "behavior": [
       "Point Target",
