@@ -1,6 +1,6 @@
 {
   "name": "dotaconstants",
-  "version": "9.4.203",
+  "version": "9.4.204",
   "description": "Constant data for Dota 2 applications",
   "main": "index.js",
   "files": [
