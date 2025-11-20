@@ -34769,12 +34769,6 @@
         "generated": true
       },
       {
-        "key": "disable_vision",
-        "header": "DISABLE VISION:",
-        "value": "0",
-        "generated": true
-      },
-      {
         "key": "cast_radius",
         "header": "CAST RADIUS:",
         "value": "0",
