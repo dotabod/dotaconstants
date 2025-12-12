@@ -4496,5 +4496,65 @@
     "name": "poogie_05",
     "all_chat": true,
     "image": "sprays/monster_hunter/premium/poogie_05.psd"
+  },
+  "795": {
+    "id": 795,
+    "name": "cm_dog_cold",
+    "all_chat": true,
+    "image": "sprays/cm_dog_cold_spray_icon.png"
+  },
+  "796": {
+    "id": 796,
+    "name": "sick_tide",
+    "all_chat": true,
+    "image": "sprays/sick_tide_spray_icon.png"
+  },
+  "797": {
+    "id": 797,
+    "name": "pa_no",
+    "all_chat": true,
+    "image": "sprays/pa_no_spray_icon.png"
+  },
+  "798": {
+    "id": 798,
+    "name": "Guild_cm_dog_cold",
+    "all_chat": true,
+    "image": "sprays/cm_dog_cold_spray_icon.png"
+  },
+  "799": {
+    "id": 799,
+    "name": "Guild_sick_tide",
+    "all_chat": true,
+    "image": "sprays/sick_tide_spray_icon.png"
+  },
+  "800": {
+    "id": 800,
+    "name": "Guild_pa_no",
+    "all_chat": true,
+    "image": "sprays/pa_no_spray_icon.png"
+  },
+  "801": {
+    "id": 801,
+    "name": "Guild_TI12_Caster_English_1",
+    "all_chat": true,
+    "label": "Its Too Good",
+    "message": "Omg its too good...but no, its not good enough at all, or wait, is it,maybe?",
+    "sound_ext": "wav"
+  },
+  "802": {
+    "id": 802,
+    "name": "Guild_TI12_Caster_Chinese_2",
+    "all_chat": true,
+    "label": "喂喂喂？",
+    "message": "喂喂喂？ Hello？队友呢？Hello？",
+    "sound_ext": "wav"
+  },
+  "803": {
+    "id": 803,
+    "name": "Guild_TI12_Caster_Russian_5",
+    "all_chat": true,
+    "label": "Вот это да!",
+    "message": "Хо-хо-хо! Вот это да!",
+    "sound_ext": "wav"
   }
 }
