@@ -137,7 +137,10 @@ const heroDataUrls: string[] = [];
 const heroDataIndex: string[] = [];
 const abilitiesUrls = [abilitiesLoc, npcAbilitiesUrl];
 
-start();
+start().catch((err) => {
+  console.error("Update constants failed:", err);
+  process.exit(1);
+});
 async function start() {
   const resp = await fetch(heroesUrl);
   let heroesVdf = parseJsonOrVdf(await resp.text(), heroesUrl) as
@@ -1749,7 +1752,19 @@ function replaceSpecialAttribs(
         const abilityValue = isObj(allData[abilitykey])
           ? allData[abilitykey].value
           : allData[abilitykey];
-        let value = abilityValue.split(" "); //can have multiple values
+        // Handle arrays or skip if not a string/array
+        let valueString: string;
+        if (typeof abilityValue === "string") {
+          valueString = abilityValue;
+        } else if (Array.isArray(abilityValue)) {
+          // Arrays contain duplicate values, take the first element
+          // e.g., ['75 85 95 105', '75 85 95 105'] -> '75 85 95 105'
+          valueString = abilityValue[0];
+        } else {
+          // Skip values that are neither strings nor arrays
+          return;
+        }
+        let value = valueString.split(" "); //can have multiple values
         value =
           value.length === 1 ? Number(value[0]) : value.map((v) => Number(v));
         abilitykey = abilitykey.toLowerCase();
