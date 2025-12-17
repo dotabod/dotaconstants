@@ -10122,12 +10122,6 @@
         "generated": true
       },
       {
-        "key": "abilitychargerestoretime",
-        "header": "CHARGE RESTORE TIME:",
-        "value": "0",
-        "generated": true
-      },
-      {
         "key": "abilitycastpoint",
         "header": "CAST TIME:",
         "value": "0.4",
@@ -38279,7 +38273,7 @@
     "bkbpierce": "Yes",
     "target_team": "Enemy",
     "target_type": "Hero",
-    "desc": "Thrusts an uncontrollable illusion at the target. The illusion receives 200% damage.\n\nThe Reality sub-ability may be used to teleport to the illusion, destroying it.",
+    "desc": "Sends an uncontrollable illusion at a target that follows and attacks the target. The illusion deals decreased damage and receives 200% damage.\n\nThe Reality sub-ability may be used to teleport to the illusion, destroying it.",
     "attrib": [
       {
         "key": "abilitycastrange",
@@ -46660,7 +46654,7 @@
       },
       {
         "key": "damage",
-        "header": "DAMAGE:",
+        "header": "TOTAL DAMAGE:",
         "value": "300"
       },
       {
@@ -71464,8 +71458,7 @@
       {
         "key": "echo_proc_chance_reduction",
         "header": "ECHO PROC CHANCE REDUCTION:",
-        "value": "50",
-        "generated": true
+        "value": "50%"
       },
       {
         "key": "abilitycastpoint",

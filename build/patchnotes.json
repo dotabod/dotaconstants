@@ -57815,7 +57815,8 @@
         "Roshan's Banner, Clinkz' Skeleton Archers, Lich's Ice Spire, Phoenix's Supernova, Pugna's Nether Ward, Templar Assassin's Psionic Traps, and Undying's Tombstone",
         "Spirit Bear already did hero damage to Shadow Shaman's Mass Serpent Wards, Couriers, Observer Wards and Sentry Wards",
         "Spirit Bear can now be targeted or affected as a hero by the following abilities:",
-        "Axe's Culling Blade, Legion Commander's Duel, Lion's Finger of Death, Mars' Spear of Mars, Necrophos' Reaper's Scythe, Slark's Pounce, and Underlord's Atrophy Aura",
+        "Axe's Culling Blade, Bounty Hunter's Track, Earth Spirit's Petrify, Legion Commander's Duel, Lion's Finger of Death, Mars' Spear of Mars, Necrophos' Reaper's Scythe, Slark's Pounce, Terrorblade's Reflection, Terrorblade's Sunder (only if the Bear is not Debuff Immune), and Underlord's Atrophy Aura",
+        "At the same time, Bounty Hunter will not steal Lone Druid's gold anymore by hitting Spirit Bear with Jinada or by using skills with Cutpurse facet on it",
         "Now can also break enemy Smoke of Deceit",
         "Spirit Bear's death will not provide charges for these spells:",
         "Charges for Urn of Shadows and its upgrades, Pudge's permanent Strength from Flesh Heap, Silencer's permanent Int from Brain Drain, Slark's permanent Agility from Essence Shift, and Storm Spirit's stacks for Galvanized",
@@ -58863,9 +58864,7 @@
           "Max Damage rescaled from 1.25/2.75/4.5/6.75% to 1.5/3/4.5/6%"
         ],
         "talents": [
-          "Level 15 Talent Health Regen increased from +20 to +25",
-          "Level 25 Talent +1000 Icarus Dive Cast Range replaced with +70% Icarus Dive Cast Range/Damage",
-          "As a result, Cast Range bonus decreased from +1000 to +770/840/910/980"
+          "Level 15 Talent Health Regen increased from +20 to +25"
         ]
       },
       "primal_beast": {
@@ -59332,7 +59331,7 @@
       "abyssal_underlord": {
         "general": [
           "Strength gain increased from 3.0 to 3.2",
-          "Base Intelligence increased by from 17 to 18"
+          "Base Intelligence increased from 17 to 18"
         ],
         "abyssal_underlord_firestorm": [
           "Cast Range increased from 600/625/650/675 to 675"
