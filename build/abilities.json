@@ -38182,7 +38182,11 @@
       {
         "key": "duration",
         "header": "HAUNT DURATION:",
-        "value": "6"
+        "value": [
+          "5",
+          "6",
+          "7"
+        ]
       },
       {
         "key": "illusion_damage_outgoing",
