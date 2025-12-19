@@ -71838,70 +71838,9 @@
     "desc": "Largo gets ready to groove. He is disarmed and his ability bar switches to 3 song abilities, each with different effects. Songs are only effective if strummed on the beat.\n\nEvery time he strums successfully, he gains a stack of Groovin'. Each stack gives him bonus armor and reduces the mana cost of every song, but he loses a stack if he misses a beat. Stacks linger for a short duration when Largo's song ends.",
     "attrib": [
       {
-        "key": "duration",
-        "header": "DURATION:",
-        "value": "0"
-      },
-      {
         "key": "radius",
         "header": "RADIUS:",
         "value": "750"
-      },
-      {
-        "key": "attack_speed_bonus",
-        "header": "ATTACK SPEED BONUS:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "magic_damage_bonus",
-        "header": "MAGIC DAMAGE BONUS:",
-        "value": [
-          "20",
-          "25",
-          "30"
-        ],
-        "generated": true
-      },
-      {
-        "key": "spell_amp_bonus",
-        "header": "SPELL AMP BONUS:",
-        "value": [
-          "8",
-          "12",
-          "16"
-        ],
-        "generated": true
-      },
-      {
-        "key": "movespeed_bonus_burst",
-        "header": "MOVESPEED BONUS BURST:",
-        "value": [
-          "16",
-          "22",
-          "28"
-        ],
-        "generated": true
-      },
-      {
-        "key": "slow_resistance",
-        "header": "SLOW RESISTANCE:",
-        "value": [
-          "70",
-          "80",
-          "90"
-        ],
-        "generated": true
-      },
-      {
-        "key": "heal_burst",
-        "header": "HEAL BURST:",
-        "value": [
-          "34",
-          "56",
-          "78"
-        ],
-        "generated": true
       },
       {
         "key": "rhythm_interval",
@@ -71912,24 +71851,6 @@
         "key": "rhythm_grace_period",
         "header": "RHYTHM GRACE PERIOD:",
         "value": "0.4",
-        "generated": true
-      },
-      {
-        "key": "battle_burst_duration",
-        "header": "BATTLE BURST DURATION:",
-        "value": "1",
-        "generated": true
-      },
-      {
-        "key": "movement_burst_duration",
-        "header": "MOVEMENT BURST DURATION:",
-        "value": "1",
-        "generated": true
-      },
-      {
-        "key": "slow_resistance_burst_duration",
-        "header": "SLOW RESISTANCE BURST DURATION:",
-        "value": "0.3",
         "generated": true
       },
       {
@@ -72028,13 +71949,13 @@
         "generated": true
       },
       {
-        "key": "attack_speed_bonus_tooltip",
-        "header": "ATTACK SPEED BONUS TOOLTIP:",
-        "value": "0",
+        "key": "radius",
+        "header": "RADIUS:",
+        "value": "750",
         "generated": true
       },
       {
-        "key": "magic_damage_bonus_tooltip",
+        "key": "magic_damage_bonus",
         "header": "ADDITIONAL MAGIC DAMAGE:",
         "value": [
           "20%",
@@ -72043,7 +71964,7 @@
         ]
       },
       {
-        "key": "spell_amp_bonus_tooltip",
+        "key": "spell_amp_bonus",
         "header": "SPELL AMP:",
         "value": [
           "8%",
@@ -72052,7 +71973,7 @@
         ]
       },
       {
-        "key": "battle_burst_duration_tooltip",
+        "key": "battle_burst_duration",
         "header": "BUFF DURATION:",
         "value": "1"
       },
@@ -72098,7 +72019,13 @@
         "generated": true
       },
       {
-        "key": "movespeed_bonus_burst_tooltip",
+        "key": "radius",
+        "header": "RADIUS:",
+        "value": "750",
+        "generated": true
+      },
+      {
+        "key": "movespeed_bonus_burst",
         "header": "MOVE SPEED:",
         "value": [
           "16%",
@@ -72107,7 +72034,7 @@
         ]
       },
       {
-        "key": "slow_resistance_tooltip",
+        "key": "slow_resistance",
         "header": "SLOW RESISTANCE:",
         "value": [
           "70%",
@@ -72116,12 +72043,12 @@
         ]
       },
       {
-        "key": "movement_burst_duration_tooltip",
+        "key": "movement_burst_duration",
         "header": "MOVEMENT DURATION:",
         "value": "1"
       },
       {
-        "key": "slow_resistance_burst_duration_tooltip",
+        "key": "slow_resistance_burst_duration",
         "header": "SLOW RESISTANCE DURATION:",
         "value": "0.3"
       },
@@ -72167,7 +72094,13 @@
         "generated": true
       },
       {
-        "key": "heal_burst_tooltip",
+        "key": "radius",
+        "header": "RADIUS:",
+        "value": "750",
+        "generated": true
+      },
+      {
+        "key": "heal_burst",
         "header": "HEAL:",
         "value": [
           "34",
