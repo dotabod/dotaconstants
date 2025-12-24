@@ -11219,7 +11219,7 @@
     ],
     "lore": "Traxex wasn't just adopted by the Drow, she was adopted by the lands they lived in.",
     "mc": "50",
-    "cd": "20",
+    "cd": "25",
     "img": "/apps/dota2/images/dota_react/abilities/drow_ranger_glacier.png"
   },
   "drow_ranger_creep_rally": {
@@ -11265,7 +11265,7 @@
     "dname": "-6s Multishot Cooldown"
   },
   "special_bonus_unique_drow_ranger_7": {
-    "dname": "-25% Frost Arrows Mana Cost"
+    "dname": "-18% Frost Arrows Mana Cost"
   },
   "special_bonus_unique_drow_ranger_8": {
     "dname": "+1 Multishot Wave"
@@ -11798,7 +11798,7 @@
       "Point Target"
     ],
     "bkbpierce": "Yes",
-    "desc": "Summons a Healing Ward which heals all nearby allied units, based on their max health. The Healing Ward moves at 325 movement speed after being summoned. Lasts 25 seconds.",
+    "desc": "Summons a Healing Ward which heals all nearby allied units, based on their max health. The Healing Ward moves at 325 movement speed after being summoned. Lasts 18 seconds.",
     "attrib": [
       {
         "key": "healing_ward_heal_amount",
@@ -11841,7 +11841,12 @@
       {
         "key": "abilityduration",
         "header": "DURATION:",
-        "value": "25",
+        "value": [
+          "18",
+          "20",
+          "22",
+          "24"
+        ],
         "generated": true
       },
       {
@@ -11872,7 +11877,7 @@
       {
         "key": "attack_rate_multiplier",
         "header": "SLASHES RATE MULTIPLIER:",
-        "value": "1.5"
+        "value": "1.4"
       },
       {
         "key": "bonus_damage",
@@ -12077,7 +12082,7 @@
     "dname": "-12s Healing Ward Cooldown"
   },
   "special_bonus_unique_juggernaut_blade_dance_lifesteal": {
-    "dname": "+50% Blade Dance Lifesteal"
+    "dname": "+40% Blade Dance Lifesteal"
   },
   "special_bonus_unique_juggernaut_omnislash_duration": {
     "dname": "+1s Omnislash Duration"
@@ -12809,7 +12814,12 @@
       {
         "key": "necromastery_max_souls",
         "header": "BASE MAX SOULS:",
-        "value": "20"
+        "value": [
+          "20",
+          "22",
+          "24",
+          "26"
+        ]
       },
       {
         "key": "souls_per_kill",
@@ -12987,11 +12997,7 @@
       {
         "key": "requiem_reduction_mres",
         "header": "MAGIC RESIST REDUCTION:",
-        "value": [
-          "-5%",
-          "-10%",
-          "-15%"
-        ]
+        "value": "-10%"
       },
       {
         "key": "requiem_slow_duration",
@@ -13506,9 +13512,9 @@
         "key": "lance_damage",
         "header": "LANCE DAMAGE:",
         "value": [
-          "70",
-          "140",
-          "210",
+          "100",
+          "160",
+          "220",
           "280"
         ]
       },
@@ -14345,7 +14351,7 @@
       }
     ],
     "lore": "The Butcher's hook is a symbolic nightmare, its curved blade a frightening reminder of his slaughterous intent.",
-    "mc": "110",
+    "mc": "120",
     "cd": [
       "18",
       "16",
@@ -16233,9 +16239,9 @@
         "key": "splash_pct",
         "header": "SPLASH DAMAGE:",
         "value": [
-          "55%",
           "70%",
-          "85%",
+          "80%",
+          "90%",
           "100%"
         ]
       },
@@ -16954,7 +16960,7 @@
       {
         "key": "slow_duration",
         "header": "SLOW DURATION:",
-        "value": "4"
+        "value": "3"
       },
       {
         "key": "damage_reduction",
@@ -17553,9 +17559,9 @@
         "header": "CURRENT HP DAMAGE:",
         "value": [
           "2.5%",
-          "3%",
-          "3.5%",
-          "4%"
+          "3.25%",
+          "4%",
+          "4.75%"
         ]
       },
       {
@@ -20780,7 +20786,7 @@
     "target_team": "Enemy",
     "target_type": "Hero",
     "desc": "Tidehunter attaches a heavy anchor to an enemy hero. The hero is leashed while attached to the anchor. Attempting to move more than 350 units away from the anchor forces the hero to 100 move speed, dragging the anchor behind them. The anchor can be destroyed with 4 hero attacks.",
-    "dmg": "100",
+    "dmg": "0",
     "attrib": [
       {
         "key": "attacks_to_destroy",
@@ -20885,7 +20891,7 @@
       {
         "key": "strength_gain_tooltip",
         "header": "STRENGTH GAIN TOOLTIP:",
-        "value": "4.1",
+        "value": "3.9",
         "generated": true
       }
     ],
@@ -21180,8 +21186,8 @@
         "header": "DAMAGE:",
         "value": [
           "60",
-          "95",
-          "130"
+          "90",
+          "120"
         ]
       },
       {
@@ -21637,10 +21643,10 @@
         "key": "attack_damage",
         "header": "ATTACK DAMAGE:",
         "value": [
-          "30",
+          "25",
           "50",
-          "70",
-          "90"
+          "75",
+          "100"
         ]
       },
       {
@@ -23503,10 +23509,10 @@
         "key": "heal_bonus",
         "header": "RESTORATION AMPLIFICATION:",
         "value": [
-          "45%",
           "55%",
+          "60%",
           "65%",
-          "75%"
+          "70%"
         ]
       },
       {
@@ -24107,11 +24113,11 @@
         "key": "explosion_dmg",
         "header": "EXPLOSION DAMAGE:",
         "value": [
-          "25",
-          "70",
-          "115",
-          "160",
-          "205"
+          "20",
+          "65",
+          "110",
+          "155",
+          "200"
         ]
       },
       {
@@ -24280,11 +24286,11 @@
         "key": "tooltip_imp_explode",
         "header": "TOOLTIP IMP EXPLODE:",
         "value": [
-          "25",
-          "70",
-          "115",
-          "160",
-          "205"
+          "20",
+          "65",
+          "110",
+          "155",
+          "200"
         ],
         "generated": true
       },
@@ -24399,10 +24405,10 @@
         "key": "damage_amp",
         "header": "DAMAGE AMP PER STACK:",
         "value": [
-          "6%",
-          "8%",
-          "10%",
-          "12%"
+          "7%",
+          "9%",
+          "11%",
+          "13%"
         ]
       },
       {
@@ -27057,8 +27063,8 @@
         "header": "SPIRITS:",
         "value": [
           "10",
-          "17",
-          "24"
+          "18",
+          "26"
         ]
       },
       {
@@ -27210,6 +27216,7 @@
       "Hidden"
     ],
     "dmg_type": "Physical",
+    "bkbpierce": "Yes",
     "dispellable": "No",
     "desc": "Phantom Assassin releases sharp blades around her, dealing a percentage of each victim's max health on impact and applying Break.",
     "attrib": [
@@ -27886,9 +27893,9 @@
     ],
     "lore": "Pugna has truly become more powerful than even the grandmaster of Oblivion.",
     "mc": [
-      "100",
-      "150",
-      "200"
+      "115",
+      "160",
+      "205"
     ],
     "cd": "7",
     "img": "/apps/dota2/images/dota_react/abilities/pugna_life_drain.png"
@@ -29562,9 +29569,9 @@
         "key": "slow",
         "header": "SLOW:",
         "value": [
+          "-13%",
           "-16%",
-          "-18%",
-          "-20%",
+          "-19%",
           "-22%"
         ]
       },
@@ -30134,7 +30141,7 @@
     "dname": "+200 Poison Touch Attack Range"
   },
   "special_bonus_unique_dazzle_shallow_grave_cooldown": {
-    "dname": "-4s Shallow Grave Cooldown"
+    "dname": "-3s Shallow Grave Cooldown"
   },
   "rattletrap_jetpack": {
     "dname": "Jetpack",
@@ -32814,16 +32821,16 @@
       "Basic",
       "Building"
     ],
-    "desc": "Clinkz gains attack speed and has bonus attack range. Any current Skeleton Archers within a 1200 radius of Clinkz also gain bonus attack range and 50% of the attack speed bonus. \n\n Casting Strafe does not break Skeleton Walk invisibility.",
+    "desc": "Clinkz gains attack speed and has bonus attack range. Any current and future Skeleton Archers within a 1200 radius of Clinkz also gain bonus attack range and 50% of the attack speed bonus. \n\n Casting Strafe does not break Skeleton Walk invisibility.",
     "attrib": [
       {
         "key": "attack_speed_bonus",
         "header": "ATTACK SPEED BONUS:",
         "value": [
-          "100",
-          "140",
-          "180",
-          "220"
+          "120",
+          "160",
+          "200",
+          "240"
         ]
       },
       {
@@ -32968,10 +32975,10 @@
         "key": "damage_bonus",
         "header": "BONUS DAMAGE:",
         "value": [
-          "18",
-          "32",
-          "46",
-          "60"
+          "20",
+          "35",
+          "50",
+          "65"
         ]
       },
       {
@@ -33413,7 +33420,7 @@
     "is_innate": true,
     "behavior": "Passive",
     "dispellable": "No",
-    "desc": "Clinkz and his skeletons apply a stacking debuff that causes their attacks to pierce up to 20% of the target's total physical armor (does not reduce their armor). Clinkz applies 2% per attack, and skeletons apply 1%. \n\nLasts 5 seconds.",
+    "desc": "Clinkz and his skeletons apply a stacking debuff that causes their attacks to pierce up to 20% of the target's total physical armor (does not reduce their armor). Clinkz applies 3% per attack, and skeletons apply 1%. \n\nLasts 5 seconds.",
     "attrib": [
       {
         "key": "duration",
@@ -33424,7 +33431,7 @@
       {
         "key": "hero_stacks",
         "header": "HERO STACKS:",
-        "value": "2",
+        "value": "3",
         "generated": true
       },
       {
@@ -33791,10 +33798,10 @@
         "key": "base_strength",
         "header": "BASE STRENGTH:",
         "value": [
-          "7",
-          "14",
-          "21",
-          "28"
+          "6",
+          "12",
+          "18",
+          "24"
         ]
       },
       {
@@ -34703,7 +34710,7 @@
       {
         "key": "hp_threshold_max",
         "header": "HP FOR MAX BONUS:",
-        "value": "12%"
+        "value": "10%"
       },
       {
         "key": "activatable",
@@ -36703,10 +36710,10 @@
         "key": "damage",
         "header": "BURN DAMAGE:",
         "value": [
-          "20",
-          "30",
-          "40",
-          "50"
+          "15",
+          "25",
+          "35",
+          "45"
         ]
       },
       {
@@ -36790,10 +36797,10 @@
         "key": "damage",
         "header": "IMPACT DAMAGE:",
         "value": [
-          "15",
-          "20",
-          "25",
-          "30"
+          "8",
+          "16",
+          "24",
+          "32"
         ]
       },
       {
@@ -37295,12 +37302,7 @@
       }
     ],
     "lore": "A molotov cocktail is the weapon of choice for Batrider.",
-    "mc": [
-      "110",
-      "115",
-      "120",
-      "125"
-    ],
+    "mc": "110",
     "cd": [
       "22",
       "19",
@@ -38123,10 +38125,10 @@
         "key": "damage_reflection_pct",
         "header": "DAMAGE REFLECTED:",
         "value": [
-          "7%",
-          "11%",
-          "15%",
-          "19%"
+          "8%",
+          "12%",
+          "16%",
+          "20%"
         ]
       },
       {
@@ -38283,10 +38285,10 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
-          "700",
-          "850",
-          "1000",
-          "1150"
+          "750",
+          "900",
+          "1050",
+          "1200"
         ],
         "generated": true
       },
@@ -38316,9 +38318,9 @@
         "key": "illusion_outgoing_damage",
         "header": "ILLUSION DAMAGE:",
         "value": [
-          "20%",
-          "30%",
-          "40%",
+          "32%",
+          "38%",
+          "44%",
           "50%"
         ]
       },
@@ -38349,10 +38351,10 @@
       "75"
     ],
     "cd": [
-      "32",
-      "28",
-      "24",
-      "20"
+      "30",
+      "26",
+      "22",
+      "18"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/spectre_shadow_step.png"
   },
@@ -39570,12 +39572,7 @@
       {
         "key": "debuff_amp",
         "header": "DURATION BONUS:",
-        "value": [
-          "14%",
-          "16%",
-          "18%",
-          "20%"
-        ]
+        "value": "15%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/ursa_bear_down.png"
@@ -43730,7 +43727,7 @@
       {
         "key": "scepter_barrier_duration",
         "header": "SCEPTER BARRIER DURATION:",
-        "value": "15",
+        "value": "12",
         "generated": true
       },
       {
@@ -43763,7 +43760,7 @@
     ],
     "dmg_type": "Magical",
     "bkbpierce": "No",
-    "desc": "Unleashes a psychic blast that deals damage to enemies based on the difference between your mana and the target's mana. Sanity's Eclipse can hit units trapped by Astral Imprisonment. Deals bonus damage to illusions.",
+    "desc": "Unleashes a psychic blast that deals damage to enemies based on the difference between your mana and the target's mana. Sanity's Eclipse can hit units trapped by Astral Imprisonment.",
     "attrib": [
       {
         "key": "base_damage",
@@ -43795,8 +43792,9 @@
       },
       {
         "key": "illusion_bonus_damage",
-        "header": "ILLUSION DAMAGE:",
-        "value": "200%"
+        "header": "ILLUSION BONUS DAMAGE:",
+        "value": "0",
+        "generated": true
       },
       {
         "key": "debuff_duration",
@@ -44385,7 +44383,7 @@
       {
         "key": "radius",
         "header": "RADIUS:",
-        "value": "375"
+        "value": "400"
       },
       {
         "key": "damage",
@@ -44600,7 +44598,7 @@
       "Instant Cast"
     ],
     "dispellable": "No",
-    "desc": "Brewmaster can switch stances based on the elements he controls.\n\nWhenever Brewmaster casts an ability, he becomes Brewed Up, increasing his stance power by 150% for 5s. If he casts another ability while Brewed Up, the duration is extended by 1s. After Brewed Up expires, he is hungover and cannot Brew Up again for 9s.\n\nEarth Brawler gains bonus Magic Resistance and Armor.\n\nStorm Brawler gains bonus Evasion and Movement Speed.\n\nFire Brawler gains bonus Attack Speed and chance to critical strike.",
+    "desc": "Brewmaster can switch stances based on the elements he controls.\n\nWhenever Brewmaster casts an ability, he becomes Brewed Up, increasing his stance power by 150% for 5s. If he casts another ability while Brewed Up, the duration is extended by 2s. After Brewed Up expires, he is hungover and cannot Brew Up again for 9s.\n\nEarth Brawler gains bonus Magic Resistance and Armor.\n\nStorm Brawler gains bonus Evasion and Movement Speed.\n\nFire Brawler gains bonus Attack Speed and chance to critical strike.",
     "attrib": [
       {
         "key": "magic_resist",
@@ -44676,7 +44674,7 @@
       {
         "key": "brewed_up_duration_extend",
         "header": "BREWED UP DURATION EXTEND:",
-        "value": "1",
+        "value": "2",
         "generated": true
       },
       {
@@ -44737,7 +44735,7 @@
       {
         "key": "max_speed",
         "header": "MAX SPEED INCREASE:",
-        "value": "25%"
+        "value": "30%"
       },
       {
         "key": "speed_toggle_time",
@@ -44792,6 +44790,7 @@
         "value": [
           "16",
           "20",
+          "24",
           "24"
         ]
       },
@@ -45074,7 +45073,7 @@
   "brewmaster_earth_spell_immunity": {
     "dname": "Earth Element",
     "behavior": "Passive",
-    "desc": "Magic and status resistance increased.",
+    "desc": "Magic, status, and slow resistance increased.",
     "attrib": [
       {
         "key": "magic_resist",
@@ -45084,6 +45083,11 @@
       {
         "key": "status_resist",
         "header": "STATUS RESISTANCE:",
+        "value": "80%"
+      },
+      {
+        "key": "slow_resist",
+        "header": "SLOW RESISTANCE:",
         "value": "80%"
       }
     ],
@@ -45850,9 +45854,9 @@
         "header": "CAST RANGE:",
         "value": [
           "700",
-          "800",
-          "900",
-          "1000"
+          "775",
+          "850",
+          "925"
         ],
         "generated": true
       },
@@ -46238,9 +46242,9 @@
     "lore": "Sylla studies and masters the arts of the lost Bear Clan, enhancing his attunement with the wild.",
     "mc": "50",
     "cd": [
-      "38",
-      "32",
+      "29",
       "26",
+      "23",
       "20"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/lone_druid_savage_roar.png"
@@ -46480,12 +46484,7 @@
       {
         "key": "damage",
         "header": "ROOT DAMAGE PER SECOND:",
-        "value": [
-          "60",
-          "70",
-          "80",
-          "90"
-        ]
+        "value": "90"
       },
       {
         "key": "spirit_bear_counters_applied_tooltip",
@@ -46582,12 +46581,7 @@
       {
         "key": "damage",
         "header": "ROOT DAMAGE PER SECOND:",
-        "value": [
-          "60",
-          "70",
-          "80",
-          "90"
-        ]
+        "value": "90"
       },
       {
         "key": "abilitycastrange",
@@ -46604,10 +46598,10 @@
     ],
     "mc": "60",
     "cd": [
-      "24",
-      "22",
       "20",
-      "18"
+      "19",
+      "18",
+      "17"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/lone_druid_entangle.png"
   },
@@ -47129,7 +47123,7 @@
       {
         "key": "abilitycastpoint",
         "header": "CAST TIME:",
-        "value": "0",
+        "value": "0.3",
         "generated": true
       }
     ],
@@ -47629,7 +47623,7 @@
       }
     ],
     "lore": "The Protectors don't often come into vision; their natural state being nestled within their leafy brethren.",
-    "cd": "50",
+    "cd": "35",
     "img": "/apps/dota2/images/dota_react/abilities/treant_natures_guise.png"
   },
   "treant_innate_attack_damage": {
@@ -47880,7 +47874,7 @@
       {
         "key": "damage_block_base",
         "header": "DAMAGE BLOCKED:",
-        "value": "100"
+        "value": "120"
       },
       {
         "key": "damage_block_loss",
@@ -47913,9 +47907,9 @@
       "55"
     ],
     "cd": [
-      "30",
-      "25",
-      "20",
+      "24",
+      "21",
+      "18",
       "15"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/treant_living_armor.png"
@@ -52886,12 +52880,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": [
-          "6",
-          "8",
-          "10",
-          "12"
-        ]
+        "value": "12"
       },
       {
         "key": "agi_bonus_damage_factor",
@@ -52917,12 +52906,22 @@
       {
         "key": "regen_steal",
         "header": "STACK REGEN STEAL:",
-        "value": "3"
+        "value": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
       },
       {
         "key": "ms_steal",
         "header": "STACK SPEED STEAL:",
-        "value": "3"
+        "value": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
       },
       {
         "key": "melee_range_buffer",
@@ -54318,7 +54317,7 @@
       {
         "key": "duration",
         "header": "TOTAL DURATION:",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "melee_attack_range",
@@ -55179,12 +55178,12 @@
       },
       {
         "key": "whirling_damage",
-        "header": "DAMAGE:",
+        "header": "BASE DAMAGE:",
         "value": [
-          "85",
-          "130",
-          "175",
-          "220"
+          "75",
+          "120",
+          "165",
+          "210"
         ]
       },
       {
@@ -55217,10 +55216,10 @@
         "key": "duration",
         "header": "STAT LOSS DURATION:",
         "value": [
+          "11",
           "12",
           "13",
-          "14",
-          "15"
+          "14"
         ]
       },
       {
@@ -55833,7 +55832,7 @@
       {
         "key": "base_move_slow",
         "header": "BASE MOVEMENT SLOW:",
-        "value": "10%"
+        "value": "12%"
       },
       {
         "key": "move_slow_per_stack",
@@ -57469,7 +57468,7 @@
     "dname": "+10% Withering Mist Health Restoration Reduction"
   },
   "special_bonus_unique_abaddon_7": {
-    "dname": "Aphotic Shield provides +10 HP Regen"
+    "dname": "Aphotic Shield provides +8 HP Regen"
   },
   "special_bonus_unique_abaddon_immolation": {
     "dname": "100 Borrowed Time Immolation DPS"
@@ -58156,9 +58155,9 @@
         "key": "move_speed",
         "header": "BONUS MOVE SPEED:",
         "value": [
-          "10%",
-          "14%",
-          "18%",
+          "13%",
+          "16%",
+          "19%",
           "22%"
         ]
       },
@@ -58192,7 +58191,7 @@
       }
     ],
     "lore": "The rallying horn of the Bronze Legion is able to inspire any heart.",
-    "mc": "100",
+    "mc": "90",
     "cd": [
       "16",
       "15",
@@ -59615,10 +59614,10 @@
     "lore": "Temper, temper. The rage rises up and takes control.  Meet Terrorblade's own worst self.",
     "mc": "100",
     "cd": [
-      "155",
-      "150",
       "145",
-      "140"
+      "140",
+      "135",
+      "130"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/terrorblade_metamorphosis.png"
   },
@@ -60848,7 +60847,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "400",
+        "value": "450",
         "generated": true
       },
       {
@@ -61850,16 +61849,16 @@
     "dname": "+17% Arctic Burn Slow"
   },
   "special_bonus_unique_winter_wyvern_2": {
-    "dname": "+300 Splinter Blast Shatter Radius"
+    "dname": "+250 Splinter Blast Shatter Radius"
   },
   "special_bonus_unique_winter_wyvern_3": {
     "dname": "+60 Winter's Curse Attack Speed "
   },
   "special_bonus_unique_winter_wyvern_4": {
-    "dname": "Splinter Blast 1.25s Stun"
+    "dname": "Splinter Blast 1s Stun"
   },
   "special_bonus_unique_winter_wyvern_5": {
-    "dname": "+25 HP/s Cold Embrace Heal"
+    "dname": "+20 HP/s Cold Embrace Heal"
   },
   "special_bonus_unique_winter_wyvern_6": {
     "dname": "+3s Arctic Burn Debuff Duration"
@@ -63472,7 +63471,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "13"
+        "value": "14"
       },
       {
         "key": "leadership_time_buffer",
@@ -63615,25 +63614,25 @@
         "key": "dash_range",
         "header": "DASH RANGE:",
         "value": [
-          "400",
-          "500",
-          "600",
-          "700"
+          "575",
+          "650",
+          "725",
+          "800"
         ]
       },
       {
         "key": "range",
         "header": "SLASH RANGE:",
-        "value": "700"
+        "value": "850"
       },
       {
         "key": "damage",
         "header": "DAMAGE PER STRIKE:",
         "value": [
-          "30",
-          "60",
-          "90",
-          "120"
+          "35",
+          "65",
+          "95",
+          "125"
         ]
       },
       {
@@ -63696,10 +63695,10 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
-          "400",
-          "500",
-          "600",
-          "700"
+          "575",
+          "650",
+          "725",
+          "800"
         ],
         "generated": true
       },
@@ -63845,10 +63844,10 @@
     "lore": "Only in the midst of his enemies does the Pangolier truly thrive.",
     "mc": "75",
     "cd": [
-      "16",
-      "13",
-      "10",
-      "7"
+      "15",
+      "12",
+      "9",
+      "6"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/pangolier_shield_crash.png"
   },
@@ -63911,11 +63910,11 @@
     "dmg_type": "Physical",
     "bkbpierce": "No",
     "dispellable": "No",
-    "desc": "Pangolier curls into a debuff immune ball with 60% additional magic resistance and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage proportional to his attack damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction.\n\nDISPEL TYPE: Basic Dispel",
+    "desc": "Pangolier curls into a debuff immune ball with 80% additional magic resistance and rolls out. When rolling, he moves at an increased speed and can move through trees, but has a decreased ability to turn. Striking enemies knocks them back, inflicting damage proportional to his attack damage and stunning them when they land. \n\nColliding with walls or cliffs will cause a temporary pause while Pangolier reverses in direction.\n\nDISPEL TYPE: Basic Dispel",
     "dmg": [
-      "75",
-      "150",
-      "225"
+      "100",
+      "200",
+      "300"
     ],
     "attrib": [
       {
@@ -63992,9 +63991,9 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "9",
           "10",
-          "11"
+          "11",
+          "12"
         ]
       },
       {
@@ -64006,7 +64005,7 @@
       {
         "key": "magic_resistance",
         "header": "MAGIC RESISTANCE:",
-        "value": "60",
+        "value": "80",
         "generated": true
       },
       {
@@ -64074,7 +64073,7 @@
     "dmg_type": "Magical",
     "bkbpierce": "No",
     "dispellable": "No",
-    "desc": "Pangolier curls into an immobile protective ball, gaining debuff immunity, 60% magic resistance, and allowing him to turn. Can be cast during Rolling Thunder to temporarily hit the brakes. Can cast Rolling Thunder and Shield Crash during Roll Up. If enemies attack Pangolier during this, he will roll away from the attacker, applying Rolling Thunder damage/stun if there are enemies in the way.",
+    "desc": "Pangolier curls into an immobile protective ball, gaining debuff immunity, 80% magic resistance, and allowing him to turn. Can be cast during Rolling Thunder to temporarily hit the brakes. Can cast Rolling Thunder and Shield Crash during Roll Up. If enemies attack Pangolier during this, he will roll away from the attacker, applying Rolling Thunder damage/stun if there are enemies in the way.",
     "attrib": [
       {
         "key": "cast_time_tooltip",
@@ -64159,7 +64158,7 @@
       {
         "key": "magic_resistance",
         "header": "MAGIC RESISTANCE:",
-        "value": "60",
+        "value": "80",
         "generated": true
       },
       {
@@ -65669,6 +65668,17 @@
         "generated": true
       },
       {
+        "key": "block_targeting",
+        "header": "BLOCK TARGETING:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "reduced_vision_percent",
+        "header": "REDUCED VISION:",
+        "value": "0%"
+      },
+      {
         "key": "arena_kill_buff_duration",
         "header": "ARENA KILL BUFF DURATION:",
         "value": "0",
@@ -65811,7 +65821,7 @@
       {
         "key": "duration",
         "header": "REMNANT LIFETIME:",
-        "value": "20"
+        "value": "17"
       },
       {
         "key": "think_interval",
@@ -68320,8 +68330,8 @@
       "150"
     ],
     "cd": [
-      "90",
-      "75",
+      "80",
+      "70",
       "60"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/marci_unleash.png"
@@ -68334,7 +68344,7 @@
     "dispellable": "Strong Dispels Only",
     "target_team": "Friendly",
     "target_type": "Hero",
-    "desc": "Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies in a 275 radius where she lands.\n\n The ally receives 15% bonus movement speed for 4s.",
+    "desc": "Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies in a 300 radius where she lands.\n\n The ally receives 15% bonus movement speed for 4s.",
     "attrib": [
       {
         "key": "move_speed",
@@ -68372,7 +68382,7 @@
       {
         "key": "landing_radius",
         "header": "LANDING RADIUS:",
-        "value": "275",
+        "value": "300",
         "generated": true
       },
       {
@@ -68705,7 +68715,7 @@
     "dname": "+1.5s Dispose Slow Duration"
   },
   "special_bonus_unique_marci_rebound_radius": {
-    "dname": "+75 Rebound Landing Radius"
+    "dname": "+50 Rebound Landing Radius"
   },
   "primal_beast_onslaught": {
     "dname": "Onslaught",
@@ -68791,10 +68801,10 @@
         "key": "stun_duration",
         "header": "STUN DURATION:",
         "value": [
-          "0.8",
+          "0.7",
           "1",
-          "1.2",
-          "1.4"
+          "1.3",
+          "1.6"
         ]
       },
       {
@@ -69242,7 +69252,7 @@
     "img": "/apps/dota2/images/dota_react/abilities/primal_beast_innate_status_resistance_per_time.png"
   },
   "special_bonus_unique_primal_beast_roar_dispells": {
-    "dname": "Beast dispels himself when activating Uproar"
+    "dname": "Basic Self-Dispel on Uproar Cast"
   },
   "special_bonus_unique_primal_beast_onslaught_damage": {
     "dname": "+80 Onslaught Damage"
@@ -69254,7 +69264,7 @@
     "dname": "+67% Pulverize Duration"
   },
   "special_bonus_unique_primal_beast_uproar_armor": {
-    "dname": "+7 Uproar Armor Per Stack"
+    "dname": "+6 Uproar Armor Per Stack"
   },
   "special_bonus_unique_primal_beast_trample_magic_resist": {
     "dname": "+25% Magic Resistance During Trample"
@@ -70982,7 +70992,7 @@
     "dname": "+1s Impalement Arts Bleed and Slow Duration"
   },
   "special_bonus_unique_ringmaster_dagger_impact_damage": {
-    "dname": "+75 Impalement Arts Impact Damage"
+    "dname": "+85 Impalement Arts Impact Damage"
   },
   "kez_switch_weapons": {
     "dname": "Switch Discipline",
@@ -71001,12 +71011,12 @@
       {
         "key": "katana_base_attack_time",
         "header": "KATANA BASE ATTACK TIME:",
-        "value": "1.8"
+        "value": "1.9"
       },
       {
         "key": "katana_agility_bonus_base_damage",
         "header": "KATANA BONUS AGILITY BASE DAMAGE:",
-        "value": "12%"
+        "value": "16%"
       },
       {
         "key": "sai_attack_range",
@@ -71427,10 +71437,10 @@
         "key": "base_echo_damage",
         "header": "ECHO ATTACK DAMAGE:",
         "value": [
+          "30%",
           "35%",
           "40%",
-          "45%",
-          "50%"
+          "45%"
         ]
       },
       {
@@ -72222,7 +72232,7 @@
     "dispellable": "Yes",
     "target_team": "Friendly",
     "target_type": "Hero",
-    "desc": "Largo strums a tune to a friendly hero. The hero's items and abilities have reduced mana cost and a percentage of their damage reverberates over the following 5 seconds. When an affected hero spends mana, the remaining buff duration is reduced by 0.5s.",
+    "desc": "Largo strums a tune to a friendly hero. The hero's items and abilities have reduced mana cost and a percentage of their damage reverberates over the following 5 seconds.\n\nWhen an affected hero spends mana, the remaining buff duration is reduced by 0.5s. Duration is not reduced for Largo himself.",
     "attrib": [
       {
         "key": "damage_per_second",
@@ -72291,6 +72301,12 @@
         "generated": true
       },
       {
+        "key": "max_distance",
+        "header": "MAX DISTANCE:",
+        "value": "2000",
+        "generated": true
+      },
+      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "800",
@@ -72343,12 +72359,12 @@
       },
       {
         "key": "pull_distance",
-        "header": "PULL DISTANCE:",
+        "header": "ENEMY PULL DISTANCE:",
         "value": [
-          "210",
-          "240",
-          "270",
-          "300"
+          "235",
+          "265",
+          "295",
+          "325"
         ]
       },
       {
@@ -72373,9 +72389,9 @@
         "header": "BONUS HEALTH REGEN:",
         "value": [
           "4",
-          "6",
-          "8",
-          "10"
+          "7",
+          "10",
+          "13"
         ]
       },
       {
@@ -73893,7 +73909,7 @@
     "dname": "+{s:bonus_health_gain} Death Pact Bonus Health"
   },
   "special_bonus_unique_clinkz_9": {
-    "dname": "+{s:bonus_AbilityCharges} Death Pact Charge"
+    "dname": "-{s:bonus_AbilityChargeRestoreTime}s Death Pact Charge Restore Time"
   },
   "special_bonus_unique_clinkz_10": {
     "dname": "-{s:bonus_AbilityCooldown}s Skeleton Walk Cooldown"
@@ -74374,6 +74390,9 @@
   },
   "special_bonus_unique_tidehunter_smash_on_blubber": {
     "dname": "Blubber effect triggers Anchor Smash"
+  },
+  "special_bonus_unique_tidehunter_smash_on_blubber_description": {
+    "dname": "Triggered attack has {s:bonus_smash_on_purge}% damage and is reflected damage."
   },
   "special_bonus_unique_tinker": {
     "dname": "+{s:bonus_laser_damage} Laser Damage"

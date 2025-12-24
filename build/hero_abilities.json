@@ -3105,7 +3105,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_hp_300",
+        "name": "special_bonus_hp_250",
         "level": 2
       },
       {
@@ -3235,7 +3235,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_unique_viper_1",
+        "name": "special_bonus_unique_viper_7",
         "level": 1
       },
       {
@@ -3243,7 +3243,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_viper_7",
+        "name": "special_bonus_unique_viper_1",
         "level": 2
       },
       {
@@ -4125,7 +4125,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_lifesteal_15",
+        "name": "special_bonus_lifesteal_12",
         "level": 2
       },
       {
@@ -4955,7 +4955,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_unique_ursa",
+        "name": "special_bonus_unique_ursa_maul_health",
         "level": 2
       },
       {
@@ -4967,7 +4967,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_ursa_maul_health",
+        "name": "special_bonus_unique_ursa",
         "level": 3
       },
       {
@@ -5315,7 +5315,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_attack_speed_20",
+        "name": "special_bonus_attack_speed_25",
         "level": 1
       },
       {
@@ -5618,7 +5618,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_strength_10",
+        "name": "special_bonus_strength_8",
         "level": 1
       },
       {
@@ -6886,7 +6886,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_strength_12",
+        "name": "special_bonus_strength_10",
         "level": 2
       },
       {
@@ -6995,7 +6995,7 @@
         "icon": "vortex_in",
         "color": "Gray",
         "gradient_id": 3,
-        "title": "Reverse Polarity",
+        "title": "Reverse Polarity Facet",
         "description": "Reverse Polarity pulls all nearby enemies in."
       },
       {
@@ -8985,7 +8985,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_primal_beast_roar_dispells",
+        "name": "special_bonus_unique_primal_beast_uproar_armor",
         "level": 2
       },
       {
@@ -8993,7 +8993,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_primal_beast_uproar_armor",
+        "name": "special_bonus_unique_primal_beast_roar_dispells",
         "level": 3
       },
       {
