@@ -42057,6 +42057,108 @@
     "cd": "27",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_forge_spirit.png"
   },
+  "invoker_forge_spirit_ad": {
+    "dname": "Forge Spirit (AD)",
+    "behavior": "No Target",
+    "desc": "Invoker forges a spirit embodying the strength of fire and fortitude of ice. The elemental's scorching attack is capable of melting the armor of enemy heroes.",
+    "attrib": [
+      {
+        "key": "spirit_damage",
+        "header": "DAMAGE:\\n",
+        "value": [
+          "30",
+          "50",
+          "70",
+          "90"
+        ]
+      },
+      {
+        "key": "spirit_mana",
+        "header": "MANA:\\n",
+        "value": [
+          "150",
+          "250",
+          "350",
+          "450"
+        ]
+      },
+      {
+        "key": "spirit_armor",
+        "header": "ARMOR:\\n",
+        "value": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ]
+      },
+      {
+        "key": "spirit_attack_range",
+        "header": "ATTACK RANGE:\\n",
+        "value": [
+          "360",
+          "470",
+          "580",
+          "690"
+        ]
+      },
+      {
+        "key": "spirit_hp",
+        "header": "HEALTH:\\n",
+        "value": [
+          "400",
+          "600",
+          "800",
+          "1000"
+        ]
+      },
+      {
+        "key": "spirit_duration",
+        "header": "DURATION:\\n",
+        "value": [
+          "30",
+          "42",
+          "54",
+          "66"
+        ]
+      },
+      {
+        "key": "armor_per_attack",
+        "header": "ARMOR PER ATTACK:",
+        "value": [
+          "0.9",
+          "1.1",
+          "1.3",
+          "1.5"
+        ],
+        "generated": true
+      },
+      {
+        "key": "extra_spirit_count_quas",
+        "header": "EXTRA SPIRIT COUNT QUAS:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "extra_spirit_count_exort",
+        "header": "EXTRA SPIRIT COUNT EXORT:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "spirit_count_ad",
+        "header": "SPIRIT COUNT:\\n",
+        "value": [
+          "1",
+          "2",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "lore": "Culween's Most Cunning Fabrications.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_forge_spirit_ad.png"
+  },
   "forged_spirit_melting_strike": {
     "dname": "Melting Strike",
     "behavior": "Passive",
@@ -42766,90 +42868,6 @@
     "mc": "175",
     "cd": "25",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_sun_strike_ad.png"
-  },
-  "invoker_forge_spirit_ad": {
-    "dname": "Forge Spirit (AD)",
-    "behavior": "No Target",
-    "bkbpierce": "No",
-    "desc": "Invoker forges a spirit embodying the strength of fire and fortitude of ice. The elemental's scorching attack is capable of melting the armor of enemy heroes.",
-    "attrib": [
-      {
-        "key": "spirit_damage",
-        "header": "DAMAGE:\\n",
-        "value": [
-          "32",
-          "49",
-          "66",
-          "82"
-        ]
-      },
-      {
-        "key": "spirit_mana",
-        "header": "MANA:\\n",
-        "value": [
-          "150",
-          "233",
-          "316",
-          "400"
-        ]
-      },
-      {
-        "key": "spirit_armor",
-        "header": "ARMOR:\\n",
-        "value": [
-          "1",
-          "2",
-          "4",
-          "6"
-        ]
-      },
-      {
-        "key": "spirit_attack_range",
-        "header": "ATTACK RANGE:\\n",
-        "value": [
-          "365",
-          "470",
-          "580",
-          "690"
-        ]
-      },
-      {
-        "key": "spirit_hp",
-        "header": "HEALTH:\\n",
-        "value": [
-          "400",
-          "566",
-          "733",
-          "900"
-        ]
-      },
-      {
-        "key": "spirit_duration",
-        "header": "DURATION:\\n",
-        "value": [
-          "30",
-          "47",
-          "63",
-          "80"
-        ]
-      },
-      {
-        "key": "spirit_count",
-        "header": "SPIRIT COUNT:",
-        "value": "1",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Culween's Most Cunning Fabrications.",
-    "mc": "75",
-    "cd": "30",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_forge_spirit_ad.png"
   },
   "invoker_chaos_meteor_ad": {
     "dname": "Chaos Meteor (AD)",
