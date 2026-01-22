@@ -3278,7 +3278,7 @@
       {
         "key": "bonus_all_stats",
         "display": "+ {value} All Attributes",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "bonus_health_regen",
@@ -3288,7 +3288,7 @@
       {
         "key": "bonus_mana_regen",
         "display": "+ {value} Mana Regeneration",
-        "value": "2.5"
+        "value": "2.25"
       },
       {
         "key": "slow",
@@ -9582,6 +9582,10 @@
       {
         "key": "creep_damage_taken_cooldown",
         "value": "3"
+      },
+      {
+        "key": "bounty_pct",
+        "value": "100"
       }
     ],
     "mc": 50,

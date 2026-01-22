@@ -208,7 +208,7 @@
     ],
     "talents": [
       {
-        "name": "special_bonus_hp_175",
+        "name": "special_bonus_hp_200",
         "level": 1
       },
       {
@@ -228,7 +228,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_agility_20",
+        "name": "special_bonus_agility_15",
         "level": 3
       },
       {
@@ -1964,7 +1964,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_hp_300",
+        "name": "special_bonus_hp_250",
         "level": 2
       },
       {
@@ -3914,7 +3914,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_attack_range_60",
+        "name": "special_bonus_attack_range_50",
         "level": 2
       },
       {
@@ -4745,7 +4745,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_hp_350",
+        "name": "special_bonus_hp_325",
         "level": 3
       },
       {

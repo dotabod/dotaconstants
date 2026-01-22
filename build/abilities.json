@@ -9847,12 +9847,12 @@
       {
         "key": "damage_pct",
         "header": "MAX HEALTH DAMAGE PER SECOND:",
-        "value": "1.4%"
+        "value": "1.2%"
       },
       {
         "key": "damage_pct_enemies",
         "header": "DAMAGE PCT ENEMIES:",
-        "value": "1.4",
+        "value": "1.2",
         "generated": true
       },
       {
@@ -11259,7 +11259,7 @@
     "dname": "+1 Multishot Arrow Per Wave"
   },
   "special_bonus_unique_drow_ranger_3": {
-    "dname": "+10% Marksmanship Chance"
+    "dname": "+8% Marksmanship Chance"
   },
   "special_bonus_unique_drow_ranger_6": {
     "dname": "-6s Multishot Cooldown"
@@ -11361,10 +11361,10 @@
     ],
     "lore": "The Nishian totem splits the world to its core with tectonic force.",
     "mc": [
+      "115",
       "120",
       "125",
-      "130",
-      "135"
+      "130"
     ],
     "cd": [
       "18",
@@ -13688,7 +13688,7 @@
       }
     ],
     "lore": "Dread Magus Vorn's death imbued the Phantom Lancer with the ability to bend and fracture all spectrums of light.",
-    "mc": "50",
+    "mc": "70",
     "cd": [
       "22",
       "18",
@@ -13836,7 +13836,7 @@
       {
         "key": "outgoing_floor",
         "header": "MIN DAMAGE:",
-        "value": "18%"
+        "value": "17%"
       },
       {
         "key": "duration",
@@ -14265,9 +14265,9 @@
     ],
     "lore": "The Butcher gives new meaning to the words 'meat shield.'",
     "mc": [
-      "50",
-      "60",
+      "65",
       "70",
+      "75",
       "80"
     ],
     "cd": [
@@ -28512,10 +28512,10 @@
         "key": "damage",
         "header": "DAMAGE PER SECOND:",
         "value": [
-          "8",
-          "16",
-          "24",
-          "32"
+          "10",
+          "15",
+          "20",
+          "25"
         ]
       },
       {
@@ -31279,9 +31279,9 @@
         "header": "TREANT DAMAGE:",
         "value": [
           "16",
-          "24",
-          "32",
-          "40"
+          "25",
+          "34",
+          "43"
         ]
       },
       {
@@ -33012,7 +33012,7 @@
       "Instant Cast"
     ],
     "dispellable": "No",
-    "desc": "Clinkz moves invisibly through units until the moment he attacks or uses items. Leaving Skeleton Walk creates Skeleton Archers.\n\nSkeleton Archers are immobile and die within multiple attacks from a hero or tower. Skeleton Archers deal a percentage of Clinkz' damage, and deal 25% less damage to buildings. Attack range is equal to Clinkz' attack range.",
+    "desc": "Clinkz moves invisibly through units until the moment he attacks or uses items. Leaving Skeleton Walk creates Skeleton Archers.\n\nSkeleton Archers are immobile and die within multiple attacks from a hero or tower. Skeleton Archers deal a percentage of Clinkz' damage, and deal 75% less damage to buildings. Attack range is equal to Clinkz' attack range.",
     "attrib": [
       {
         "key": "duration",
@@ -33082,7 +33082,7 @@
       {
         "key": "skeleton_building_damage_reduction",
         "header": "SKELETON BUILDING DAMAGE REDUCTION:",
-        "value": "25",
+        "value": "75",
         "generated": true
       },
       {
@@ -33276,7 +33276,7 @@
       {
         "key": "skeleton_building_damage_reduction",
         "header": "SKELETON BUILDING DAMAGE REDUCTION:",
-        "value": "25",
+        "value": "75",
         "generated": true
       },
       {
@@ -35444,10 +35444,10 @@
         "key": "max_charges",
         "header": "MAX CHARGES:",
         "value": [
-          "4",
-          "6",
-          "8",
-          "10"
+          "3",
+          "5",
+          "7",
+          "9"
         ],
         "generated": true
       }
@@ -36605,10 +36605,10 @@
         "key": "path_duration",
         "header": "PATH DURATION:",
         "value": [
-          "3",
-          "3.5",
-          "4",
-          "4.5"
+          "2.6",
+          "3.1",
+          "3.6",
+          "4.1"
         ]
       },
       {
@@ -38655,7 +38655,7 @@
       }
     ],
     "lore": "Lucifer shares the fire branding bestowed upon him at the time of his exile.",
-    "mc": "40",
+    "mc": "35",
     "cd": [
       "13",
       "10",
@@ -39463,10 +39463,10 @@
         "key": "damage_per_stack",
         "header": "DAMAGE PER ATTACK:",
         "value": [
-          "13",
-          "21",
-          "29",
-          "37"
+          "12",
+          "20",
+          "28",
+          "36"
         ]
       },
       {
@@ -44632,10 +44632,10 @@
         "key": "bonus_armor",
         "header": "ARMOR:",
         "value": [
-          "2",
-          "4",
-          "6",
-          "8"
+          "3",
+          "5",
+          "7",
+          "9"
         ]
       },
       {
@@ -46238,9 +46238,9 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "0.8",
-          "1.2",
-          "1.6",
+          "1.1",
+          "1.4",
+          "1.7",
           "2"
         ]
       },
@@ -46723,7 +46723,7 @@
     "dname": "-5s Savage Roar Cooldown"
   },
   "special_bonus_unique_lone_druid_8": {
-    "dname": "True Form provides 60% Slow Resistance"
+    "dname": "True Form provides 70% Slow Resistance"
   },
   "special_bonus_unique_lone_druid_11": {
     "dname": "+{s:bonus_bear_movespeed} Spirit Bear Movement Speed"
@@ -49200,10 +49200,10 @@
     "lore": "Even the Grandest Magus may use his powers for enjoyment.",
     "mc": "110",
     "cd": [
-      "23",
-      "20",
-      "17",
-      "14"
+      "22",
+      "19",
+      "16",
+      "13"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/rubick_telekinesis.png"
   },
@@ -52915,10 +52915,10 @@
         "key": "health_rest_steal",
         "header": "STACK RESTORATION STEAL:",
         "value": [
-          "3%",
+          "2%",
           "4%",
-          "5%",
-          "6%"
+          "6%",
+          "8%"
         ]
       },
       {
@@ -52926,9 +52926,9 @@
         "header": "STACK REGEN STEAL:",
         "value": [
           "2",
-          "3",
           "4",
-          "5"
+          "6",
+          "8"
         ]
       },
       {
@@ -52936,9 +52936,9 @@
         "header": "STACK SPEED STEAL:",
         "value": [
           "2",
-          "3",
           "4",
-          "5"
+          "6",
+          "8"
         ]
       },
       {
@@ -58347,10 +58347,10 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "1.5",
-          "2",
-          "2.5",
-          "3"
+          "1.25",
+          "1.75",
+          "2.25",
+          "2.75"
         ]
       },
       {
@@ -58361,12 +58361,7 @@
       {
         "key": "damage_per_second",
         "header": "DAMAGE PER SECOND:",
-        "value": [
-          "50",
-          "70",
-          "90",
-          "110"
-        ]
+        "value": "100"
       },
       {
         "key": "tick_interval",
@@ -59542,10 +59537,10 @@
     ],
     "lore": "There's only one thing more dangerous than facing Terrorblade.  Facing MORE Terrorblades!",
     "mc": [
-      "55",
-      "65",
-      "75",
-      "85"
+      "50",
+      "60",
+      "70",
+      "80"
     ],
     "cd": "16",
     "img": "/apps/dota2/images/dota_react/abilities/terrorblade_conjure_image.png"
@@ -59702,7 +59697,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Reflection illusions gain 50% of the bonuses. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal",
+    "desc": "Costs part of Terrorblade's current HP to cast, providing Terrorblade and nearby illusions bonus movement, HP Regen and attack speed. Does not affect Reflection illusions. Can't be cast while in Metamorphosis and Metamorphosis will remove Demon Zeal",
     "attrib": [
       {
         "key": "berserk_bonus_attack_speed",
@@ -59738,7 +59733,7 @@
       {
         "key": "reflection_pct",
         "header": "REFLECTION PCT:",
-        "value": "50",
+        "value": "0",
         "generated": true
       },
       {
@@ -59802,8 +59797,8 @@
       "50"
     ],
     "cd": [
-      "120",
-      "80",
+      "110",
+      "75",
       "40"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/terrorblade_sunder.png"
@@ -63565,9 +63560,9 @@
         "header": "BONUS DAMAGE:",
         "value": [
           "30",
-          "75",
-          "120",
-          "165"
+          "80",
+          "130",
+          "180"
         ]
       },
       {
@@ -63735,10 +63730,10 @@
       "90"
     ],
     "cd": [
-      "20",
-      "17",
-      "14",
-      "11"
+      "19",
+      "16",
+      "13",
+      "10"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/pangolier_swashbuckle.png"
   },
@@ -64066,7 +64061,7 @@
       {
         "key": "chance_reduce",
         "header": "CHANCE REDUCTION:",
-        "value": "-40%"
+        "value": "-50%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/pangolier_fortune_favors_the_bold.png"
@@ -65165,9 +65160,9 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
-          "500",
-          "600",
+          "650",
           "700",
+          "750",
           "800"
         ],
         "generated": true
@@ -70603,7 +70598,7 @@
       "No Target",
       "Hidden"
     ],
-    "desc": "Use: Whoopsie Propels your hero forward 400 units. Leaves a 200 radius stink cloud behind for 3 seconds that slows enemies by -30%.",
+    "desc": "Use: Whoopsie Propels your hero forward 400 units. Leaves a 250 radius stink cloud behind for 3 seconds that slows enemies by -30%.",
     "attrib": [
       {
         "key": "leap_distance",
@@ -70644,7 +70639,7 @@
       {
         "key": "fart_cloud_radius",
         "header": "FART CLOUD RADIUS:",
-        "value": "200",
+        "value": "250",
         "generated": true
       },
       {
@@ -71868,7 +71863,7 @@
       {
         "key": "radius",
         "header": "RADIUS:",
-        "value": "750"
+        "value": "800"
       },
       {
         "key": "rhythm_interval",
@@ -71979,7 +71974,7 @@
       {
         "key": "radius",
         "header": "RADIUS:",
-        "value": "750",
+        "value": "800",
         "generated": true
       },
       {
@@ -72049,7 +72044,7 @@
       {
         "key": "radius",
         "header": "RADIUS:",
-        "value": "750",
+        "value": "800",
         "generated": true
       },
       {
@@ -72124,7 +72119,7 @@
       {
         "key": "radius",
         "header": "RADIUS:",
-        "value": "750",
+        "value": "800",
         "generated": true
       },
       {
@@ -72166,10 +72161,10 @@
         "key": "damage_per_stomp",
         "header": "DAMAGE PER STOMP:",
         "value": [
-          "35",
-          "45",
-          "55",
-          "65"
+          "36",
+          "48",
+          "60",
+          "72"
         ]
       },
       {
