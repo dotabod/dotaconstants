@@ -60266,7 +60266,8 @@
       },
       "misc": [
         "Roots and leashes will now interrupt Return's channeling",
-        "Previously they only prevented casting of Return, but had no effect if applied during the channelling"
+        "Previously they only prevented casting of Return, but had no effect if applied during the channelling",
+        "Duration increased from 0.8/1.2/1.6/2s to 1.1/1.4/1.7/2s"
       ],
       "monkey_king": {
         "monkey_king_jingu_mastery": [
