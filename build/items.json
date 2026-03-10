@@ -5232,7 +5232,7 @@
       {
         "type": "active",
         "title": "Cyclone",
-        "description": "Sweeps a target unit up into a cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself, enemy units or allied units.\n\nEnemy units take 50 magical damage upon landing.\nDispel Type: Basic Dispel"
+        "description": "Sweeps a target unit up into a cyclone, making them invulnerable for 2.5 seconds. Cyclone can be cast on yourself, enemy units or allied units. When cast on yourself, you can move the tornado at a speed of 300.\n\nEnemy units take 50 magical damage upon landing.\nDispel Type: Basic Dispel"
       }
     ],
     "hint": [],
