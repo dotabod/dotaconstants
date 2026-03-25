@@ -591,7 +591,7 @@
     "hero_name": "npc_dota_hero_rattletrap",
     "hero_id": 51,
     "has_scepter": true,
-    "scepter_desc": "Supercharges Clockwerks abilities:\n\nBattery Assault has an increased radius and affects all enemies in its range; \n\nPower Cogs radius in increased, and Clockwerk's armor while near Power Cogs is increased; \n\n Rocket Flares have increased damage, vision and slow duration, and fire additional rockets to either side of the target; \n\nHookshot stun radius and duration is increased; \n\nJetpack moves faster. \n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+    "scepter_desc": "Supercharges Clockwerks abilities:\n\n<b>Battery Assault</b>: Increased radius and affects all enemies in its range.\n<b>Power Cogs</b>: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\n<b>Rocket Flares</b>: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\n<b>Hookshot</b>: Stun radius and duration increased.\n<b>Jetpack</b> Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
     "scepter_skill_name": "Overclocking",
     "scepter_new_skill": true,
     "has_shard": true,

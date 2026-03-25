@@ -31369,7 +31369,7 @@
     ],
     "bkbpierce": "Yes",
     "dispellable": "No",
-    "desc": "Supercharges Clockwerks abilities:\n\nBattery Assault has an increased radius and affects all enemies in its range; \n\nPower Cogs radius in increased, and Clockwerk's armor while near Power Cogs is increased; \n\n Rocket Flares have increased damage, vision and slow duration, and fire additional rockets to either side of the target; \n\nHookshot stun radius and duration is increased; \n\nJetpack moves faster. \n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+    "desc": "Supercharges Clockwerks abilities:\n\nBattery Assault: Increased radius and affects all enemies in its range.\nPower Cogs: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\nRocket Flares: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\nHookshot: Stun radius and duration increased.\nJetpack Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
     "attrib": [
       {
         "key": "buff_duration",
@@ -42350,6 +42350,12 @@
       },
       {
         "key": "bonus_gold",
+        "header": "BONUS GOLD:",
+        "value": "2",
+        "generated": true
+      },
+      {
+        "key": "bonus_gold_tooltip",
         "header": "BASE BONUS GOLD:",
         "value": "2"
       },
@@ -42371,6 +42377,12 @@
       },
       {
         "key": "bonus_gold_cap",
+        "header": "BONUS GOLD CAP:",
+        "value": "18",
+        "generated": true
+      },
+      {
+        "key": "bonus_gold_cap_tooltip",
         "header": "MAX BONUS GOLD PER KILL:",
         "value": "18"
       },
@@ -64299,6 +64311,12 @@
         "key": "tooltip_seconds",
         "header": "TOOLTIP SECONDS:",
         "value": "420",
+        "generated": true
+      },
+      {
+        "key": "tooltip_int_pct",
+        "header": "TOOLTIP INT PCT:",
+        "value": "25",
         "generated": true
       }
     ],
