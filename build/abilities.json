@@ -10255,10 +10255,10 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "105",
-          "175",
-          "245",
-          "315"
+          "100",
+          "155",
+          "210",
+          "265"
         ]
       },
       {
@@ -38040,7 +38040,8 @@
     "behavior": [
       "Unit Target",
       "Autocast",
-      "Attack Modifier"
+      "Attack Modifier",
+      "AOE"
     ],
     "dmg_type": "Magical",
     "bkbpierce": "No",
