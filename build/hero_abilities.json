@@ -2066,7 +2066,7 @@
       "tidehunter_dead_in_the_water",
       "generic_hidden",
       "tidehunter_ravage",
-      "tidehunter_krill_eater"
+      "tidehunter_leviathans_catch"
     ],
     "talents": [
       {
@@ -2121,10 +2121,7 @@
         "color": "Green",
         "gradient_id": 0,
         "title": "Krill Eater",
-        "description": "Tidehunter grows larger and gains extra bonuses per level.",
-        "abilities": [
-          "tidehunter_krill_eater"
-        ]
+        "description": "Tidehunter grows larger and gains extra bonuses per level."
       }
     ]
   },
@@ -8431,10 +8428,8 @@
       "monkey_king_mischief",
       "monkey_king_wukongs_command",
       "monkey_king_primal_spring_early",
-      [
-        "monkey_king_untransform",
-        "monkey_king_transfiguration"
-      ]
+      "monkey_king_untransform",
+      "monkey_king_transfiguration"
     ],
     "talents": [
       {

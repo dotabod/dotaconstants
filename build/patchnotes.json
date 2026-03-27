@@ -63270,7 +63270,7 @@
           "Strength gain increased from 3.6 to 3.7",
           "Removed Blubber innate ability"
         ],
-        "tidehunter_krill_eater": [
+        "tidehunter_leviathans_catch": [
           "New Innate Ability. Passive",
           "Whenever an enemy hero dies while affected by any Tidehunter's debuff or is killed by him, they drop a fish. Tidehunter can eat the fish to grow in size and permanently gain 3 Max Health, 2 Attack Range and 1 Bonus Damage Block. Tidehunter automatically eats a fish on every level up",
           "Bonus Damage Block is only applied if there is a source of damage block being applied to an incoming physical attack",

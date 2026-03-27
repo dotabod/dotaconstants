@@ -10126,7 +10126,10 @@
   "bane_ichor_of_nyctasha": {
     "dname": "Ichor of Nyctasha",
     "is_innate": true,
-    "behavior": "Passive",
+    "behavior": [
+      "Passive",
+      "Hidden"
+    ],
     "dmg_type": "Pure",
     "desc": "Every time Bane kills an enemy hero or they die under the effect of Bane's debuff, they receive a Terror for the rest of the game that decreases their status resistance to Bane's subsequent debuffs.",
     "attrib": [
@@ -21670,10 +21673,13 @@
     "cd": "35",
     "img": "/apps/dota2/images/dota_react/abilities/tidehunter_dead_in_the_water.png"
   },
-  "tidehunter_krill_eater": {
+  "tidehunter_leviathans_catch": {
     "dname": "Leviathan's Catch",
     "is_innate": true,
-    "behavior": "Passive",
+    "behavior": [
+      "Passive",
+      "Hidden"
+    ],
     "dispellable": "No",
     "attrib": [
       {
@@ -21749,7 +21755,7 @@
         "generated": true
       }
     ],
-    "img": "/apps/dota2/images/dota_react/abilities/tidehunter_krill_eater.png"
+    "img": "/apps/dota2/images/dota_react/abilities/tidehunter_leviathans_catch.png"
   },
   "tidehunter_blubber": {
     "dname": "Blubber",
@@ -30483,6 +30489,7 @@
     "dname": "Elder Dragon Form",
     "behavior": "No Target",
     "dmg_type": "Magical",
+    "bkbpierce": "Yes",
     "dispellable": "No",
     "desc": "Dragon Knight assumes the form of the Elder Dragon, increasing the range of his abilities, gaining bonus movement speed, and a ranged attack with various properties. The Dragon evolves per level. The bonuses are cumulative. \n\nLevel 1 Green: Grants a corrosive damage over time that can also damage buildings.\n\nLevel 2 Red: Grants splash damage to the dragon's attacks.\n\nLevel 3 Blue: Grants a debuff immunity piercing movement and attack frost slow on attack.",
     "attrib": [
@@ -39195,6 +39202,12 @@
         "key": "unsummon_time",
         "header": "UNSUMMON TIME:",
         "value": "3",
+        "generated": true
+      },
+      {
+        "key": "unsummon_cooldown_reduction",
+        "header": "UNSUMMON COOLDOWN REDUCTION:",
+        "value": "12",
         "generated": true
       },
       {

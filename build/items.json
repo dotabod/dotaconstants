@@ -19793,12 +19793,7 @@
       "Instant Cast"
     ],
     "notes": "",
-    "attrib": [
-      {
-        "key": "fish_duration",
-        "value": "30"
-      }
-    ],
+    "attrib": [],
     "mc": false,
     "hc": false,
     "cd": false,
