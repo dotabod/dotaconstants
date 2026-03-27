@@ -4977,7 +4977,7 @@
       "Hero",
       "Basic"
     ],
-    "notes": "Self-cast will use Hurricane Pike on yourself.\nHurricane Pike doesn't interrupt the target's actions.\nWill not work on a unit inside Chronosphere, Duel, or Black Hole.\nAttack Range bonuses from Dragon Lance and its upgrades do not stack.",
+    "notes": "Self-cast will use Hurricane Pike on yourself.\nHurricane Pike doesn't interrupt the target's actions.\nWill not work on a unit inside Chronosphere, Duel, or Black Hole.\nAttack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack.",
     "attrib": [
       {
         "key": "bonus_intellect",
@@ -7598,7 +7598,7 @@
       {
         "type": "passive",
         "title": "Hallowed",
-        "description": "Gain a stack every 3s, up to a maximum of 3 stacks. Upon gaining a stack, your movement speed is increased by 20% for 7s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all stacks to gain an all damage barrier for 7s that absorbs 120 damage per stack (360 max)."
+        "description": "Gain a stack every 3s, up to a maximum of 3 stacks. Upon gaining a stack, your movement speed is increased by 15% for 5s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all stacks to gain an all damage barrier for 5s that absorbs 120 damage per stack (360 max)."
       }
     ],
     "hint": [],
@@ -7613,7 +7613,7 @@
       {
         "key": "bonus_spell_resist",
         "display": "+ {value}% Magic Resistance",
-        "value": "15"
+        "value": "12"
       },
       {
         "key": "bonus_all_stats",
@@ -7635,7 +7635,7 @@
       },
       {
         "key": "movement_speed_pct_on_stack_gain",
-        "value": "20"
+        "value": "15"
       },
       {
         "key": "stack_threshold_damage",
@@ -7643,7 +7643,7 @@
       },
       {
         "key": "duration",
-        "value": "7"
+        "value": "5"
       },
       {
         "key": "barrier_per_stack",
@@ -8431,7 +8431,7 @@
     "dname": "Dragon Lance",
     "qual": "artifact",
     "cost": 1900,
-    "notes": "Attack Range bonuses from Dragon Lance and its upgrades do not stack.",
+    "notes": "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack.",
     "attrib": [
       {
         "key": "bonus_agility",
@@ -17399,7 +17399,7 @@
       {
         "key": "bat_reduce",
         "display": "- {value}% Base Attack Time",
-        "value": "8 / 12 / 16"
+        "value": "6 / 9 / 12"
       },
       {
         "key": "intelligence_pct",
@@ -18858,7 +18858,7 @@
     "dname": "Hydra's Breath",
     "qual": "rare",
     "cost": 5900,
-    "notes": "Attack Range bonuses from Dragon Lance and its upgrades do not stack.",
+    "notes": "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack.",
     "attrib": [
       {
         "key": "strength",

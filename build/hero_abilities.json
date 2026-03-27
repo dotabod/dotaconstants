@@ -741,13 +741,13 @@
     "abilities": [
       "morphling_waveform",
       "morphling_adaptive_strike_agi",
-      "morphling_ebb_and_flow",
+      "generic_hidden",
       "morphling_morph_agi",
       "morphling_morph_str",
       "morphling_replicate",
       "morphling_morph_replicate",
       "generic_hidden",
-      "generic_hidden"
+      "morphling_ebb_and_flow"
     ],
     "talents": [
       {
@@ -2950,7 +2950,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_hp_350",
+        "name": "special_bonus_hp_300",
         "level": 2
       },
       {
@@ -4871,7 +4871,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_hp_325",
+        "name": "special_bonus_hp_300",
         "level": 3
       },
       {
@@ -6356,6 +6356,10 @@
       {
         "name": "rubick_hidden4",
         "level": 5
+      },
+      {
+        "name": "rubick_hidden5",
+        "level": 6
       }
     ],
     "facets": [
@@ -6847,7 +6851,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_slark_5",
+        "name": "special_bonus_unique_slark_4",
         "level": 3
       },
       {
@@ -6859,7 +6863,7 @@
         "level": 4
       },
       {
-        "name": "special_bonus_unique_slark_4",
+        "name": "special_bonus_unique_slark_5",
         "level": 4
       }
     ],
@@ -7114,7 +7118,7 @@
         "color": "Gray",
         "gradient_id": 3,
         "title": "Horsepower",
-        "description": "Centaur Warrunner gains 30% of his strength as bonus movement speed.\n\n This Movement speed bonus does not stack with bonuses from boots.",
+        "description": "Centaur Warrunner gains 40% of his strength as bonus movement speed.\n\n This Movement speed bonus does not stack with bonuses from boots.",
         "abilities": [
           "centaur_horsepower"
         ]

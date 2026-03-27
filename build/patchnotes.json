@@ -63721,5 +63721,308 @@
         ]
       }
     }
+  },
+  "7_41a": {
+    "general": [],
+    "items": {
+      "consecrated_wraps": [
+        "Magic Resistance bonus decreased from +15% to +12%",
+        "Hallowed movement speed on stack gain decreased from 20% to 15%",
+        "Hallowed barrier and movement speed duration decreased from 7s to 5s"
+      ],
+      "enhancement_crude": [
+        "Base Attack Time Reduction bonus worsened from 8/12/16% to 6/9/12%"
+      ]
+    },
+    "heroes": {
+      "misc": [
+        "Enchantment Changes"
+      ],
+      "alchemist": {
+        "general": [
+          "Base movement speed decreased from 295 to 290"
+        ],
+        "alchemist_goblins_greed": [
+          "Max Bonus Gold Per Kill decreased from 18 to 16",
+          "Bonus Damage per Scepter decreased from +25 to +15"
+        ]
+      },
+      "ancient_apparition": {
+        "ancient_apparition_bone_chill": [
+          "Base Strength Reduction increased from 0.1 to 0.2"
+        ]
+      },
+      "antimage": {
+        "general": [
+          "Base Movement Speed increased from 310 to 315",
+          "Base Health Regen increased by 0.5"
+        ],
+        "antimage_mana_break": [
+          "Mana Burned As Damage increased from 50% to 60%"
+        ]
+      },
+      "bloodseeker": {
+        "bloodseeker_bloodrage": [
+          "Attack Speed decreased from 60/90/120/150 to 55/80/105/130",
+          "Aghanim's Shard target's max health as damage decreased from 2% to 1.5%"
+        ]
+      },
+      "centaur": {
+        "centaur_horsepower": [
+          "Strength as Bonus Movement Speed increased from 30% to 40%"
+        ]
+      },
+      "chaos_knight": {
+        "general": [
+          "Base Damage increased by 3",
+          "Damage on level 1 increased from 53–73 to 56–76"
+        ]
+      },
+      "chen": {
+        "chen_penitence": [
+          "Damage increased from 50/75/100/125 to 50/100/150/200"
+        ],
+        "talents": [
+          "Level 15 Talent Penitence Slow increased from +14% to +15%"
+        ]
+      },
+      "rattletrap": {
+        "rattletrap_power_cogs": [
+          "Mana Burn increased from 35/75/115/155 to 40/80/120/160"
+        ],
+        "talents": [
+          "Level 15 Talent Battery Assault Damage increased from +24 to +25",
+          "Level 20 Talent Power Cogs Mana Burn increased from +70 to +80"
+        ]
+      },
+      "death_prophet": {
+        "death_prophet_spirit_siphon": [
+          "Mana Cost decreased from 80 to 60"
+        ]
+      },
+      "doom_bringer": {
+        "general": [
+          "Base Armor decreased by 1"
+        ],
+        "doom_bringer_lvl_pain": [
+          "Curse Damage decreased from 15% to 10%"
+        ]
+      },
+      "invoker": {
+        "general": [
+          "Base Intelligence increased from 20 to 22",
+          "Damage on level 1 increased from 39–45 to 41–47"
+        ],
+        "talents": [
+          "Level 10 Talent Tornado Cooldown Reduction increased from 4s to 5s"
+        ]
+      },
+      "wisp": {
+        "wisp_equilibrium": [
+          "Max Damage Amp and Max Heal Amplification decreased from 5 + 0.5% per level to 4 + 0.4% per level"
+        ],
+        "talents": [
+          "Level 25 Talent Attack Tethered Ally's Target Damage decreased from 75% to 50%"
+        ]
+      },
+      "juggernaut": {
+        "juggernaut_blade_fury": [
+          "Cooldown decreased from 36/30/24/18s to 30/26/22/18s"
+        ],
+        "juggernaut_blade_dance": [
+          "Critical Damage increased from 130/150/170/190% to 140/160/180/200%"
+        ]
+      },
+      "kez": {
+        "kez_raptor_dance": [
+          "Base Damage increased from 30/60/90 to 40/70/100"
+        ],
+        "kez_ravens_veil": [
+          "Buff Duration increased from 7/8/9s to 8/10/12s"
+        ]
+      },
+      "legion_commander": {
+        "legion_commander_outfight_them": [
+          "No longer grants a passive armor bonus before casting abilities"
+        ],
+        "talents": [
+          "Level 20 Talent Duel Duration decreased from +1s to +0.75s",
+          "Level 25 Talent Moment of Courage Lifesteal increased from +75% to +100%"
+        ]
+      },
+      "leshrac": {
+        "general": [
+          "Strength gain decreased from 2.8 to 2.5"
+        ],
+        "leshrac_diabolic_edict": [
+          "Damage per explosion decreased from 10/18/26/34 to 9/16/23/30"
+        ]
+      },
+      "life_stealer": {
+        "general": [
+          "Base Damage decreased by 3",
+          "Damage on level 1 decreased from 49–55 to 46–52"
+        ],
+        "life_stealer_ghoul_frenzy": [
+          "Bonus Attack Speed decreased from 5 per level to 4 per level"
+        ],
+        "life_stealer_rage": [
+          "Movespeed Bonus decreased from 9/12/15/18% to 6/9/12/15%"
+        ],
+        "life_stealer_feast": [
+          "Max HP per Hero Kill decreased from 10/15/20/25 to 10"
+        ]
+      },
+      "meepo": {
+        "meepo_divided_we_stand": [
+          "Evasion no longer diminishes when shared between Meepos and has full strength on each",
+          "Clones can no longer copy Bottle"
+        ]
+      },
+      "mirana": {
+        "mirana_celestial_quiver": [
+          "Bonus Damage changed from 3 per level to 5 + 3 per level"
+        ],
+        "talents": [
+          "Level 20 Talent Celestial Quiver Damage increased from +35 to +40"
+        ]
+      },
+      "morphling": {
+        "general": [
+          "Agility gain increased from 3.9 to 4.2"
+        ]
+      },
+      "muerta": {
+        "muerta_the_calling": [
+          "Cooldown decreased from 30s to 30/28/26/24s"
+        ],
+        "muerta_pierce_the_veil": [
+          "Base Damage Bonus rescaled from 75% to 70/85/100%"
+        ]
+      },
+      "oracle": {
+        "oracle_fortunes_end": [
+          "Mana Cost decreased from 100 to 80"
+        ]
+      },
+      "pangolier": {
+        "pangolier_gyroshell": [
+          "Cooldown increased from 90/85/80s to 100/90/80s"
+        ]
+      },
+      "phantom_lancer": {
+        "phantom_lancer_spirit_lance": [
+          "Slow Duration decreased from 3.75s to 3s"
+        ],
+        "talents": [
+          "Level 10 Talent Spirit Lance Slow Duration decreased from +1.25s to +1s"
+        ]
+      },
+      "primal_beast": {
+        "primal_beast_colossal": [
+          "Now slightly grows in size when crossing an HP threshold"
+        ]
+      },
+      "puck": {
+        "puck_illusory_orb": [
+          "Impact Damage decreased from 75/150/225/300 to 70/140/210/280"
+        ]
+      },
+      "slark": {
+        "slark_shadow_dance": [
+          "Bonus Movement Speed decreased from 24/36/48% to 20/30/40%"
+        ],
+        "talents": [
+          "Level 20 Talent +1 Agility gain/stolen per Essence Shift Stack replaced with +25s Essence Shift Duration",
+          "Level 25 Talent +35s Essence Shift Duration replaced with +1 Agility gain/stolen per Essence Shift Stack"
+        ]
+      },
+      "spectre": {
+        "spectre_spectral_dagger": [
+          "Damage rescaled from 70/120/170/220 to 80/120/160/200"
+        ],
+        "talents": [
+          "Level 20 Talent Health decreased from +325 to +300",
+          "Level 25 Talent Dispersion decreased from +5% to +4%"
+        ]
+      },
+      "spirit_breaker": {
+        "spirit_breaker_greater_bash": [
+          "Aghanim's Scepter upgrade unit collision radius no longer affected by Area of Effect bonuses"
+        ]
+      },
+      "techies": {
+        "techies_land_mines": [
+          "Damage decreased from 450/575/750 to 400/550/700",
+          "Portion of damage dealt on the edge of AoE decreased from 60% to 50%",
+          "Minimum Damage decreased from 240/345/450 to 200/225/350"
+        ],
+        "talents": [
+          "Level 10 Talent Proximity Mines Cooldown Reduction decreased from 3s to 2s"
+        ]
+      },
+      "tidehunter": {
+        "tidehunter_leviathans_catch": [
+          "Fish spawn launch distance decreased from 400 to 200"
+        ]
+      },
+      "shredder": {
+        "shredder_exposure_therapy": [
+          "Mana Restore increased from 3.75 + 0.25 per level to 4 + 0.5 per level"
+        ],
+        "shredder_chakram": [
+          "Mana Cost decreased from 100/140/180 to 90/120/150",
+          "Mana Cost per second decreased from 14/22/30 to 10/15/20"
+        ]
+      },
+      "tinker": {
+        "tinker_deploy_turrets": [
+          "Tinker Knockback increased from 350 to 400"
+        ]
+      },
+      "tiny": {
+        "tiny_tree_grab": [
+          "Number of Attacks increased from 4/5/6/7 to 5/6/7/8"
+        ],
+        "tiny_grow": [
+          "Bonus Damage increased from 55/110/165 to 60/120/180",
+          "Movement Speed Bonus increased from 10/15/20 to 10/20/30"
+        ]
+      },
+      "void_spirit": {
+        "general": [
+          "Base Mana Regen decreased by 0.6"
+        ]
+      },
+      "windrunner": {
+        "general": [
+          "Base Agility increased from 17 to 20",
+          "Damage on level 1 increased from 47–59 to 49–61"
+        ],
+        "windrunner_tailwind": [
+          "Duration increased from 2s to 2.5s",
+          "Aghanim's Scepter bonus is still +1s, so it's increased to 3.5s"
+        ],
+        "windrunner_focusfire": [
+          "Cooldown decreased from 70/50/30s to 50/40/30s"
+        ]
+      },
+      "skeleton_king": {
+        "general": [
+          "Base Attack Time worsened from 1.7s to 1.8s",
+          "Intelligence gain decreased from 1.6 to 1.4"
+        ],
+        "skeleton_king_bone_guard": [
+          "Skeleton Duration decreased from 46s to 40s"
+        ],
+        "skeleton_king_mortal_strike": [
+          "Cooldown rescaled from 6/5.5/5/4.5s to 5s"
+        ],
+        "talents": [
+          "Level 15 Talent Health decreased from +350 to +300",
+          "Level 15 Talent Wraithfire Blast Stun Duration decreased from +1s to +0.75s"
+        ]
+      }
+    }
   }
 }
