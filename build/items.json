@@ -15077,7 +15077,7 @@
       {
         "type": "active",
         "title": "Psychic Push",
-        "description": "Pushes the target enemy unit away from you 400 distance."
+        "description": "Pushes the target unit away from you 400 distance."
       }
     ],
     "hint": [],
