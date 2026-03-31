@@ -13972,7 +13972,7 @@
     "dispellable": "No",
     "target_team": [],
     "target_type": [],
-    "desc": "Morphling changes his form to match the targeted enemy, gaining their basic abilities. Can be toggled for the duration of the ability.",
+    "desc": "Morphling changes his form to match the targeted enemy, gaining their basic abilities and changing his primary attribute based on his target. Can be toggled for the duration of the ability.",
     "attrib": [
       {
         "key": "duration",
