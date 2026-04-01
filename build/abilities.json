@@ -17772,16 +17772,6 @@
         "generated": true
       },
       {
-        "key": "duration",
-        "header": "DURATION:",
-        "value": [
-          "3",
-          "4",
-          "5",
-          "6"
-        ]
-      },
-      {
         "key": "abilityduration",
         "header": "DURATION:",
         "value": [
@@ -77161,7 +77151,7 @@
     "dname": "-{s:bonus_damage_reduction}% Powershot Reduction"
   },
   "special_bonus_unique_windranger_4": {
-    "dname": "+{s:bonus_duration}s Windrun Duration"
+    "dname": "+{s:bonus_AbilityDuration}s Windrun Duration"
   },
   "special_bonus_unique_windranger_5": {
     "dname": "+{s:bonus_max_movespeed} Tailwind Max Movespeed"
