@@ -152,9 +152,6 @@
   "necronomicon_warrior_last_will": {
     "img": "/assets/images/dota2/neutral_abilities/necronomicon_warrior_last_will.png"
   },
-  "necronomicon_warrior_sight": {
-    "img": "/assets/images/dota2/neutral_abilities/necronomicon_warrior_sight.png"
-  },
   "necronomicon_archer_aoe": {
     "img": "/assets/images/dota2/neutral_abilities/necronomicon_archer_aoe.png"
   },
@@ -163,6 +160,9 @@
   },
   "forged_spirit_melting_strike": {
     "img": "/assets/images/dota2/neutral_abilities/forged_spirit_melting_strike.png"
+  },
+  "special_bonus_unique_invoker_forged_spirit_armor_reduction": {
+    "img": "/assets/images/dota2/neutral_abilities/special_bonus_unique_invoker_forged_spirit_armor_reduction.png"
   },
   "broodmother_poison_sting": {
     "img": "/assets/images/dota2/neutral_abilities/broodmother_poison_sting.png"

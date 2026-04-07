@@ -3982,12 +3982,12 @@
       {
         "type": "active",
         "title": "Energy Charge",
-        "description": "Target an allied unit to increase their incoming Heal Amplification by 10% for 4s and instantly restore 17 health and 15 mana per charge stored. \n\nAutomatically gains a charge every 10 seconds and whenever a visible enemy within 1200 range uses an ability."
+        "description": "Target an allied unit to increase their incoming Heal Amplification by 15% for 4s and instantly restore 17 health and 15 mana per charge stored. \n\nAutomatically gains a charge every 10 seconds and whenever a visible enemy within 1200 range uses an ability."
       },
       {
         "type": "passive",
         "title": "Holy Blessing",
-        "description": "Amplifies heals you provide by 15%."
+        "description": "Amplifies heals you provide by 10%."
       }
     ],
     "hint": [],
@@ -4014,7 +4014,7 @@
       },
       {
         "key": "heal_increase_passive",
-        "value": "15"
+        "value": "10"
       },
       {
         "key": "max_charges",
@@ -4039,7 +4039,7 @@
       },
       {
         "key": "incoming_heal_increase_active",
-        "value": "10"
+        "value": "15"
       },
       {
         "key": "active_buff_duration",
@@ -6097,7 +6097,7 @@
       "Instant Cast",
       "No Target"
     ],
-    "notes": "Purchasing another Black King Bar will not reset its immunity duration.",
+    "notes": "Purchasing another Black King Bar will not reset its immunity duration.\nAvatar duration is not affected by increases to buff duration.",
     "attrib": [
       {
         "key": "bonus_strength",
@@ -7598,7 +7598,7 @@
       {
         "type": "passive",
         "title": "Hallowed",
-        "description": "Gain a stack every 3s, up to a maximum of 3 stacks. Upon gaining a stack, your movement speed is increased by 15% for 5s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all stacks to gain an all damage barrier for 5s that absorbs 120 damage per stack (360 max)."
+        "description": "Gain a charge every 3s, up to a maximum of 3 charges. Upon gaining a charge, your movement speed is increased by 15% for 5s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for 5s that absorbs 120 damage per charge (360 max)."
       }
     ],
     "hint": [],
@@ -7608,7 +7608,7 @@
     "qual": "epic",
     "cost": 2600,
     "dispellable": "Yes",
-    "notes": "Stacks cannot be gained for 3s after you take damage from a player-controlled unit or Roshan.\nSelf-damage and HP Loss damage cannot remove stacks.\nMovement speed buff does not stack.\nMovement speed buff is only provided if you have reached maximum stacks at least once while the item is equipped.",
+    "notes": "Charges cannot be gained for 4s after you take damage from a player-controlled unit or Roshan.\nSelf-damage and HP Loss damage cannot remove charges.\nMovement speed buff does not stack.",
     "attrib": [
       {
         "key": "bonus_spell_resist",
@@ -7618,7 +7618,7 @@
       {
         "key": "bonus_all_stats",
         "display": "+ {value} All Attributes",
-        "value": "6"
+        "value": "5"
       },
       {
         "key": "bonus_health",
@@ -7627,7 +7627,7 @@
       },
       {
         "key": "stack_gain_time",
-        "value": "3"
+        "value": "4"
       },
       {
         "key": "max_stacks",
@@ -7652,10 +7652,6 @@
       {
         "key": "max_barrier_tooltip",
         "value": "360"
-      },
-      {
-        "key": "barrier_cd",
-        "value": "0"
       }
     ],
     "mc": false,
@@ -7668,7 +7664,7 @@
       "crown"
     ],
     "created": true,
-    "charges": false
+    "charges": 3
   },
   "recipe_crellas_crozier": {
     "id": 1855,
@@ -8751,7 +8747,7 @@
       {
         "key": "hp_regen_amp",
         "display": "+ {value}% Health Restoration",
-        "value": "20"
+        "value": "16"
       },
       {
         "key": "slow_resistance",
@@ -8806,7 +8802,7 @@
       {
         "key": "hp_regen_amp",
         "display": "+ {value}% Health Restoration",
-        "value": "20"
+        "value": "16"
       },
       {
         "key": "manacost_reduction",
@@ -9185,7 +9181,7 @@
       {
         "key": "hp_regen_amp",
         "display": "+ {value}% Health Restoration",
-        "value": "16"
+        "value": "12"
       }
     ],
     "mc": false,
@@ -9330,7 +9326,7 @@
       {
         "type": "active",
         "title": "Dominate",
-        "description": "Takes control of one neutral target unit and sets its movement speed to 380 and max health to a minimum of 1800. Also provides the unit with +70 base attack damage, +12 health regen, +4 mana regen, +7 armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than 1800 retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to 250 gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for 3 seconds after the dominated creep takes damage from an enemy hero or Roshan."
+        "description": "Takes control of one neutral target unit and sets its movement speed to 380 and max health to a minimum of 1900. Also provides the unit with +70 base attack damage, +12 health regen, +4 mana regen, +7 armor, and levels up some abilities of the target by 1 level. \n\nDominated units with a max health of greater than 1900 retain their original max health. Grants the caster the gold and experience bounty of the dominated creep. Dominated unit's bounty is set to 250 gold and it can no longer be killed by abilities that instantly kill creeps otherwise.\n\nThe Helm cannot be used for 3 seconds after the dominated creep takes damage from an enemy hero or Roshan."
       }
     ],
     "hint": [],
@@ -9361,7 +9357,7 @@
       },
       {
         "key": "health_min",
-        "value": "1800"
+        "value": "1900"
       },
       {
         "key": "speed_base",
@@ -9414,7 +9410,7 @@
     ],
     "mc": 50,
     "hc": false,
-    "cd": 45,
+    "cd": 40,
     "lore": "The powerful headpiece of an undead necromancer.",
     "components": [
       "helm_of_the_dominator",
@@ -9511,7 +9507,7 @@
       {
         "type": "active",
         "title": "Eternal Chains",
-        "description": "Roots all enemies in a 350 radius for 2 seconds."
+        "description": "Roots all enemies in a 400 radius for 2 seconds."
       }
     ],
     "hint": [],
@@ -9554,11 +9550,11 @@
       },
       {
         "key": "radius",
-        "value": "275"
+        "value": "325"
       },
       {
         "key": "radius_tooltip",
-        "value": "350"
+        "value": "400"
       },
       {
         "key": "duration",
@@ -10522,7 +10518,7 @@
       {
         "key": "bonus_magical_armor",
         "display": "+ {value}% Magic Resistance",
-        "value": "20"
+        "value": "18"
       },
       {
         "key": "spell_amp_debuff",
@@ -10531,7 +10527,7 @@
       {
         "key": "bonus_health_regen",
         "display": "+ {value} Health Regeneration",
-        "value": "6"
+        "value": "5.5"
       },
       {
         "key": "bonus_mana_regen",
@@ -11604,7 +11600,7 @@
       {
         "key": "hp_regen_amp",
         "display": "+ {value}% Health Restoration",
-        "value": "20"
+        "value": "16"
       },
       {
         "key": "bash_chance_melee",
@@ -11689,7 +11685,7 @@
       {
         "key": "bonus_health_regen",
         "display": "+ {value} Health Regeneration",
-        "value": "6"
+        "value": "6.5"
       },
       {
         "key": "bonus_evasion",
@@ -14323,7 +14319,7 @@
       {
         "type": "active",
         "title": "Greater Demonic Summoning",
-        "description": "Summon 2 demonic warriors and 2 demonic archers that last 65 seconds. The Warrior burns mana every hit, reveals invisible units, and deals magical damage to whoever kills it. The Archer has a basic dispel ability with a slow and a passive movement speed aura."
+        "description": "Summon 2 demonic warriors and 2 demonic archers that last 65 seconds. The Warrior burns mana every hit and deals magical damage to whoever kills it. The Archer has a basic dispel ability with a slow and a passive movement speed aura."
       }
     ],
     "hint": [],
@@ -14335,7 +14331,7 @@
       "Instant Cast",
       "No Target"
     ],
-    "notes": "The Demonic Warrior has 1600 Health, 4 Armor, 40% Magic Resistance, 380 Movement Speed, 134 Attack Damage, 50 Mana Burn on Hit, 800 Damage on Death, and 1000 True Sight Radius.\nThe Demonic Archer has 1300 Health, 4 Armor, 40% Magic Resistance, 425 Movement Speed, 131 Attack Damage, a basic dispel ability with a slow on a 15s Cooldown, and a 9% Bonus Movement Speed Aura.",
+    "notes": "The Demonic Warrior has 1600 Health, 4 Armor, 40% Magic Resistance, 380 Movement Speed, 134 Attack Damage, 50 Mana Burn on Hit, and deals 800 Damage on Death.\nThe Demonic Archer has 1300 Health, 4 Armor, 40% Magic Resistance, 425 Movement Speed, 131 Attack Damage, a basic dispel ability with a slow on a 15s Cooldown, and a 9% Bonus Movement Speed Aura.",
     "attrib": [
       {
         "key": "bonus_strength",
@@ -14592,7 +14588,7 @@
       {
         "type": "active",
         "title": "Lesser Avatar",
-        "description": "Applies a basic dispel. Grants 50% magic resistance and immunity to reflected and pure damage for 2s. For the duration of the effect, any negative effect from enemy spells has no effect.\n\nDispel Type: Basic Dispel"
+        "description": "Applies a basic dispel. Grants 60% magic resistance and immunity to reflected and pure damage for 2s. For the duration of the effect, any negative effect from enemy spells has no effect.\n\nDispel Type: Basic Dispel"
       }
     ],
     "hint": [],
@@ -14612,7 +14608,7 @@
       },
       {
         "key": "magic_resist",
-        "value": "50"
+        "value": "60"
       },
       {
         "key": "model_scale",
@@ -16900,7 +16896,7 @@
       {
         "type": "passive",
         "title": "Reverberate",
-        "description": "After taking 220 damage from any source, the wearer fires a projectile at up to 2 random enemies in a 600 radius, prioritizing heroes, that deal 110 physical damage and slow the targets movement and attack speed by 100% for 0.2s."
+        "description": "After taking 220 damage from any source, the wearer fires a projectile at up to 2 random enemies in a 600 radius, prioritizing heroes, that deal 90 physical damage and slow the targets movement and attack speed by 100% for 0.2s."
       }
     ],
     "hint": [],
@@ -16936,7 +16932,7 @@
       },
       {
         "key": "projectile_damage",
-        "value": "110"
+        "value": "90"
       },
       {
         "key": "target_count",
@@ -17394,7 +17390,7 @@
       {
         "key": "health_restoration",
         "display": "+ {value}% Health Restoration",
-        "value": "10 / 15 / 20"
+        "value": "9 / 12 / 15"
       },
       {
         "key": "bat_reduce",
@@ -18355,7 +18351,7 @@
       {
         "type": "active",
         "title": "Pollinate",
-        "description": "Spreads pollen on all enemy units in a 700 unit radius for 9 seconds, decreasing their health restoration by 50% and dealing damage equal to 9% of their maximum health per second."
+        "description": "Spreads pollen on all enemy units in a 900 unit radius for 9 seconds, decreasing their health restoration by 50% and dealing damage per second, the total equal to 9% of their maximum health."
       }
     ],
     "hint": [],
@@ -18379,7 +18375,7 @@
       },
       {
         "key": "debuff_radius",
-        "value": "700"
+        "value": "900"
       },
       {
         "key": "debuff_duration",
@@ -19054,7 +19050,7 @@
     ],
     "mc": false,
     "hc": false,
-    "cd": 30,
+    "cd": 27,
     "lore": "",
     "components": null,
     "created": false,
@@ -19066,7 +19062,7 @@
       {
         "type": "active",
         "title": "Pupate",
-        "description": "Enter into an insect form for 5 seconds, increasing magic resistance by 50% and movement speed by 15%. While an insect, your size is decreased and your armor is reduced by 45%."
+        "description": "Enter into an insect form for 5 seconds, increasing magic resistance by 50% and movement speed by 20%. While an insect, your size is decreased and your armor is reduced by 45%."
       }
     ],
     "hint": [],
@@ -19088,7 +19084,7 @@
       },
       {
         "key": "bonus_movespeed",
-        "value": "15"
+        "value": "20"
       },
       {
         "key": "size_decrease",
@@ -19113,7 +19109,7 @@
       {
         "type": "active",
         "title": "False Flight",
-        "description": "Gain 50% slow resistance, phased movement, and 25% evasion for 5 seconds."
+        "description": "Gain 50% slow resistance, phased movement, and 25% evasion for 6.5 seconds."
       }
     ],
     "hint": [],
@@ -19127,7 +19123,7 @@
     "attrib": [
       {
         "key": "duration",
-        "value": "5"
+        "value": "6.5"
       },
       {
         "key": "slow_resist",
@@ -19315,7 +19311,7 @@
       {
         "type": "passive",
         "title": "Enchant",
-        "description": "Increases the bonuses of the item's Neutral Enchantment by 15%. Every time this item is crafted again the bonus is increased by 40%."
+        "description": "Increases the bonuses of the item's Neutral Enchantment by 10%. Every time this item is crafted again the bonus is increased by 40%."
       }
     ],
     "hint": [],
@@ -19327,7 +19323,7 @@
     "attrib": [
       {
         "key": "enchantment_bonus_base",
-        "value": "15"
+        "value": "10"
       },
       {
         "key": "enchantment_bonus_growth",
@@ -19386,7 +19382,7 @@
       {
         "type": "passive",
         "title": "Spellover",
-        "description": "Dealing 100 spell damage to an enemy causes them to overheat and deal damage to their allies in a 300 unit radius. Hero targets deal 40 damage to their allies, other targets deal 15 damage."
+        "description": "Dealing 200 spell damage to an enemy causes them to overheat and deal damage to their allies in a 300 unit radius. Hero targets deal 80 damage to their allies, other targets deal 30 damage."
       }
     ],
     "hint": [],
@@ -19402,7 +19398,7 @@
       },
       {
         "key": "damage_threshold",
-        "value": "100"
+        "value": "200"
       },
       {
         "key": "damage_aoe",
@@ -19410,11 +19406,15 @@
       },
       {
         "key": "damage",
-        "value": "40"
+        "value": "80"
       },
       {
         "key": "damage_creep",
-        "value": "15"
+        "value": "30"
+      },
+      {
+        "key": "cooldown",
+        "value": "0.1"
       }
     ],
     "mc": false,
