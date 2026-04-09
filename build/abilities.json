@@ -73964,7 +73964,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Kez slashes forward in a 800 distance line with his Katana, attacking enemies in an area and applying a brief 100s impact slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
+    "desc": "Kez slashes forward in a 800 distance line with his Katana, attacking enemies in an area and applying a brief 100% impact slow. After a short delay, the area is attacked again. Heroes take bonus damage.",
     "attrib": [
       {
         "key": "katana_echo_damage",

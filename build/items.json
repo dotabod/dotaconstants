@@ -7598,7 +7598,7 @@
       {
         "type": "passive",
         "title": "Hallowed",
-        "description": "Gain a charge every 3s, up to a maximum of 3 charges. Upon gaining a charge, your movement speed is increased by 15% for 5s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for 5s that absorbs 120 damage per charge (360 max)."
+        "description": "Gain a charge every 4s, up to a maximum of 3 charges. Upon gaining a charge, your movement speed is increased by 15% for 5s.\n\nWhenever you take damage from a player-controlled unit or Roshan, consume all charges to gain an all damage barrier for 5s that absorbs 120 damage per charge (360 max)."
       }
     ],
     "hint": [],
@@ -7608,7 +7608,7 @@
     "qual": "epic",
     "cost": 2600,
     "dispellable": "Yes",
-    "notes": "Charges cannot be gained for 4s after you take damage from a player-controlled unit or Roshan.\nSelf-damage and HP Loss damage cannot remove charges.\nMovement speed buff does not stack.",
+    "notes": "Charges cannot be gained for %stack_gain_time%s after you take damage from a player-controlled unit or Roshan.\nSelf-damage and HP Loss damage cannot remove charges.\nMovement speed buff does not stack.",
     "attrib": [
       {
         "key": "bonus_spell_resist",
@@ -7624,14 +7624,6 @@
         "key": "bonus_health",
         "display": "+ {value} Health",
         "value": "250"
-      },
-      {
-        "key": "stack_gain_time",
-        "value": "4"
-      },
-      {
-        "key": "max_stacks",
-        "value": "3"
       },
       {
         "key": "movement_speed_pct_on_stack_gain",
