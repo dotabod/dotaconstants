@@ -19382,7 +19382,7 @@
     "img": "/apps/dota2/images/dota_react/items/conjurers_catalyst.png?t=1593393829403",
     "dname": "Conjurer's Catalyst",
     "cost": 0,
-    "notes": "",
+    "notes": "Spellover has a 0.1s cooldown between overheats.\nAccumulated damage resets if no damage is dealt to the target for 6s.",
     "attrib": [
       {
         "key": "duration",
