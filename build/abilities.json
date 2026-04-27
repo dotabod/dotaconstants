@@ -30596,6 +30596,17 @@
         "generated": true
       },
       {
+        "key": "flying_movement",
+        "header": "FLYING MOVEMENT:",
+        "value": [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "generated": true
+      },
+      {
         "key": "frost_duration",
         "header": "FROST DURATION:",
         "value": [
