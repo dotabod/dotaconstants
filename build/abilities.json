@@ -67025,12 +67025,6 @@
         "header": "DAMAGE REDUCTION PCT:",
         "value": "0",
         "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "900",
-        "generated": true
       }
     ],
     "lore": "You'll have to excuse my friend Jex. He's really into murder.",
