@@ -917,7 +917,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_unique_puck",
+        "name": "special_bonus_unique_puck_5",
         "level": 2
       },
       {
@@ -933,7 +933,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_puck_5",
+        "name": "special_bonus_unique_puck",
         "level": 4
       },
       {
@@ -1348,11 +1348,11 @@
         "level": 1
       },
       {
-        "name": "special_bonus_strength_8",
+        "name": "special_bonus_unique_tiny_6",
         "level": 1
       },
       {
-        "name": "special_bonus_unique_tiny_6",
+        "name": "special_bonus_strength_10",
         "level": 2
       },
       {
@@ -8002,7 +8002,7 @@
         "color": "Red",
         "gradient_id": 2,
         "title": "Dying Light",
-        "description": "Phoenix deals 4% of its missing health as magic damage to all enemies in a 400 radius every second.",
+        "description": "Phoenix deals 3.5% of its missing health as magic damage to all enemies in a 400 radius every second.",
         "abilities": [
           "phoenix_dying_light"
         ]
@@ -9581,7 +9581,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_largo_5",
+        "name": "special_bonus_unique_largo_8",
         "level": 3
       },
       {
@@ -9593,7 +9593,7 @@
         "level": 4
       },
       {
-        "name": "special_bonus_unique_largo_8",
+        "name": "special_bonus_unique_largo_5",
         "level": 4
       }
     ],

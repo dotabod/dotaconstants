@@ -6009,7 +6009,7 @@
     "id": 113,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Heart of Tarrasque Recipe",
-    "cost": 600,
+    "cost": 700,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -6034,7 +6034,7 @@
     "img": "/apps/dota2/images/dota_react/items/heart.png?t=1593393829403",
     "dname": "Heart of Tarrasque",
     "qual": "epic",
-    "cost": 5100,
+    "cost": 5200,
     "notes": "Multiple instances of Behemoth's Blood do not stack.",
     "attrib": [
       {
@@ -6204,7 +6204,7 @@
       {
         "type": "passive",
         "title": "Freezing Aura",
-        "description": "Reduces the attack speed of all enemies by -45. \n\nRadius: 1200"
+        "description": "Reduces the attack speed of all enemies by -40. \n\nRadius: 1200"
       }
     ],
     "hint": [],
@@ -6241,7 +6241,7 @@
       },
       {
         "key": "aura_attack_speed",
-        "value": "-45"
+        "value": "-40"
       },
       {
         "key": "blast_damage",
@@ -6286,7 +6286,7 @@
       {
         "type": "passive",
         "title": "Spell Weakness Aura",
-        "description": "Enemy units take 12% increased damage from spells. \n\nRadius: 1200"
+        "description": "Enemy units take 10% increased damage from spells. \n\nRadius: 1200"
       }
     ],
     "hint": [],
@@ -6304,7 +6304,7 @@
       {
         "key": "bonus_health",
         "display": "+ {value} Health",
-        "value": "650"
+        "value": "625"
       },
       {
         "key": "bonus_mana",
@@ -6344,7 +6344,7 @@
       },
       {
         "key": "aura_spell_vulnerability",
-        "value": "12"
+        "value": "10"
       },
       {
         "key": "aura_radius",
@@ -6353,7 +6353,7 @@
     ],
     "mc": false,
     "hc": false,
-    "cd": 30,
+    "cd": 35,
     "lore": "The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.",
     "components": [
       "veil_of_discord",
@@ -7081,7 +7081,7 @@
       {
         "type": "active",
         "title": "Soul Release",
-        "description": "Provides 40 health regeneration when cast on allies.\n\nCan be ground targeted to lie dormant for up to 15s and attach to the first enemy that comes within 400 radius. When on enemies, deals 25 damage per second and provides True Sight over them and shares their vision with the wearer's team.\n\nLasts 8 seconds.\n\nGains charges every time an enemy hero dies within 1500 units."
+        "description": "Provides 40 health regeneration when cast on allies.\n\nCan be ground targeted to lie dormant for up to 15s and attach to the first enemy that comes within 450 radius. When on enemies, deals 25 damage per second and provides True Sight over them and shares their vision with the wearer's team.\n\nLasts 8 seconds.\n\nGains charges every time an enemy hero dies within 1500 units."
       }
     ],
     "hint": [],
@@ -7097,7 +7097,7 @@
     ],
     "target_team": "Both",
     "target_type": "Hero",
-    "notes": "Empty distillers gain 2 charges.\nOnly the closest Essence Distiller to the dying hero will gain a charge.\nIf the allied unit is attacked by an enemy hero or Roshan, the effect is lost.\nDoes not trigger spell block or spell reflect.\nWhile dormant, provides vision in 400 radius. Vision lingers for 0.5s after latching.",
+    "notes": "Empty distillers gain 2 charges.\nOnly the closest Essence Distiller to the dying hero will gain a charge.\nIf the allied unit is attacked by an enemy hero or Roshan, the effect is lost.\nDoes not trigger spell block or spell reflect.\nWhile dormant, provides vision in 450 radius. Vision lingers for 0.5s after latching.",
     "attrib": [
       {
         "key": "mana_regen",
@@ -7149,11 +7149,11 @@
       },
       {
         "key": "latch_range",
-        "value": "400"
+        "value": "450"
       },
       {
         "key": "latch_vision",
-        "value": "400"
+        "value": "450"
       },
       {
         "key": "linger_after_latch_duration",
@@ -7679,7 +7679,7 @@
       {
         "type": "active",
         "title": "Rite of Rumusque",
-        "description": "You enter ghost form for 4 seconds, becoming immune to physical damage, but are unable to attack and -30% more vulnerable to magic damage.\n\nSteal 5% movement speed from enemy heroes in 900 range every second. Movement speed steal lasts 1.5s.\n\nPutrefaction Aura's effect is increased to 75%. All of the lost Health Restoration is redirected to you every second."
+        "description": "You enter ghost form for 4 seconds, becoming immune to physical damage, but are unable to attack and -30% more vulnerable to magic damage.\n\nSteal 6% movement speed from enemy heroes in 900 range every second. Movement speed steal lasts 1.5s.\n\nPutrefaction Aura's effect is increased to 75%. All of the lost Health Restoration is redirected to you every second."
       },
       {
         "type": "passive",
@@ -7741,7 +7741,7 @@
       },
       {
         "key": "movespeed_steal_pct",
-        "value": "5"
+        "value": "6"
       },
       {
         "key": "active_health_steal",
@@ -8622,7 +8622,7 @@
       {
         "type": "active",
         "title": "Shadow Walk",
-        "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While invisible, you move 25% faster and can move through units. \n\nAttacking to end the invisibility will deal 300 bonus physical damage, disable their passive abilities for 5 seconds, and cap their movement speed to 200."
+        "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While invisible, you move 22% faster and can move through units. \n\nAttacking to end the invisibility will deal 300 bonus physical damage, disable their passive abilities for 5 seconds, and cap their movement speed to 200."
       }
     ],
     "hint": [],
@@ -8665,7 +8665,7 @@
       },
       {
         "key": "windwalk_movement_speed",
-        "value": "25"
+        "value": "22"
       },
       {
         "key": "windwalk_fade_time",
@@ -8690,7 +8690,7 @@
     ],
     "mc": 75,
     "hc": false,
-    "cd": 20,
+    "cd": 22,
     "lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
     "components": [
       "invis_sword",
@@ -9864,7 +9864,7 @@
       {
         "type": "active",
         "title": "Suppress",
-        "description": "Dispels both the wearer and the target. Enemy targets are slowed for 5 seconds. Allied targets gain bonus movespeed and 40% slow resistance for 5 seconds. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.\nDispel Type: Basic Dispel"
+        "description": "Dispels both the wearer and the target. Enemy targets are slowed for 4 seconds. Allied targets gain bonus movespeed and 40% slow resistance for 4 seconds. Caster is always granted the ally benefit on cast.\n\nBoth movement speed reduction and increase start at 100% and gradually decrease to 0% over the course of the buff duration.\nDispel Type: Basic Dispel"
       },
       {
         "type": "passive",
@@ -9926,15 +9926,15 @@
       },
       {
         "key": "enemy_effect_duration",
-        "value": "5.0"
+        "value": "4.0"
       },
       {
         "key": "ally_effect_duration",
-        "value": "5.0"
+        "value": "4.0"
       },
       {
         "key": "movement_speed_buff_rate",
-        "value": "5"
+        "value": "4"
       },
       {
         "key": "phase_movement_speed",
@@ -10105,7 +10105,7 @@
     ],
     "mc": false,
     "hc": 170,
-    "cd": 25,
+    "cd": 30,
     "lore": "A ring that feeds on the souls of those who wear it.",
     "components": [
       "ring_of_protection",
@@ -10489,7 +10489,7 @@
       {
         "type": "passive",
         "title": "Mage Slayer",
-        "description": "Places a debuff when you attack enemies, dealing 40 physical damage per second and causing them to do 40% less spell damage for 3 seconds."
+        "description": "Places a debuff when you attack enemies, dealing 35 physical damage per second and causing them to do 40% less spell damage for 3 seconds."
       }
     ],
     "hint": [],
@@ -10537,7 +10537,7 @@
       },
       {
         "key": "dps",
-        "value": "40"
+        "value": "35"
       }
     ],
     "mc": false,
@@ -10655,7 +10655,7 @@
       {
         "type": "passive",
         "title": "Swiftness Aura",
-        "description": "Grants 20 movement speed and 2.5 health regeneration to allies. \n\nRadius: 1200"
+        "description": "Grants 15 movement speed and 2.5 health regeneration to allies. \n\nRadius: 1200"
       }
     ],
     "hint": [
@@ -10674,7 +10674,7 @@
     "attrib": [
       {
         "key": "aura_movement_speed",
-        "value": "20"
+        "value": "15"
       },
       {
         "key": "aura_health_regen",
@@ -17304,7 +17304,7 @@
       {
         "key": "bonus_damage",
         "display": "+ {value} Damage",
-        "value": "7 / 10 / 13 / 16"
+        "value": "6 / 9 / 12 / 15"
       },
       {
         "key": "armor",
@@ -17392,7 +17392,7 @@
       {
         "key": "intelligence_pct",
         "display": "- {value}% Intelligence",
-        "value": "-6"
+        "value": "-9"
       }
     ],
     "mc": false,
@@ -17495,7 +17495,7 @@
       {
         "key": "bonus_mana",
         "display": "+ {value} Mana",
-        "value": "200 / 250"
+        "value": "150 / 200"
       },
       {
         "key": "bonus_damage",
@@ -18765,7 +18765,7 @@
       {
         "key": "agility",
         "display": "+ {value} Agility",
-        "value": "12"
+        "value": "15"
       },
       {
         "key": "damage",
