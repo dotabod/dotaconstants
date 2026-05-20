@@ -516,6 +516,18 @@
     "shard_new_skill": false
   },
   {
+    "hero_name": "npc_dota_hero_pugna",
+    "hero_id": 45,
+    "has_scepter": true,
+    "scepter_desc": "Reduces cooldown by 3.5s. When targeting an enemy hero, Pugna reduces their outgoing spell damage by 8% per second up to a maximum of 75% and increases his own, up to a maximum of 100%. When draining through a Nether Ward using Shard, the rate of increase/decrease is 4% instead. Debuff lasts 8 seconds.",
+    "scepter_skill_name": "Life Drain",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Life Drain can target your Nether Ward, causing life drain to refract to all enemy heroes within 700 units of the ward for 75% of its normal value. The effect is interrupted if the ward is destroyed.",
+    "shard_skill_name": "Life Drain",
+    "shard_new_skill": false
+  },
+  {
     "hero_name": "npc_dota_hero_templar_assassin",
     "hero_id": 46,
     "has_scepter": true,
