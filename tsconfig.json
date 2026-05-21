@@ -1,8 +1,13 @@
 {
-  "include": ["index.ts"],
   "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "strict": true,
+    "noEmit": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true
   },
-  "exclude": ["node_modules"]
+  "include": ["tasks"]
 }

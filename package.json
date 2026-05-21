@@ -1,25 +1,18 @@
 {
   "name": "dotaconstants",
-  "version": "9.4.430",
+  "version": "10.8.0",
   "description": "Constant data for Dota 2 applications",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "index.ts",
-    "build/**/*.json"
-  ],
-  "exports": {
-    ".": "./index.js",
-    "./build/*": "./build/*"
-  },
+  "exports": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsx tasks/updateconstants && tsc",
-    "postbuild": "git add build/*.json || true",
-    "patch": "tsx tasks/newpatch",
-    "prettier": "prettier --write tasks",
-    "build_node": "node tasks/updateconstants.ts"
+    "patch": "node tasks/newpatch.ts",
+    "prettier": "npx prettier --write tasks",
+    "build": "node tasks/updateconstants.ts"
   },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "vdf-parser": "^1.2.1"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/odota/dotaconstants.git"
@@ -29,17 +22,5 @@
   "bugs": {
     "url": "https://github.com/odota/dotaconstants/issues"
   },
-  "homepage": "https://github.com/odota/dotaconstants#readme",
-  "devDependencies": {
-    "@biomejs/biome": "2.0.6",
-    "@types/node": "^24.0.10",
-    "prettier": "^3.6.2",
-    "tsx": "^4.20.3",
-    "typescript": "^5.8.3",
-    "vdf-parser": "^1.2.1"
-  },
-  "trustedDependencies": [
-    "@biomejs/biome"
-  ],
-  "dependencies": {}
+  "homepage": "https://github.com/odota/dotaconstants#readme"
 }
