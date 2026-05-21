@@ -1,99 +1,106 @@
-name: Fetch new data when d2vpkr is updated
+name: Update constants from d2vpkr
 
 on:
-  workflow_dispatch:     # Allow manual triggering
+  workflow_dispatch: # Allow manual triggering
   schedule:
-    - cron: '0 * * * *'  # Check hourly for updates
+    - cron: '0 */6 * * *' # Every 6 hours (tune as needed)
+
+permissions:
+  contents: write
+
+# Never let two runs push at once; queue instead of racing.
+concurrency:
+  group: update-constants
+  cancel-in-progress: false
 
 jobs:
-  precheck:
-    name: Check for updates
+  update:
+    name: Rebuild constants if d2vpkr changed
     runs-on: ubuntu-latest
-    outputs:
-      latest_commit: ${{ steps.latest_commit.outputs.sha }}
-      current_commit: ${{ steps.current_commit.outputs.sha }}
-      should_update: ${{ steps.check_commits.outputs.should_update }}
-      new_version: ${{ steps.get_version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: 'master'
-      - id: latest_commit
-        name: Fetch latest d2vpkr commit
-        run: |
-          echo "sha=$(curl -s 'https://api.github.com/repos/dotabuff/d2vpkr/commits/master' | jq -r .sha)" >> $GITHUB_OUTPUT
-      - id: current_commit
-        name: Get current tracked commit
-        run: |
-          if [ -f d2vpkr_commit ]; then
-            echo "sha=$(cat d2vpkr_commit)" >> $GITHUB_OUTPUT
-          else
-            echo "sha=" >> $GITHUB_OUTPUT
-          fi
-      - id: check_commits
-        name: Compare commits
-        run: |
-          if [[ "${{ steps.latest_commit.outputs.sha }}" != "${{ steps.current_commit.outputs.sha }}" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "should_update=true" >> $GITHUB_OUTPUT
-          else
-            echo "should_update=false" >> $GITHUB_OUTPUT
-          fi
-      - id: get_version
-        name: Get Dota 2 version
-        if: steps.check_commits.outputs.should_update == 'true'
-        run: |
-          echo "version=$(curl -s 'https://api.steampowered.com/IGCVersion_570/GetClientVersion/v1/' | jq -r .result.active_version)" >> $GITHUB_OUTPUT
 
-  build:
-    name: Fetch and build new source strings
-    needs: precheck
-    if: ${{ needs.precheck.outputs.should_update == 'true' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: 'master'
+      - name: Check d2vpkr for new commits
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          latest=$(curl -sSf --retry 3 \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            'https://api.github.com/repos/dotabuff/d2vpkr/commits/master' | jq -r .sha)
+          current=$(cat d2vpkr_commit 2>/dev/null || echo "")
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [[ "$latest" != "$current" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            echo "d2vpkr changed: $current -> $latest"
+          else
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "No d2vpkr changes since $current; nothing to do."
+          fi
 
       - name: Setup Node.js
+        if: steps.check.outputs.proceed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm i
-
-      - name: Update version and commit tracking
-        run: |
-          echo ${{ needs.precheck.outputs.new_version }} > version
-          echo ${{ needs.precheck.outputs.latest_commit }} > d2vpkr_commit
+        if: steps.check.outputs.proceed == 'true'
+        run: npm ci
 
       - name: Build constants
+        if: steps.check.outputs.proceed == 'true'
         run: npm run build
 
-      - name: Run code formatting
-        run: npm run prettier
-
-      - name: Configure Git
+      - name: Validate build output
+        if: steps.check.outputs.proceed == 'true'
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
-
-      - name: Commit changes and set update flag
-        id: commit_changes
-        run: |
-          git add .
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          else
-            git commit -m "Update based on d2vpkr changes (Dota 2 version ${{ needs.precheck.outputs.new_version }})"
-            echo "has_changes=true" >> $GITHUB_OUTPUT
+          set -euo pipefail
+          heroes=$(jq 'length' build/heroes.json)
+          items=$(jq 'length' build/items.json)
+          abilities=$(jq 'length' build/abilities.json)
+          echo "heroes=$heroes items=$items abilities=$abilities"
+          if (( heroes < 120 || items < 100 || abilities < 1000 )); then
+            echo "::error::Build output looks incomplete (heroes=$heroes items=$items abilities=$abilities) - refusing to commit."
+            exit 1
           fi
 
-      - name: Update package version
-        if: steps.commit_changes.outputs.has_changes == 'true'
-        run: npm version patch -m "Update to Dota 2 version ${{ needs.precheck.outputs.new_version }}"
+      - name: Commit, version, and push if constants changed
+        if: steps.check.outputs.proceed == 'true'
+        env:
+          LATEST: ${{ steps.check.outputs.latest }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-      - name: Push changes
-        run: git push --follow-tags
+          # Did the *generated constants* actually change? (ignore tracking/meta files)
+          if git diff --quiet -- build index.ts index.js json; then
+            echo "No constant changes. Advancing d2vpkr tracker only (no version bump)."
+            echo "$LATEST" > d2vpkr_commit
+            if ! git diff --quiet -- d2vpkr_commit; then
+              git add d2vpkr_commit
+              git commit -m "chore: track d2vpkr ${LATEST} (no constant changes)"
+              git push
+            fi
+            exit 0
+          fi
+
+          # Real data change: record version (best-effort), bump, single commit + tag.
+          version=$(curl -sS --retry 3 \
+            'https://api.steampowered.com/IGCVersion_570/GetClientVersion/v1/' \
+            | jq -r '.result.active_version // empty')
+          echo "$LATEST" > d2vpkr_commit
+          [ -n "$version" ] && echo "$version" > version || echo "Steam version unavailable; leaving version file unchanged."
+
+          npm version patch --no-git-tag-version > /dev/null
+          pkgver=$(node -p "require('./package.json').version")
+          msg="Update constants from d2vpkr${version:+ (Dota 2 version ${version})} [v${pkgver}]"
+
+          git add -A
+          git commit -m "$msg"
+          git tag "v${pkgver}"
+          git push --follow-tags
