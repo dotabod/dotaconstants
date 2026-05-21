@@ -18,7 +18,7 @@ jobs:
     name: Rebuild constants if d2vpkr changed
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Check d2vpkr for new commits
         id: check
@@ -42,7 +42,7 @@ jobs:
 
       - name: Setup Node.js
         if: steps.check.outputs.proceed == 'true'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
           cache: 'npm'

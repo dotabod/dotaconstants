@@ -2,7 +2,10 @@
   "name": "dotaconstants",
   "version": "10.8.0",
   "description": "Constant data for Dota 2 applications",
-  "exports": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./build/*": "./build/*"
+  },
   "scripts": {
     "patch": "node tasks/newpatch.ts",
     "prettier": "npx prettier --write tasks",
