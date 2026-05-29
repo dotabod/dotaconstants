@@ -31385,7 +31385,7 @@
     ],
     "bkbpierce": "Yes",
     "dispellable": "No",
-    "desc": "Supercharges Clockwerks abilities:\n\nBattery Assault: Increased radius and affects all enemies in its range.\nPower Cogs: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\nRocket Flares: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\nHookshot: Stun radius and duration increased.\nJetpack Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
+    "desc": "Supercharges Clockwerks abilities:\n\nBattery Assault: Increased radius and affects all enemies in its range.\nPower Cogs: Radius increased, and Clockwerk's armor while near Power Cogs is increased.\nRocket Flares: Increased damage, vision and slow duration, and fire additional rockets to either side of the target.\nHookshot: Stun radius and duration increased.\nJetpack: Moves faster.\n\nClockwerk's movement and attack speed becomes slowed to a crawl after the duration runs out.",
     "attrib": [
       {
         "key": "buff_duration",
