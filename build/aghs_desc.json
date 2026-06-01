@@ -300,18 +300,6 @@
     "shard_new_skill": false
   },
   {
-    "hero_name": "npc_dota_hero_shadow_shaman",
-    "hero_id": 27,
-    "has_scepter": true,
-    "scepter_desc": "Increase cast range. Every 0.9 seconds, shackled units emit a radial Ether Shock hitting all other units within 600 of the target for 100% of Ether Shock's normal damage. Shackles can now also be cast on allies and Mass Serpent Wards that stay within 2000 units of Shadow Shaman. Allied units are not disabled by Shackle.",
-    "scepter_skill_name": "Shackles",
-    "scepter_new_skill": false,
-    "has_shard": true,
-    "shard_desc": "Allows to create a Mega Ward using the Urnaconda ability.",
-    "shard_skill_name": "Mass Serpent Ward",
-    "shard_new_skill": false
-  },
-  {
     "hero_name": "npc_dota_hero_slardar",
     "hero_id": 28,
     "has_scepter": true,
