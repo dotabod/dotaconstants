@@ -34,6 +34,11 @@ jobs:
       # Provides marketable flag + market_hash_name (for market links) and is the
       # icon fallback for the few DXT textures with no embedded PNG.
       STEAM_WEB_API: ${{ secrets.STEAM_WEB_API }}
+      # A real (throwaway) account that has licensed the free Dota 2 — anonymous
+      # can't pull client content. The account must have Steam Guard disabled, or
+      # the first login will block on a 2FA prompt that CI can't answer.
+      STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+      STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
     steps:
       - uses: actions/checkout@v5
 
@@ -52,9 +57,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download Dota pak01 VPK (anonymous)
+      - name: Download Dota pak01 VPK
         run: |
           set -euo pipefail
+
+          if [ -z "${STEAM_USERNAME:-}" ] || [ -z "${STEAM_PASSWORD:-}" ]; then
+            echo "::error::STEAM_USERNAME/STEAM_PASSWORD secrets are required (Dota client content isn't anonymous)." >&2
+            exit 1
+          fi
 
           # DepotDownloader ships a self-contained linux-x64 binary on GitHub
           # releases (it is NOT a `dotnet tool`).
@@ -74,11 +84,14 @@ jobs:
 
           "$WORK_DIR/dd/DepotDownloader" \
             -app "$APP_ID" \
+            -username "$STEAM_USERNAME" \
+            -password "$STEAM_PASSWORD" \
+            -remember-password \
             -filelist "$WORK_DIR/filelist.txt" \
             -dir "$WORK_DIR/download"
 
           if [ ! -f "$WORK_DIR/download/game/dota/pak01_dir.vpk" ]; then
-            echo "::error::pak01_dir.vpk not found — anonymous access denied or layout changed." >&2
+            echo "::error::pak01_dir.vpk not found — login/2FA failed or no Dota license on this account." >&2
             exit 1
           fi
 
