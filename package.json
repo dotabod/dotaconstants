@@ -9,7 +9,8 @@
   "scripts": {
     "patch": "node tasks/newpatch.ts",
     "prettier": "npx prettier --write tasks",
-    "build": "node tasks/updateconstants.ts"
+    "build": "node tasks/updateconstants.ts",
+    "build:cosmetics": "node tasks/cosmetics.ts"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",

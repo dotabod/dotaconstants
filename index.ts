@@ -4,6 +4,7 @@ export { default as aghs_desc } from './build/aghs_desc.json' with { type: 'json
 export { default as ancients } from './build/ancients.json' with { type: 'json' };
 export { default as chat_wheel } from './build/chat_wheel.json' with { type: 'json' };
 export { default as cluster } from './build/cluster.json' with { type: 'json' };
+export { default as cosmetics } from './build/cosmetics.json' with { type: 'json' };
 export { default as countries } from './build/countries.json' with { type: 'json' };
 export { default as game_mode } from './build/game_mode.json' with { type: 'json' };
 export { default as hero_abilities } from './build/hero_abilities.json' with { type: 'json' };
