@@ -28,10 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       APP_ID: '570'
-      # Dota 2 content depot that holds pak01 (panorama/econ images). If the
-      # download fails, verify the current id at https://steamdb.info/app/570/depots/
-      DEPOT_ID: '373301'
       WORK_DIR: /mnt/dota
+      # Self-contained binary (bundles the .NET runtime); bump as releases land.
+      DD_VERSION: '3.4.0'
       # Provides marketable flag + market_hash_name (for market links) and is the
       # icon fallback for the few DXT textures with no embedded PNG.
       STEAM_WEB_API: ${{ secrets.STEAM_WEB_API }}
@@ -43,11 +42,6 @@ jobs:
           df -h
           sudo mkdir -p "$WORK_DIR"
           sudo chown "$USER" "$WORK_DIR"
-
-      - name: Setup .NET (DepotDownloader)
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -61,24 +55,30 @@ jobs:
       - name: Download Dota pak01 VPK (anonymous)
         run: |
           set -euo pipefail
-          dotnet tool install --global DepotDownloader
-          export PATH="$PATH:$HOME/.dotnet/tools"
+
+          # DepotDownloader ships a self-contained linux-x64 binary on GitHub
+          # releases (it is NOT a `dotnet tool`).
+          curl -fsSL -o "$WORK_DIR/dd.zip" \
+            "https://github.com/SteamRE/DepotDownloader/releases/download/DepotDownloader_${DD_VERSION}/DepotDownloader-linux-x64.zip"
+          unzip -o "$WORK_DIR/dd.zip" -d "$WORK_DIR/dd"
+          chmod +x "$WORK_DIR/dd/DepotDownloader"
 
           # -filelist takes one regex per line. pak01_dir.vpk only indexes data
           # stored in the numbered pak01_NNN chunks, so both must be allowed.
+          # No -depot: -app + -filelist pulls pak01 from whatever depot holds it,
+          # so this doesn't break when Valve's content depot id rolls.
           {
             printf '%s\n' 'regex:game/dota/pak01_dir\.vpk$'
             printf '%s\n' 'regex:game/dota/pak01_[0-9]+\.vpk$'
           } > "$WORK_DIR/filelist.txt"
 
-          DepotDownloader \
+          "$WORK_DIR/dd/DepotDownloader" \
             -app "$APP_ID" \
-            -depot "$DEPOT_ID" \
             -filelist "$WORK_DIR/filelist.txt" \
             -dir "$WORK_DIR/download"
 
           if [ ! -f "$WORK_DIR/download/game/dota/pak01_dir.vpk" ]; then
-            echo "::error::pak01_dir.vpk not found — wrong depot id or anonymous access denied." >&2
+            echo "::error::pak01_dir.vpk not found — anonymous access denied or layout changed." >&2
             exit 1
           fi
 
