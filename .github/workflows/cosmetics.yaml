@@ -1,0 +1,120 @@
+name: Update cosmetic icons from VPK
+
+# Rebuilds build/cosmetics.json with a Steam CDN icon URL for (nearly) every
+# equipped cosmetic. Steam hosts each econ image at
+#   https://steamcdn-a.akamaihd.net/apps/570/icons/<image_inventory>.<sha1>.png
+# where <sha1> is the hash of the PNG embedded in that item's .vtex_c. We compute
+# those hashes by downloading Dota's pak01 VPK (anonymous, DepotDownloader) and
+# reading it with the `vpk` package inside tasks/cosmetics.ts — no image hosting
+# on our side. This is the only way to cover untradable items (Cache/Battle Pass);
+# the economy API alone reaches ~17%.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly; far less churn than the 6h d2vpkr constants job (icons change rarely).
+    - cron: '30 7 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-cosmetics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Rebuild cosmetics.json icons from VPK
+    runs-on: ubuntu-latest
+    env:
+      APP_ID: '570'
+      # Dota 2 content depot that holds pak01 (panorama/econ images). If the
+      # download fails, verify the current id at https://steamdb.info/app/570/depots/
+      DEPOT_ID: '373301'
+      WORK_DIR: /mnt/dota
+      # Provides marketable flag + market_hash_name (for market links) and is the
+      # icon fallback for the few DXT textures with no embedded PNG.
+      STEAM_WEB_API: ${{ secrets.STEAM_WEB_API }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Use /mnt for the large VPK download
+        run: |
+          df -h
+          sudo mkdir -p "$WORK_DIR"
+          sudo chown "$USER" "$WORK_DIR"
+
+      - name: Setup .NET (DepotDownloader)
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download Dota pak01 VPK (anonymous)
+        run: |
+          set -euo pipefail
+          dotnet tool install --global DepotDownloader
+          export PATH="$PATH:$HOME/.dotnet/tools"
+
+          # -filelist takes one regex per line. pak01_dir.vpk only indexes data
+          # stored in the numbered pak01_NNN chunks, so both must be allowed.
+          {
+            printf '%s\n' 'regex:game/dota/pak01_dir\.vpk$'
+            printf '%s\n' 'regex:game/dota/pak01_[0-9]+\.vpk$'
+          } > "$WORK_DIR/filelist.txt"
+
+          DepotDownloader \
+            -app "$APP_ID" \
+            -depot "$DEPOT_ID" \
+            -filelist "$WORK_DIR/filelist.txt" \
+            -dir "$WORK_DIR/download"
+
+          if [ ! -f "$WORK_DIR/download/game/dota/pak01_dir.vpk" ]; then
+            echo "::error::pak01_dir.vpk not found — wrong depot id or anonymous access denied." >&2
+            exit 1
+          fi
+
+      - name: Build cosmetics.json with icon hashes
+        env:
+          DOTA_VPK_DIR: ${{ env.WORK_DIR }}/download/game/dota
+        run: npm run build:cosmetics
+
+      - name: Validate icon coverage
+        run: |
+          set -euo pipefail
+          total=$(jq 'length' build/cosmetics.json)
+          icons=$(jq '[.[] | select(.icon)] | length' build/cosmetics.json)
+          pct=$(( total > 0 ? icons * 100 / total : 0 ))
+          echo "cosmetics=$total with_icon=$icons (${pct}%)"
+          # The VPK path should reach ~90%+; well above the economy-only ~17%.
+          if (( total < 5000 || pct < 70 )); then
+            echo "::error::icon coverage too low (${pct}% of ${total}) — refusing to commit." >&2
+            exit 1
+          fi
+
+      - name: Commit, version, and push if cosmetics changed
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          if git diff --quiet -- build/cosmetics.json; then
+            echo "No cosmetics changes; nothing to commit."
+            exit 0
+          fi
+
+          npm version patch --no-git-tag-version > /dev/null
+          pkgver=$(node -p "require('./package.json').version")
+
+          git add build/cosmetics.json package.json package-lock.json
+          git commit -m "Update cosmetic icons from VPK [v${pkgver}]"
+          git tag "v${pkgver}"
+          git push --follow-tags
