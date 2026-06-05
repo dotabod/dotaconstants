@@ -1140,18 +1140,6 @@
     "shard_new_skill": false
   },
   {
-    "hero_name": "npc_dota_hero_magnataur",
-    "hero_id": 97,
-    "has_scepter": true,
-    "scepter_desc": "Magnus tosses any enemies in front of him, launching them to his rear. Enemies take damage, spend 0.6 seconds in the air, and are stunned while in the air and an additional amount of time after landing.",
-    "scepter_skill_name": "Horn Toss",
-    "scepter_new_skill": true,
-    "has_shard": true,
-    "shard_desc": "Increases range and deals additional damage when skewering enemies into trees or cliffs.",
-    "shard_skill_name": "Skewer",
-    "shard_new_skill": false
-  },
-  {
     "hero_name": "npc_dota_hero_shredder",
     "hero_id": 98,
     "has_scepter": true,
