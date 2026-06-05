@@ -300,6 +300,18 @@
     "shard_new_skill": false
   },
   {
+    "hero_name": "npc_dota_hero_shadow_shaman",
+    "hero_id": 27,
+    "has_scepter": true,
+    "scepter_desc": "Increase cast range. Every 0.9 seconds, shackled units emit a radial Ether Shock hitting all other units within 600 of the target for 100% of Ether Shock's normal damage. Shackles can now also be cast on allies and Mass Serpent Wards that stay within 2000 units of Shadow Shaman. Allied units are not disabled by Shackle.",
+    "scepter_skill_name": "Shackles",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Allows to create a Mega Ward using the Urnaconda ability.",
+    "shard_skill_name": "Mass Serpent Ward",
+    "shard_new_skill": false
+  },
+  {
     "hero_name": "npc_dota_hero_slardar",
     "hero_id": 28,
     "has_scepter": true,
@@ -771,7 +783,7 @@
     "hero_name": "npc_dota_hero_spectre",
     "hero_id": 67,
     "has_scepter": true,
-    "scepter_desc": "The first time Spectre uses Reality on a Haunt illusion, enemies in a =400 area around the target are Feared away from Spectre for =1.5s and have their movement speed slowed by 50%.\n\nReduces cooldown by 20s.",
+    "scepter_desc": "The first time Spectre uses Reality on a Haunt illusion, enemies in a =400 area around the target are Feared away from Spectre for =2.0s and have their movement speed slowed by 50%.\n\nReduces cooldown by 20s.",
     "scepter_skill_name": "Haunt",
     "scepter_new_skill": false,
     "has_shard": true,
@@ -799,7 +811,7 @@
     "scepter_skill_name": "Doom",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Devour has 2 charges and can target Ancients. Stolen creep abilities have 20% increased AoE and 40% increased spell amplification.",
+    "shard_desc": "Devour has 2 charges and can target Ancients. Stolen creep abilities have 15% increased AoE and 40% increased spell amplification.",
     "shard_skill_name": "Devour",
     "shard_new_skill": false
   },
@@ -831,7 +843,7 @@
     "hero_name": "npc_dota_hero_gyrocopter",
     "hero_id": 72,
     "has_scepter": true,
-    "scepter_desc": "Gyrocopter gains a Side Gunner that attacks enemy units in a %AbilityCastRange% unit radius every 1.3s with his attack. Side Gunner will attack 2 units at a time while Flak Cannon is active. Prioritizes furthest unit away within its range.",
+    "scepter_desc": "Gyrocopter gains a Side Gunner that attacks enemy units in a %AbilityCastRange% unit radius every 1.3s with his attack. Prioritizes furthest unit away within its range.",
     "scepter_skill_name": "Side Gunner",
     "scepter_new_skill": true,
     "has_shard": true,
@@ -907,7 +919,7 @@
     "scepter_skill_name": "Primal Split",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Toss a strong drink to a teammate or drink it yourself, activating the maximum power effect of Liquid Courage and granting 2.5% Max HP Regen per second.\n\nLasts 5 seconds.",
+    "shard_desc": "Toss a strong drink to a teammate or drink it yourself, activating the maximum power effect of Liquid Courage and granting 3% Max HP Regen per second.\n\nLasts 5 seconds.",
     "shard_skill_name": "Liquid Courage",
     "shard_new_skill": false
   },
@@ -1371,7 +1383,7 @@
     "hero_name": "npc_dota_hero_grimstroke",
     "hero_id": 121,
     "has_scepter": true,
-    "scepter_desc": "Creates an ink illusion of a target enemy hero. Illusion is debuff immune, has 95% magic resistance, and has bonus movement speed and attack damage.",
+    "scepter_desc": "Creates an ink illusion of a target enemy hero. Illusion is debuff immune, has 90% magic resistance, and has bonus movement speed and attack damage.",
     "scepter_skill_name": "Dark Portrait",
     "scepter_new_skill": true,
     "has_shard": true,

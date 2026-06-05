@@ -5056,7 +5056,7 @@
     "id": 103,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Dagon Recipe",
-    "cost": 1150,
+    "cost": 1100,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -5081,7 +5081,7 @@
     "img": "/apps/dota2/images/dota_react/items/dagon.png?t=1593393829403",
     "dname": "Dagon",
     "qual": "rare",
-    "cost": 3050,
+    "cost": 3000,
     "behavior": "Unit Target",
     "target_team": "Enemy",
     "target_type": [
@@ -5148,7 +5148,7 @@
     "img": "/apps/dota2/images/dota_react/items/dagon_2.png?t=1593393829403",
     "dname": "Dagon",
     "qual": "rare",
-    "cost": 4200,
+    "cost": 4100,
     "behavior": "Unit Target",
     "target_team": "Enemy",
     "target_type": [
@@ -5210,7 +5210,7 @@
     "img": "/apps/dota2/images/dota_react/items/dagon_3.png?t=1593393829403",
     "dname": "Dagon",
     "qual": "rare",
-    "cost": 5350,
+    "cost": 5200,
     "behavior": "Unit Target",
     "target_team": "Enemy",
     "target_type": [
@@ -5272,7 +5272,7 @@
     "img": "/apps/dota2/images/dota_react/items/dagon_4.png?t=1593393829403",
     "dname": "Dagon",
     "qual": "rare",
-    "cost": 6500,
+    "cost": 6300,
     "behavior": "Unit Target",
     "target_team": "Enemy",
     "target_type": [
@@ -5334,7 +5334,7 @@
     "img": "/apps/dota2/images/dota_react/items/dagon_5.png?t=1593393829403",
     "dname": "Dagon",
     "qual": "rare",
-    "cost": 7650,
+    "cost": 7400,
     "behavior": "Unit Target",
     "target_team": "Enemy",
     "target_type": [
@@ -10529,7 +10529,7 @@
       {
         "key": "bonus_damage",
         "display": "+ {value} Damage",
-        "value": "15"
+        "value": "12"
       },
       {
         "key": "duration",
@@ -13426,7 +13426,7 @@
       {
         "type": "active",
         "title": "Skitter",
-        "description": "Grants you 20% bonus movement speed, 50% improved turn rate, and free pathing for 14 seconds. Walking over trees causes them to be destroyed."
+        "description": "Grants you 20% bonus movement speed, 50% improved turn rate, and free pathing for 12 seconds. Walking over trees causes them to be destroyed."
       }
     ],
     "hint": [],
@@ -13450,12 +13450,12 @@
       },
       {
         "key": "duration",
-        "value": "14"
+        "value": "12"
       }
     ],
     "mc": false,
     "hc": false,
-    "cd": 20,
+    "cd": 15,
     "lore": "A horrifying yet useful mixture of necromancy and artificing.",
     "components": null,
     "created": false,
@@ -14352,7 +14352,7 @@
       {
         "type": "active",
         "title": "Fallen Sky",
-        "description": "Transform into a meteor that strikes down at the target area after 1 seconds in a 315 AoE, stunning enemies for 1.6 seconds and dealing impact damage. Continues to deal damage every 1 seconds to enemy units and buildings for 6 seconds.\n\nBuilding Impact Damage: 75 \nBuilding Over Time Damage: 60 \n\nNon-Building Impact Damage: 150 \nNon-Building Over Time Damage: 60\n\nFallen Sky cannot be used for 3 seconds after taking damage from an enemy hero or Roshan."
+        "description": "Transform into a meteor that strikes down at the target area after 1 seconds in a 315 AoE, stunning enemies for 1.6 seconds and dealing impact damage. Continues to deal damage every 1 seconds to enemy units and buildings for 6 seconds.\n\nBuilding Impact Damage: 110 \nBuilding Over Time Damage: 60 \n\nNon-Building Impact Damage: 150 \nNon-Building Over Time Damage: 60\n\nFallen Sky cannot be used for 3 seconds after taking damage from an enemy hero or Roshan."
       }
     ],
     "hint": [],
@@ -14413,7 +14413,7 @@
       },
       {
         "key": "impact_damage_buildings",
-        "value": "75"
+        "value": "110"
       },
       {
         "key": "impact_damage_units",
@@ -15492,7 +15492,7 @@
         "value": "0"
       }
     ],
-    "mc": 150,
+    "mc": 50,
     "hc": false,
     "cd": 40,
     "lore": "With ready access to test subjects, untold cruelties have been dreamed up and loosed upon the world from within the walls of the Tyler Estate.",
@@ -17247,12 +17247,12 @@
       {
         "key": "bonus_night_vision",
         "display": "+ {value} Bonus Night Vision",
-        "value": "0 / 150 / 225 / 300"
+        "value": "0 / 125 / 175 / 225"
       },
       {
         "key": "bonus_attack_range",
         "display": "+ {value} Attack Range (Melee & Ranged)",
-        "value": "0 / 0 / 0 / 100"
+        "value": "0 / 0 / 0 / 80"
       }
     ],
     "mc": false,
@@ -17469,7 +17469,7 @@
       {
         "key": "spell_amp",
         "display": "+ {value}% Spell Amplification",
-        "value": "6 / 16"
+        "value": "5 / 12"
       }
     ],
     "mc": false,
@@ -17618,7 +17618,7 @@
       {
         "key": "attack_speed",
         "display": "- {value}% Attack Speed",
-        "value": "-10 / -12 / -14"
+        "value": "-9"
       }
     ],
     "mc": false,
@@ -18428,7 +18428,7 @@
       {
         "type": "passive",
         "title": "Blood Invocation",
-        "description": "Spells have a 16% larger Area of Effect, but now additionally cost health equal to 35% of their mana cost."
+        "description": "Spells have a 20% larger Area of Effect, but now additionally cost health equal to 35% of their mana cost."
       }
     ],
     "hint": [],
@@ -18444,7 +18444,7 @@
       },
       {
         "key": "aoe_pct",
-        "value": "16"
+        "value": "20"
       }
     ],
     "mc": false,
@@ -19009,7 +19009,7 @@
       {
         "type": "active",
         "title": "Refract",
-        "description": "Spend 8% of your current life total to create a full health illusion that lasts for 20 seconds. The illusion has 50% outgoing damage and takes 200% of incoming damage."
+        "description": "Spend 8% of your current life total to create a full health illusion that lasts for 20 seconds. The illusion has 60% outgoing damage and takes 200% of incoming damage."
       }
     ],
     "hint": [],
@@ -19025,7 +19025,7 @@
     "attrib": [
       {
         "key": "outgoing_damage",
-        "value": "50"
+        "value": "60"
       },
       {
         "key": "incoming_damage",
@@ -19101,7 +19101,7 @@
       {
         "type": "active",
         "title": "False Flight",
-        "description": "Gain 50% slow resistance, phased movement, and 25% evasion for 6.5 seconds."
+        "description": "Gain 50% slow resistance, phased movement, and 35% evasion for 6.5 seconds."
       }
     ],
     "hint": [],
@@ -19123,7 +19123,7 @@
       },
       {
         "key": "evasion",
-        "value": "25"
+        "value": "35"
       }
     ],
     "mc": false,
@@ -19145,7 +19145,7 @@
       {
         "type": "passive",
         "title": "Bloodrush",
-        "description": "Enemy heroes dying within 1200 units reset the cooldown of Bloodthirst."
+        "description": "Enemy heroes dying within 1500 units reset the cooldown of Bloodthirst."
       }
     ],
     "hint": [],
@@ -19171,7 +19171,7 @@
       },
       {
         "key": "death_radius",
-        "value": "1200"
+        "value": "1500"
       }
     ],
     "mc": false,
@@ -19341,7 +19341,7 @@
       {
         "type": "passive",
         "title": "Balance",
-        "description": "Gain 5% spell manacost reduction for every spell off cooldown and 6% spell amplification for every spell on cooldown."
+        "description": "Gain 7% spell mana cost reduction for every ability off cooldown and 6% spell amplification for every ability on cooldown."
       }
     ],
     "hint": [],
@@ -19349,11 +19349,11 @@
     "img": "/apps/dota2/images/dota_react/items/harmonizer.png?t=1593393829403",
     "dname": "Harmonizer",
     "cost": 0,
-    "notes": "Only considers abilities that are visible and have a cooldown",
+    "notes": "Only considers abilities that are visible and have a cooldown.",
     "attrib": [
       {
         "key": "manacost_reduction",
-        "value": "5"
+        "value": "7"
       },
       {
         "key": "spell_amp",
@@ -19428,7 +19428,7 @@
       {
         "key": "health_regen",
         "display": "+ {value} Health Regeneration",
-        "value": "2"
+        "value": "2.25"
       }
     ],
     "mc": false,
