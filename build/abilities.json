@@ -72399,8 +72399,8 @@
         "generated": true
       },
       {
-        "key": "max_stacks_tooltip",
-        "header": "MAX STACKS TOOLTIP:",
+        "key": "max_stacks",
+        "header": "MAX STACKS:",
         "value": "5",
         "generated": true
       }
