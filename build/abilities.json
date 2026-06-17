@@ -78531,7 +78531,7 @@
     "dname": "+{s:bonus_entangle_duration}s Entangle Root Duration"
   },
   "special_bonus_unique_wisp": {
-    "dname": "+{s:bonus_hero_damage} Spirits Hero Damage"
+    "dname": "+{s:bonus_hero_damage}% Spirits Damage"
   },
   "special_bonus_unique_wisp_2": {
     "dname": "Tether Stuns"
