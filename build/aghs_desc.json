@@ -912,6 +912,18 @@
     "shard_new_skill": false
   },
   {
+    "hero_name": "npc_dota_hero_brewmaster",
+    "hero_id": 78,
+    "has_scepter": true,
+    "scepter_desc": "Primal Split gains 1 max and current level, improving the Brewlings and their abilities.\n\nAllows Primal Split to be cancelled early, and causes the Brewlings to be Brewed Up when Primal Split begins.",
+    "scepter_skill_name": "Primal Split",
+    "scepter_new_skill": false,
+    "has_shard": true,
+    "shard_desc": "Toss a strong drink to a teammate or drink it yourself, activating the maximum power effect of Liquid Courage and granting 3% Max HP Regen per second.\n\nLasts 5 seconds.",
+    "shard_skill_name": "Liquid Courage",
+    "shard_new_skill": false
+  },
+  {
     "hero_name": "npc_dota_hero_shadow_demon",
     "hero_id": 79,
     "has_scepter": true,
