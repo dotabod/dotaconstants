@@ -4563,6 +4563,54 @@
     "all_chat": true,
     "image": "sprays/monster_hunter/free/monster_hunter_atlas_complete_spray.psd"
   },
+  "805": {
+    "id": 805,
+    "name": "dc_beastmaster",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_beastmaster_icon.png"
+  },
+  "806": {
+    "id": 806,
+    "name": "dc_monkey",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_monkey_icon.png"
+  },
+  "807": {
+    "id": 807,
+    "name": "dc_oracle",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_oracle_icon.png"
+  },
+  "808": {
+    "id": 808,
+    "name": "dc_ringmaster",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_ringmaster_icon.png"
+  },
+  "809": {
+    "id": 809,
+    "name": "dc_bristleback",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_bristleback_icon.png"
+  },
+  "810": {
+    "id": 810,
+    "name": "dc_meepo",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_meepo.png"
+  },
+  "811": {
+    "id": 811,
+    "name": "dc_hoodwink",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_hoodwink_icon.png"
+  },
+  "812": {
+    "id": 812,
+    "name": "dc_earthspirit",
+    "all_chat": true,
+    "image": "sprays/dark_carnival/dc_earthspirit_icon.png"
+  },
   "813": {
     "id": 813,
     "name": "Guild_TI9_Legioncommander_Winner",
@@ -4592,6 +4640,30 @@
     "all_chat": true,
     "label": "Иди-ка сюда",
     "message": "А ну-ка иди-ка сюда. А вот все. Все.",
+    "sound_ext": "wav"
+  },
+  "818": {
+    "id": 818,
+    "name": "dc_money_and_bones",
+    "all_chat": true,
+    "label": "MONEY AND BONES! MONEY AND BONES!",
+    "message": "MONEY AND BONES! MONEY AND BONES!",
+    "sound_ext": "wav"
+  },
+  "819": {
+    "id": 819,
+    "name": "dc_are_we_the_idiots",
+    "all_chat": true,
+    "label": "Are we the idiots?",
+    "message": "Are we the idiots?",
+    "sound_ext": "wav"
+  },
+  "820": {
+    "id": 820,
+    "name": "dc_wow",
+    "all_chat": true,
+    "label": "Wow!",
+    "message": "Wow!",
     "sound_ext": "wav"
   }
 }

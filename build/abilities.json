@@ -9012,6 +9012,300 @@
     ],
     "img": "/apps/dota2/images/dota_react/abilities/deity_blessing_deep_ones.png"
   },
+  "seasonal_dark_carnival_balloon": {
+    "dname": "Carnival Balloon",
+    "behavior": [
+      "Point Target",
+      "Unit Target"
+    ],
+    "target_team": "Both",
+    "target_type": [
+      "Hero",
+      "Basic"
+    ],
+    "desc": "Release a balloon",
+    "dmg": "0",
+    "attrib": [
+      {
+        "key": "speed",
+        "header": "SPEED:",
+        "value": "1500",
+        "generated": true
+      },
+      {
+        "key": "min_distance_before_bounce",
+        "header": "MIN DISTANCE BEFORE BOUNCE:",
+        "value": "300",
+        "generated": true
+      },
+      {
+        "key": "drag",
+        "header": "DRAG:",
+        "value": "7",
+        "generated": true
+      },
+      {
+        "key": "duration",
+        "header": "DURATION:",
+        "value": "20",
+        "generated": true
+      },
+      {
+        "key": "max_height",
+        "header": "MAX HEIGHT:",
+        "value": "300",
+        "generated": true
+      },
+      {
+        "key": "max_vertical_move_time",
+        "header": "MAX VERTICAL MOVE TIME:",
+        "value": "0.5",
+        "generated": true
+      },
+      {
+        "key": "bounce_turn_angle",
+        "header": "BOUNCE TURN ANGLE:",
+        "value": "45",
+        "generated": true
+      },
+      {
+        "key": "bounce_turn_angle_tree",
+        "header": "BOUNCE TURN ANGLE TREE:",
+        "value": "30",
+        "generated": true
+      },
+      {
+        "key": "bounce_delay",
+        "header": "BOUNCE DELAY:",
+        "value": "0.6",
+        "generated": true
+      },
+      {
+        "key": "multi_spawn",
+        "header": "MULTI SPAWN:",
+        "value": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "generated": true
+      },
+      {
+        "key": "different_types",
+        "header": "DIFFERENT TYPES:",
+        "value": [
+          "0",
+          "0",
+          "1"
+        ],
+        "generated": true
+      },
+      {
+        "key": "additional_charges_after_max_level",
+        "header": "ADDITIONAL CHARGES AFTER MAX LEVEL:",
+        "value": "5",
+        "generated": true
+      },
+      {
+        "key": "abilitycastrange",
+        "header": "CAST RANGE:",
+        "value": "800",
+        "generated": true
+      },
+      {
+        "key": "charge_restore_time",
+        "header": "CHARGE RESTORE TIME:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "abilitycastpoint",
+        "header": "CAST TIME:",
+        "value": "0.2",
+        "generated": true
+      },
+      {
+        "key": "max_charges",
+        "header": "MAX CHARGES:",
+        "value": [
+          "5",
+          "10"
+        ],
+        "generated": true
+      }
+    ],
+    "lore": "Prizes!",
+    "mc": "0",
+    "cd": [
+      "60",
+      "60",
+      "40",
+      "40"
+    ],
+    "img": "/apps/dota2/images/dota_react/abilities/seasonal_dark_carnival_balloon.png"
+  },
+  "seasonal_dark_carnival_firework": {
+    "dname": "Carnival Firework",
+    "behavior": "Point Target",
+    "desc": "Shoot a firework into the air.",
+    "dmg": "0",
+    "attrib": [
+      {
+        "key": "radius",
+        "header": "RADIUS:",
+        "value": "600",
+        "generated": true
+      },
+      {
+        "key": "speed",
+        "header": "SPEED:",
+        "value": "1200",
+        "generated": true
+      },
+      {
+        "key": "linger_duration",
+        "header": "LINGER DURATION:",
+        "value": "5",
+        "generated": true
+      },
+      {
+        "key": "explosion_type",
+        "header": "EXPLOSION TYPE:",
+        "value": [
+          "1",
+          "1",
+          "2",
+          "2",
+          "3"
+        ],
+        "generated": true
+      },
+      {
+        "key": "additional_charges_after_max_level",
+        "header": "ADDITIONAL CHARGES AFTER MAX LEVEL:",
+        "value": "5",
+        "generated": true
+      },
+      {
+        "key": "abilitycastrange",
+        "header": "CAST RANGE:",
+        "value": "1200",
+        "generated": true
+      },
+      {
+        "key": "charge_restore_time",
+        "header": "CHARGE RESTORE TIME:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "abilitycastpoint",
+        "header": "CAST TIME:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "max_charges",
+        "header": "MAX CHARGES:",
+        "value": [
+          "5",
+          "10"
+        ],
+        "generated": true
+      }
+    ],
+    "lore": "Boom!",
+    "mc": "0",
+    "cd": [
+      "60",
+      "60",
+      "40",
+      "40"
+    ],
+    "img": "/apps/dota2/images/dota_react/abilities/seasonal_dark_carnival_firework.png"
+  },
+  "seasonal_dark_carnival_pie": {
+    "dname": "Carnival Pie",
+    "behavior": "Unit Target",
+    "target_team": "Both",
+    "target_type": "Hero",
+    "desc": "Throw a pie",
+    "dmg": "0",
+    "attrib": [
+      {
+        "key": "projectile_speed",
+        "header": "PROJECTILE SPEED:",
+        "value": "1100",
+        "generated": true
+      },
+      {
+        "key": "golden_pie",
+        "header": "GOLDEN PIE:",
+        "value": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "generated": true
+      },
+      {
+        "key": "bounce",
+        "header": "BOUNCE:",
+        "value": [
+          "0",
+          "0",
+          "1"
+        ],
+        "generated": true
+      },
+      {
+        "key": "additional_charges_after_max_level",
+        "header": "ADDITIONAL CHARGES AFTER MAX LEVEL:",
+        "value": "5",
+        "generated": true
+      },
+      {
+        "key": "abilitycastrange",
+        "header": "CAST RANGE:",
+        "value": "1200",
+        "generated": true
+      },
+      {
+        "key": "charge_restore_time",
+        "header": "CHARGE RESTORE TIME:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "abilitycastpoint",
+        "header": "CAST TIME:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "max_charges",
+        "header": "MAX CHARGES:",
+        "value": [
+          "5",
+          "10"
+        ],
+        "generated": true
+      }
+    ],
+    "lore": "Splat!",
+    "mc": "0",
+    "cd": [
+      "60",
+      "60",
+      "60",
+      "40"
+    ],
+    "img": "/apps/dota2/images/dota_react/abilities/seasonal_dark_carnival_pie.png"
+  },
   "antimage_mana_break": {
     "dname": "Mana Break",
     "behavior": "Passive",
@@ -14157,13 +14451,13 @@
       {
         "key": "model_scale_min",
         "header": "MODEL SCALE MIN:",
-        "value": "-20",
+        "value": "0",
         "generated": true
       },
       {
         "key": "model_scale_max",
         "header": "MODEL SCALE MAX:",
-        "value": "40",
+        "value": "20",
         "generated": true
       }
     ],
@@ -24215,12 +24509,6 @@
       {
         "key": "require_target",
         "header": "REQUIRE TARGET:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "no_reveal",
-        "header": "NO REVEAL:",
         "value": "0",
         "generated": true
       },
@@ -41386,12 +41674,6 @@
         "key": "knockback_height",
         "header": "KNOCKBACK HEIGHT:",
         "value": "50",
-        "generated": true
-      },
-      {
-        "key": "projectile_body_vision",
-        "header": "PROJECTILE BODY VISION:",
-        "value": "175",
         "generated": true
       },
       {
@@ -63355,12 +63637,6 @@
         "key": "hp_dmg",
         "header": "MAX HP AS BONUS DAMAGE:",
         "value": "0%"
-      },
-      {
-        "key": "duration",
-        "header": "DURATION:",
-        "value": "0.75",
-        "generated": true
       },
       {
         "key": "abilitycastrange",
