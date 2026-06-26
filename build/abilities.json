@@ -63639,6 +63639,12 @@
         "value": "0%"
       },
       {
+        "key": "duration",
+        "header": "DURATION:",
+        "value": "0.75",
+        "generated": true
+      },
+      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "1000",
