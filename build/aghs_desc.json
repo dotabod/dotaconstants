@@ -1255,7 +1255,7 @@
     "scepter_skill_name": "Fire Remnant",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "If an enemy hero dies near Ember Spirit, a Fire Remnant charge will be replenished.",
+    "shard_desc": "If an enemy hero dies near Ember Spirit, a Fire Remnant charge will be replenished. Additionally, when Ember Spirit dies a Fire Remnant is spawned at his location.",
     "shard_skill_name": "Fire Remnant",
     "shard_new_skill": false
   },
