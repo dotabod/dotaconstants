@@ -307,9 +307,9 @@
     "scepter_skill_name": "Shackles",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Allows to create a Mega Ward using the Urnaconda ability.",
-    "shard_skill_name": "Mass Serpent Ward",
-    "shard_new_skill": false
+    "shard_desc": "Throw a snake jar at the target location, damaging all enemies in the AoE and creating a Massive Serpent Ward that has 4x the base Serpent Ward damage and health there that lasts 15s.",
+    "shard_skill_name": "Urnaconda",
+    "shard_new_skill": true
   },
   {
     "hero_name": "npc_dota_hero_slardar",

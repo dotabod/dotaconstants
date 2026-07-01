@@ -21030,24 +21030,28 @@
       {
         "key": "mega_ward_multiplier_damage",
         "header": "MEGA WARD MULTIPLIER DAMAGE:",
-        "value": "0",
+        "value": "4",
         "generated": true
       },
       {
         "key": "mega_ward_multiplier_health",
         "header": "MEGA WARD MULTIPLIER HEALTH:",
-        "value": "0",
+        "value": "4",
         "generated": true
       },
       {
         "key": "mega_ward_health_tooltip",
         "header": "MEGA WARD HEALTH:",
-        "value": "0"
+        "value": "8"
       },
       {
         "key": "mega_ward_damage_tooltip",
         "header": "MEGA WARD DAMAGE:",
-        "value": "0"
+        "value": [
+          "200",
+          "340",
+          "480"
+        ]
       },
       {
         "key": "mega_ward_model_scale_multiplier",
