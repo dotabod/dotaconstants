@@ -4665,5 +4665,21 @@
     "label": "Wow!",
     "message": "Wow!",
     "sound_ext": "wav"
+  },
+  "821": {
+    "id": 821,
+    "name": "dc_its_not_that_funny",
+    "all_chat": true,
+    "label": "It's not that funny.",
+    "message": "It's not that funny.",
+    "sound_ext": "wav"
+  },
+  "822": {
+    "id": 822,
+    "name": "dc_im_sorry_who_are_you_again",
+    "all_chat": true,
+    "label": "I'm... sorry, who are you again?",
+    "message": "I'm... sorry, who are you again?",
+    "sound_ext": "wav"
   }
 }
