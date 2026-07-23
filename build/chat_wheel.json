@@ -4681,5 +4681,13 @@
     "label": "I'm... sorry, who are you again?",
     "message": "I'm... sorry, who are you again?",
     "sound_ext": "wav"
+  },
+  "823": {
+    "id": 823,
+    "name": "dc_look_at_me_i_quit",
+    "all_chat": true,
+    "label": "Look at me! I quit.",
+    "message": "Look at me! I quit.",
+    "sound_ext": "wav"
   }
 }
