@@ -66130,7 +66130,7 @@
       ],
       "ancient_apparition": {
         "ancient_apparition_ice_blast": [
-          "Cooldown decreased from 60/50/40s to 50/45/40 s"
+          "Cooldown decreased from 60/50/40s to 50/45/40s"
         ]
       },
       "axe": {
@@ -66379,7 +66379,8 @@
       },
       "pugna": {
         "general": [
-          "Base Intelligence increased from 26 to 27"
+          "Base Intelligence increased from 26 to 27",
+          "Damage at level 1 increased from 47-54 to 48-55"
         ]
       },
       "queenofpain": {
