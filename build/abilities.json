@@ -9895,9 +9895,9 @@
         "header": "DAMAGE PER SECOND:",
         "value": [
           "12",
-          "18",
-          "24",
-          "30"
+          "16",
+          "20",
+          "24"
         ]
       },
       {
@@ -10377,10 +10377,10 @@
         "key": "abilityduration",
         "header": "DURATION:",
         "value": [
-          "3.5",
-          "4.5",
-          "5.5",
-          "6.5"
+          "3",
+          "4",
+          "5",
+          "6"
         ],
         "generated": true
       },
@@ -10442,12 +10442,12 @@
       {
         "key": "max_terrors",
         "header": "MAX TERRORS PER HERO:",
-        "value": "5"
+        "value": "6"
       },
       {
         "key": "status_resistance",
         "header": "STATUS RESISTANCE PER TERROR:",
-        "value": "5%"
+        "value": "4%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/bane_ichor_of_nyctasha.png"
@@ -11434,7 +11434,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying Frost Arrows. Lasts up to 1.75 seconds.\n\nDrow can move slowly and use items while casting Multishot.",
+    "desc": "CHANNELED - Drow releases a flurry of arrows in continuous salvos, hitting enemies for extra damage and applying Frost Arrows with a range of Drow's Attack Range + 475. Lasts up to 1.75 seconds.\n\nDrow can move slowly and use items while casting Multishot.",
     "attrib": [
       {
         "key": "wave_count",
@@ -11450,10 +11450,10 @@
         "key": "arrow_damage_pct",
         "header": "ARROW BASE DAMAGE BONUS:",
         "value": [
+          "80%",
           "100%",
           "120%",
-          "140%",
-          "160%"
+          "140%"
         ]
       },
       {
@@ -11471,7 +11471,14 @@
       {
         "key": "arrow_range_multiplier",
         "header": "ARROW RANGE MULTIPLIER:",
-        "value": "1.75"
+        "value": "1",
+        "generated": true
+      },
+      {
+        "key": "arrow_range_base",
+        "header": "ARROW RANGE BASE:",
+        "value": "475",
+        "generated": true
       },
       {
         "key": "arrow_angle",
@@ -11505,10 +11512,10 @@
     ],
     "lore": "In the ranger's youth, learning to fire multiple arrows at once was considered a distracting frivolity. In the war of the Ancients, such technique has become strange necessity.",
     "mc": [
-      "50",
       "70",
-      "90",
-      "110"
+      "85",
+      "100",
+      "115"
     ],
     "cd": [
       "24",
@@ -13365,7 +13372,7 @@
       {
         "key": "duration",
         "header": "STACK DURATION:",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "procs_attack",
@@ -13456,7 +13463,7 @@
       {
         "key": "duration",
         "header": "STACK DURATION:",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "procs_attack",
@@ -13547,7 +13554,7 @@
       {
         "key": "duration",
         "header": "STACK DURATION:",
-        "value": "7"
+        "value": "6"
       },
       {
         "key": "procs_attack",
@@ -14287,9 +14294,9 @@
     "lore": "Staring into Morphling produces a reflection that mimics the beholder.",
     "mc": "50",
     "cd": [
-      "140",
-      "100",
-      "60"
+      "125",
+      "90",
+      "55"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/morphling_replicate.png"
   },
@@ -14953,10 +14960,10 @@
       "120"
     ],
     "cd": [
+      "12",
       "11",
       "10",
-      "9",
-      "8"
+      "9"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/puck_illusory_orb.png"
   },
@@ -18629,9 +18636,9 @@
         "key": "damage",
         "header": "DAMAGE:",
         "value": [
-          "300",
-          "475",
-          "650"
+          "275",
+          "425",
+          "575"
         ]
       },
       {
@@ -18666,7 +18673,7 @@
       {
         "key": "attack_speed_bonus",
         "header": "BONUS ATTACK SPEED:",
-        "value": "30"
+        "value": "20"
       },
       {
         "key": "arc_lightning_damage_pct",
@@ -22245,7 +22252,7 @@
     "bkbpierce": "No",
     "dispellable": "No",
     "target_type": "Hero",
-    "desc": "Curses all enemy Heroes and player-controlled units in a small area, causing them to take a set amount of damage each second, as well as bursts of damage every 4 seconds based on how much health they have lost since the curse began.",
+    "desc": "Curses all enemy Heroes and player-controlled targets in a small area, causing them to take a set amount of damage each second, as well as bursts of damage every 4 seconds based on how much health they have lost since the curse began.",
     "dmg": [
       "18",
       "22",
@@ -24686,7 +24693,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "750",
+        "value": "600",
         "generated": true
       },
       {
@@ -24815,7 +24822,7 @@
       {
         "key": "regen",
         "header": "HP/MANA REGEN:",
-        "value": "3.7"
+        "value": "3.8"
       },
       {
         "key": "bonus_aoe",
@@ -26497,9 +26504,9 @@
     "lore": "Akasha's envenomed dagger allows her to delight in the drawn out suffering of her victims.",
     "mc": [
       "100",
+      "105",
       "110",
-      "120",
-      "130"
+      "115"
     ],
     "cd": [
       "11",
@@ -27162,9 +27169,9 @@
         "header": "INITIAL DAMAGE:",
         "value": [
           "40",
-          "60",
-          "80",
-          "100"
+          "70",
+          "100",
+          "130"
         ]
       },
       {
@@ -29333,7 +29340,7 @@
     "dmg_type": "Physical",
     "bkbpierce": "Yes",
     "dispellable": "No",
-    "desc": "Templar Assassin conceals herself, becoming invisible as long as she remains still. If Meld's invisibility is broken by attacking an enemy, Lanaya's attack will deal bonus damage to the enemy and reduce their armor for 6 seconds. Bonus damage and armor reductions are applied to all enemies in the Psi Blades split range.",
+    "desc": "Templar Assassin conceals herself, becoming invisible as long as she remains still. If Meld's invisibility is broken by attacking an enemy, Lanaya's attack will deal bonus damage to the enemy and reduce their armor for 6 seconds. Bonus damage and debuffs from Meld are applied to all enemies in the Psi Blades split range.",
     "attrib": [
       {
         "key": "bonus_damage",
@@ -30765,10 +30772,10 @@
         "key": "bonus_aoe",
         "header": "AOE BONUS:",
         "value": [
-          "25",
-          "50",
-          "75",
-          "100"
+          "30",
+          "60",
+          "90",
+          "120"
         ]
       }
     ],
@@ -31844,7 +31851,7 @@
     "behavior": "No Target",
     "dmg_type": "Magical",
     "bkbpierce": "Yes",
-    "desc": "Forms a ring of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Damage is increased by 50% of the mana burned.\n\n Cogs can be destroyed by enemy attacks, but Clockwerk can push them up to 1000 distance away with one hit. Clockwerk can move through the cogs freely, disabling them as he passes over.",
+    "desc": "Forms a ring of energized cogs around Clockwerk, trapping any units that are near. Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down. Damage is increased by 50% of the mana burned.\n\n Cogs can be destroyed by enemy attacks, but Clockwerk can push them up to 850 distance away with one hit. Clockwerk can move through the cogs freely, disabling them as he passes over.",
     "attrib": [
       {
         "key": "duration",
@@ -31871,9 +31878,9 @@
         "header": "MANA BURN:",
         "value": [
           "40",
-          "80",
-          "120",
-          "160"
+          "75",
+          "110",
+          "145"
         ]
       },
       {
@@ -31937,7 +31944,12 @@
       {
         "key": "projectile_distance",
         "header": "PROJECTILE DISTANCE:",
-        "value": "1000",
+        "value": [
+          "850",
+          "900",
+          "950",
+          "1000"
+        ],
         "generated": true
       },
       {
@@ -35003,7 +35015,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Omniknight imbues his hammer with holy power, causing his attack to have increased range, deal pure damage based on a percentage of his base damage and slow his target for a short duration.\n\n Omniknight heals for 35% of the damage dealt over 5s.",
+    "desc": "Omniknight imbues his hammer with holy power, causing his attack to have increased range, deal pure damage based on a percentage of his base damage and slow his target for a short duration.\n\n Omniknight heals for 40% of the damage dealt over 4s.",
     "dmg": "0",
     "attrib": [
       {
@@ -35029,13 +35041,13 @@
       {
         "key": "heal_pct",
         "header": "HEAL PCT:",
-        "value": "35",
+        "value": "40",
         "generated": true
       },
       {
         "key": "heal_duration",
         "header": "HEAL DURATION:",
-        "value": "5",
+        "value": "4",
         "generated": true
       },
       {
@@ -36606,7 +36618,7 @@
       {
         "key": "radius",
         "header": "AURA RADIUS:",
-        "value": "375"
+        "value": "350"
       },
       {
         "key": "dps",
@@ -38102,7 +38114,7 @@
       {
         "key": "established_thread_break_distance",
         "header": "THREAD BREAK DISTANCE:",
-        "value": "900"
+        "value": "890"
       },
       {
         "key": "damage_per_thread_hero",
@@ -39891,9 +39903,9 @@
         "key": "illusion_damage_outgoing",
         "header": "ILLUSION DAMAGE OUTGOING:",
         "value": [
-          "-70",
+          "-65",
           "-50",
-          "-30"
+          "-35"
         ],
         "generated": true
       },
@@ -39901,9 +39913,9 @@
         "key": "tooltip_outgoing",
         "header": "HAUNT DAMAGE:",
         "value": [
-          "30%",
+          "35%",
           "50%",
-          "70%"
+          "65%"
         ]
       },
       {
@@ -40356,20 +40368,20 @@
         "key": "burn_damage",
         "header": "BASE BURN DAMAGE:",
         "value": [
-          "15",
-          "30",
-          "45",
-          "60"
+          "18",
+          "34",
+          "50",
+          "66"
         ]
       },
       {
         "key": "burn_damage_pct",
         "header": "MAX HP AS DAMAGE:",
         "value": [
-          "1%",
-          "2%",
+          "0.5%",
+          "1.75%",
           "3%",
-          "4%"
+          "4.25%"
         ]
       },
       {
@@ -40905,8 +40917,8 @@
     "lore": "Ice storms from ages past flow through Kaldr's frosty limbs, crashing into the world and turning its inhabitants into monuments to his eternal power.",
     "mc": "175",
     "cd": [
-      "60",
       "50",
+      "55",
       "40"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/ancient_apparition_ice_blast.png"
@@ -41936,7 +41948,7 @@
       }
     ],
     "lore": "Aurel's new craft has an increased payload for rockets, enhancing their rapid-fire capabilities.",
-    "mc": "85",
+    "mc": "75",
     "cd": [
       "7",
       "6.5",
@@ -42044,17 +42056,12 @@
       }
     ],
     "lore": "The biggest missile Aurel could possibly attach to his craft, The Bomb has carefully calculated aerodynamics and explosives for maximum impact.",
-    "mc": [
-      "120",
-      "130",
-      "140",
-      "150"
-    ],
+    "mc": "120",
     "cd": [
-      "30",
-      "24",
-      "18",
-      "12"
+      "26",
+      "21",
+      "16",
+      "11"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/gyrocopter_homing_missile.png"
   },
@@ -43172,6 +43179,45 @@
     "cd": "18",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_cold_snap.png"
   },
+  "invoker_cold_snap_ad": {
+    "dname": "Cold Snap (AD)",
+    "behavior": "Unit Target",
+    "desc": "Invoker draws the heat from an enemy, chilling them to their very core for a duration. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases as the level goes up.",
+    "attrib": [
+      {
+        "key": "duration",
+        "header": "COLD SNAP DURATION:\\n",
+        "value": [
+          "3.4",
+          "4.2",
+          "5",
+          "5.8"
+        ]
+      },
+      {
+        "key": "freeze_cooldown",
+        "header": "FREEZE COOLDOWN:",
+        "value": [
+          "0.77",
+          "0.71",
+          "0.65",
+          "0.59"
+        ]
+      },
+      {
+        "key": "freeze_damage",
+        "header": "FREEZE DAMAGE:",
+        "value": [
+          "36",
+          "52",
+          "68",
+          "84"
+        ]
+      }
+    ],
+    "lore": "Sadron's Protracted Frisson.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_cold_snap_ad.png"
+  },
   "invoker_ghost_walk": {
     "dname": "Ghost Walk",
     "behavior": [
@@ -43186,7 +43232,7 @@
       {
         "key": "duration",
         "header": "DURATION:",
-        "value": "60"
+        "value": "50"
       },
       {
         "key": "area_of_effect",
@@ -43276,6 +43322,66 @@
     "mc": "175",
     "cd": "40",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_ghost_walk.png"
+  },
+  "invoker_ghost_walk_ad": {
+    "dname": "Ghost Walk (AD)",
+    "behavior": [
+      "No Target",
+      "Instant Cast"
+    ],
+    "desc": "Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies, and slows Invoker as well based on the level.",
+    "attrib": [
+      {
+        "key": "enemy_slow",
+        "header": "ENEMY SLOW:\\n",
+        "value": [
+          "-25%",
+          "-35%",
+          "-45%",
+          "-55%"
+        ]
+      },
+      {
+        "key": "self_slow",
+        "header": "SELF SPEED:\\n",
+        "value": [
+          "-15%",
+          "-5%",
+          "5%",
+          "15%"
+        ]
+      },
+      {
+        "key": "health_regen",
+        "header": "HEALTH REGEN:",
+        "value": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "generated": true
+      },
+      {
+        "key": "mana_regen",
+        "header": "MANA REGEN:",
+        "value": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "generated": true
+      },
+      {
+        "key": "apply_ice_wall_debuff",
+        "header": "APPLY ICE WALL DEBUFF:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Myrault's Hinder-Gast.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_ghost_walk_ad.png"
   },
   "invoker_tornado": {
     "dname": "Tornado",
@@ -43413,6 +43519,69 @@
     "cd": "27",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_tornado.png"
   },
+  "invoker_tornado_ad": {
+    "dname": "Tornado (AD)",
+    "behavior": "Point Target",
+    "desc": "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level and holds enemies in the air for a duration.\n\nDISPEL TYPE: Basic Dispel",
+    "attrib": [
+      {
+        "key": "travel_distance",
+        "header": "TRAVEL DISTANCE:\\n",
+        "value": [
+          "1800",
+          "2400",
+          "3000",
+          "3600"
+        ]
+      },
+      {
+        "key": "lift_duration",
+        "header": "LIFT TIME:\\n",
+        "value": [
+          "1.4",
+          "1.8",
+          "2.2",
+          "2.6"
+        ]
+      },
+      {
+        "key": "quas_damage",
+        "header": "QUAS DAMAGE:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "wex_damage",
+        "header": "ADDED DAMAGE:",
+        "value": [
+          "90",
+          "180",
+          "270",
+          "360"
+        ]
+      },
+      {
+        "key": "twister_distance_interval",
+        "header": "TWISTER DISTANCE INTERVAL:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "twister_damage",
+        "header": "TWISTER DAMAGE:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "twister_duration",
+        "header": "TWISTER DURATION:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Claws of Tornarus.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_tornado_ad.png"
+  },
   "invoker_emp": {
     "dname": "E.M.P.",
     "behavior": [
@@ -43489,6 +43658,44 @@
     "cd": "27",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_emp.png"
   },
+  "invoker_emp_ad": {
+    "dname": "E.M.P. (AD)",
+    "behavior": [
+      "Point Target",
+      "AOE"
+    ],
+    "desc": "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after 2.9 seconds. The detonation covers an area, draining mana. Deals damage for each point of mana drained. If EMP drains mana from an enemy hero, Invoker gains 50% of the mana drained.",
+    "attrib": [
+      {
+        "key": "delay",
+        "header": "CHARGE TIME:",
+        "value": "2.9"
+      },
+      {
+        "key": "mana_burned",
+        "header": "MAX MANA BURNED:\\n",
+        "value": [
+          "175",
+          "325",
+          "475",
+          "625"
+        ]
+      },
+      {
+        "key": "damage_per_mana_pct",
+        "header": "BURN DAMAGE:",
+        "value": "60%"
+      },
+      {
+        "key": "drag_speed",
+        "header": "DRAG SPEED:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Endoleon's Malevolent Perturbation.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_emp_ad.png"
+  },
   "invoker_alacrity": {
     "dname": "Alacrity",
     "behavior": [
@@ -43559,6 +43766,41 @@
     "mc": "75",
     "cd": "15",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_alacrity.png"
+  },
+  "invoker_alacrity_ad": {
+    "dname": "Alacrity (AD)",
+    "behavior": "Unit Target",
+    "desc": "Invoker infuses an ally with an immense surge of energy, increasing their attack speed and their damage.",
+    "attrib": [
+      {
+        "key": "bonus_attack_speed",
+        "header": "BONUS ATTACK SPEED:\\n",
+        "value": [
+          "22",
+          "46",
+          "70",
+          "94"
+        ]
+      },
+      {
+        "key": "bonus_damage",
+        "header": "BONUS DAMAGE:\\n",
+        "value": [
+          "22",
+          "42",
+          "62",
+          "82"
+        ]
+      },
+      {
+        "key": "bonus_attack_range",
+        "header": "BONUS ATTACK RANGE:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Gaster's Mandate of Impetuous Strife.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_alacrity_ad.png"
   },
   "invoker_chaos_meteor": {
     "dname": "Chaos Meteor",
@@ -43683,6 +43925,50 @@
     "cd": "50",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_chaos_meteor.png"
   },
+  "invoker_chaos_meteor_ad": {
+    "dname": "Chaos Meteor (AD)",
+    "behavior": "Point Target",
+    "desc": "Invoker pulls a flaming meteor from space onto the targeted location. Upon landing, the meteor rolls forward, constantly dealing damage and rolling further based on the level. Units hit by the meteor will also be set on fire for a short time.",
+    "attrib": [
+      {
+        "key": "travel_distance",
+        "header": "TRAVEL DISTANCE:\\n",
+        "value": [
+          "615",
+          "930",
+          "1245",
+          "1575"
+        ]
+      },
+      {
+        "key": "main_damage",
+        "header": "CONTACT DAMAGE:\\n",
+        "value": [
+          "75",
+          "115",
+          "155",
+          "195"
+        ]
+      },
+      {
+        "key": "burn_duration",
+        "header": "BURN DURATION:",
+        "value": "3"
+      },
+      {
+        "key": "burn_dps",
+        "header": "BURN DAMAGE PER SECOND:\\n",
+        "value": [
+          "15",
+          "25",
+          "35",
+          "45"
+        ]
+      }
+    ],
+    "lore": "Tarak's Descent of Fire.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_chaos_meteor_ad.png"
+  },
   "invoker_sun_strike": {
     "dname": "Sun Strike",
     "behavior": [
@@ -43784,6 +44070,34 @@
     "mc": "175",
     "cd": "23",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_sun_strike.png"
+  },
+  "invoker_sun_strike_ad": {
+    "dname": "Sun Strike (AD)",
+    "behavior": [
+      "Point Target",
+      "AOE"
+    ],
+    "desc": "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. Damage is spread evenly over all enemies hit.",
+    "attrib": [
+      {
+        "key": "damage",
+        "header": "DAMAGE:\\n",
+        "value": [
+          "225",
+          "325",
+          "425",
+          "525"
+        ]
+      },
+      {
+        "key": "create_forged_spirit_on_hero_damage",
+        "header": "CREATE FORGED SPIRIT ON HERO DAMAGE:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Harlek's Incantation of Incineration.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_sun_strike_ad.png"
   },
   "invoker_forge_spirit": {
     "dname": "Forge Spirit",
@@ -44036,9 +44350,9 @@
         "header": "SPIRIT COUNT:\\n",
         "value": [
           "1",
+          "1",
           "2",
-          "2",
-          "3"
+          "2"
         ]
       }
     ],
@@ -44209,6 +44523,75 @@
     "cd": "23",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_ice_wall.png"
   },
+  "invoker_ice_wall_ad": {
+    "dname": "Ice Wall (AD)",
+    "behavior": "No Target",
+    "desc": "Generates a wall of solid ice directly in front of Invoker for a duration. The bitter cold emanating from it greatly slows nearby enemies and deals damage each second.",
+    "attrib": [
+      {
+        "key": "duration",
+        "header": "WALL DURATION:\\n",
+        "value": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "key": "slow",
+        "header": "MOVEMENT SLOW:\\n",
+        "value": [
+          "-45%",
+          "-75%",
+          "-105%",
+          "-135%"
+        ]
+      },
+      {
+        "key": "damage_per_second",
+        "header": "DAMAGE PER SECOND:\\n",
+        "value": [
+          "36",
+          "48",
+          "60",
+          "72"
+        ]
+      },
+      {
+        "key": "wall_width",
+        "header": "WALL WIDTH:",
+        "value": "105",
+        "generated": true
+      },
+      {
+        "key": "vector_cast_range",
+        "header": "VECTOR CAST RANGE:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "root_delay",
+        "header": "ROOT DELAY:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "root_duration",
+        "header": "ROOT DURATION:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "root_damage",
+        "header": "ROOT DAMAGE:",
+        "value": "0",
+        "generated": true
+      }
+    ],
+    "lore": "Killing Wall of Koryx.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_ice_wall_ad.png"
+  },
   "invoker_deafening_blast": {
     "dname": "Deafening Blast",
     "behavior": [
@@ -44318,6 +44701,45 @@
     "cd": "36",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_deafening_blast.png"
   },
+  "invoker_deafening_blast_ad": {
+    "dname": "Deafening Blast",
+    "behavior": "Point Target",
+    "desc": "Invoker unleashes a mighty sonic wave in front of him, dealing damage to any enemy unit it collides with. The sheer impact from the blast is enough to knock those enemy units back for a duration then disarm their attacks for a duration.",
+    "attrib": [
+      {
+        "key": "damage",
+        "header": "DAMAGE:\\n",
+        "value": [
+          "110",
+          "190",
+          "270",
+          "350"
+        ]
+      },
+      {
+        "key": "knockback_duration",
+        "header": "KNOCKBACK DURATION:\\n",
+        "value": [
+          "1.2",
+          "1.4",
+          "1.6",
+          "1.8"
+        ]
+      },
+      {
+        "key": "disarm_duration",
+        "header": "DISARM DURATION:\\n",
+        "value": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    ],
+    "lore": "Buluphont's Aureal Incapacitator.",
+    "img": "/apps/dota2/images/dota_react/abilities/invoker_deafening_blast_ad.png"
+  },
   "invoker_mastermind": {
     "dname": "Mastermind",
     "is_innate": true,
@@ -44332,709 +44754,6 @@
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/invoker_mastermind.png"
-  },
-  "invoker_cold_snap_ad": {
-    "dname": "Cold Snap (AD)",
-    "behavior": "Unit Target",
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "dispellable": "Yes",
-    "target_team": "Enemy",
-    "target_type": [
-      "Hero",
-      "Basic"
-    ],
-    "desc": "Invoker draws the heat from an enemy, chilling them to their very core for a duration. The enemy will take damage and be briefly frozen. Further damage taken in this state will freeze the enemy again, dealing bonus damage. The enemy can only be frozen so often, but the freeze cooldown decreases as the level goes up.",
-    "attrib": [
-      {
-        "key": "duration",
-        "header": "COLD SNAP DURATION:\\n",
-        "value": [
-          "3.5",
-          "4.3",
-          "5.1",
-          "6"
-        ]
-      },
-      {
-        "key": "freeze_duration",
-        "header": "FREEZE DURATION:",
-        "value": "0.4"
-      },
-      {
-        "key": "freeze_cooldown",
-        "header": "FREEZE COOLDOWN:",
-        "value": [
-          "0.8",
-          "0.75",
-          "0.70",
-          "0.65"
-        ]
-      },
-      {
-        "key": "freeze_damage",
-        "header": "FREEZE DAMAGE:",
-        "value": [
-          "16",
-          "30",
-          "43",
-          "56"
-        ]
-      },
-      {
-        "key": "damage_trigger",
-        "header": "DAMAGE TRIGGER:",
-        "value": "10",
-        "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "1000",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Sadron's Protracted Frisson.",
-    "mc": "90",
-    "cd": "20",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_cold_snap_ad.png"
-  },
-  "invoker_ghost_walk_ad": {
-    "dname": "Ghost Walk (AD)",
-    "behavior": [
-      "No Target",
-      "Instant Cast"
-    ],
-    "bkbpierce": "No",
-    "dispellable": "No",
-    "desc": "Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies, and slows Invoker as well based on the level.",
-    "attrib": [
-      {
-        "key": "duration",
-        "header": "DURATION:",
-        "value": "100"
-      },
-      {
-        "key": "area_of_effect",
-        "header": "RADIUS:",
-        "value": "400"
-      },
-      {
-        "key": "enemy_slow",
-        "header": "ENEMY SLOW:\\n",
-        "value": [
-          "-20%",
-          "-30%",
-          "-40%",
-          "-50%"
-        ]
-      },
-      {
-        "key": "self_slow",
-        "header": "SELF SPEED:\\n",
-        "value": [
-          "-15%",
-          "-5%",
-          "5%",
-          "15%"
-        ]
-      },
-      {
-        "key": "aura_fade_time",
-        "header": "AURA FADE TIME:",
-        "value": "2",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Myrault's Hinder-Gast.",
-    "mc": "200",
-    "cd": "45",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_ghost_walk_ad.png"
-  },
-  "invoker_tornado_ad": {
-    "dname": "Tornado (AD)",
-    "behavior": "Point Target",
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "dispellable": "Yes",
-    "desc": "Unleashes a fast moving tornado that picks up enemy units in its path, suspending them helplessly in the air shortly before allowing them to plummet to their doom. Travels further based on the level and holds enemies in the air for a duration.\n\nDISPEL TYPE: Basic Dispel",
-    "attrib": [
-      {
-        "key": "travel_distance",
-        "header": "TRAVEL DISTANCE:\\n",
-        "value": [
-          "1200",
-          "1865",
-          "2530",
-          "3200"
-        ]
-      },
-      {
-        "key": "travel_speed",
-        "header": "TRAVEL SPEED:",
-        "value": "1000",
-        "generated": true
-      },
-      {
-        "key": "area_of_effect",
-        "header": "RADIUS:",
-        "value": "200"
-      },
-      {
-        "key": "vision_distance",
-        "header": "VISION DISTANCE:",
-        "value": "200",
-        "generated": true
-      },
-      {
-        "key": "end_vision_duration",
-        "header": "END VISION DURATION:",
-        "value": "1.75",
-        "generated": true
-      },
-      {
-        "key": "lift_duration",
-        "header": "LIFT TIME:\\n",
-        "value": [
-          "1.1",
-          "1.6",
-          "2.1",
-          "2.6"
-        ]
-      },
-      {
-        "key": "base_damage",
-        "header": "BASE DAMAGE:",
-        "value": "70"
-      },
-      {
-        "key": "quas_damage",
-        "header": "QUAS DAMAGE:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "wex_damage",
-        "header": "ADDED DAMAGE:",
-        "value": [
-          "90",
-          "165",
-          "240",
-          "315"
-        ]
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "2000",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Claws of Tornarus.",
-    "mc": "140",
-    "cd": "30",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_tornado_ad.png"
-  },
-  "invoker_emp_ad": {
-    "dname": "E.M.P. (AD)",
-    "behavior": [
-      "Point Target",
-      "AOE"
-    ],
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "desc": "Invoker builds up a charge of electromagnetic energy at a targeted location which automatically detonates after 2.9 seconds. The detonation covers an area, draining mana. Deals damage for each point of mana drained. If EMP drains mana from an enemy hero, Invoker gains 50% of the mana drained.",
-    "attrib": [
-      {
-        "key": "delay",
-        "header": "CHARGE TIME:",
-        "value": "2.9"
-      },
-      {
-        "key": "area_of_effect",
-        "header": "RADIUS:",
-        "value": "675"
-      },
-      {
-        "key": "mana_burned",
-        "header": "MAX MANA BURNED:\\n",
-        "value": [
-          "100",
-          "250",
-          "400",
-          "550"
-        ]
-      },
-      {
-        "key": "damage_per_mana_pct",
-        "header": "BURN DAMAGE:",
-        "value": "60%"
-      },
-      {
-        "key": "self_mana_restore_pct",
-        "header": "SELF MANA RESTORE PCT:",
-        "value": "25",
-        "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "950",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Endoleon's Malevolent Perturbation.",
-    "mc": "125",
-    "cd": "30",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_emp_ad.png"
-  },
-  "invoker_alacrity_ad": {
-    "dname": "Alacrity (AD)",
-    "behavior": "Unit Target",
-    "bkbpierce": "Yes",
-    "dispellable": "Yes",
-    "target_team": "Friendly",
-    "target_type": "Hero",
-    "desc": "Invoker infuses an ally with an immense surge of energy, increasing their attack speed and their damage.",
-    "attrib": [
-      {
-        "key": "bonus_attack_speed",
-        "header": "BONUS ATTACK SPEED:\\n",
-        "value": [
-          "22",
-          "42",
-          "62",
-          "82"
-        ]
-      },
-      {
-        "key": "bonus_damage",
-        "header": "BONUS DAMAGE:\\n",
-        "value": [
-          "22",
-          "42",
-          "62",
-          "82"
-        ]
-      },
-      {
-        "key": "duration",
-        "header": "DURATION:",
-        "value": "9"
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "650",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Gaster's Mandate of Impetuous Strife.",
-    "mc": "90",
-    "cd": "17",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_alacrity_ad.png"
-  },
-  "invoker_sun_strike_ad": {
-    "dname": "Sun Strike (AD)",
-    "behavior": [
-      "Point Target",
-      "AOE"
-    ],
-    "dmg_type": "Pure",
-    "bkbpierce": "Yes",
-    "desc": "Sends a catastrophic ray of fierce energy from the sun at any targeted location, incinerating all enemies standing beneath it once it reaches the earth. Damage is spread evenly over all enemies hit.",
-    "attrib": [
-      {
-        "key": "delay",
-        "header": "DELAY:",
-        "value": "1.7"
-      },
-      {
-        "key": "area_of_effect",
-        "header": "RADIUS:",
-        "value": "175"
-      },
-      {
-        "key": "damage",
-        "header": "DAMAGE:\\n",
-        "value": [
-          "162",
-          "266",
-          "370",
-          "475"
-        ]
-      },
-      {
-        "key": "vision_distance",
-        "header": "VISION DISTANCE:",
-        "value": "400",
-        "generated": true
-      },
-      {
-        "key": "vision_duration",
-        "header": "VISION DURATION:",
-        "value": "4",
-        "generated": true
-      },
-      {
-        "key": "cataclysm_cooldown",
-        "header": "CATACLYSM COOLDOWN:",
-        "value": "90",
-        "generated": true
-      },
-      {
-        "key": "cataclysm_min_range",
-        "header": "CATACLYSM MIN RANGE:",
-        "value": "90",
-        "generated": true
-      },
-      {
-        "key": "cataclysm_max_range",
-        "header": "CATACLYSM MAX RANGE:",
-        "value": "180",
-        "generated": true
-      },
-      {
-        "key": "cataclysm_damage_pct",
-        "header": "CATACLYSM DAMAGE PCT:",
-        "value": "75",
-        "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Harlek's Incantation of Incineration.",
-    "mc": "175",
-    "cd": "25",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_sun_strike_ad.png"
-  },
-  "invoker_chaos_meteor_ad": {
-    "dname": "Chaos Meteor (AD)",
-    "behavior": "Point Target",
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "dispellable": "Yes",
-    "desc": "Invoker pulls a flaming meteor from space onto the targeted location. Upon landing, the meteor rolls forward, constantly dealing damage and rolling further based on the level. Units hit by the meteor will also be set on fire for a short time.",
-    "attrib": [
-      {
-        "key": "land_time",
-        "header": "IMPACT DELAY:",
-        "value": "1.3"
-      },
-      {
-        "key": "area_of_effect",
-        "header": "RADIUS:",
-        "value": "275"
-      },
-      {
-        "key": "travel_distance",
-        "header": "TRAVEL DISTANCE:\\n",
-        "value": [
-          "615",
-          "880",
-          "1145",
-          "1410"
-        ]
-      },
-      {
-        "key": "travel_speed",
-        "header": "TRAVEL SPEED:",
-        "value": "300",
-        "generated": true
-      },
-      {
-        "key": "damage_interval",
-        "header": "CONTACT DAMAGE TICK:",
-        "value": "0.5"
-      },
-      {
-        "key": "vision_distance",
-        "header": "VISION DISTANCE:",
-        "value": "500",
-        "generated": true
-      },
-      {
-        "key": "end_vision_duration",
-        "header": "END VISION DURATION:",
-        "value": "3",
-        "generated": true
-      },
-      {
-        "key": "main_damage",
-        "header": "CONTACT DAMAGE:\\n",
-        "value": [
-          "71",
-          "103",
-          "134",
-          "166"
-        ]
-      },
-      {
-        "key": "burn_duration",
-        "header": "BURN DURATION:",
-        "value": "3"
-      },
-      {
-        "key": "burn_dps",
-        "header": "BURN DAMAGE PER SECOND:\\n",
-        "value": [
-          "14",
-          "20",
-          "26.5",
-          "32.5"
-        ]
-      },
-      {
-        "key": "meteor_count",
-        "header": "METEOR COUNT:",
-        "value": "1",
-        "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "700",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Tarak's Descent of Fire.",
-    "mc": "200",
-    "cd": "55",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_chaos_meteor_ad.png"
-  },
-  "invoker_ice_wall_ad": {
-    "dname": "Ice Wall (AD)",
-    "behavior": "No Target",
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "dispellable": "No",
-    "desc": "Generates a wall of solid ice directly in front of Invoker for a duration. The bitter cold emanating from it greatly slows nearby enemies and deals damage each second.",
-    "attrib": [
-      {
-        "key": "duration",
-        "header": "WALL DURATION:\\n",
-        "value": [
-          "3",
-          "6",
-          "9",
-          "12"
-        ]
-      },
-      {
-        "key": "slow",
-        "header": "MOVEMENT SLOW:\\n",
-        "value": [
-          "-20%",
-          "-80%",
-          "-140%",
-          "-200%"
-        ]
-      },
-      {
-        "key": "slow_duration",
-        "header": "SLOW DURATION:",
-        "value": "2"
-      },
-      {
-        "key": "damage_per_second",
-        "header": "DAMAGE PER SECOND:\\n",
-        "value": [
-          "30",
-          "45",
-          "60",
-          "75"
-        ]
-      },
-      {
-        "key": "tick_interval",
-        "header": "TICK INTERVAL:",
-        "value": "0.5",
-        "generated": true
-      },
-      {
-        "key": "wall_place_distance",
-        "header": "WALL PLACE DISTANCE:",
-        "value": "200",
-        "generated": true
-      },
-      {
-        "key": "wall_total_length",
-        "header": "WALL TOTAL LENGTH:",
-        "value": "1200",
-        "generated": true
-      },
-      {
-        "key": "wall_width",
-        "header": "WALL WIDTH:",
-        "value": "105",
-        "generated": true
-      },
-      {
-        "key": "vector_cast_range",
-        "header": "VECTOR CAST RANGE:",
-        "value": "0",
-        "generated": true
-      },
-      {
-        "key": "glacier_formation_delay",
-        "header": "GLACIER FORMATION DELAY:",
-        "value": "1.3",
-        "generated": true
-      },
-      {
-        "key": "glacier_formation_speed",
-        "header": "GLACIER FORMATION SPEED:",
-        "value": "600",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Killing Wall of Koryx.",
-    "mc": "125",
-    "cd": "25",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_ice_wall_ad.png"
-  },
-  "invoker_deafening_blast_ad": {
-    "dname": "Deafening Blast",
-    "behavior": "Point Target",
-    "dmg_type": "Magical",
-    "bkbpierce": "No",
-    "dispellable": "No",
-    "desc": "Invoker unleashes a mighty sonic wave in front of him, dealing damage to any enemy unit it collides with. The sheer impact from the blast is enough to knock those enemy units back for a duration then disarm their attacks for a duration.",
-    "attrib": [
-      {
-        "key": "travel_distance",
-        "header": "TRAVEL DISTANCE:",
-        "value": "1000"
-      },
-      {
-        "key": "travel_speed",
-        "header": "TRAVEL SPEED:",
-        "value": "1100",
-        "generated": true
-      },
-      {
-        "key": "radius_start",
-        "header": "RADIUS START:",
-        "value": "175",
-        "generated": true
-      },
-      {
-        "key": "radius_end",
-        "header": "RADIUS END:",
-        "value": "225",
-        "generated": true
-      },
-      {
-        "key": "end_vision_duration",
-        "header": "END VISION DURATION:",
-        "value": "1.75",
-        "generated": true
-      },
-      {
-        "key": "damage",
-        "header": "DAMAGE:\\n",
-        "value": [
-          "60",
-          "127",
-          "293",
-          "260"
-        ]
-      },
-      {
-        "key": "knockback_duration",
-        "header": "KNOCKBACK DURATION:\\n",
-        "value": [
-          "0.4",
-          "0.74",
-          "1.06",
-          "1.4"
-        ]
-      },
-      {
-        "key": "disarm_duration",
-        "header": "DISARM DURATION:\\n",
-        "value": [
-          "2",
-          "3.25",
-          "4.5",
-          "5.75"
-        ]
-      },
-      {
-        "key": "radial_count",
-        "header": "RADIAL COUNT:",
-        "value": "1",
-        "generated": true
-      },
-      {
-        "key": "abilitycastrange",
-        "header": "CAST RANGE:",
-        "value": "1000",
-        "generated": true
-      },
-      {
-        "key": "abilitycastpoint",
-        "header": "CAST TIME:",
-        "value": "0.05",
-        "generated": true
-      }
-    ],
-    "lore": "Buluphont's Aureal Incapacitator.",
-    "mc": "250",
-    "cd": "40",
-    "img": "/apps/dota2/images/dota_react/abilities/invoker_deafening_blast_ad.png"
   },
   "silencer_curse_of_the_silent": {
     "dname": "Arcane Curse",
@@ -45687,7 +45406,10 @@
   },
   "obsidian_destroyer_objurgation": {
     "dname": "Objurgation",
-    "behavior": "No Target",
+    "behavior": [
+      "No Target",
+      "Instant Cast"
+    ],
     "dispellable": "Yes",
     "target_team": "Friendly",
     "target_type": "Hero",
@@ -45697,9 +45419,9 @@
         "key": "barrier_flat",
         "header": "BARRIER:",
         "value": [
-          "120",
-          "180",
-          "240",
+          "150",
+          "200",
+          "250",
           "300"
         ]
       },
@@ -45726,16 +45448,16 @@
       {
         "key": "abilitycastpoint",
         "header": "CAST TIME:",
-        "value": "0.2",
+        "value": "0",
         "generated": true
       }
     ],
     "mc": "175",
     "cd": [
       "36",
-      "34",
-      "32",
-      "30"
+      "33",
+      "30",
+      "27"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/obsidian_destroyer_objurgation.png"
   },
@@ -45900,9 +45622,9 @@
     "lore": "Does this bite look infected?",
     "mc": "150",
     "cd": [
-      "110",
-      "100",
-      "90"
+      "105",
+      "95",
+      "85"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/lycan_wolf_bite.png"
   },
@@ -48617,7 +48339,7 @@
       {
         "key": "bonus_building_damage",
         "header": "BONUS BUILDING DAMAGE:",
-        "value": "30%"
+        "value": "20%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/lone_druid_spirit_bear_demolish.png"
@@ -48626,7 +48348,7 @@
     "dname": "+5s True Form Duration"
   },
   "special_bonus_unique_lone_druid_4": {
-    "dname": "-5s Savage Roar Cooldown"
+    "dname": "-4s Savage Roar Cooldown"
   },
   "special_bonus_unique_lone_druid_8": {
     "dname": "True Form provides 70% Slow Resistance"
@@ -48669,7 +48391,7 @@
       {
         "key": "chaos_bolt_speed",
         "header": "CHAOS BOLT SPEED:",
-        "value": "700",
+        "value": "900",
         "generated": true
       },
       {
@@ -49110,7 +48832,10 @@
   },
   "meepo_poof": {
     "dname": "Poof",
-    "behavior": "Point Target",
+    "behavior": [
+      "Point Target",
+      "Unit Target"
+    ],
     "dmg_type": "Magical",
     "bkbpierce": "No",
     "target_team": "Friendly",
@@ -49770,9 +49495,9 @@
         "key": "duration",
         "header": "DURATION:",
         "value": [
-          "0.9",
-          "1.1",
-          "1.3",
+          "0.75",
+          "1",
+          "1.25",
           "1.5"
         ]
       },
@@ -49912,12 +49637,7 @@
       }
     ],
     "lore": "The roots and tendrils of the Treant Protectors are far-reaching, stimulating the growth and rejuvenation of all of nature.",
-    "mc": [
-      "65",
-      "70",
-      "75",
-      "80"
-    ],
+    "mc": "80",
     "cd": [
       "24",
       "21",
@@ -51067,7 +50787,7 @@
       {
         "key": "movement_bonus",
         "header": "BONUS MOVESPEED:",
-        "value": "20"
+        "value": "25"
       },
       {
         "key": "spawn_zombie_on_attack",
@@ -53279,7 +52999,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "850",
+        "value": "750",
         "generated": true
       },
       {
@@ -53331,15 +53051,13 @@
       },
       {
         "key": "off_duration",
-        "header": "OFF DURATION:",
-        "value": "1.85",
-        "generated": true
+        "header": "OFF INTERVAL:",
+        "value": "1.85"
       },
       {
         "key": "on_duration",
-        "header": "ON DURATION:",
-        "value": "1",
-        "generated": true
+        "header": "ON INTERVAL:",
+        "value": "1"
       },
       {
         "key": "off_duration_initial",
@@ -53352,6 +53070,11 @@
         "header": "FIXED MOVEMENT SPEED:",
         "value": "60",
         "generated": true
+      },
+      {
+        "key": "wisp_duration_tooltip",
+        "header": "TOTAL DURATION:",
+        "value": "13.4"
       },
       {
         "key": "bounty",
@@ -53447,10 +53170,10 @@
     "lore": "In the same vein, Ezalor bestows his harmony among others.",
     "mc": "0",
     "cd": [
-      "19",
-      "16",
-      "13",
-      "10"
+      "20",
+      "17",
+      "14",
+      "11"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/keeper_of_the_light_chakra_magic.png"
   },
@@ -56157,7 +55880,7 @@
     "dispellable": "No",
     "target_team": "Both",
     "target_type": "Hero",
-    "desc": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within 900 range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel.\n\nDISPEL TYPE: Basic Dispel",
+    "desc": "Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within 900 range, prioritizing heroes. Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed, slow resistance and movement speed. Applies a Basic Dispel.\n\nDISPEL TYPE: Basic Dispel",
     "attrib": [
       {
         "key": "trance_duration",
@@ -56191,6 +55914,11 @@
       {
         "key": "movement_speed",
         "header": "MOVEMENT SPEED:",
+        "value": "35%"
+      },
+      {
+        "key": "slow_resistance",
+        "header": "SLOW RESISTANCE:",
         "value": "35%"
       },
       {
@@ -56468,10 +56196,10 @@
         "key": "return_damage_str",
         "header": "STR RETURN DAMAGE:",
         "value": [
-          "16%",
-          "24%",
-          "32%",
-          "40%"
+          "14%",
+          "21%",
+          "28%",
+          "35%"
         ]
       },
       {
@@ -56743,7 +56471,7 @@
       {
         "key": "damage",
         "header": "DAMAGE:",
-        "value": "300"
+        "value": "325"
       },
       {
         "key": "radius",
@@ -60382,7 +60110,7 @@
       {
         "key": "armor_from_movespeed",
         "header": "BONUS SPEED TO ARMOR:",
-        "value": "5%"
+        "value": "7%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/elder_titan_momentum.png"
@@ -61847,7 +61575,7 @@
     "dname": "-2.0s Boulder Smash Cooldown"
   },
   "special_bonus_unique_earth_spirit_8": {
-    "dname": "+30% Magnetize Damage & Duration"
+    "dname": "+25% Magnetize Damage & Duration"
   },
   "terrorblade_reflection": {
     "dname": "Reflection",
@@ -63145,8 +62873,8 @@
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": [
-          "700",
           "800",
+          "850",
           "900"
         ],
         "generated": true
@@ -69110,7 +68838,7 @@
       "Hero",
       "Basic"
     ],
-    "desc": "Snapfire unloads with a wide blast that damages and slows enemies in a cone. Damage is increased by 30% and Movement Slow, Attack Slow and Slow Duration are increased by 50% for enemies caught at point-blank range.",
+    "desc": "Snapfire unloads with a wide blast that damages and slows enemies in a cone. Damage is increased by 25% and Movement Slow, Attack Slow and Slow Duration are increased by 50% for enemies caught at point-blank range.",
     "attrib": [
       {
         "key": "abilitycastrange",
@@ -69169,7 +68897,7 @@
       {
         "key": "point_blank_dmg_bonus_pct",
         "header": "POINT BLANK DMG BONUS PCT:",
-        "value": "30",
+        "value": "25",
         "generated": true
       },
       {
@@ -69248,9 +68976,9 @@
         "key": "damage_per_impact",
         "header": "DAMAGE PER GLOB:",
         "value": [
-          "180",
-          "270",
-          "360"
+          "170",
+          "250",
+          "330"
         ]
       },
       {
@@ -69599,10 +69327,10 @@
         "key": "impact_damage",
         "header": "IMPACT DAMAGE:",
         "value": [
-          "75",
-          "150",
-          "225",
-          "300"
+          "60",
+          "130",
+          "200",
+          "270"
         ]
       },
       {
@@ -69909,7 +69637,7 @@
     ],
     "lore": "A precious last vestige of Hoodwink's childhood, converted into deadly distraction.",
     "mc": "125",
-    "cd": "18",
+    "cd": "20",
     "img": "/apps/dota2/images/dota_react/abilities/hoodwink_hunters_boomerang.png"
   },
   "hoodwink_decoy": {
@@ -70396,9 +70124,9 @@
     ],
     "lore": "While her first arbalest was a chance discovery, Hoodwink now takes great care in carving and caring for her own -- of course with some necessary components pilfered or otherwise cleverly procured.",
     "mc": [
-      "100",
       "150",
-      "200"
+      "200",
+      "250"
     ],
     "cd": "45",
     "img": "/apps/dota2/images/dota_react/abilities/hoodwink_sharpshooter.png"
@@ -70428,7 +70156,7 @@
       {
         "key": "redirect_chance",
         "header": "REDIRECT CHANCE:",
-        "value": "14%"
+        "value": "14.25%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/hoodwink_mistwoods_wayfarer.png"
@@ -73413,10 +73141,10 @@
         "key": "bleed_creep_dps",
         "header": "DAMAGE PER SECOND (CREEPS):",
         "value": [
-          "85",
+          "60",
+          "75",
           "90",
-          "95",
-          "100"
+          "105"
         ]
       },
       {
@@ -78583,7 +78311,7 @@
     "dname": "+{s:bonus_duration}s Duel Duration"
   },
   "special_bonus_unique_legion_commander_duel_refresh_on_victory": {
-    "dname": "Duel Refreshes Cooldown On Victory"
+    "dname": "Duel Advances Cooldown by {s:bonus_duel_refresh_on_victory}s On Victory"
   },
   "special_bonus_unique_legion_commander_outfight_them_armor": {
     "dname": "+{s:bonus_armor} Outfight Them! Armor"

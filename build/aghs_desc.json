@@ -27,7 +27,7 @@
     "hero_name": "npc_dota_hero_bane",
     "hero_id": 3,
     "has_scepter": true,
-    "scepter_desc": "Reduces Fiend's Grip cooldown by 45. Fiend's Grip now creates two uncontrollable illusions that are also channeling Fiend's Grip on the target. Illusions take 225% incoming damage and immediately die if they are interrupted. Damage does not stack.",
+    "scepter_desc": "Reduces Fiend's Grip cooldown by 40s. Fiend's Grip now creates two uncontrollable illusions that are also channeling Fiend's Grip on the target. Illusions take 225% incoming damage and immediately die if they are interrupted. Damage does not stack.",
     "scepter_skill_name": "Fiend's Grip",
     "scepter_new_skill": false,
     "has_shard": true,
@@ -511,7 +511,7 @@
     "scepter_skill_name": "Fan of Knives",
     "scepter_new_skill": true,
     "has_shard": true,
-    "shard_desc": "Decreases Cooldown. Any time Phantom Assassin gets a hero kill, her ability cooldowns advance 60% of their max cooldown values.",
+    "shard_desc": "Decreases Cooldown by 10s. Any time Phantom Assassin gets a hero kill, her ability cooldowns advance 60% of their max cooldown values.",
     "shard_skill_name": "Blur",
     "shard_new_skill": false
   },

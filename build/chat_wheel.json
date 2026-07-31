@@ -4281,6 +4281,7 @@
   "735": {
     "id": 735,
     "name": "VoiceOfGod_1",
+    "all_chat": true,
     "label": "Well Played!",
     "message": "Well Played!",
     "sound_ext": "wav"
@@ -4288,16 +4289,17 @@
   "736": {
     "id": 736,
     "name": "VoiceOfGod_2",
-    "label": "Never Give Up.",
-    "message": "Never Give Up.",
+    "all_chat": true,
+    "label": "Never Give Up",
+    "message": "Never Give Up",
     "sound_ext": "wav"
   },
   "737": {
     "id": 737,
     "name": "VoiceOfGod_3",
     "all_chat": true,
-    "label": "That was regrettable.",
-    "message": "That was regrettable.",
+    "label": "That was regrettable",
+    "message": "That was regrettable",
     "sound_ext": "wav"
   },
   "738": {
@@ -4689,5 +4691,69 @@
     "label": "Look at me! I quit.",
     "message": "Look at me! I quit.",
     "sound_ext": "wav"
+  },
+  "824": {
+    "id": 824,
+    "name": "Community_TI15_maincast_1",
+    "all_chat": true,
+    "label": "О-о-о, найс! Оце потужно!",
+    "message": "О-о-о, найс! Оце потужно!",
+    "sound_ext": "mp3"
+  },
+  "825": {
+    "id": 825,
+    "name": "Community_TI15_maincast_2",
+    "all_chat": true,
+    "label": "Тисну руку. Обіймаю.",
+    "message": "Тисну руку. Обіймаю.",
+    "sound_ext": "mp3"
+  },
+  "826": {
+    "id": 826,
+    "name": "Community_TI15_maincast_3",
+    "all_chat": true,
+    "label": "Джентльмени, ми на порозі грандіозного камбеку.",
+    "message": "Джентльмени, ми на порозі грандіозного камбеку.",
+    "sound_ext": "mp3"
+  },
+  "827": {
+    "id": 827,
+    "name": "Community_TI15_ns_art_1",
+    "all_chat": true,
+    "label": "Abocanha, garoto!",
+    "message": "Abocanha, garoto!",
+    "sound_ext": "mp3"
+  },
+  "828": {
+    "id": 828,
+    "name": "Community_TI15_ns_art_2",
+    "all_chat": true,
+    "label": "Pináculo!",
+    "message": "Pináculo!",
+    "sound_ext": "mp3"
+  },
+  "830": {
+    "id": 830,
+    "name": "Community_TI15_wxc_1",
+    "all_chat": true,
+    "label": "Buo ang loob, sira ang tuktok.",
+    "message": "Buo ang loob, sira ang tuktok.",
+    "sound_ext": "mp3"
+  },
+  "831": {
+    "id": 831,
+    "name": "Community_TI15_wxc_2",
+    "all_chat": true,
+    "label": "D-d-d-d-dagger out peace!",
+    "message": "D-d-d-d-dagger out peace!",
+    "sound_ext": "mp3"
+  },
+  "832": {
+    "id": 832,
+    "name": "Community_TI15_wxc_3",
+    "all_chat": true,
+    "label": "Geng, geng, geng, geng… Kami naman!",
+    "message": "Geng, geng, geng, geng… Kami naman!",
+    "sound_ext": "mp3"
   }
 }
