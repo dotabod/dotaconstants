@@ -35051,6 +35051,12 @@
         "generated": true
       },
       {
+        "key": "total_ticks",
+        "header": "TOTAL TICKS:",
+        "value": "4",
+        "generated": true
+      },
+      {
         "key": "attack_cooldown",
         "header": "ATTACK COOLDOWN:",
         "value": "-1",
@@ -47599,7 +47605,7 @@
       {
         "key": "bear_armor",
         "header": "BEAR BASE ARMOR:",
-        "value": "0"
+        "value": "-1"
       },
       {
         "key": "backlash_damage",

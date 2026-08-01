@@ -4732,6 +4732,14 @@
     "message": "Pináculo!",
     "sound_ext": "mp3"
   },
+  "829": {
+    "id": 829,
+    "name": "Community_TI15_ns_art_3",
+    "all_chat": true,
+    "label": "Agora sou eu e você, meu gostoso!",
+    "message": "Agora sou eu e você, meu gostoso!",
+    "sound_ext": "mp3"
+  },
   "830": {
     "id": 830,
     "name": "Community_TI15_wxc_1",

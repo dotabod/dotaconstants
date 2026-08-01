@@ -7608,7 +7608,7 @@
     "qual": "epic",
     "cost": 2600,
     "dispellable": "Yes",
-    "notes": "Charges cannot be gained for %stack_gain_time%s after you take damage from a player-controlled source or Roshan.\nSelf-damage and HP Loss damage cannot remove charges.\nMovement speed buff does not stack.",
+    "notes": "Charges cannot be gained for 4s after you take damage from a player-controlled source or Roshan.\nSelf-damage and HP Loss damage cannot remove charges.\nMovement speed buff does not stack.",
     "attrib": [
       {
         "key": "bonus_spell_resist",
