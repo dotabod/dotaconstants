@@ -187,7 +187,7 @@
     "scepter_skill_name": "Epicenter",
     "scepter_new_skill": false,
     "has_shard": true,
-    "shard_desc": "Increases Epicenter damage per pulse. Every 3.0s causes a small single Epicenter Pulse around Sand King.",
+    "shard_desc": "Every 3.0s causes a small single Epicenter Pulse around Sand King.",
     "shard_skill_name": "Epicenter",
     "shard_new_skill": false
   },
