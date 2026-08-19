@@ -1392,18 +1392,6 @@
     "shard_new_skill": false
   },
   {
-    "hero_name": "npc_dota_hero_hoodwink",
-    "hero_id": 123,
-    "has_scepter": true,
-    "scepter_desc": "Increases arrow speed and movement speed slow.",
-    "scepter_skill_name": "Sharpshooter",
-    "scepter_new_skill": false,
-    "has_shard": true,
-    "shard_desc": "Tosses a boomerang in an arc. Upon contact, it returns to Hoodwink.  The boomerang will deal damage as it passes through or hits enemies, and apply a debuff that causes affected enemies to be slowed and be more vulnerable to spell damage.",
-    "shard_skill_name": "Hunter's Boomerang",
-    "shard_new_skill": true
-  },
-  {
     "hero_name": "npc_dota_hero_void_spirit",
     "hero_id": 126,
     "has_scepter": true,
