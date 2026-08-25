@@ -948,18 +948,6 @@
     "shard_new_skill": false
   },
   {
-    "hero_name": "npc_dota_hero_chaos_knight",
-    "hero_id": 81,
-    "has_scepter": true,
-    "scepter_desc": "Gains a passive component.  When an illusion of Chaos Knight is created, there is a 50% chance to create an additional illusion under Chaos Knight's control.\n\nWhen Phantasm is activated, also creates an illusion of allied heroes globally.",
-    "scepter_skill_name": "Phantasm",
-    "scepter_new_skill": false,
-    "has_shard": true,
-    "shard_desc": "Causes Chaos Bolt to create a Phantasm illusion to attack the target. This illusion deals =15% less damage.",
-    "shard_skill_name": "Chaos Bolt",
-    "shard_new_skill": false
-  },
-  {
     "hero_name": "npc_dota_hero_meepo",
     "hero_id": 82,
     "has_scepter": true,
