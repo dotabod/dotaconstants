@@ -136,11 +136,13 @@ let aghsAbilityValues = {};
 const heroDataUrls: string[] = [];
 const heroDataIndex: string[] = [];
 const abilitiesUrls = [abilitiesLoc, npcAbilitiesUrl];
+// Several sources share the same files (every hero file is pulled in by
+// npc_heroes.txt and again for abilities), so only download each URL once.
+const textCache = new Map<string, Promise<string>>();
 
 start();
 async function start() {
-  const resp = await fetch(heroesUrl);
-  const heroesVdf = parseJsonOrVdf(await resp.text(), heroesUrl);
+  const heroesVdf = await fetchVdf(heroesUrl);
   let ids = Object.keys(heroesVdf.DOTAHeroes)
     .filter((name) => !badNames.has(name))
     .map((key) => heroesVdf.DOTAHeroes[key].HeroID)
@@ -440,7 +442,8 @@ async function start() {
         // Merge into scripts all the hero abilities (the rest of the array)
         for (let i = 2; i < respObj.length; i++) {
           // console.log(respObj[i]);
-          const heroAbs = respObj[i].DOTAAbilities;
+          const heroAbs =
+            respObj[i].DOTAHeroes[heroDataIndex[i - 2]].AbilityDefinitions;
           scripts = { ...scripts, ...heroAbs };
         }
         let abilities = {};
@@ -932,7 +935,8 @@ async function start() {
 
         let scripts = {};
         for (let i = 0; i < heroAbils.length; i++) {
-          scripts[heroDataIndex[i]] = heroAbils[i].DOTAAbilities;
+          scripts[heroDataIndex[i]] =
+            heroAbils[i].DOTAHeroes[heroDataIndex[i]].AbilityDefinitions;
         }
 
         let heroes = heroObj.DOTAHeroes;
@@ -1379,8 +1383,7 @@ async function start() {
     const resps = await Promise.all(
       arr.map(async (url) => {
         console.log(url);
-        const resp = await fetch(url);
-        return parseJsonOrVdf(await resp.text(), url);
+        return fetchVdf(url);
       }),
     );
     let final: any = resps;
@@ -1424,6 +1427,38 @@ function isObj(obj: any) {
     typeof obj === "object" &&
     !Array.isArray(obj)
   );
+}
+
+// npc_heroes.txt is now just a list of `#base "heroes/<hero>.txt"` includes,
+// which vdf-parser can't read. Fetch each base relative to the including file
+// and merge it in, letting the including file's own keys win.
+async function fetchVdf(url: string): Promise<any> {
+  let pending = textCache.get(url);
+  if (!pending) {
+    pending = fetch(url).then((resp) => resp.text());
+    textCache.set(url, pending);
+  }
+  const text = await pending;
+  const baseRegex = /^[ \t]*#base[ \t]+"([^"]+)".*$/gm;
+  const baseUrls = [...text.matchAll(baseRegex)].map(
+    ([, path]) => new URL(path, url).href,
+  );
+  if (baseUrls.length === 0) {
+    return parseJsonOrVdf(text, url);
+  }
+  const bases = await Promise.all(baseUrls.map(fetchVdf));
+  const own = parseJsonOrVdf(text.replace(baseRegex, ""), url);
+  return [...bases, own].reduce(deepMerge, {});
+}
+
+function deepMerge(target: any, source: any) {
+  for (const [key, value] of Object.entries(source)) {
+    target[key] =
+      isObj(target[key]) && isObj(value)
+        ? deepMerge(target[key], value)
+        : value;
+  }
+  return target;
 }
 
 function parseJsonOrVdf(text: string, url: string) {
