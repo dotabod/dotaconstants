@@ -9316,7 +9316,7 @@
       {
         "key": "percent_damage_per_burn",
         "header": "MANA BURNED AS DAMAGE:",
-        "value": "60"
+        "value": "65"
       },
       {
         "key": "mana_per_hit",
@@ -11187,9 +11187,15 @@
         "generated": true
       },
       {
-        "key": "explosion_interval",
-        "header": "EXPLOSION INTERVAL:",
+        "key": "explosion_interval_tooltip",
+        "header": "EXPLOSION INTERVAL TOOLTIP:",
         "value": "0.1",
+        "generated": true
+      },
+      {
+        "key": "num_explosions",
+        "header": "NUM EXPLOSIONS:",
+        "value": "100",
         "generated": true
       },
       {
@@ -11934,13 +11940,19 @@
       {
         "key": "free_pathing_application_radius",
         "header": "FREE PATHING APPLICATION RADIUS:",
-        "value": "150",
+        "value": "0",
         "generated": true
       },
       {
         "key": "fissure_max_distance_moved",
         "header": "FISSURE MAX DISTANCE MOVED:",
         "value": "300",
+        "generated": true
+      },
+      {
+        "key": "free_pathing_all_allies",
+        "header": "FREE PATHING ALL ALLIES:",
+        "value": "0",
         "generated": true
       },
       {
@@ -12840,7 +12852,7 @@
     "dmg_type": "Magical",
     "bkbpierce": "No",
     "dispellable": "Strong Dispels Only",
-    "desc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 2.6 seconds, with bonus damage up to 180 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
+    "desc": "Fires a long-range arrow with deadly precision, which stuns and damages the first enemy unit it strikes. The stun duration ranges from 0.01 to 2.3 seconds, with bonus damage up to 180 added, based on the distance the arrow travels to its target. Instantly kills the first non-ancient creep it hits.",
     "dmg": [
       "60",
       "160",
@@ -12880,9 +12892,9 @@
         "key": "arrow_max_stun",
         "header": "MAXIMUM STUN:",
         "value": [
-          "2.6",
-          "3.4",
-          "4.2",
+          "2.3",
+          "3.2",
+          "4.1",
           "5"
         ]
       },
@@ -12895,6 +12907,12 @@
         "key": "arrow_vision",
         "header": "ARROW VISION:",
         "value": "400",
+        "generated": true
+      },
+      {
+        "key": "pierce_units",
+        "header": "PIERCE UNITS:",
+        "value": "0",
         "generated": true
       },
       {
@@ -12996,7 +13014,6 @@
   "mirana_solar_flare": {
     "dname": "Solar Flare",
     "behavior": "No Target",
-    "bkbpierce": "Yes",
     "dispellable": "No",
     "desc": "Gradually increases attack speed and damage of Mirana and all allied heroes, reaching maximum power after 6s. \n\n Allies receive 50% of the bonus.",
     "attrib": [
@@ -13186,6 +13203,12 @@
         "generated": true
       },
       {
+        "key": "secondary_targets",
+        "header": "SECONDARY TARGETS:",
+        "value": "1",
+        "generated": true
+      },
+      {
         "key": "starstruck_blind_pct",
         "header": "BLIND MISS RATE:",
         "value": "0%"
@@ -13294,7 +13317,7 @@
       {
         "key": "charge_restore_time",
         "header": "CHARGE RESTORE TIME:",
-        "value": "6",
+        "value": "7",
         "generated": true
       }
     ],
@@ -13401,7 +13424,7 @@
       {
         "key": "damage_per_soul",
         "header": "BONUS DAMAGE PER SOUL:",
-        "value": "3"
+        "value": "2"
       },
       {
         "key": "abilitycastpoint",
@@ -13492,7 +13515,7 @@
       {
         "key": "damage_per_soul",
         "header": "BONUS DAMAGE PER SOUL:",
-        "value": "3"
+        "value": "2"
       },
       {
         "key": "abilitycastpoint",
@@ -13583,7 +13606,7 @@
       {
         "key": "damage_per_soul",
         "header": "BONUS DAMAGE PER SOUL:",
-        "value": "3"
+        "value": "2"
       },
       {
         "key": "abilitycastpoint",
@@ -13604,12 +13627,12 @@
       "Passive",
       "Hidden"
     ],
-    "desc": "Shadow Fiend steals the soul from units he kills, gaining 1.35 bonus damage per soul. Hero kills grant 4 souls. On death, he releases 30% of them from bondage.",
+    "desc": "Shadow Fiend steals the soul from units he kills, gaining 1 bonus damage per soul. Hero kills grant 4 souls. On death, he releases 30% of them from bondage.",
     "attrib": [
       {
         "key": "necromastery_damage_per_soul",
         "header": "DAMAGE PER SOUL:",
-        "value": "1.35"
+        "value": "1"
       },
       {
         "key": "necromastery_max_souls",
@@ -19372,16 +19395,16 @@
     "dname": "Fiery Soul",
     "behavior": "Passive",
     "dispellable": "No",
-    "desc": "Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts 18 seconds.",
+    "desc": "Grants bonus attack and movement speed each time Lina hits an enemy with a spell. Stacks with itself. Lasts 16 seconds.",
     "attrib": [
       {
         "key": "fiery_soul_attack_speed_bonus",
         "header": "ATTACK SPEED BONUS:",
         "value": [
-          "8",
-          "16",
-          "24",
-          "32"
+          "7",
+          "14",
+          "21",
+          "28"
         ]
       },
       {
@@ -19402,7 +19425,7 @@
       {
         "key": "fiery_soul_stack_duration",
         "header": "DURATION:",
-        "value": "18"
+        "value": "16"
       },
       {
         "key": "bonus_spell_damage",
@@ -21466,9 +21489,9 @@
         "key": "crush_damage",
         "header": "DAMAGE:",
         "value": [
-          "75",
-          "150",
-          "225",
+          "60",
+          "140",
+          "220",
           "300"
         ]
       },
@@ -23039,9 +23062,9 @@
         "key": "eidolon_attack_range",
         "header": "EIDOLON ATTACK RANGE:",
         "value": [
-          "425",
-          "450",
-          "475",
+          "380",
+          "420",
+          "460",
           "500"
         ]
       },
@@ -23323,7 +23346,7 @@
     "dname": "+4 Malefice Instances"
   },
   "special_bonus_unique_enigma_3": {
-    "dname": "+40 Eidolon Damage"
+    "dname": "+30 Eidolon Damage"
   },
   "special_bonus_unique_enigma_4": {
     "dname": "+10 Eidolon Attack Speed"
@@ -24838,7 +24861,7 @@
       {
         "key": "hero_multiplier",
         "header": "HERO KILL MULTIPLIER:",
-        "value": "6"
+        "value": "4"
       },
       {
         "key": "regen_duration",
@@ -24872,10 +24895,10 @@
         "key": "heal_bonus",
         "header": "RESTORATION AMPLIFICATION:",
         "value": [
+          "45%",
           "55%",
           "65%",
-          "75%",
-          "85%"
+          "75%"
         ]
       },
       {
@@ -26971,8 +26994,6 @@
     "behavior": "Point Target",
     "dmg_type": "Physical",
     "bkbpierce": "Yes",
-    "target_team": "Friendly",
-    "target_type": "Hero",
     "desc": "Summons a plague ward to attack enemy units and structures. The ward is immune to magic. Wards gain the Poison Sting level from Venomancer, dealing 50% of the full damage.",
     "attrib": [
       {
@@ -26999,19 +27020,29 @@
         "value": "40"
       },
       {
-        "key": "ward_multiplier",
-        "header": "WARD MULTIPLIER:",
-        "value": "1",
-        "generated": true
-      },
-      {
         "key": "ward_model_scale",
         "header": "WARD MODEL SCALE:",
         "value": "1",
         "generated": true
       },
       {
-        "key": "ward_hp_tooltip",
+        "key": "ward_base_damage",
+        "header": "WARD DAMAGE:",
+        "value": [
+          "16",
+          "24",
+          "32",
+          "40"
+        ]
+      },
+      {
+        "key": "ward_damage_spread",
+        "header": "WARD DAMAGE SPREAD:",
+        "value": "2",
+        "generated": true
+      },
+      {
+        "key": "ward_max_health",
         "header": "WARD HP:",
         "value": [
           "150",
@@ -27021,14 +27052,32 @@
         ]
       },
       {
-        "key": "ward_damage_tooltip",
-        "header": "WARD DAMAGE:",
+        "key": "ward_gold_bounty_min",
+        "header": "WARD GOLD BOUNTY MIN:",
         "value": [
-          "16",
-          "24",
-          "32",
-          "40"
-        ]
+          "10",
+          "14",
+          "18",
+          "22"
+        ],
+        "generated": true
+      },
+      {
+        "key": "ward_gold_bounty_max",
+        "header": "WARD GOLD BOUNTY MAX:",
+        "value": [
+          "10",
+          "14",
+          "18",
+          "22"
+        ],
+        "generated": true
+      },
+      {
+        "key": "magic_immune",
+        "header": "MAGIC IMMUNE:",
+        "value": "1",
+        "generated": true
       },
       {
         "key": "abilitycastrange",
@@ -31909,7 +31958,7 @@
       {
         "key": "push_duration",
         "header": "PUSH DURATION:",
-        "value": "0.8",
+        "value": "0.7",
         "generated": true
       },
       {
@@ -31984,7 +32033,7 @@
       }
     ],
     "lore": "One of Clockwerk's inventions of which he is most proud is the power cog - though it is sometimes despised by his allies.",
-    "mc": "75",
+    "mc": "90",
     "cd": [
       "21",
       "19",
@@ -33443,10 +33492,10 @@
       "140"
     ],
     "cd": [
+      "21",
       "20",
       "19",
-      "18",
-      "17"
+      "18"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/life_stealer_rage.png"
   },
@@ -37325,7 +37374,7 @@
       }
     ],
     "lore": "While most of her prey is wrapped in silken cocoons and saved for her young, the Broodmother herself has a taste for wandering heroes.",
-    "mc": "80",
+    "mc": "70",
     "cd": [
       "45",
       "40",
@@ -37683,18 +37732,18 @@
         "key": "bonus_gold_self",
         "header": "SELF BONUS GOLD:",
         "value": [
-          "130",
-          "225",
-          "320"
+          "80",
+          "160",
+          "240"
         ]
       },
       {
         "key": "bonus_gold",
         "header": "ALLIES BONUS GOLD:",
         "value": [
-          "50",
-          "90",
-          "130"
+          "40",
+          "80",
+          "120"
         ]
       },
       {
@@ -39822,7 +39871,7 @@
       {
         "key": "bonus_damage",
         "header": "DAMAGE:",
-        "value": "23"
+        "value": "23.5"
       },
       {
         "key": "radius",
@@ -41338,7 +41387,7 @@
       {
         "key": "health_as_damage_pct",
         "header": "HEALTH AS DAMAGE:",
-        "value": "1.25%"
+        "value": "1.75%"
       }
     ],
     "img": "/apps/dota2/images/dota_react/abilities/ursa_maul.png"
@@ -42107,6 +42156,18 @@
         "key": "bonus_night_vision",
         "header": "BONUS NIGHT VISION:",
         "value": "0"
+      },
+      {
+        "key": "additional_targets",
+        "header": "ADDITIONAL TARGETS:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "proc_attack_modifiers",
+        "header": "PROC ATTACK MODIFIERS:",
+        "value": "0",
+        "generated": true
       },
       {
         "key": "abilityduration",
@@ -43182,7 +43243,7 @@
     ],
     "lore": "Sadron's Protracted Frisson.",
     "mc": "100",
-    "cd": "18",
+    "cd": "19",
     "img": "/apps/dota2/images/dota_react/abilities/invoker_cold_snap.png"
   },
   "invoker_cold_snap_ad": {
@@ -48147,7 +48208,12 @@
       {
         "key": "counter_duration",
         "header": "STACK DURATION:",
-        "value": "10"
+        "value": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
       },
       {
         "key": "hits_required",
@@ -48182,7 +48248,12 @@
       {
         "key": "counter_duration",
         "header": "STACK DURATION:",
-        "value": "10"
+        "value": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
       },
       {
         "key": "lone_druid_counters_applied_tooltip",
@@ -49322,7 +49393,7 @@
       {
         "key": "grace_time",
         "header": "GRACE TIME:",
-        "value": "2",
+        "value": "1",
         "generated": true
       },
       {
@@ -49526,7 +49597,12 @@
       {
         "key": "leech_heal",
         "header": "DAMAGE TO HEALING:",
-        "value": "20%"
+        "value": [
+          "10%",
+          "15%",
+          "20%",
+          "25%"
+        ]
       },
       {
         "key": "leech_damage",
@@ -49575,6 +49651,7 @@
       }
     ],
     "lore": "Rooftrellen nurtures the beings under his stewardship, sustained by the lifeforce of trespassers into his sacred ground.",
+    "mc": "35",
     "cd": [
       "15",
       "12",
@@ -49632,7 +49709,7 @@
       {
         "key": "damage_block_threshold",
         "header": "DAMAGE BLOCK THRESHOLD:",
-        "value": "20",
+        "value": "10",
         "generated": true
       },
       {
@@ -50434,7 +50511,7 @@
       }
     ],
     "lore": "The strength of the living is simply borrowed from the strength of the dead.",
-    "mc": "100",
+    "mc": "110",
     "cd": [
       "13",
       "10",
@@ -53131,10 +53208,10 @@
         "key": "cooldown_reduction",
         "header": "COOLDOWN REDUCTION:",
         "value": [
-          "3",
-          "4",
-          "5",
-          "6"
+          "2.5",
+          "3.5",
+          "4.5",
+          "5.5"
         ]
       },
       {
@@ -53225,7 +53302,7 @@
       {
         "key": "illuminate_heal",
         "header": "ILLUMINATE HEAL:",
-        "value": "70%"
+        "value": "60%"
       }
     ],
     "lore": "In a flash of light, Ezalor reveals his true nature.",
@@ -56404,7 +56481,7 @@
       {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
-        "value": "250",
+        "value": "200",
         "generated": true
       }
     ],
@@ -60227,6 +60304,12 @@
         "generated": true
       },
       {
+        "key": "shield_counts_non_hero_damage",
+        "header": "SHIELD COUNTS NON HERO DAMAGE:",
+        "value": "0",
+        "generated": true
+      },
+      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "0",
@@ -61560,7 +61643,7 @@
     "img": "/apps/dota2/images/dota_react/abilities/earth_spirit_magnetize.png"
   },
   "special_bonus_unique_earth_spirit": {
-    "dname": "+175% Rolling Boulder Damage from Strength"
+    "dname": "+250% Rolling Boulder Damage from Strength"
   },
   "special_bonus_unique_earth_spirit_2": {
     "dname": "Earth Spirit Magnetizes himself"
@@ -61572,7 +61655,7 @@
     "dname": "+150 Rolling Boulder Distance"
   },
   "special_bonus_unique_earth_spirit_5": {
-    "dname": "+250 Geomagnetic Grip Remnant Damage"
+    "dname": "+200 Geomagnetic Grip Remnant Damage"
   },
   "special_bonus_unique_earth_spirit_6": {
     "dname": "+80 Boulder Smash Damage"
@@ -61581,7 +61664,7 @@
     "dname": "-2.0s Boulder Smash Cooldown"
   },
   "special_bonus_unique_earth_spirit_8": {
-    "dname": "+25% Magnetize Damage & Duration"
+    "dname": "+35 Magnetize Damage Per Second"
   },
   "terrorblade_reflection": {
     "dname": "Reflection",
@@ -64005,9 +64088,9 @@
     "lore": "The same organ where some dragons stoke their inner flame is, in Auroth, a crucible of unimaginable cold. From deep within her frosty gullet, an exhalation sends enemies into burning agony.",
     "mc": "100",
     "cd": [
+      "29",
       "26",
-      "24",
-      "22",
+      "23",
       "20"
     ],
     "img": "/apps/dota2/images/dota_react/abilities/winter_wyvern_arctic_burn.png"
@@ -64144,9 +64227,9 @@
         "key": "heal_percentage",
         "header": "MAX HP HEAL PER SECOND:",
         "value": [
-          "2.25%",
-          "3%",
-          "3.75%",
+          "1.5%",
+          "2.5%",
+          "3.5%",
           "4.5%"
         ]
       },
@@ -70116,6 +70199,18 @@
         "generated": true
       },
       {
+        "key": "pierce_units",
+        "header": "PIERCE UNITS:",
+        "value": "0",
+        "generated": true
+      },
+      {
+        "key": "pierce_hero_damage_reduction_pct",
+        "header": "PIERCE HERO DAMAGE REDUCTION PCT:",
+        "value": "0",
+        "generated": true
+      },
+      {
         "key": "abilitycastrange",
         "header": "CAST RANGE:",
         "value": "3000",
@@ -71012,7 +71107,7 @@
     "dispellable": "Strong Dispels Only",
     "target_team": "Friendly",
     "target_type": "Hero",
-    "desc": "Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies where she lands.\n\nWhen Rebound is set to alt-cast, Marci brings the target ally with her to her final destination.\n\n The ally receives 15% bonus movement speed for 4s.",
+    "desc": "Marci bounds to the targeted allied unit, choosing a direction and distance she will spring away from it. Upon reaching the unit, Marci lunges to her final destination, damaging and stunning enemies where she lands.\n\nWhen Rebound is set to alt-cast, Marci brings the target ally with her to her final destination.\n\n The ally receives 25% bonus movement speed for 4s.",
     "attrib": [
       {
         "key": "move_speed",
@@ -71124,12 +71219,7 @@
       {
         "key": "ally_movespeed_pct",
         "header": "ALLY MOVESPEED PCT:",
-        "value": [
-          "15",
-          "20",
-          "25",
-          "30"
-        ],
+        "value": "25",
         "generated": true
       },
       {
@@ -71431,7 +71521,7 @@
     "dname": "Unleash Duration Extended By 6s On Kill"
   },
   "special_bonus_unique_marci_lunge_movespeed": {
-    "dname": "+10% Rebound Movement Speed Bonus"
+    "dname": "+{s:bonus_ally_movespeed_pct}% Rebound Movement Speed Bonus"
   },
   "special_bonus_unique_marci_guardian_damage": {
     "dname": "+12% Bodyguard Damage"
@@ -74537,6 +74627,12 @@
         "generated": true
       },
       {
+        "key": "parry_only_heroes",
+        "header": "PARRY ONLY HEROES:",
+        "value": "1",
+        "generated": true
+      },
+      {
         "key": "abilitycastpoint",
         "header": "CAST TIME:",
         "value": "0",
@@ -74588,7 +74684,7 @@
     "dispellable": "Strong Dispels Only",
     "target_team": "Enemy",
     "target_type": "Hero",
-    "desc": "Kez releases a wave of smoke that applies his Mark to nearby enemies, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
+    "desc": "Kez releases a wave of smoke that applies his Mark to nearby enemy heroes, briefly reducing their vision. Kez receives a basic dispel and gains bonus movement speed and invisibility until he attacks or casts a spell.",
     "attrib": [
       {
         "key": "blast_radius",
@@ -74644,6 +74740,12 @@
         "key": "apply_parry_bonus",
         "header": "APPLY PARRY BONUS:",
         "value": "0",
+        "generated": true
+      },
+      {
+        "key": "mark_only_heroes",
+        "header": "MARK ONLY HEROES:",
+        "value": "1",
         "generated": true
       },
       {
@@ -74981,9 +75083,9 @@
         "key": "heal_burst",
         "header": "HEAL:",
         "value": [
-          "34",
-          "56",
-          "78"
+          "30",
+          "55",
+          "80"
         ]
       },
       {
@@ -75893,7 +75995,7 @@
     "dname": "{s:bonus_aoe_radius} AoE Living Armor"
   },
   "special_bonus_unique_treant_8": {
-    "dname": "+{s:bonus_heal_per_second} Living Armor Heal Per Second"
+    "dname": "+{s:bonus_duration}s Living Armor Duration"
   },
   "special_bonus_unique_treant_9": {
     "dname": "+{s:bonus_damage_per_second} Nature's Grasp Damage"
@@ -76217,7 +76319,7 @@
     "dname": "Wave Of Terror Steals {s:bonus_steal_pct}% Of Reduced Damage And Armor"
   },
   "special_bonus_unique_venomancer": {
-    "dname": "{s:bonus_ward_hp_tooltip}x Plague Ward HP/Damage"
+    "dname": "{s:bonus_ward_base_damage}x Plague Ward HP/Damage"
   },
   "special_bonus_unique_venomancer_2": {
     "dname": "+{s:bonus_movement_speed}% Poison Sting Slow"

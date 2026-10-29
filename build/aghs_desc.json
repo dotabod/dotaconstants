@@ -375,7 +375,7 @@
     "hero_name": "npc_dota_hero_enigma",
     "hero_id": 33,
     "has_scepter": true,
-    "scepter_desc": "Black Hole deals additional damage equivalent to 4% of the unit's Max Health per second and does a non-interrupting pull towards it in a 1000 AoE. Pulls at a rate of 175.",
+    "scepter_desc": "Black Hole deals additional damage equivalent to 4% of the unit's Max Health per second and does a non-interrupting pull towards it in a 1000 AoE. Pulls at a rate of 150.",
     "scepter_skill_name": "Black Hole",
     "scepter_new_skill": false,
     "has_shard": true,

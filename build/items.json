@@ -627,7 +627,7 @@
       {
         "key": "mana_regen",
         "display": "+ {value} Mana Regeneration",
-        "value": "0.8"
+        "value": "0.6"
       },
       {
         "key": "magic_damage_block",
@@ -4970,7 +4970,7 @@
     "img": "/apps/dota2/images/dota_react/items/hurricane_pike.png?t=1593393829403",
     "dname": "Hurricane Pike",
     "qual": "epic",
-    "cost": 4450,
+    "cost": 4550,
     "behavior": "Unit Target",
     "target_team": "Both",
     "target_type": [
@@ -5412,7 +5412,7 @@
     "img": "/apps/dota2/images/dota_react/items/necronomicon.png?t=1593393829403",
     "dname": "Necronomicon",
     "qual": "rare",
-    "cost": 2050,
+    "cost": 2700,
     "behavior": [
       "Instant Cast",
       "No Target"
@@ -5425,9 +5425,8 @@
         "value": "6 / 12 / 18"
       },
       {
-        "key": "bonus_mana_regen",
-        "display": "+ {value} Mana Regeneration",
-        "value": "2 / 3 / 4"
+        "key": "bonus_intellect",
+        "value": "15 / 20 / 25"
       },
       {
         "key": "summon_duration",
@@ -5483,8 +5482,7 @@
     "cd": 80,
     "lore": "Considered the ultimate in necromancy and demonology, a powerful malefic force is locked within its pages.",
     "components": [
-      "sobi_mask",
-      "sobi_mask",
+      "staff_of_wizardry",
       "belt_of_strength"
     ],
     "created": true,
@@ -5503,7 +5501,7 @@
     "img": "/apps/dota2/images/dota_react/items/necronomicon_2.png?t=1593393829403",
     "dname": "Necronomicon",
     "qual": "rare",
-    "cost": 3300,
+    "cost": 3950,
     "behavior": [
       "Instant Cast",
       "No Target"
@@ -5516,9 +5514,8 @@
         "value": "6 / 12 / 18"
       },
       {
-        "key": "bonus_mana_regen",
-        "display": "+ {value} Mana Regeneration",
-        "value": "2 / 3 / 4"
+        "key": "bonus_intellect",
+        "value": "15 / 20 / 25"
       },
       {
         "key": "summon_duration",
@@ -5593,7 +5590,7 @@
     "img": "/apps/dota2/images/dota_react/items/necronomicon_3.png?t=1593393829403",
     "dname": "Necronomicon",
     "qual": "rare",
-    "cost": 4550,
+    "cost": 5200,
     "behavior": [
       "Instant Cast",
       "No Target"
@@ -5606,9 +5603,8 @@
         "value": "6 / 12 / 18"
       },
       {
-        "key": "bonus_mana_regen",
-        "display": "+ {value} Mana Regeneration",
-        "value": "2 / 3 / 4"
+        "key": "bonus_intellect",
+        "value": "15 / 20 / 25"
       },
       {
         "key": "summon_duration",
@@ -6009,7 +6005,7 @@
     "id": 113,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Heart of Tarrasque Recipe",
-    "cost": 700,
+    "cost": 800,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -6034,7 +6030,7 @@
     "img": "/apps/dota2/images/dota_react/items/heart.png?t=1593393829403",
     "dname": "Heart of Tarrasque",
     "qual": "epic",
-    "cost": 5200,
+    "cost": 5300,
     "notes": "Multiple instances of Behemoth's Blood do not stack.",
     "attrib": [
       {
@@ -6199,7 +6195,7 @@
       {
         "type": "active",
         "title": "Arctic Blast",
-        "description": "Emits a freezing wave that deals 260 magical damage to enemies and slows their movement by -40% for 4 seconds.\n\nRadius: 825"
+        "description": "Emits a freezing wave that deals 225 magical damage to enemies and slows their movement by -40% for 4 seconds.\n\nRadius: 825"
       },
       {
         "type": "passive",
@@ -6245,7 +6241,7 @@
       },
       {
         "key": "blast_damage",
-        "value": "260"
+        "value": "225"
       },
       {
         "key": "blast_movement_speed",
@@ -7102,7 +7098,7 @@
       {
         "key": "mana_regen",
         "display": "+ {value} Mana Regeneration",
-        "value": "1.75"
+        "value": "1.5"
       },
       {
         "key": "bonus_all_stats",
@@ -7644,6 +7640,10 @@
       {
         "key": "max_barrier_tooltip",
         "value": "360"
+      },
+      {
+        "key": "damage_must_be_player_owned_or_roshan",
+        "value": "1"
       }
     ],
     "mc": false,
@@ -7986,7 +7986,7 @@
     "id": 140,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Daedalus Recipe",
-    "cost": 900,
+    "cost": 1000,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -8011,7 +8011,7 @@
     "img": "/apps/dota2/images/dota_react/items/greater_crit.png?t=1593393829403",
     "dname": "Daedalus",
     "qual": "epic",
-    "cost": 5100,
+    "cost": 5200,
     "notes": "Critical Strike does not work against buildings.",
     "attrib": [
       {
@@ -8215,7 +8215,7 @@
     ],
     "mc": false,
     "hc": false,
-    "cd": 4,
+    "cd": 3,
     "lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
     "components": [
       "pers",
@@ -8247,7 +8247,7 @@
       {
         "type": "active",
         "title": "Mirror Image",
-        "description": "Creates 2 images of your hero that last 18 seconds. \n\nMelee images deal 33% damage, while Ranged images deal 28%. Illusions take 300% damage. \n\nDispel Type: Basic Dispel"
+        "description": "Creates 2 images of your hero that last 18 seconds. \n\nMelee images deal 33% damage, while Ranged images deal 25%. Illusions take 300% damage. \n\nDispel Type: Basic Dispel"
       }
     ],
     "hint": [],
@@ -8310,11 +8310,11 @@
       },
       {
         "key": "images_do_damage_percent_ranged",
-        "value": "-72"
+        "value": "-75"
       },
       {
         "key": "tooltip_damage_outgoing_ranged",
-        "value": "28"
+        "value": "25"
       },
       {
         "key": "invuln_duration",
@@ -8401,7 +8401,7 @@
     "id": 234,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Dragon Lance Recipe",
-    "cost": 450,
+    "cost": 550,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -8418,7 +8418,7 @@
     "img": "/apps/dota2/images/dota_react/items/dragon_lance.png?t=1593393829403",
     "dname": "Dragon Lance",
     "qual": "artifact",
-    "cost": 1900,
+    "cost": 2000,
     "notes": "Attack Range bonuses from Monkey King Bar and Dragon Lance and its upgrades do not stack.",
     "attrib": [
       {
@@ -8622,7 +8622,7 @@
       {
         "type": "active",
         "title": "Shadow Walk",
-        "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While invisible, you move 22% faster and can move through units. \n\nAttacking to end the invisibility will deal 300 bonus physical damage, disable their passive abilities for 5 seconds, and cap their movement speed to 200."
+        "description": "Makes you invisible for 17 seconds, or until you attack or cast a spell. While invisible, you move 20% faster and can move through units. \n\nAttacking to end the invisibility will deal 300 bonus physical damage, disable their passive abilities for 5 seconds, and cap their movement speed to 200."
       }
     ],
     "hint": [],
@@ -8665,7 +8665,7 @@
       },
       {
         "key": "windwalk_movement_speed",
-        "value": "22"
+        "value": "20"
       },
       {
         "key": "windwalk_fade_time",
@@ -8690,7 +8690,7 @@
     ],
     "mc": 75,
     "hc": false,
-    "cd": 22,
+    "cd": 23,
     "lore": "Once used to slay an unjust king, only to have the kingdom erupt into civil war in the aftermath.",
     "components": [
       "invis_sword",
@@ -8911,7 +8911,7 @@
       {
         "key": "lifesteal_percent",
         "display": "+ {value}% Lifesteal",
-        "value": "30"
+        "value": "25"
       },
       {
         "key": "unholy_lifesteal_percent",
@@ -8959,7 +8959,7 @@
       {
         "type": "active",
         "title": "Static Charge",
-        "description": "Places a charged shield on a target unit for 15 seconds which has a 20% chance to release a 225 magical damage shocking bolt at a nearby attacker and 4 additional enemies."
+        "description": "Places a charged shield on a target unit for 12 seconds which has a 20% chance to release a 225 magical damage shocking bolt at a nearby attacker and 4 additional enemies."
       },
       {
         "type": "passive",
@@ -8994,7 +8994,7 @@
       },
       {
         "key": "static_duration",
-        "value": "15.0"
+        "value": "12.0"
       },
       {
         "key": "static_chance",
@@ -9711,7 +9711,7 @@
       {
         "key": "lifesteal_percent",
         "display": "+ {value}% Lifesteal",
-        "value": "24"
+        "value": "22"
       },
       {
         "key": "berserk_bonus_attack_speed",
@@ -10210,7 +10210,7 @@
     "id": 228,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Octarine Core Recipe",
-    "cost": 200,
+    "cost": 400,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -10227,7 +10227,7 @@
     "img": "/apps/dota2/images/dota_react/items/octarine_core.png?t=1593393829403",
     "dname": "Octarine Core",
     "qual": "rare",
-    "cost": 4900,
+    "cost": 5100,
     "notes": "",
     "attrib": [
       {
@@ -11638,7 +11638,7 @@
     "id": 209,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
     "dname": "Heaven's Halberd Recipe",
-    "cost": 450,
+    "cost": 350,
     "behavior": false,
     "notes": "",
     "attrib": [],
@@ -11663,7 +11663,7 @@
     "img": "/apps/dota2/images/dota_react/items/heavens_halberd.png?t=1593393829403",
     "dname": "Heaven's Halberd",
     "qual": "artifact",
-    "cost": 3400,
+    "cost": 3300,
     "behavior": "Unit Target",
     "dispellable": "Strong Dispels Only",
     "target_team": "Enemy",
@@ -17504,7 +17504,7 @@
       {
         "key": "bonus_damage",
         "display": "- {value} Attack Damage",
-        "value": "-30 / -60"
+        "value": "-35 / -70"
       }
     ],
     "mc": false,
@@ -18819,7 +18819,7 @@
   "recipe_hydras_breath": {
     "id": 1857,
     "img": "/apps/dota2/images/dota_react/items/recipe.png?t=1593393829403",
-    "cost": 1100,
+    "cost": 1000,
     "behavior": false,
     "notes": "",
     "attrib": [],

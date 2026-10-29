@@ -3831,7 +3831,7 @@
         "level": 1
       },
       {
-        "name": "special_bonus_movement_speed_20",
+        "name": "special_bonus_movement_speed_15",
         "level": 1
       },
       {
@@ -4465,7 +4465,7 @@
         "level": 2
       },
       {
-        "name": "special_bonus_unique_bounty_hunter_8",
+        "name": "special_bonus_unique_bounty_hunter_2",
         "level": 3
       },
       {
@@ -4473,7 +4473,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_bounty_hunter_2",
+        "name": "special_bonus_unique_bounty_hunter_8",
         "level": 4
       },
       {
@@ -7825,7 +7825,7 @@
         "level": 3
       },
       {
-        "name": "special_bonus_unique_earth_spirit",
+        "name": "special_bonus_unique_earth_spirit_5",
         "level": 3
       },
       {
@@ -7833,7 +7833,7 @@
         "level": 4
       },
       {
-        "name": "special_bonus_unique_earth_spirit_5",
+        "name": "special_bonus_unique_earth_spirit",
         "level": 4
       }
     ],
