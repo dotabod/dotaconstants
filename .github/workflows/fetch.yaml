@@ -1,22 +1,27 @@
 name: Update constants from d2vpkr
 
 on:
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch: # Force a regeneration, even if the source commit is unchanged
+  push:
+    branches: [master]
+    paths: ['tasks/**', 'json/**', 'package*.json', '.github/workflows/fetch.yaml']
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours (tune as needed)
+    - cron: '17 * * * *' # Check game updates hourly
+    - cron: '47 3 * * *' # Rebuild daily for live Valve feeds as well
 
 permissions:
   contents: write
 
 # Never let two runs push at once; queue instead of racing.
 concurrency:
-  group: update-constants
+  group: dotaconstants-writer
   cancel-in-progress: false
 
 jobs:
   update:
     name: Rebuild constants if d2vpkr changed
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
 
@@ -24,6 +29,8 @@ jobs:
         id: check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          DAILY_REBUILD: ${{ github.event.schedule == '47 3 * * *' }}
         run: |
           set -euo pipefail
           latest=$(curl -sSf --retry 3 \
@@ -32,7 +39,7 @@ jobs:
             'https://api.github.com/repos/dotabuff/d2vpkr/commits/master' | jq -r .sha)
           current=$(cat d2vpkr_commit 2>/dev/null || echo "")
           echo "latest=$latest" >> "$GITHUB_OUTPUT"
-          if [[ "$latest" != "$current" || "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+          if [[ "$latest" != "$current" || "$EVENT_NAME" != "schedule" || "$DAILY_REBUILD" == "true" ]]; then
             echo "proceed=true" >> "$GITHUB_OUTPUT"
             echo "d2vpkr changed: $current -> $latest"
           else
@@ -51,8 +58,14 @@ jobs:
         if: steps.check.outputs.proceed == 'true'
         run: npm ci
 
+      - name: Test generator
+        if: steps.check.outputs.proceed == 'true'
+        run: npm test
+
       - name: Build constants
         if: steps.check.outputs.proceed == 'true'
+        env:
+          D2VPKR_SHA: ${{ steps.check.outputs.latest }}
         run: npm run build
 
       - name: Validate build output
@@ -100,7 +113,9 @@ jobs:
           pkgver=$(node -p "require('./package.json').version")
           msg="Update constants from d2vpkr${version:+ (Dota 2 version ${version})} [v${pkgver}]"
 
-          git add -A
+          git add build index.js index.ts json d2vpkr_commit version package.json package-lock.json
           git commit -m "$msg"
-          git tag "v${pkgver}"
-          git push --follow-tags
+          if [ "$GITHUB_REF_NAME" = "master" ]; then
+            git tag -a "v${pkgver}" -m "Generated constants v${pkgver}"
+          fi
+          git push origin HEAD --follow-tags

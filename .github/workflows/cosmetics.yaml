@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-cosmetics
+  group: dotaconstants-writer
   cancel-in-progress: false
 
 jobs:
