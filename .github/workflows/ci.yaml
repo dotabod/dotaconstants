@@ -1,0 +1,40 @@
+name: Validate constants
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Pin game resources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: echo "D2VPKR_SHA=$(gh api repos/dotabuff/d2vpkr/commits/master --jq .sha)" >> "$GITHUB_ENV"
+      - run: npm run build
+      - name: Validate generated datasets
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { readFileSync } from 'node:fs';
+          const read = (name) => JSON.parse(readFileSync(`build/${name}.json`, 'utf8'));
+          const heroes = Object.values(read('heroes'));
+          assert.ok(heroes.length >= 120);
+          assert.ok(heroes.every((hero) => Array.isArray(hero.aliases)));
+          assert.ok(Object.keys(read('abilities')).length >= 1000);
+          assert.ok(Object.keys(read('items')).length >= 100);
+          assert.ok(Object.keys(read('cosmetics')).length >= 5000);
+          console.log(`Validated ${heroes.length} heroes, abilities, items, and preserved cosmetics`);
+          JS

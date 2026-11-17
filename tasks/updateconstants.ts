@@ -1,6 +1,13 @@
 import fs from "node:fs";
 import vdfparser from "vdf-parser";
-import { cleanupArray } from "./util.ts";
+import { createSourceReader, gameSourceUrl } from "./source.ts";
+import {
+  cleanupArray,
+  resolveSpecialBonusPlaceholders,
+  abilityNameStrings,
+  buildSpecialBonusLookup,
+  parseNameAliases,
+} from "./util.ts";
 
 const extraStrings = {
   DOTA_ABILITY_BEHAVIOR_NONE: "None",
@@ -134,35 +141,47 @@ const localizationUrl =
 
 let aghsAbilityValues = {};
 const heroDataUrls: string[] = [];
-const heroDataIndex: string[] = [];
-const abilitiesUrls = [abilitiesLoc, npcAbilitiesUrl];
-// Several sources share the same files (every hero file is pulled in by
-// npc_heroes.txt and again for abilities), so only download each URL once.
-const textCache = new Map<string, Promise<string>>();
+const sourceRevision = process.env.D2VPKR_SHA ?? "master";
+const readSource = createSourceReader(sourceRevision);
 
+console.log(`Game source revision: ${sourceRevision}`);
 start();
 async function start() {
+  // Hero data (and each hero's abilities) lives in per-hero files, fetched once
+  // here and shared by every source transform below.
   const heroesVdf = await fetchVdf(heroesUrl);
-  let ids = Object.keys(heroesVdf.DOTAHeroes)
-    .filter((name) => !badNames.has(name))
-    .map((key) => heroesVdf.DOTAHeroes[key].HeroID)
+  const heroNames = Object.keys(heroesVdf.DOTAHeroes).filter(
+    (name) => !badNames.has(name),
+  );
+  const currentHeroes = Object.fromEntries(
+    heroNames.map((name) => [name, heroesVdf.DOTAHeroes[name]]),
+  );
+  const currentTalents = getReferencedHeroTalents(currentHeroes);
+  const preferredAbilities = new Set<string>(
+    Object.values(currentHeroes).flatMap((hero: any) =>
+      Object.entries(hero)
+        .filter(
+          ([key, value]) =>
+            /^Ability\d+$/.test(key) &&
+            typeof value === "string" &&
+            !value.startsWith("special_bonus"),
+        )
+        .map(([, value]) => String(value)),
+    ),
+  );
+  const ids = heroNames
+    .map((name) => heroesVdf.DOTAHeroes[name].HeroID)
     .sort((a, b) => Number(a) - Number(b));
   ids.forEach((key) => {
     heroDataUrls.push(
-      "http://www.dota2.com/datafeed/herodata?language=english&hero_id=" + key,
+      "https://www.dota2.com/datafeed/herodata?language=english&hero_id=" + key,
     );
   });
-  let names = Object.keys(heroesVdf.DOTAHeroes).filter(
-    (name) => !badNames.has(name),
-  );
-  names.forEach((name) => {
-    // The hero abilities were moved to individual hero files, e.g. https://raw.githubusercontent.com/dotabuff/d2vpkr/master/dota/scripts/npc/heroes/npc_dota_hero_abaddon.txt
-    abilitiesUrls.push(
-      "https://raw.githubusercontent.com/dotabuff/d2vpkr/master/dota/scripts/npc/heroes/" +
-        name +
-        ".txt",
-    );
-    heroDataIndex.push(name);
+  // hero name => its DOTAAbilities-like block of ability scripts
+  const heroAbilityScripts: Record<string, any> = {};
+  heroNames.forEach((name) => {
+    heroAbilityScripts[name] =
+      heroesVdf.DOTAHeroes[name].AbilityDefinitions ?? {};
   });
 
   const sources = [
@@ -297,7 +316,7 @@ async function start() {
                       value: (val.value ?? val).split(" ").join(" / "),
                     };
                   },
-                )
+                ).filter((attr) => Number(attr.value) !== 0)
               : [];
 
             item.mc = parseInt(scripts[key].AbilityManaCost) || false;
@@ -435,17 +454,20 @@ async function start() {
     },
     {
       key: "abilities",
-      url: abilitiesUrls,
+      url: [abilitiesLoc, npcAbilitiesUrl],
       transform: (respObj: any) => {
         const strings = respObj[0].lang.Tokens;
-        let scripts = respObj[1].DOTAAbilities;
-        // Merge into scripts all the hero abilities (the rest of the array)
-        for (let i = 2; i < respObj.length; i++) {
-          // console.log(respObj[i]);
-          const heroAbs =
-            respObj[i].DOTAHeroes[heroDataIndex[i - 2]].AbilityDefinitions;
-          scripts = { ...scripts, ...heroAbs };
-        }
+        // Merge into the generic scripts all the hero abilities
+        const scripts = Object.assign(
+          {},
+          respObj[1].DOTAAbilities,
+          ...Object.values(heroAbilityScripts),
+        );
+        const talentLookup = buildSpecialBonusLookup(scripts, {
+          currentTalents,
+          preferredAbilities,
+        });
+        const nameStrings = abilityNameStrings(strings);
         let abilities = {};
 
         Object.keys(scripts)
@@ -456,21 +478,17 @@ async function start() {
             let specialAttr = getSpecialAttrs(scripts[key]);
 
             ability.dname = replaceSValues(
-              strings[`DOTA_Tooltip_ability_${key}`] ??
-                strings[`DOTA_Tooltip_Ability_${key}`],
+              nameStrings[`dota_tooltip_ability_${key}`],
               specialAttr,
               key,
             );
 
-            // Check for unreplaced `s:bonus_<talent>`
-            if (
-              scripts[key].ad_linked_abilities &&
-              scripts[scripts[key].ad_linked_abilities]
-            ) {
-              ability.dname = replaceBonusSValues(
-                key,
-                ability.dname,
-                scripts[scripts[key].ad_linked_abilities].AbilityValues,
+            // Resolve explicit links before the global modifier fallback.
+            const linkedAbility = scripts[scripts[key].ad_linked_abilities];
+            if (linkedAbility) {
+              resolveSpecialBonusPlaceholders(
+                { [key]: ability },
+                buildSpecialBonusLookup({ linkedAbility }),
               );
             }
 
@@ -642,6 +660,19 @@ async function start() {
               aghsAbilityValues[key] = aghsObj;
             }
           });
+        // Some current talents are referenced by npc_heroes.txt but don't have
+        // their own DOTAAbilities block in the corresponding hero file. Add
+        // localized entries for those talents without pulling in unreferenced
+        // legacy talent strings.
+        currentTalents.forEach((talent) => {
+          if (abilities[talent]) {
+            return;
+          }
+          const dname = nameStrings[`dota_tooltip_ability_${talent}`];
+          if (dname) {
+            abilities[talent] = { dname };
+          }
+        });
         // Some unique talents don't show up in each hero data file
         // e.g. special_bonus_unique_axe_8
         // Do a pass through the strings and if any are missing, add them with just basic description
@@ -658,6 +689,7 @@ async function start() {
             }
           }
         });
+        resolveSpecialBonusPlaceholders(abilities, talentLookup);
         return abilities;
       },
     },
@@ -867,17 +899,14 @@ async function start() {
     },
     {
       key: "heroes",
-      url: [localizationUrl, heroesUrl],
+      url: localizationUrl,
       transform: (respObj: any) => {
         let heroes: any = [];
-        let keys = Object.keys(respObj[1].DOTAHeroes).filter(
-          (name) => !badNames.has(name),
-        );
-        keys.forEach((name) => {
-          let h: any = formatVpkHero(name, respObj[1]);
+        heroNames.forEach((name) => {
+          let h: any = formatVpkHero(name, heroesVdf);
           h.localized_name =
-            respObj[1].DOTAHeroes[name].workshop_guide_name ??
-            respObj[0].lang.Tokens[name + ":n"];
+            heroesVdf.DOTAHeroes[name].workshop_guide_name ??
+            respObj.lang.Tokens[name + ":n"];
           heroes.push(h);
         });
         heroes = heroes.sort((a, b) => a.id - b.id);
@@ -891,21 +920,15 @@ async function start() {
     },
     {
       key: "hero_lore",
-      url: [
-        "https://raw.githubusercontent.com/dotabuff/d2vpkr/master/dota/resource/localization/hero_lore_english.txt",
-        heroesUrl,
-      ],
+      url: "https://raw.githubusercontent.com/dotabuff/d2vpkr/master/dota/resource/localization/hero_lore_english.txt",
       transform: (respObj: any) => {
-        let keys = Object.keys(respObj[1].DOTAHeroes).filter(
-          (name) => !badNames.has(name),
-        );
         let sortedHeroes: { name: string; id: number }[] = [];
-        keys.forEach((name) => {
-          const hero = respObj[1].DOTAHeroes[name];
+        heroNames.forEach((name) => {
+          const hero = heroesVdf.DOTAHeroes[name];
           sortedHeroes.push({ name, id: hero.HeroID });
         });
         sortedHeroes = sortedHeroes.sort((a, b) => a.id - b.id);
-        const lore = respObj[0].lang.Tokens;
+        const lore = respObj.lang.Tokens;
         const heroLore = {};
         sortedHeroes.forEach((hero) => {
           const heroKey = hero.name.replace("npc_dota_hero_", "");
@@ -923,23 +946,16 @@ async function start() {
     },
     {
       key: "hero_abilities",
-      url: [heroesUrl, ...abilitiesUrls],
+      url: abilitiesLoc,
       transform: (respObj: any) => {
-        const [heroObj, abilityLoc, _, ...heroAbils] = respObj;
-
-        const strings = abilityLoc.lang.Tokens;
+        const strings = respObj.lang.Tokens;
         // Fix places where valve doesn't care about correct case
         Object.keys(strings).forEach((key) => {
           strings[key.toLowerCase()] = strings[key];
         });
 
-        let scripts = {};
-        for (let i = 0; i < heroAbils.length; i++) {
-          scripts[heroDataIndex[i]] =
-            heroAbils[i].DOTAHeroes[heroDataIndex[i]].AbilityDefinitions;
-        }
-
-        let heroes = heroObj.DOTAHeroes;
+        const scripts = heroAbilityScripts;
+        let heroes = heroesVdf.DOTAHeroes;
         const heroAbilities = {};
         Object.keys(heroes).forEach(function (heroKey) {
           if (
@@ -1380,12 +1396,7 @@ async function start() {
     // Make all urls into array
     const arr = Array.isArray(url) ? url : [url];
     // console.log(arr);
-    const resps = await Promise.all(
-      arr.map(async (url) => {
-        console.log(url);
-        return fetchVdf(url);
-      }),
-    );
+    const resps = await Promise.all(arr.map(fetchVdf));
     let final: any = resps;
     if (s.transform) {
       final = s.transform(resps.length === 1 ? resps[0] : resps);
@@ -1433,12 +1444,8 @@ function isObj(obj: any) {
 // which vdf-parser can't read. Fetch each base relative to the including file
 // and merge it in, letting the including file's own keys win.
 async function fetchVdf(url: string): Promise<any> {
-  let pending = textCache.get(url);
-  if (!pending) {
-    pending = fetch(url).then((resp) => resp.text());
-    textCache.set(url, pending);
-  }
-  const text = await pending;
+  url = gameSourceUrl(url, sourceRevision);
+  const text = await readSource(url);
   const baseRegex = /^[ \t]*#base[ \t]+"([^"]+)".*$/gm;
   const baseUrls = [...text.matchAll(baseRegex)].map(
     ([, path]) => new URL(path, url).href,
@@ -1697,73 +1704,40 @@ function removeSigns(template: string) {
     .replace("=", "");
 }
 
-let specialBonusLookup = {};
+function getReferencedHeroTalents(heroes: Record<string, any>) {
+  const talents = new Set<string>();
+  Object.values(heroes).forEach((hero) => {
+    const talentStart = Number(hero.AbilityTalentStart ?? 10);
+    Object.entries(hero).forEach(([key, value]) => {
+      const match = key.match(/^Ability(\d+)$/);
+      if (
+        match &&
+        Number(match[1]) >= talentStart &&
+        typeof value === "string" &&
+        value.startsWith("special_bonus")
+      ) {
+        talents.add(value);
+      }
+    });
+  });
+  return talents;
+}
 
 function replaceSValues(template: string, attribs: any[], key: string) {
-  let values = specialBonusLookup[key] ?? {};
-  if (
-    template &&
-    ((attribs && Array.isArray(attribs)) || Object.keys(values).length)
-  ) {
-    (attribs || []).forEach((attrib) => {
-      for (const key of Object.keys(attrib)) {
-        let val = attrib[key];
-        if (val === null) {
-          continue;
-        }
-        if (isObj(val)) {
-          values[key] = val["value"];
-          const specialBonusKey = Object.keys(val).find((key) =>
-            key.startsWith("special_bonus_"),
-          );
-          if (specialBonusKey) {
-            const bonusKey = `bonus_${key}`;
-            // Get the bonus value, handling both string and object cases
-            let specialBonusVal;
-            if (typeof val[specialBonusKey] === "string") {
-              specialBonusVal = val[specialBonusKey];
-            } else if (
-              typeof val[specialBonusKey] === "object" &&
-              val[specialBonusKey].special_bonus_scepter
-            ) {
-              specialBonusVal = val[specialBonusKey].special_bonus_scepter;
-            } else {
-              console.warn(
-                `Unexpected special bonus value type for ${key}:`,
-                val[specialBonusKey],
-              );
-              continue;
-            }
-
-            // Clean up the value by removing signs
-            specialBonusVal = specialBonusVal
-              .replace("+", "")
-              .replace("-", "")
-              .replace("x", "")
-              .replace("%", "");
-
-            if (specialBonusKey in specialBonusLookup) {
-              specialBonusLookup[specialBonusKey][bonusKey] = specialBonusVal;
-            } else {
-              // sometimes special bonuses look up by the value key rather than the bonus name.
-              specialBonusLookup[specialBonusKey] = {
-                [bonusKey]: specialBonusVal,
-                value: specialBonusVal,
-              };
-            }
-          }
-        } else {
-          values[key] = val;
-        }
-      }
-    });
-    Object.keys(values).forEach((key) => {
-      if (typeof values[key] != "object") {
-        template = template.replace(`{s:${key}}`, values[key]);
-      }
-    });
-  }
-  return template;
+  const values = Object.assign(
+    {},
+    ...(attribs || []).map((attr) =>
+      Object.fromEntries(
+        Object.entries(attr).map(([name, value]: [string, any]) => [
+          name.toLowerCase(),
+          isObj(value) ? value.value : value,
+        ]),
+      ),
+    ),
+  );
+  const abilities = { [key]: { dname: template } };
+  resolveSpecialBonusPlaceholders(abilities, { [key]: values }, false);
+  return abilities[key].dname;
 }
 
 function removeHTML(string = "") {
@@ -1775,27 +1749,6 @@ function removeHTML(string = "") {
       .replace(/(<(\/[^>]+)>)/gi, "")
       .replace(/(<([^>]+)>)/gi, "")
   );
-}
-
-function replaceBonusSValues(key, template, attribs) {
-  if (template && attribs) {
-    Object.keys(attribs).forEach((bonus) => {
-      if (
-        typeof attribs[bonus] == "object" &&
-        attribs[bonus]?.hasOwnProperty(key)
-      ) {
-        // remove redundant signs
-        let bonus_value = removeSigns(attribs[bonus][key]);
-
-        template = template
-          // Most of the time, the bonus value template is named bonus_<bonus_key>
-          .replace(`{s:bonus_${bonus}}`, bonus_value)
-          // But sometimes, it"s just value
-          .replace(`{s:value}`, bonus_value);
-      }
-    });
-  }
-  return template;
 }
 
 // Formats templates like "Storm"s movement speed is %storm_move_speed%" with "Storm"s movement speed is 32"
@@ -2062,6 +2015,8 @@ function formatVpkHero(key: string, vpkr: any) {
   h.night_vision = Number(
     vpkrh.VisionNighttimeRange || baseHero.VisionNighttimeRange,
   );
+
+  h.aliases = parseNameAliases(vpkrh.NameAliases);
 
   return h;
 }
