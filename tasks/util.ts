@@ -140,3 +140,33 @@ export const resolveSpecialBonusPlaceholders = (
     );
   });
 };
+
+type NeutralItems = Record<string, unknown>;
+type NeutralTier = {
+  items?: NeutralItems;
+  item_pools?: Record<string, { items?: NeutralItems }>;
+};
+
+export function getNeutralItemNameTierMap(neutrals: {
+  neutral_tiers: Record<string, NeutralTier>;
+}): Record<string, number> {
+  const tiers: Record<string, number> = {};
+  for (const [tier, data] of Object.entries(neutrals.neutral_tiers)) {
+    const poolItems = Object.values(data.item_pools ?? {}).map(
+      (pool) => pool.items,
+    );
+    const itemLists = [data.items, ...poolItems].filter(
+      (items): items is NeutralItems => !!items,
+    );
+    if (!itemLists.length) {
+      throw new Error(`No item list for neutral tier ${tier}`);
+    }
+    for (const items of itemLists) {
+      for (const name of Object.keys(items)) {
+        const tierNumber = Number(tier);
+        tiers[name] = tiers[name.replace(/recipe_/gi, "")] = tierNumber;
+      }
+    }
+  }
+  return tiers;
+}
