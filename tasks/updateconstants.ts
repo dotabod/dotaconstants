@@ -7,6 +7,7 @@ import {
   abilityNameStrings,
   buildSpecialBonusLookup,
   parseNameAliases,
+  getNeutralItemNameTierMap,
 } from "./util.ts";
 
 const extraStrings = {
@@ -2031,14 +2032,3 @@ function parseNameFromArray(array: string[], names: string[]) {
   }
   return final.map((a) => a)[0];
 }
-
-const getNeutralItemNameTierMap = (neutrals) => {
-  let ret = {};
-  Object.keys(neutrals.neutral_tiers).forEach((tier) => {
-    let items = neutrals.neutral_tiers[tier].items;
-    Object.keys(items).forEach((itemName) => {
-      ret[itemName] = ret[itemName.replace(/recipe_/gi, "")] = parseInt(tier);
-    });
-  });
-  return ret;
-};
