@@ -3950,7 +3950,7 @@
     "behavior": "No Target",
     "dmg_type": "Magical",
     "dispellable": "Yes",
-    "desc": "The Ancient Thunderhide slams his mammoth foot against the ground, sending 3 shockwaves, each smaller than the last. Every wave damages enemies it catches and throws them off their footing, slowing their movement and attack speed. Heroes regain their balance more quickly.",
+    "desc": "The Ancient Thunderhide slams his mammoth foot against the ground, sending 3 shockwaves, each smaller than the last. Every wave damages enemies it catches and throws them off their footing, slowing their movement and attack speed.",
     "dmg": "175",
     "attrib": [
       {
@@ -3991,14 +3991,9 @@
         "value": "-50"
       },
       {
-        "key": "non_hero_duration",
+        "key": "duration",
         "header": "DURATION:",
-        "value": "4"
-      },
-      {
-        "key": "hero_duration",
-        "header": "HERO DURATION:",
-        "value": "3"
+        "value": "2"
       },
       {
         "key": "abilitycastpoint",
@@ -47154,7 +47149,7 @@
     "dmg_type": "Physical",
     "bkbpierce": "No",
     "dispellable": "Yes",
-    "desc": "Lycan and units under his control mark units on attack for 6 seconds. When Lycan or a unit under his control attacks a marked unit, it deals bonus damage equal to 5% of its attack damage per stack, and heals the attacker for 3% of its attack damage per stack. Only units within 1200 range of Lycan can apply new marks.\n\nDISPEL TYPE: Basic Dispel",
+    "desc": "Lycan and units under his control mark units on attack for 6 seconds. When Lycan or a unit under his control attacks a marked unit, it deals bonus damage equal to 5% of its attack damage per stack, and heals the attacker for 3% of its attack damage per stack. Only units within 1200 range of Lycan can apply new marks.",
     "attrib": [
       {
         "key": "mark_duration",
